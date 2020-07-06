@@ -191,3 +191,14 @@ a>.external-link svg {
 a:hover>.external-link svg {
     stroke: hsl(210, 100%, 50%);
 }
+
+/* Dark Mode Styling */
+
+@media (prefers-color-scheme: dark) {
+    body, html {
+        background: black;
+    }
+    body, html, a {
+        color: white;
+    }
+}
