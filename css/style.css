@@ -1,7 +1,3 @@
-:root {
-  color-scheme: light dark;
-}
-
 * {
     -webkit-overflow-scrolling: touch;
 }
@@ -16,7 +12,6 @@ html,
 body {
     overflow-x: hidden;
     max-width: 100%;
-    overflow: -moz-scrollbars-none;
     -ms-overflow-style: none;
     background: hsl(200, 100%, 94%);
     height: 100%;
@@ -32,7 +27,6 @@ html {
 body {
     margin: 0;
     font-size: 1rem;
-    -moz-osx-font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
     scrollbar-width: none !important;
 }
