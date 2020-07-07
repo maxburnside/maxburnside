@@ -161,7 +161,7 @@ h1 {
 p {
     font-family: 'Neuton', serif;
     font-size: 1.3rem;
-    color: hsl(200, 32%, 36%);
+    color: hsl(200, 32%, 24%);
     letter-spacing: 0.055rem;
     max-width: 656px;
     line-height: 1.45;
@@ -186,7 +186,7 @@ a>.external-link svg {
     display: inline-block;
     margin-left: 6px;
     margin-bottom: -4px;
-    stroke: hsla(200, 100%, 80%, 0.75);
+    stroke: hsla(210, 100%, 50%, 0.25);
 }
 
 a:hover>.external-link svg {
@@ -206,13 +206,13 @@ a:hover>.external-link svg {
         color: hsl(200, 24%, 44%);
     }
     p a {
-        color: hsl(200, 40%, 80%);
+        color: hsl(200, 48%, 56%);
     }
     p a:hover {
-        color: hsl(200, 24%, 92%);
+        color: hsl(200, 24%, 88%);
     }
     a>.external-link svg {
-        stroke: hsla(210, 100%, 50%, 0.5);
+        stroke: hsla(210, 100%, 50%, 0.32);
     }
     a:hover>.external-link svg {
         stroke: hsla(210, 100%, 50%, 1);
@@ -222,7 +222,6 @@ a:hover>.external-link svg {
         color: hsl(200, 24%, 4%);
         text-shadow: none;
     }
-
     ::-moz-selection {
         background: hsl(200, 100%, 94%);
         color: hsl(200, 24%, 4%);
