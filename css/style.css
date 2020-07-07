@@ -176,10 +176,6 @@ p a:hover {
     color: hsl(210, 100%, 24%);
 }
 
-p a:hover>svg {
-    stroke: red;
-}
-
 .external-link {
     height: 20px;
     cursor: pointer;
