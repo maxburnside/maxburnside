@@ -165,11 +165,12 @@ p {
     letter-spacing: 0.055rem;
     max-width: 656px;
     line-height: 1.45;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 p a {
     color: hsl(210, 100%, 50%);
+    font-weight: 700;
 }
 
 p a:hover {
@@ -202,10 +203,19 @@ a:hover>.external-link svg {
         color: hsl(200, 8%, 88%);
     }
     p {
-        color: hsl(200, 24%, 48%);
+        color: hsl(200, 24%, 44%);
+    }
+    p a {
+        color: hsl(200, 40%, 80%);
     }
     p a:hover {
-        color: hsl(200, 40%, 80%);
+        color: hsl(200, 24%, 92%);
+    }
+    a>.external-link svg {
+        stroke: hsla(210, 100%, 50%, 0.5);
+    }
+    a:hover>.external-link svg {
+        stroke: hsla(210, 100%, 50%, 1);
     }
     ::selection {
         background: hsl(200, 100%, 94%);
