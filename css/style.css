@@ -185,11 +185,11 @@ a>.external-link svg {
     display: inline-block;
     margin-left: 6px;
     margin-bottom: -4px;
-    stroke: hsla(200, 100%, 80%, 1);
+    stroke: hsla(200, 100%, 80%, 0.75);
 }
 
 a:hover>.external-link svg {
-    stroke: hsl(210, 100%, 50%);
+    stroke: hsla(210, 100%, 50%, 1);
 }
 
 /* Dark Mode Styling */
@@ -199,12 +199,12 @@ a:hover>.external-link svg {
         background: hsl(200, 24%, 4%);
     }
     h1 {
-        color: hsl(200, 8%, 72%);
+        color: hsl(200, 8%, 88%);
     }
     p {
         color: hsl(200, 24%, 48%);
     }
-    .external-link {
-        color: hsl(210, 100%, 44%);
+    p a:hover {
+        color: hsl(200, 40%, 80%);
     }
 }
