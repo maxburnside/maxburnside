@@ -203,10 +203,10 @@ a:hover>.external-link svg {
         color: hsl(200, 8%, 88%);
     }
     p {
-        color: hsl(200, 24%, 44%);
+        color: hsl(200, 24%, 56%);
     }
     p a {
-        color: hsl(200, 48%, 56%);
+        color: hsl(200, 100%, 72%);
     }
     p a:hover {
         color: hsl(200, 24%, 88%);
