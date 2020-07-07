@@ -207,4 +207,15 @@ a:hover>.external-link svg {
     p a:hover {
         color: hsl(200, 40%, 80%);
     }
+    ::selection {
+        background: hsl(200, 100%, 94%);
+        color: hsl(200, 24%, 4%);
+        text-shadow: none;
+    }
+
+    ::-moz-selection {
+        background: hsl(200, 100%, 94%);
+        color: hsl(200, 24%, 4%);
+        text-shadow: none;
+    }
 }
