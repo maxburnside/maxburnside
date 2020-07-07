@@ -144,7 +144,7 @@ h1 {
     clear: both;
     color: hsl(200, 40%, 8%);
     letter-spacing: 0.05rem;
-    line-height: 4.75rem;
+    line-height: 4.5rem;
     padding-bottom: 0;
     margin-bottom: 0;
     font-family: 'Work Sans', sans-serif;
@@ -160,7 +160,7 @@ p {
     color: hsl(200, 32%, 36%);
     letter-spacing: 0.055rem;
     max-width: 656px;
-    line-height: 1.6;
+    line-height: 1.45;
     font-weight: 400;
 }
 
@@ -199,7 +199,10 @@ a:hover>.external-link svg {
         background: hsl(200, 24%, 4%);
     }
     h1 {
-        color: white;
+        color: hsl(200, 8%, 72%);
+    }
+    p {
+        color: hsl(200, 24%, 48%);
     }
     .external-link {
         color: hsl(210, 100%, 44%);
