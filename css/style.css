@@ -126,7 +126,7 @@ a:active {
     max-width: 780px;
     position: absolute;
     z-index: 100;
-    top: calc(10vh - 24px);
+    top: calc(4vh - 24px);
     left: 50%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
