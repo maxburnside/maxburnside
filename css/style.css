@@ -161,7 +161,7 @@ p {
     max-width: 656px;
     line-height: 1.45;
     font-weight: 300;
-    margin-left: -1px;
+    margin-left: 0;
 }
 
 p a {
