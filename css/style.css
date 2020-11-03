@@ -13,7 +13,7 @@ body {
     overflow-x: hidden;
     max-width: 100%;
     -ms-overflow-style: none;
-    background: hsl(200, 100%, 94%);
+    background: hsl(210, 100%, 94%);
     height: 100%;
     box-sizing: border-box;
 }
@@ -64,13 +64,13 @@ svg:not(:root) {
 }
 
 ::selection {
-    background: hsl(200, 40%, 8%);
+    background: hsl(210, 40%, 8%);
     color: white;
     text-shadow: none;
 }
 
 ::-moz-selection {
-    background: hsl(200, 40%, 8%);
+    background: hsl(210, 40%, 8%);
     color: white;
     text-shadow: none;
 }
@@ -117,32 +117,32 @@ a:active {
 
 .landing-page-text-block {
     width: 100%;
-    max-width: 780px;
+    max-width: 760px;
     position: absolute;
     z-index: 100;
-    top: calc(4vh - 24px);
+    /*! top: calc(4vh - 24px); */
     left: 50%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-    padding: 0 32px 24px;
+    padding: 0 40px 24px;
 }
 
 nav {
-    height: 112px;
+    height: 128px;
 }
 
 .nav-logo {
     position: relative;
-    top: 32px;
-    left: 32px;
+    top: 40px;
+    left: 40px;
 }
 
 h1 {
     clear: both;
-    color: hsl(200, 40%, 8%);
-    letter-spacing: 0.05rem;
-    line-height: 4.5rem;
+    color: hsl(210, 40%, 8%);
+    letter-spacing: -0.005rem;
+    line-height: 4.1rem;
     padding-bottom: 0;
     margin-bottom: 0;
     font-family: 'Work Sans', sans-serif;
@@ -150,25 +150,26 @@ h1 {
     font-size: 4.025rem;
     position: relative;
     overflow-x: visible;
+    margin-left: -3px;
 }
 
 p {
     font-family: 'Neuton', serif;
-    font-size: 1.3rem;
-    color: hsl(200, 32%, 24%);
-    letter-spacing: 0.055rem;
-    max-width: 656px;
-    line-height: 1.45;
-    font-weight: 300;
+    font-size: 1.25rem;
+    color: hsl(210, 32%, 24%);
+    letter-spacing: 0.025rem;
+    max-width: 600px;
+    line-height: 1.35;
+    font-weight: 100;
 }
 
 p a {
-    color: hsl(210, 100%, 50%);
+    color: hsl(200, 100%, 50%);
     font-weight: 700;
 }
 
 p a:hover {
-    color: hsl(210, 100%, 24%);
+    color: hsl(200, 100%, 32%);
 }
 
 .external-link {
@@ -180,45 +181,45 @@ a>.external-link svg {
     display: inline-block;
     margin-left: 6px;
     margin-bottom: -4px;
-    stroke: hsla(210, 100%, 50%, 0.25);
+    stroke: hsla(200, 100%, 50%, 0.25);
 }
 
 a:hover>.external-link svg {
-    stroke: hsla(210, 100%, 50%, 1);
+    stroke: hsla(200, 100%, 50%, 1);
 }
 
 /* Dark Mode Styling */
 
 @media (prefers-color-scheme: dark) {
     * body, html, main, section {
-        background: hsl(200, 24%, 4%);
+        background: hsl(210, 24%, 4%);
     }
     h1 {
-        color: hsl(200, 8%, 88%);
+        color: hsl(210, 8%, 88%);
     }
     p {
-        color: hsl(200, 24%, 56%);
+        color: hsl(210, 24%, 56%);
     }
     p a {
-        color: hsl(200, 100%, 72%);
+        color: hsl(210, 100%, 72%);
     }
     p a:hover {
-        color: hsl(200, 24%, 88%);
+        color: hsl(210, 24%, 88%);
     }
     a>.external-link svg {
         stroke: hsla(210, 100%, 50%, 0.32);
     }
     a:hover>.external-link svg {
-        stroke: hsla(210, 100%, 50%, 1);
+        stroke: hsl(210, 100%, 50%);
     }
     ::selection {
-        background: hsl(200, 100%, 94%);
-        color: hsl(200, 24%, 4%);
+        background: hsl(210, 100%, 94%);
+        color: hsl(210, 24%, 4%);
         text-shadow: none;
     }
     ::-moz-selection {
-        background: hsl(200, 100%, 94%);
-        color: hsl(200, 24%, 4%);
+        background: hsl(210, 100%, 94%);
+        color: hsl(210, 24%, 4%);
         text-shadow: none;
     }
 }
