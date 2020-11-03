@@ -158,18 +158,18 @@ p {
     font-size: 1.3rem;
     color: hsl(200, 32%, 24%);
     letter-spacing: 0.055rem;
-    max-width: 656px;
+    max-width: 600px;
     line-height: 1.45;
     font-weight: 300;
 }
 
 p a {
-    color: hsl(210, 100%, 50%);
+    color: hsl(220, 100%, 50%);
     font-weight: 700;
 }
 
 p a:hover {
-    color: hsl(210, 100%, 24%);
+    color: hsl(210, 100%, 32%);
 }
 
 .external-link {
@@ -181,45 +181,45 @@ a>.external-link svg {
     display: inline-block;
     margin-left: 6px;
     margin-bottom: -4px;
-    stroke: hsla(210, 100%, 50%, 0.25);
+    stroke: hsla(200, 100%, 50%, 0.25);
 }
 
 a:hover>.external-link svg {
-    stroke: hsla(210, 100%, 50%, 1);
+    stroke: hsla(200, 100%, 50%, 1);
 }
 
 /* Dark Mode Styling */
 
 @media (prefers-color-scheme: dark) {
     * body, html, main, section {
-        background: hsl(200, 24%, 4%);
+        background: hsl(210, 24%, 4%);
     }
     h1 {
-        color: hsl(200, 8%, 88%);
+        color: hsl(210, 8%, 88%);
     }
     p {
-        color: hsl(200, 24%, 56%);
+        color: hsl(210, 24%, 56%);
     }
     p a {
-        color: hsl(200, 100%, 72%);
+        color: hsl(210, 100%, 72%);
     }
     p a:hover {
-        color: hsl(200, 24%, 88%);
+        color: hsl(210, 24%, 88%);
     }
     a>.external-link svg {
         stroke: hsla(210, 100%, 50%, 0.32);
     }
     a:hover>.external-link svg {
-        stroke: hsla(210, 100%, 50%, 1);
+        stroke: hsl(210, 100%, 50%);
     }
     ::selection {
-        background: hsl(200, 100%, 94%);
-        color: hsl(200, 24%, 4%);
+        background: hsl(210, 100%, 94%);
+        color: hsl(210, 24%, 4%);
         text-shadow: none;
     }
     ::-moz-selection {
-        background: hsl(200, 100%, 94%);
-        color: hsl(200, 24%, 4%);
+        background: hsl(210, 100%, 94%);
+        color: hsl(210, 24%, 4%);
         text-shadow: none;
     }
 }
