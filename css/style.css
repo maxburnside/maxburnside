@@ -117,7 +117,7 @@ a:active {
 
 .landing-page-text-block {
     width: 100%;
-    max-width: 780px;
+    max-width: 768px;
     position: absolute;
     z-index: 100;
     top: calc(4vh - 24px);
@@ -150,6 +150,7 @@ h1 {
     font-size: 4.025rem;
     position: relative;
     overflow-x: visible;
+    margin-left: -3px;
 }
 
 p {
@@ -160,6 +161,7 @@ p {
     max-width: 656px;
     line-height: 1.45;
     font-weight: 300;
+    margin-left: -1px;
 }
 
 p a {
