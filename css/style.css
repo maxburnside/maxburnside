@@ -13,7 +13,7 @@ body {
     overflow-x: hidden;
     max-width: 100%;
     -ms-overflow-style: none;
-    background: hsl(200, 100%, 94%);
+    background: hsl(210, 100%, 94%);
     height: 100%;
     box-sizing: border-box;
 }
@@ -64,13 +64,13 @@ svg:not(:root) {
 }
 
 ::selection {
-    background: hsl(200, 40%, 8%);
+    background: hsl(210, 40%, 8%);
     color: white;
     text-shadow: none;
 }
 
 ::-moz-selection {
-    background: hsl(200, 40%, 8%);
+    background: hsl(210, 40%, 8%);
     color: white;
     text-shadow: none;
 }
@@ -140,7 +140,7 @@ nav {
 
 h1 {
     clear: both;
-    color: hsl(200, 40%, 8%);
+    color: hsl(210, 40%, 8%);
     letter-spacing: 0.05rem;
     line-height: 4.5rem;
     padding-bottom: 0;
@@ -156,11 +156,11 @@ h1 {
 p {
     font-family: 'Neuton', serif;
     font-size: 1.3rem;
-    color: hsl(200, 32%, 24%);
+    color: hsl(210, 32%, 24%);
     letter-spacing: 0.055rem;
     max-width: 600px;
     line-height: 1.45;
-    font-weight: 300;
+    font-weight: 100;
 }
 
 p a {
