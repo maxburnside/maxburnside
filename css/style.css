@@ -117,7 +117,7 @@ a:active {
 
 .landing-page-text-block {
     width: 100%;
-    max-width: 784px;
+    max-width: 760px;
     position: absolute;
     z-index: 100;
     /*! top: calc(4vh - 24px); */
@@ -141,8 +141,8 @@ nav {
 h1 {
     clear: both;
     color: hsl(210, 40%, 8%);
-    letter-spacing: 0.05rem;
-    line-height: 4.5rem;
+    letter-spacing: -0.005rem;
+    line-height: 4.1rem;
     padding-bottom: 0;
     margin-bottom: 0;
     font-family: 'Work Sans', sans-serif;
@@ -155,21 +155,21 @@ h1 {
 
 p {
     font-family: 'Neuton', serif;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     color: hsl(210, 32%, 24%);
-    letter-spacing: 0.055rem;
+    letter-spacing: 0.025rem;
     max-width: 600px;
-    line-height: 1.45;
+    line-height: 1.35;
     font-weight: 100;
 }
 
 p a {
-    color: hsl(220, 100%, 50%);
+    color: hsl(200, 100%, 50%);
     font-weight: 700;
 }
 
 p a:hover {
-    color: hsl(210, 100%, 32%);
+    color: hsl(200, 100%, 32%);
 }
 
 .external-link {
