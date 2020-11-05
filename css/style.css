@@ -119,7 +119,7 @@ a {
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-    padding: 24px 40px;
+    padding: 24px 40px 48px;
 }
 
 nav {
@@ -178,7 +178,7 @@ p a:hover {
 a>.external-link svg {
     display: inline-block;
     margin-left: 12px;
-    margin-bottom: -3px;
+    margin-bottom: -2px;
     stroke: hsla(200, 100%, 50%, 0.75);
     stroke-width: 2px;
 }
