@@ -119,16 +119,16 @@ a {
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-    padding: 24px 40px 48px;
+    padding: 0 40px 48px;
 }
 
 nav {
-    height: 128px;
+    height: 144px;
 }
 
 .nav-logo {
     position: relative;
-    top: 40px;
+    top: 48px;
     left: 40px;
 }
 
@@ -136,7 +136,7 @@ h1 {
     clear: both;
     color: hsl(210, 24%, 8%);
     letter-spacing: -0.005rem;
-    line-height: 4.1rem;
+    line-height: 4rem;
     padding-bottom: 0;
     margin-bottom: 0;
     font-family: 'Work Sans', sans-serif;
@@ -154,12 +154,12 @@ p {
     letter-spacing: 0.04rem;
     max-width: 640px;
     line-height: 1.45;
-    font-weight: 100;
+    font-weight: 200;
 }
 
 p a {
     color: hsl(210, 100%, 50%);
-    font-weight: 600;
+    font-weight: 700;
     text-decoration-color: transparent;
 }
 
