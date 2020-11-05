@@ -182,10 +182,12 @@ a>.external-link svg {
     margin-left: 6px;
     margin-bottom: -4px;
     stroke: hsla(200, 100%, 50%, 0.4);
+    stroke-width: 2px;
 }
 
 a:hover>.external-link svg {
     stroke: hsla(240, 100%, 50%, 1);
+    stroke-width: 3px;
 }
 
 /* Dark Mode Styling */
