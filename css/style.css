@@ -64,13 +64,13 @@ svg:not(:root) {
 }
 
 ::selection {
-    background: hsl(210, 40%, 8%);
+    background: hsl(200, 24%, 4%);
     color: white;
     text-shadow: none;
 }
 
 ::-moz-selection {
-    background: hsl(210, 40%, 8%);
+    background: hsl(200, 24%, 4%);
     color: white;
     text-shadow: none;
 }
@@ -103,10 +103,14 @@ a {
     text-decoration: none;
 }
 
-a:hover,
+/*a:hover,
 a:active {
     outline: 0;
     text-decoration: none
+}*/
+
+:focus {
+    border: 1px solid hsla(200,100%,40%,0.5);
 }
 
 .landing-page-main {
@@ -165,11 +169,13 @@ p {
 
 p a {
     color: hsl(220, 100%, 56%);
-    font-weight: 400;
+    font-weight: 600;
+    text-decoration: underline 1px solid transparent;
 }
 
 p a:hover {
     color: hsl(210, 24%, 16%);
+    text-decoration: underline 1px solid hsl(210, 24%, 16%);
 }
 
 .external-link {
@@ -188,13 +194,14 @@ a>.external-link svg {
 a:hover>.external-link svg {
     stroke: hsla(240, 100%, 50%, 1);
     stroke-width: 3px;
+    text-decoration: none;
 }
 
 /* Dark Mode Styling */
 
 @media (prefers-color-scheme: dark) {
     * body, html, main, section {
-        background: hsl(210, 24%, 4%);
+        background: hsl(200, 24%, 4%);
     }
     h1 {
         color: hsl(200, 24%, 92%);
@@ -204,6 +211,7 @@ a:hover>.external-link svg {
     }
     p a:hover {
         color: hsl(210, 24%, 88%);
+        text-decoration: underline 1px solid hsl(210, 24%, 88%);
     }
     a>.external-link svg {
         stroke: hsla(210, 100%, 50%, 0.45);
@@ -213,12 +221,12 @@ a:hover>.external-link svg {
     }
     ::selection {
         background: hsl(210, 100%, 94%);
-        color: hsl(210, 24%, 4%);
+        color: hsl(200, 24%, 4%);
         text-shadow: none;
     }
     ::-moz-selection {
         background: hsl(210, 100%, 94%);
-        color: hsl(210, 24%, 4%);
+        color: hsl(200, 24%, 4%);
         text-shadow: none;
     }
 }
