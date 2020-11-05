@@ -154,12 +154,12 @@ p {
     letter-spacing: 0.04rem;
     max-width: 640px;
     line-height: 1.45;
-    font-weight: 100;
+    font-weight: 200;
 }
 
 p a {
     color: hsl(210, 100%, 50%);
-    font-weight: 600;
+    font-weight: 700;
     text-decoration-color: transparent;
 }
 
