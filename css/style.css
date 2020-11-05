@@ -13,7 +13,7 @@ body {
     overflow-x: hidden;
     max-width: 100%;
     -ms-overflow-style: none;
-    background: hsl(210, 100%, 94%);
+    background: hsl(200, 24%, 96%);
     height: 100%;
     box-sizing: border-box;
 }
@@ -140,7 +140,7 @@ nav {
 
 h1 {
     clear: both;
-    color: hsl(210, 40%, 8%);
+    color: hsl(210, 24%, 8%);
     letter-spacing: -0.005rem;
     line-height: 4.1rem;
     padding-bottom: 0;
@@ -157,14 +157,14 @@ p {
     font-family: 'Neuton', serif;
     font-size: 1.25rem;
     color: hsl(210, 32%, 24%);
-    letter-spacing: 0.025rem;
+    letter-spacing: 0.05rem;
     max-width: 600px;
     line-height: 1.35;
     font-weight: 100;
 }
 
 p a {
-    color: hsl(210, 100%, 48%);
+    color: hsl(220, 100%, 48%);
     font-weight: 700;
 }
 
@@ -192,17 +192,17 @@ a:hover>.external-link svg {
 
 @media (prefers-color-scheme: dark) {
     * body, html, main, section {
-        background: hsl(210, 24%, 4%);
+        background: hsl(210, 24%, 8%);
     }
     h1 {
-        color: hsl(210, 8%, 88%);
+        color: hsl(200, 24%, 92%);
     }
     p {
-        color: hsl(210, 24%, 56%);
+        color: hsl(200, 16%, 48%);
     }
-    p a {
+/*    p a {
         color: hsl(210, 100%, 72%);
-    }
+    }*/
     p a:hover {
         color: hsl(210, 24%, 88%);
     }
