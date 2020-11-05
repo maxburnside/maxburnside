@@ -123,12 +123,12 @@ a {
 }
 
 nav {
-    height: 128px;
+    height: 144px;
 }
 
 .nav-logo {
     position: relative;
-    top: 40px;
+    top: 48px;
     left: 40px;
 }
 
@@ -136,7 +136,7 @@ h1 {
     clear: both;
     color: hsl(210, 24%, 8%);
     letter-spacing: -0.005rem;
-    line-height: 4.1rem;
+    line-height: 4rem;
     padding-bottom: 0;
     margin-bottom: 0;
     font-family: 'Work Sans', sans-serif;
