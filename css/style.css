@@ -169,7 +169,7 @@ p a {
 }
 
 p a:hover {
-    color: hsl(200, 100%, 32%);
+    color: hsl(210, 24%, 16%);
 }
 
 .external-link {
@@ -185,7 +185,7 @@ a>.external-link svg {
 }
 
 a:hover>.external-link svg {
-    stroke: hsla(200, 100%, 50%, 1);
+    stroke: hsla(240, 100%, 50%, 1);
 }
 
 /* Dark Mode Styling */
@@ -200,9 +200,6 @@ a:hover>.external-link svg {
     p {
         color: hsl(200, 16%, 48%);
     }
-/*    p a {
-        color: hsl(210, 100%, 72%);
-    }*/
     p a:hover {
         color: hsl(210, 24%, 88%);
     }
