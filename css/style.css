@@ -158,7 +158,7 @@ p {
 }
 
 p a {
-    color: hsl(220, 100%, 56%);
+    color: hsl(210, 100%, 50%);
     font-weight: 600;
     text-decoration-color: transparent;
 }
@@ -184,7 +184,7 @@ a>.external-link svg {
 }
 
 a:hover>.external-link svg {
-    stroke: hsla(240, 100%, 50%, 1);
+    stroke: hsl(210, 100%, 50%);
     stroke-width: 3px;
     text-decoration: none;
     text-decoration-color: transparent;
