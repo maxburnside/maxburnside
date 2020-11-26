@@ -8,4 +8,4 @@ Goals for the page:
 3. Maintain a minimalist, but well-defined, aesthetic
 4. Experiment with upcoming browser/web features, while maintaining fallback features for older browsers.
 
-There are no breakpoints for different device viewports, with the only media query utilized to apply dark mode styling on devices with a dark mode preference enabled.
+There are deliberately no responsive breakpoints for different device viewports (the challenge in creating this page was that the CSS values/properties would have to work equally well on all devices), with only one media query utilized to apply dark mode styling on devices with a dark mode preference enabled.
