@@ -185,7 +185,6 @@ a>.external-link svg {
 
 a:hover>.external-link svg {
     stroke: hsl(210, 100%, 50%);
-    stroke-width: 3px;
     text-decoration: none;
     text-decoration-color: transparent;
 }
