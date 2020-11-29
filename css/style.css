@@ -141,7 +141,7 @@ h1 {
     margin-bottom: 0;
     font-family: 'Work Sans', sans-serif;
     font-weight: 900;
-    font-size: 4.025rem;
+    font-size: 3.75rem;
     position: relative;
     overflow-x: visible;
     margin-left: -3px;
@@ -149,16 +149,16 @@ h1 {
 
 p {
     font-family: 'Neuton', serif;
-    font-size: 1.35rem;
+    font-size: 1.325rem;
     color: hsl(200, 16%, 24%);
     letter-spacing: 0.04rem;
     max-width: 640px;
     line-height: 1.45;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 p a {
-    color: hsl(210, 100%, 50%);
+    color: hsl(210, 100%, 46%);
     font-weight: 700;
     text-decoration-color: transparent;
 }
