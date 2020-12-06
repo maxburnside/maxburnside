@@ -124,6 +124,18 @@ a {
 
 nav {
     height: 144px;
+/* 
+
+    Future Navbar Updates
+
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background: hsl(200, 24%, 4%);
+    
+*/
 }
 
 .nav-logo {
