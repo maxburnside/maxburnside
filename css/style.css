@@ -134,7 +134,7 @@ nav {
     z-index: 100;
     width: 100%;
     background: hsl(200, 24%, 4%);
-    
+
 */
 }
 
@@ -161,7 +161,6 @@ h1 {
 
 p {
     font-family: 'Neuton', serif;
-/*    font-size: 1.325rem;*/
     font-size: 20px;
     color: hsl(200, 16%, 24%);
     letter-spacing: 0.04rem;
