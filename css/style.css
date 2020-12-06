@@ -124,6 +124,18 @@ a {
 
 nav {
     height: 144px;
+/* 
+
+    Future Navbar Updates
+
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background: hsl(200, 24%, 4%);
+
+*/
 }
 
 .nav-logo {
@@ -149,7 +161,6 @@ h1 {
 
 p {
     font-family: 'Neuton', serif;
-/*    font-size: 1.325rem;*/
     font-size: 20px;
     color: hsl(200, 16%, 24%);
     letter-spacing: 0.04rem;
