@@ -149,7 +149,8 @@ h1 {
 
 p {
     font-family: 'Neuton', serif;
-    font-size: 1.325rem;
+/*    font-size: 1.325rem;*/
+    font-size: 20px;
     color: hsl(200, 16%, 24%);
     letter-spacing: 0.04rem;
     max-width: 640px;
@@ -173,13 +174,14 @@ p a:hover {
 .external-link {
     height: 20px;
     cursor: pointer;
+    font-size: 20px;
 }
 
 a>.external-link svg {
     display: inline-block;
     margin-left: 12px;
     margin-bottom: -2px;
-    stroke: hsla(200, 100%, 50%, 0.75);
+    stroke: hsla(200, 100%, 54%);
     stroke-width: 2px;
 }
 
@@ -213,7 +215,7 @@ a:hover>.external-link svg {
         text-decoration-color: hsl(210, 24%, 88%);
     }
     a>.external-link svg {
-        stroke: hsla(210, 100%, 50%, 0.45);
+        stroke: hsla(210, 100%, 34%);
     }
     a:hover>.external-link svg {
         stroke: hsl(210, 100%, 50%);
