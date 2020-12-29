@@ -1,4 +1,4 @@
-# maxburnside_landing_page
+# Personal Landing Page
 A nice, minimal landing page that houses links to my work, and currently serves as my personal home page.
 
 Goals for the page:
