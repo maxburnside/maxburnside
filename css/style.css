@@ -182,6 +182,12 @@ p a:hover {
     text-decoration-color: hsl(210, 24%, 16%);
 }
 
+.site-link-href {
+    display: block;
+    width: max-content;
+    margin-bottom: 24px;
+}
+
 .external-link {
     height: 20px;
     cursor: pointer;
