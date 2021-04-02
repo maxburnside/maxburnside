@@ -170,16 +170,16 @@ p {
 }
 
 p a {
-    color: hsl(210, 100%, 46%);
+    color: hsl(210, 100%, 40%);
     font-weight: 700;
     text-decoration-color: transparent;
 }
 
 p a:hover {
-    color: hsl(210, 24%, 16%);
+    color: hsl(210, 8%, 8%);
     text-decoration: underline;
     text-decoration-style: 1px solid;
-    text-decoration-color: hsl(210, 24%, 16%);
+    text-decoration-color: hsl(210, 8%, 8%);
 }
 
 .site-link-href {
@@ -221,6 +221,7 @@ a:hover>.external-link svg {
         color: hsl(200, 16%, 56%);
     }
     p a {
+        color: hsl(200, 100%, 42%);
         text-decoration: underline;
         text-decoration-style: 1px solid;
         text-decoration-color: transparent;
