@@ -3,6 +3,12 @@
 }
 
 *,
+html,
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+*,
 *:before,
 *:after {
     box-sizing: inherit;
@@ -30,7 +36,7 @@ body {
     -webkit-font-smoothing: antialiased;
     scrollbar-width: none !important;
 }
-          
+
 body::-webkit-scrollbar,
 html::-webkit-scrollbar {
     width: 0 !important;
@@ -42,8 +48,9 @@ html::-webkit-scrollbar {
 
 footer,
 nav,
+figure,
 section,
-main  {
+main {
     display: block;
 }
 
@@ -107,24 +114,26 @@ a {
 .landing-page-main {
     position: relative;
     width: 100%;
+    height: 100%;
     top: 0;
+    left: 0;
+    padding: 0;
 }
 
 .landing-page-text-block {
     width: 100%;
-    max-width: 760px;
+    max-width: 712px;
     position: absolute;
-    z-index: 100;
+    z-index: 10;
     left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    padding: 0 40px 48px;
+    top: calc(50% + 48px);
+    transform: translate(-50%,-50%);
+    padding: 0 32px;
 }
 
 nav {
     height: 144px;
-/* 
+    /* 
 
     Future Navbar Updates
 
@@ -135,75 +144,98 @@ nav {
     width: 100%;
     background: hsl(200, 24%, 4%);
 
-*/
+    */
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    top: 48px;
+    left: 32px;
+    position: absolute;
+    z-index: 100;
 }
 
 .nav-logo {
     position: relative;
-    top: 48px;
-    left: 40px;
+/*    top: 48px;
+    left: 32px;*/
 }
 
 h1 {
     clear: both;
-    color: hsl(210, 24%, 8%);
+    color: hsl(200, 8%, 8%);
     letter-spacing: -0.005rem;
     line-height: 4rem;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    font-family: 'Work Sans', sans-serif;
     font-weight: 900;
     font-size: 3.75rem;
     position: relative;
     overflow-x: visible;
-    margin-left: -3px;
+    padding: 0;
+    margin: 0 0 0 -3px;
 }
 
 p {
-    font-family: 'Neuton', serif;
-    font-size: 20px;
-    color: hsl(200, 16%, 24%);
-    letter-spacing: 0.04rem;
-    max-width: 640px;
-    line-height: 1.45;
-    font-weight: 300;
+    font-size: 1.2rem;
+    color: hsl(200, 12%, 36%);
+    letter-spacing: -0.015rem;
+    line-height: 1.4;
+    font-weight: 500;
+    margin: 16px 0 0 -2px;
+    padding: 0;
 }
 
-p a {
-    color: hsl(210, 100%, 40%);
-    font-weight: 700;
+li a {
+    color: hsl(220, 100%, 50%);
+    font-weight: 500;
     text-decoration-color: transparent;
 }
 
-p a:hover {
-    color: hsl(210, 8%, 8%);
+li a:hover {
+    color: hsl(200, 8%, 8%);
     text-decoration: underline;
     text-decoration-style: 1px solid;
-    text-decoration-color: hsl(210, 8%, 8%);
+    text-decoration-color: hsl(200, 8%, 8%);
+}
+
+ul {
+    margin: 48px 0 0 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    margin: 0 0 0 -1px;
+    padding: 0;
+    line-height: 1rem;
+    letter-spacing: -0.005rem;
+}
+
+ul li:not(:last-child) {
+    margin-bottom: 32px;
 }
 
 .site-link-href {
     display: block;
     width: max-content;
-    margin-bottom: 24px;
 }
 
 .external-link {
-    height: 20px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 
 a>.external-link svg {
     display: inline-block;
-    margin-left: 12px;
+    margin-left: 8px;
     margin-bottom: -2px;
-    stroke: hsla(200, 100%, 54%);
+    stroke: hsla(200, 100%, 72%);
     stroke-width: 2px;
+    stroke-linecap: round;
 }
 
 a:hover>.external-link svg {
-    stroke: hsl(210, 100%, 50%);
+    stroke: hsl(220, 100%, 50%);
     text-decoration: none;
     text-decoration-color: transparent;
 }
@@ -211,41 +243,66 @@ a:hover>.external-link svg {
 /* Dark Mode Styling */
 
 @media (prefers-color-scheme: dark) {
-    * body, html, main, section {
+
+    * body,
+    html,
+    main,
+    section {
         background: hsl(200, 24%, 4%);
     }
+
     h1 {
         color: hsl(200, 24%, 92%);
     }
+
     p {
-        color: hsl(200, 16%, 56%);
+        color: hsl(200, 16%, 52%);
     }
-    p a {
-        color: hsl(200, 100%, 42%);
+
+    p span {
+        color: hsl(200, 100%, 96%);
+    }
+
+    li a {
+        color: hsl(210, 100%, 50%);
         text-decoration: underline;
         text-decoration-style: 1px solid;
         text-decoration-color: transparent;
     }
-    p a:hover {
-        color: hsl(210, 24%, 88%);
+
+    li a:hover {
+        color: hsl(200, 24%, 96%);
         text-decoration: underline;
         text-decoration-style: 1px solid;
-        text-decoration-color: hsl(210, 24%, 88%);
+        text-decoration-color: hsl(200, 24%, 88%);
     }
+
     a>.external-link svg {
-        stroke: hsla(210, 100%, 34%);
+        stroke: hsla(210, 100%, 24%);
     }
+
     a:hover>.external-link svg {
-        stroke: hsl(210, 100%, 50%);
+        stroke: hsl(200, 100%, 48%);
     }
+
     ::selection {
-        background: hsl(210, 100%, 94%);
+        background: hsl(200, 100%, 94%);
         color: hsl(200, 24%, 4%);
         text-shadow: none;
     }
+
     ::-moz-selection {
-        background: hsl(210, 100%, 94%);
+        background: hsl(200, 100%, 94%);
         color: hsl(200, 24%, 4%);
         text-shadow: none;
+    }
+}
+
+@media screen and (max-height: 560px) and (max-width: 920px) {
+    .landing-page-text-block {
+        position: relative;
+        top: 144px;
+        left: 0;
+        transform: none;
     }
 }
