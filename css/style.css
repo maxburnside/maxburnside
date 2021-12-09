@@ -15,11 +15,16 @@ body {
 }
 
 html,
+body,
+nav {
+    background: hsl(200, 24%, 96%);
+}
+
+html,
 body {
     overflow-x: hidden;
     max-width: 100%;
     -ms-overflow-style: none;
-    background: hsl(200, 24%, 96%);
     height: 100%;
     box-sizing: border-box;
 }
@@ -82,7 +87,7 @@ svg:not(:root) {
     text-shadow: none;
 }
 
-ul {
+main ul {
     margin-top: 0;
     margin-bottom: 24px;
     padding-left: 24px;
@@ -128,23 +133,38 @@ a {
     left: 50%;
     top: calc(50% + 48px);
     transform: translate(-50%,-50%);
-    padding: 0 32px;
+    padding: 32px;
 }
 
 nav {
-    height: 144px;
-    /* 
-
-    Future Navbar Updates
-
+    height: 112px;
     top: 0;
     left: 0;
     position: fixed;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
     z-index: 100;
     width: 100%;
-    background: hsl(200, 24%, 4%);
+    padding: 0 32px;
+}
 
-    */
+nav ul {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    color: white;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+nav ul li:not(:first-child) {
+    padding: 0 0 0 32px;
 }
 
 figure {
@@ -158,8 +178,6 @@ figure {
 
 .nav-logo {
     position: relative;
-/*    top: 48px;
-    left: 32px;*/
 }
 
 h1 {
@@ -198,20 +216,23 @@ li a:hover {
     text-decoration-color: hsl(200, 8%, 8%);
 }
 
-ul {
+main ul {
     margin: 48px 0 0 0;
     padding: 0;
 }
 
 ul li {
     list-style: none;
-    margin: 0 0 0 -1px;
     padding: 0;
     line-height: 1rem;
+}
+
+main ul li {
+    margin: 0 0 0 -1px;
     letter-spacing: -0.005rem;
 }
 
-ul li:not(:last-child) {
+main ul li:not(:last-child) {
     margin-bottom: 32px;
 }
 
@@ -246,6 +267,7 @@ a:hover>.external-link svg {
 
     * body,
     html,
+    nav,
     main,
     section {
         background: hsl(200, 24%, 4%);
@@ -298,11 +320,12 @@ a:hover>.external-link svg {
     }
 }
 
-@media screen and (max-height: 560px) and (max-width: 920px) {
+@media screen and (max-height: 568px) {
     .landing-page-text-block {
         position: relative;
-        top: 144px;
-        left: 0;
+        top: 112px;
+        left: unset;
         transform: none;
+        margin: 0 auto;
     }
 }
