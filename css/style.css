@@ -110,9 +110,7 @@ html {
 a {
     background-color: transparent;
     color: inherit;
-    text-decoration: underline;
-    text-decoration-style: 1px solid;
-    text-decoration-color: transparent;
+    text-decoration: none;
 }
 
 .landing-page-main {
@@ -126,7 +124,7 @@ a {
 
 .landing-page-text-block {
     width: 100%;
-    max-width: 728px;
+    max-width: 736px;
     position: absolute;
     z-index: 10;
     left: 50%;
@@ -169,6 +167,12 @@ nav ul li:not(:first-child) {
 
 nav ul li a {
     font-size: 1rem;
+    border-bottom: 1px solid transparent;
+}
+
+nav .active {
+    color: red;
+    border-bottom: 1px solid pink;
 }
 
 .nav-logo {
@@ -178,7 +182,7 @@ nav ul li a {
 h1 {
     clear: both;
     color: hsl(200, 8%, 8%);
-    letter-spacing: -0.005rem;
+    letter-spacing: 0.0125rem;
     line-height: 4rem;
     font-weight: 900;
     font-size: 3.75rem;
@@ -201,15 +205,12 @@ p {
 li a {
     color: hsl(220, 100%, 50%);
     font-weight: 500;
-    text-decoration-color: transparent;
 }
 
 li a:hover,
-li a:hover {
+li a:focus {
     color: hsl(200, 8%, 8%);
-    text-decoration: underline;
-    text-decoration-style: 1px solid;
-    text-decoration-color: hsl(200, 8%, 8%);
+    text-decoration: none;
 }
 
 main ul {
@@ -232,29 +233,28 @@ main ul li:not(:last-child) {
     margin-bottom: 32px;
 }
 
-.site-link-href {
+.home-page-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+.home-page-link svg {
     display: block;
-    width: max-content;
-}
-
-.external-link {
-    cursor: pointer;
-    font-size: 1.3rem;
-}
-
-a>.external-link svg {
-    display: inline-block;
     margin-left: 8px;
-    margin-bottom: -2px;
+    margin-bottom: 3px;
     stroke: hsla(200, 100%, 72%);
     stroke-width: 2px;
     stroke-linecap: round;
 }
 
-a:hover>.external-link svg {
+.home-page-link:hover span {
+    color: hsl(200, 8%, 8%);
+}
+
+.home-page-link:hover svg {
     stroke: hsl(220, 100%, 50%);
     text-decoration: none;
-    text-decoration-color: transparent;
 }
 
 /* Dark Mode Styling */
@@ -283,25 +283,25 @@ a:hover>.external-link svg {
 
     li a {
         color: hsl(210, 100%, 50%);
-        text-decoration: underline;
-        text-decoration-style: 1px solid;
-        text-decoration-color: transparent;
+        text-decoration: none;
     }
 
     nav li a:hover,
     li a:hover {
         color: hsl(200, 24%, 97%);
-        text-decoration: underline;
-        text-decoration-style: 1px solid;
-        text-decoration-color: hsl(200, 24%, 88%);
+        text-decoration: none;
     }
 
-    a>.external-link svg {
-        stroke: hsla(210, 100%, 24%);
+    .home-page-link svg {
+        stroke: hsl(210, 100%, 24%);
     }
 
-    a:hover>.external-link svg {
-        stroke: hsl(200, 100%, 48%);
+    .home-page-link:hover svg {
+        stroke: hsl(200, 100%, 48%)
+    }
+
+    .home-page-link:hover span {
+        color: hsl(200, 24%, 97%);
     }
 
     ::selection {
