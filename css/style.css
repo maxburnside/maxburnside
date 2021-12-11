@@ -14,9 +14,12 @@ body {
     box-sizing: inherit;
 }
 
+* body,
 html,
-body,
-nav {
+nav,
+main,
+section,
+footer ul li {
     background: hsl(200, 24%, 97%);
 }
 
@@ -193,7 +196,7 @@ nav .active::before {
 }
 
 nav ul li a:hover::before {
-    background-color: hsl(200, 24%, 96%);
+    background-color: hsl(200, 24%, 97%);
 }
 
 nav .active:hover {
@@ -290,10 +293,43 @@ main ul li:not(:last-child) {
 footer {
     position: fixed;
     z-index: 9;
-    right: 0;
-    bottom: 0;
-    background: black;
-    color: white;
+    right: 16px;
+    bottom: 16px;
+    padding: 0;
+    margin: 0;
+    height: 32px;
+}
+
+footer ul {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    padding: 8px;
+    border-radius: 16px;
+}
+
+footer ul li:not(:first-child) {
+    margin: 0 0 0 8px;
+}
+
+.footer_icon_dribbble {
+    fill: hsl(320, 88%, 60%);
+}
+
+.footer_icon_twitter {
+    fill: hsl(210, 100%, 52%);
+}
+
+.footer_icon_github {
+    fill: hsl(264, 100%, 40%);
+}
+
+footer ul li a:hover>svg path {
+    fill: hsl(200, 8%, 8%);
 }
 
 /* Dark Mode Styling */
@@ -304,7 +340,8 @@ footer {
     html,
     nav,
     main,
-    section {
+    section,
+    footer ul li {
         background: hsl(200, 24%, 4%);
     }
 
@@ -353,6 +390,10 @@ footer {
         background: hsl(200, 100%, 94%);
         color: hsl(200, 24%, 4%);
         text-shadow: none;
+    }
+
+    footer ul li a:hover>svg path {
+        fill: hsl(200, 24%, 97%);
     }
 }
 
