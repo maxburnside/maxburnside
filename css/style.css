@@ -131,7 +131,7 @@ a {
     position: relative;
     width: 100%;
     height: 100%;
-    top: 0;
+    top: -7rem;
     left: 0;
     padding: 0;
 }
@@ -198,7 +198,7 @@ nav ul li a {
 }
 
 nav ul li a:focus {
-    box-shadow: 0 0 0 0.125rem hsla(220, 100%, 50%, 0.5);
+    box-shadow: 0 0 0 0.125rem hsla(200, 100%, 50%, 0.5);
 }
 
 nav ul li a::before {
@@ -394,19 +394,38 @@ footer ul li a:hover>svg path {
 }
 
 .tools_intro,
-.tools_section {
+.tools_section,
+.tools_category {
     margin: 0 auto;
     max-width: 992px;
 }
 
 .tools_intro {
-    padding: 8rem 2rem 5rem;
+    padding: 8rem 2rem 0;
 }
 
-.tools_intro h2 {}
+.tools_category {
+    padding: 4rem 2rem 0;
+}
+
+.tools_category h2 {
+    color: hsl(200, 16%, 6%);
+}
 
 .tools_section {
     padding: 4rem 2rem;
+    position: relative;
+}
+
+.tools_section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: hsla(200, 24%, 50%, 0.25);
 }
 
 .tools_section h3 {
@@ -493,6 +512,7 @@ footer ul li a:hover>svg path {
 
 .tools_card_title_container a {
     color: hsl(220, 100%, 50%);
+    text-align: right;
 }
 
 .hardware_tool h3,
@@ -532,18 +552,18 @@ footer ul li a:hover>svg path {
 
 .tools_card_text_container ul li {
     margin-top: 0.5rem;
-    margin-left: 1rem;
+    margin-left: 1.25rem;
     position: relative;
 }
 
 .tools_card_text_container ul li::before {
     content: '';
     position: absolute;
-    left: -0.875rem;
+    left: -1.25rem;
     top: 0.25rem;
     width: 0.5rem;
     height: 0.5rem;
-    background-color: hsl(220, 100%, 50%);
+    background-color: hsla(200, 100%, 50%, 0.5);
     border-radius: 0.25rem;
 }
 
@@ -557,6 +577,10 @@ footer ul li a:hover>svg path {
     nav {
         background: hsl(200, 16%, 98%);
         position: fixed;
+    }
+
+    .landing-page-main {
+        top: 0;
     }
 
     .tools_main {
@@ -641,6 +665,11 @@ footer ul li a:hover>svg path {
         color: hsl(200, 16%, 6%);
     }
 
+    a::selection {
+        background: hsl(220, 100%, 50%);
+        color: hsl(200, 16%, 98%);
+    }
+
     ::-moz-selection {
         background: hsl(200, 16%, 98%);
         color: hsl(200, 16%, 6%);
@@ -660,8 +689,8 @@ footer ul li a:hover>svg path {
         text-decoration: none;
     }
 
-    h2 {
-        color: hsl(200, 16%, 72%);
+    .tools_category h2, h2 {
+        color: hsl(200, 16%, 84%);
     }
 
     .tools_card_title_container h4 {
