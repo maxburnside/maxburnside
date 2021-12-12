@@ -61,6 +61,31 @@ main {
     display: block;
 }
 
+.tools_main {
+    margin-top: 7rem;
+}
+
+.tools_hero {
+    position: relative;
+    width: 100%;
+    padding: 6rem 2rem 8rem;
+    background: hsl(220, 100%, 50%);
+    background-image: linear-gradient(134deg, #00AAFF 0%, #0000FF 100%);
+}
+
+.tools_hero h1, .tools_hero p {
+    max-width: 1376px;
+    padding: 0;
+}
+
+.tools_hero p {
+    margin: 1rem auto 0;
+}
+
+.tools_intro {
+    padding: 4rem 2rem;
+}
+
 img {
     border-style: none;
     height: auto;
@@ -78,13 +103,13 @@ svg:not(:root) {
 }
 
 ::selection {
-    background: hsl(200, 24%, 4%);
+    background: hsl(200, 16%, 6%);
     color: white;
     text-shadow: none;
 }
 
 ::-moz-selection {
-    background: hsl(200, 24%, 4%);
+    background: hsl(200, 16%, 6%);
     color: white;
     text-shadow: none;
 }
@@ -137,18 +162,26 @@ a {
 }
 
 nav {
-    height: 112px;
+    height: 7rem;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+.inner_nav_container {
+    width: 100%;
+    height: 7rem;
+    max-width: 1440px;
+    padding: 0 1.5rem 0 2rem;
+    position: absolute;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 10;
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 1.5rem 0 2rem;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 nav ul {
@@ -194,7 +227,7 @@ nav ul li a::before {
 }
 
 nav .active, nav u li a:active {
-    color: hsl(200, 8%, 8%);
+    color: hsl(200, 16%, 6%);
 }
 
 nav .active::before {
@@ -202,12 +235,12 @@ nav .active::before {
 }
 
 nav ul li a:hover::before {
-    background-color: hsl(200, 8%, 8%);
+    background-color: hsl(200, 16%, 6%);
 }
 
 nav .active:hover {
     cursor: default;
-    color: hsl(200, 8%, 8%);
+    color: hsl(200, 16%, 6%);
 }
 
 nav .active:hover::before {
@@ -218,17 +251,24 @@ nav .active:hover::before {
     position: relative;
 }
 
+.landing-page-main h1 {
+    position: relative;
+    padding: 0;
+    margin: 0 0 0 -3px;
+}
+
+.landing-page-main p {
+    margin: 16px 0 0 -2px;
+    padding: 0;
+}
+
 h1 {
     clear: both;
-    color: hsl(200, 8%, 8%);
+    color: hsl(200, 16%, 6%);
     letter-spacing: 0.0125rem;
     line-height: 4rem;
     font-weight: 900;
     font-size: 3.75rem;
-    position: relative;
-    overflow-x: visible;
-    padding: 0;
-    margin: 0 0 0 -3px;
 }
 
 p {
@@ -237,8 +277,11 @@ p {
     letter-spacing: -0.015rem;
     line-height: 1.4;
     font-weight: 500;
-    margin: 16px 0 0 -2px;
-    padding: 0;
+}
+
+.tools_hero h1, .tools_hero p {
+    color: hsl(200, 24%, 97%);
+    text-shadow: 1px 0 0 hsla(200, 16%, 6%, 0.5);
 }
 
 li a {
@@ -248,7 +291,7 @@ li a {
 
 li a:hover,
 li a:focus {
-    color: hsl(200, 8%, 8%);
+    color: hsl(200, 16%, 6%);
     text-decoration: none;
 }
 
@@ -288,7 +331,7 @@ main ul li:not(:last-child) {
 }
 
 .home-page-link:hover span {
-    color: hsl(200, 8%, 8%);
+    color: hsl(200, 16%, 6%);
 }
 
 .home-page-link:hover svg {
@@ -335,7 +378,7 @@ footer ul li:not(:first-child) {
 }
 
 footer ul li a:hover>svg path {
-    fill: hsl(200, 8%, 8%);
+    fill: hsl(200, 16%, 6%);
 }
 
 /* Dark Mode Styling */
@@ -348,7 +391,7 @@ footer ul li a:hover>svg path {
     main,
     section,
     footer ul li {
-        background: hsl(200, 16%, 8%);
+        background: hsl(200, 16%, 6%);
     }
 
     nav ul li a:hover::before {
@@ -357,6 +400,10 @@ footer ul li a:hover>svg path {
 
     p {
         color: hsl(200, 16%, 52%);
+    }
+
+    .tools_hero h1, .tools_hero p {
+        color: white;
     }
 
     li a, li a:focus {
@@ -374,13 +421,13 @@ footer ul li a:hover>svg path {
 
     ::selection {
         background: hsl(200, 24%, 97%);
-        color: hsl(200, 16%, 8%);
+        color: hsl(200, 16%, 6%);
         text-shadow: none;
     }
 
     ::-moz-selection {
         background: hsl(200, 24%, 97%);
-        color: hsl(200, 16%, 8%);
+        color: hsl(200, 16%, 6%);
         text-shadow: none;
     }
 
@@ -390,6 +437,9 @@ footer ul li a:hover>svg path {
     nav u li a:active,
     nav .active:hover,
     h1,
+    h2,
+    h3,
+    h4,
     .home-page-link:hover span,
     p span {
         color: hsl(200, 24%, 97%);
