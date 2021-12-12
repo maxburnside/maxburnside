@@ -14,7 +14,7 @@ body {
     box-sizing: inherit;
 }
 
-* body,
+body,
 html,
 nav,
 main,
@@ -61,31 +61,6 @@ main {
     display: block;
 }
 
-.tools_main {
-    margin-top: 7rem;
-}
-
-.tools_hero {
-    position: relative;
-    width: 100%;
-    padding: 6rem 2rem 8rem;
-    background: hsl(220, 100%, 50%);
-    background-image: linear-gradient(134deg, #00AAFF 0%, #0000FF 100%);
-}
-
-.tools_hero h1, .tools_hero p {
-    max-width: 1376px;
-    padding: 0;
-}
-
-.tools_hero p {
-    margin: 1rem auto 0;
-}
-
-.tools_intro {
-    padding: 4rem 2rem;
-}
-
 img {
     border-style: none;
     height: auto;
@@ -104,13 +79,13 @@ svg:not(:root) {
 
 ::selection {
     background: hsl(200, 16%, 6%);
-    color: white;
+    color: hsl(200, 24%, 97%);
     text-shadow: none;
 }
 
 ::-moz-selection {
     background: hsl(200, 16%, 6%);
-    color: white;
+    color: hsl(200, 24%, 97%);
     text-shadow: none;
 }
 
@@ -226,7 +201,8 @@ nav ul li a::before {
     position: absolute;
 }
 
-nav .active, nav u li a:active {
+nav .active,
+nav u li a:active {
     color: hsl(200, 16%, 6%);
 }
 
@@ -235,7 +211,7 @@ nav .active::before {
 }
 
 nav ul li a:hover::before {
-    background-color: hsl(200, 16%, 6%);
+    background-color: transparent;
 }
 
 nav .active:hover {
@@ -271,22 +247,27 @@ h1 {
     font-size: 3.75rem;
 }
 
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 4rem;
+}
+
+h2,
+h3,
+p,
+li a {
+    font-weight: 500;
+}
+
 p {
     font-size: 1.2rem;
     color: hsl(200, 12%, 36%);
     letter-spacing: -0.015rem;
     line-height: 1.4;
-    font-weight: 500;
-}
-
-.tools_hero h1, .tools_hero p {
-    color: hsl(200, 24%, 97%);
-    text-shadow: 1px 0 0 hsla(200, 16%, 6%, 0.5);
 }
 
 li a {
     color: hsl(220, 100%, 50%);
-    font-weight: 500;
 }
 
 li a:hover,
@@ -381,11 +362,144 @@ footer ul li a:hover>svg path {
     fill: hsl(200, 16%, 6%);
 }
 
+.tools_main {
+    margin: 7rem 0;
+}
+
+.tools_hero {
+    position: relative;
+    width: 100%;
+    padding: 8rem 0;
+    background: hsl(210, 100%, 64%);
+    background-image: linear-gradient(155deg, hsl(190, 100%, 64%) 0%, hsl(230, 100%, 64%) 100%);
+}
+
+.tools_intro {
+    padding: 4rem 2rem;
+    margin: 0 auto;
+    max-width: 992px;
+}
+
+.tools_hero h1 {
+    text-align: center;
+}
+
+.tools_hero h1,
+.tools_hero p {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    color: hsl(200, 24%, 16%);
+}
+
+.tools_hero p {
+    margin: 2rem auto 0;
+    max-width: 720px;
+}
+
+.tools_card_container {
+    display: inline-flex;
+}
+
+.tools_card {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.tools_card:nth-child(odd) {
+    margin-right: 128px;
+}
+
+.tools_card figure,
+.tools_card figure svg {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.tools_card figure svg {
+    max-width: 400px;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+}
+
+.tools_card a:hover figure {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transition: 0.1s all;
+    -webkit-transition: 0.1s all;
+    box-shadow: 0 8px 32px 0 hsla(200, 16%, 6%, 0.24), 0 4px 8px 0 hsla(200, 16%, 6%, 0.08);
+}
+
+.tools_card_title_container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tools_card_title_container h3,
+.tools_card_title_container a {
+    line-height: 1;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+.tools_card_title_container h3 {
+    color: hsl(200, 16%, 6%);
+    font-size: 1.25rem;
+}
+
+.tools_card_title_container a {
+    color: hsl(220, 100%, 50%);
+}
+
+.tools_card_text_container p {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.tools_card_text_container a {
+    color: hsl(220, 100%, 50%);
+}
+
+@media screen and (max-width: 992px) {
+    .tools_card:nth-child(2n+1) {
+        margin-right: 2%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .tools_card_container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 400px;
+    }
+
+    .tools_card {
+        margin: 0 0 4rem;
+    }
+
+    .tools_card figure,
+    .tools_card figure svg {
+        width: 100%;
+        max-width: none;
+    }
+
+    .tools_card a:hover figure {
+        transform: none;
+        -webkit-transform: none;
+    }
+}
+
 /* Dark Mode Styling */
 
 @media (prefers-color-scheme: dark) {
 
-    * body,
+    body,
     html,
     nav,
     main,
@@ -394,19 +508,22 @@ footer ul li a:hover>svg path {
         background: hsl(200, 16%, 6%);
     }
 
-    nav ul li a:hover::before {
-        background-color: hsl(200, 24%, 97%);
-    }
-
     p {
         color: hsl(200, 16%, 52%);
     }
 
-    .tools_hero h1, .tools_hero p {
-        color: white;
+    .tools_hero {
+        background: hsl(220, 100%, 32%);
+        background-image: linear-gradient(155deg, hsl(210, 100%, 32%) 0%, hsl(230, 100%, 24%) 100%);
     }
 
-    li a, li a:focus {
+    .tools_hero h1,
+    .tools_hero p {
+        color: hsl(200, 24%, 97%);
+    }
+
+    li a,
+    li a:focus {
         color: hsl(220, 100%, 50%);
         text-decoration: none;
     }
@@ -422,28 +539,42 @@ footer ul li a:hover>svg path {
     ::selection {
         background: hsl(200, 24%, 97%);
         color: hsl(200, 16%, 6%);
-        text-shadow: none;
     }
 
     ::-moz-selection {
         background: hsl(200, 24%, 97%);
         color: hsl(200, 16%, 6%);
-        text-shadow: none;
     }
 
-    nav li a:hover,
-    li a:hover,
     nav .active,
     nav u li a:active,
     nav .active:hover,
+    nav li a:hover,
+    li a:hover,
     h1,
-    h2,
     h3,
     h4,
     .home-page-link:hover span,
     p span {
         color: hsl(200, 24%, 97%);
         text-decoration: none;
+    }
+
+    h2 {
+        color: hsl(200, 16%, 72%);
+    }
+
+    .tools_card_title_container h3 {
+        color: hsl(200, 24%, 92%);
+    }
+
+    .tools_card_title_container a:hover,
+    .tools_card_text_container a:hover {
+        color: hsl(200, 24%, 97%);
+    }
+
+    .tools_card_text_container p {
+        color: hsl(200, 24%, 76%);
     }
 
     footer ul li a:hover>svg path {
