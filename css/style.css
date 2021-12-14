@@ -261,11 +261,18 @@ h1 {
 
 h2 {
     font-size: 1.875rem;
+    letter-spacing: -0.0125rem;
 }
 
 
 h3 {
     font-size: 1.5rem;
+    letter-spacing: -0.0125rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    letter-spacing: -0.0125rem;
 }
 
 h2,
@@ -467,7 +474,7 @@ footer ul li a:hover>svg path {
 .tools_card {
     display: flex;
     flex-direction: column;
-    margin: 0 0 4rem 0;
+    margin: 0 0 6rem 0;
     max-width: 400px;
 }
 
@@ -503,19 +510,44 @@ footer ul li a:hover>svg path {
 
 .tools_card_title_container {
     display: inline-flex;
-    align-items: baseline;
+    align-items: flex-start;
     justify-content: space-between;
-    margin: 1rem 0 0 0;
+    margin: 1.25rem 0 0 0;
+    line-height: 1;
+}
+
+.multiple_link_container {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+}
+
+.multiple_link_container li:last-child {
+    margin-left: 0.75rem;
+}
+
+.hardware_name {
+    display: flex;
+    flex-direction: column;
+}
+
+.hardware_tool h4 span {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
 }
 
 .tools_card_title_container h4,
-.tools_card_title_container a {
+.tools_card_title_container a,
+.hardware_tool h4 span:second-child {
     line-height: 1;
     padding: 0;
     margin: 0;
 }
 
-.tools_card_title_container h4 {
+.tools_card_title_container h4,
+.hardware_tool h4 span:second-child {
     color: hsl(200, 16%, 6%);
     font-size: 1.25rem;
 }
@@ -523,24 +555,32 @@ footer ul li a:hover>svg path {
 .tools_card_title_container a {
     color: hsl(220, 100%, 50%);
     text-align: right;
+    line-height: 1;
 }
 
-.hardware_tool h3,
-.hardware_tool h4 {
+.hardware_tool h3 {
     margin: 0;
     padding: 0;
     text-align: left;
 }
 
-.hardware_tool h3 {
-    font-size: 0.625rem;
-    margin-bottom: 0.125rem;
+.hardware_tool h4 span:first-child {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+    color: hsl(200, 16%, 40%)
+}
+
+.tools_card_text_container {
+    margin-top: 1.375rem;
+}
+
+.card_description {
+    margin-top: 1.25rem;
 }
 
 .tools_card_text_container p {
     font-size: 0.875rem;
-    line-height: 1.375rem;
-    margin-top: 1.25rem;
+    line-height: 1.25rem;
     margin-bottom: 0;
 }
 
@@ -557,14 +597,17 @@ footer ul li a:hover>svg path {
 .tools_card_text_container ul {
     list-style: none;
     font-size: 0.875rem;
-    margin-top: 0.5rem;
+    margin-top: 0.625rem;
 }
 
 .tools_card_text_container ul li {
-    margin-top: 0.5rem;
     margin-left: 1.25rem;
     position: relative;
     line-height: 1.25rem;
+}
+
+.tools_card_text_container ul li:not(:first-child) {
+    margin-top: 0.75rem;
 }
 
 .tools_card_text_container ul li::before {
@@ -700,11 +743,16 @@ footer ul li a:hover>svg path {
         text-decoration: none;
     }
 
-    .tools_category h2, h2 {
+    .tools_category h2, h2, .tools_intro h2 {
         color: hsl(200, 16%, 84%);
     }
 
-    .tools_card_title_container h4 {
+    .hardware_tool h4 span:first-child {
+        color: hsl(200, 16%, 64%);
+    }
+
+    .tools_card_title_container h4,
+    .hardware_tool h4 span:second-child {
         color: hsl(200, 24%, 92%);
     }
 
@@ -715,7 +763,7 @@ footer ul li a:hover>svg path {
 
     .tools_card_text_container p,
     .tools_card_text_container ul {
-        color: hsl(200, 24%, 76%);
+        color: hsl(200, 16%, 84%);
     }
 
     footer ul li a:hover>svg path {
@@ -747,5 +795,9 @@ footer ul li a:hover>svg path {
 
     .landing-page-text-block {
         padding: 32px;
+    }
+
+    .multiple_link_container li:last-child {
+        margin-left: 0.25rem;
     }
 }
