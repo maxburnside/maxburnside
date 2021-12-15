@@ -428,7 +428,7 @@ footer ul li a:hover>svg path {
 }
 
 .tools_category::before,
-.hardware_section::after {
+.software_section::after {
     content: '';
     position: absolute;
     left: 50%;
@@ -443,7 +443,7 @@ footer ul li a:hover>svg path {
     top: 0;
 }
 
-.hardware_section::after {
+.software_section::after {
     bottom: 0;
 }
 
