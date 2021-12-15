@@ -191,7 +191,7 @@ nav ul li:not(:first-child) {
 nav ul li a {
     position: relative;
     display: block;
-    font-size: 1rem;
+    font-size: 1.25rem;
     line-height: 0.75rem;
     padding: 0.5rem;
     border-radius: 0.25rem;
@@ -205,7 +205,7 @@ nav ul li a:focus {
 nav ul li a::before {
     content: '';
     top: -1.375rem;
-    width: 4rem;
+    width: 4.5rem;
     left: 50%;
     transform: translateX(-50%);
     height: 0.25rem;
@@ -287,7 +287,7 @@ li a {
 
 p {
     font-size: 1.25rem;
-    color: hsl(200, 12%, 36%);
+    color: hsl(200, 12%, 28%);
     letter-spacing: -0.015rem;
     line-height: 1.4;
 }
@@ -530,17 +530,6 @@ footer ul li a:hover>svg path {
     line-height: 1;
 }
 
-.multiple_link_container {
-    margin: 0;
-    padding: 0;
-    display: inline-flex;
-    align-items: center;
-}
-
-.multiple_link_container li:last-child {
-    margin-left: 0.75rem;
-}
-
 .hardware_name {
     display: flex;
     flex-direction: column;
@@ -612,7 +601,7 @@ footer ul li a:hover>svg path {
 
 .tools_card_text_container p {
     font-size: 0.875rem;
-    line-height: 1.25rem;
+    line-height: 1.375rem;
     margin-bottom: 0;
 }
 
@@ -838,15 +827,95 @@ tools_card_text_container p a:hover {
 
 @media screen and (max-width: 440px) {
     nav {
-        padding: 0 32px;
+        height: 5rem;
+    }
+
+    .inner_nav_container {
+        padding: 0 1rem 0 1.5rem;
+        height: 5rem;
+    }
+
+    nav ul li a::before {
+        top: -0.875rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    h4 {
+        font-size: 1.125rem;
+    }
+
+    p,
+    .tools_card_text_container p,
+    .tools_card_text_container ul,
+    .tools_disclaimer p {
+        font-size: 0.8125rem;
+    }
+
+    .landing-page-main {
+        top: -2.5rem;
+    }
+
+    .landing-page-main p {
+        font-size: 1.25rem;
+    }
+
+    .tools_main {
+        margin: 5rem 0;
+    }
+
+    .tools_hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .tools_hero p {
+        font-size: 1rem;
+    }
+
+    .tools_card {
+        margin: 0 0 2.5rem;
+    }
+
+    .tools_card_text_container ul li {
+        line-height: 1rem;
+    }
+
+    .tools_card_text_container ul li {
+        margin-left: 1.125rem;
+    }
+
+    .tools_card_text_container ul li::before {
+        left: -1.125rem;
+        top: 0.25rem;
+    }
+
+    .tools_card_title_container a {
+        font-size: 0.875rem;
+    }
+
+    .tools_card_title_container a::after {
+        top: 0.0625rem
     }
 
     .landing-page-text-block {
-        padding: 32px;
+        padding: 1.5rem;
     }
 
-    .multiple_link_container li:last-child {
-        margin-left: 0.25rem;
+    .tools_category,
+    .tools_section {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    footer {
+        bottom: 1rem;
+        right: 1rem;
     }
 }
 
