@@ -284,7 +284,8 @@ p {
     line-height: 1.4;
 }
 
-li a {
+li a,
+.home_hero_link {
     color: hsl(220, 100%, 50%);
 }
 
@@ -765,6 +766,10 @@ tools_card_text_container p a:hover {
     a {
         color: hsl(220, 100%, 50%);
         text-decoration: none;
+    }
+
+    .tools_card_text_container a {
+        text-decoration: underline;
     }
 
     .home_hero_link svg {
