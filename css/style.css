@@ -100,7 +100,7 @@ svg:not(:root) {
     text-shadow: none;
 }
 
-.landing-page-main ul {
+.home_main ul {
     margin-top: 0;
     margin-bottom: 24px;
     padding-left: 24px;
@@ -127,23 +127,16 @@ a {
     text-decoration: underline;
 }
 
-.landing-page-main {
-    position: relative;
+.home_main {
     width: 100%;
     height: 100%;
-    top: -7rem;
-    left: 0;
-    padding: 0;
+    padding: 4rem 0;
 }
 
-.landing-page-text-block {
+.home_hero_text_block {
     width: 100%;
-    max-width: 736px;
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    top: calc(50% + 48px);
-    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    max-width: 760px;
     padding: 2rem;
 }
 
@@ -241,13 +234,12 @@ nav .active:hover::before {
     position: relative;
 }
 
-.landing-page-main h1 {
-    position: relative;
+.home_main h1 {
     padding: 0;
     margin: 0 0 0 -3px;
 }
 
-.landing-page-main p {
+.home_main p {
     margin: 16px 0 0 -2px;
     padding: 0;
 }
@@ -302,7 +294,7 @@ li a:focus {
     text-decoration: none;
 }
 
-.landing-page-main ul {
+.home_main ul {
     margin: 48px 0 0 0;
     padding: 0;
 }
@@ -313,40 +305,72 @@ ul li {
     line-height: 1rem;
 }
 
-.landing-page-main ul li {
+.home_main ul li {
     margin: 0 0 0 -1px;
     letter-spacing: -0.005rem;
 }
 
-.landing-page-main ul li:not(:last-child) {
+.home_main ul li:not(:last-child) {
     margin-bottom: 32px;
 }
 
-.home-page-link {
+.home_hero_link {
     display: inline-flex;
     align-items: center;
     font-size: 1.25rem;
     text-decoration: none;
 }
 
-.home-page-link svg {
+.home_hero_link svg {
     display: block;
     margin-left: 8px;
     margin-bottom: 3px;
     stroke: hsla(200, 100%, 72%);
     stroke-width: 2px;
     stroke-linecap: round;
+    fill: transparent;
 }
 
-.home-page-link:hover span,
+.home_hero_link:hover span,
 .tools_card_title_container a:hover,
 .tools_card_text_container a:hover {
     color: hsl(200, 16%, 6%);
 }
 
-.home-page-link:hover svg {
+.home_hero_link:hover svg {
     stroke: hsl(220, 100%, 50%);
     text-decoration: none;
+}
+
+.home_recent_work {
+    width: 100%;
+    max-width: 760px;
+    padding: 4rem 2rem;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.recent_work_header {
+    margin: 2rem auto 1rem;
+    width: 100%;
+    max-width: 1440px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recent_work_image_container a {
+    width: 47%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.recent_work_image_container a:nth-child(2n+1) {
+    margin-right: 5%;
+    margin-bottom: 5%;
 }
 
 footer {
@@ -504,16 +528,13 @@ footer ul li a:hover>svg path {
     padding: 0;
 }
 
-.tools_card figure svg {
-    /*max-width: 400px;*/
-}
-
+.recent_work_image_container a,
 .tools_card figure {
-    /*max-width: 400px;*/
     transition: 0.2s all;
     -webkit-transition: 0.2s all;
 }
 
+.recent_work_image_container a:hover img,
 .tools_card a:hover figure {
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
@@ -666,9 +687,12 @@ tools_card_text_container p a:hover {
         background: hsl(200, 16%, 98%);
         position: fixed;
     }
-
-    .landing-page-main {
-        top: 0;
+    .recent_work_image_container a,
+    .recent_work_image_container a:nth-child(2n+1) {
+        width: 100%;
+        display: block;
+        margin-right: 0;
+        margin-bottom: 2.5rem;
     }
 
     .tools_main {
@@ -702,7 +726,8 @@ tools_card_text_container p a:hover {
         width: 100%;
         max-width: none;
     }
-
+    
+    .recent_work_image_container a:hover img,
     .tools_card a:hover figure {
         transform: none;
         -webkit-transform: none;
@@ -736,16 +761,17 @@ tools_card_text_container p a:hover {
     }
 
     li a,
-    li a:focus {
+    li a:focus,
+    a {
         color: hsl(220, 100%, 50%);
         text-decoration: none;
     }
 
-    .home-page-link svg {
+    .home_hero_link svg {
         stroke: hsl(210, 100%, 24%);
     }
 
-    .home-page-link:hover svg {
+    .home_hero_link:hover svg {
         stroke: hsl(200, 100%, 48%)
     }
 
@@ -772,7 +798,7 @@ tools_card_text_container p a:hover {
     h1,
     h3,
     h4,
-    .home-page-link:hover span,
+    .home_hero_link:hover span,
     p span {
         color: hsl(200, 16%, 98%);
         text-decoration: none;
@@ -813,15 +839,9 @@ tools_card_text_container p a:hover {
         background: hsl(200, 16%, 6%);
         position: fixed;
     }
-}
 
-@media screen and (max-height: 568px) {
-    .landing-page-text-block {
-        position: relative;
-        top: 112px;
-        left: unset;
-        transform: none;
-        margin: 0 auto;
+    .home_hero_text_block {
+        padding: 9rem 2rem 2rem;
     }
 }
 
@@ -858,11 +878,7 @@ tools_card_text_container p a:hover {
         font-size: 0.8125rem;
     }
 
-    .landing-page-main {
-        top: -2.5rem;
-    }
-
-    .landing-page-main p {
+    .home_main p {
         font-size: 1.25rem;
     }
 
@@ -903,8 +919,8 @@ tools_card_text_container p a:hover {
         top: 0.0625rem
     }
 
-    .landing-page-text-block {
-        padding: 1.5rem;
+    .home_hero_text_block {
+        padding: 3rem 1.5rem;
     }
 
     .tools_category,
