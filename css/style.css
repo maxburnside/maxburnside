@@ -230,7 +230,7 @@ nav .active:hover::before {
     background-color: hsl(220, 100%, 50%);
 }
 
-.nav-logo {
+.nav_logo {
     position: relative;
 }
 
@@ -855,8 +855,18 @@ tools_card_text_container p a:hover {
         height: 5rem;
     }
 
+    .inner_nav_container a {
+        transform: scale(0.75);
+    }
+
+    .nav_logo {
+        /*transform: scale(0.75);*/
+        width: 100%;
+        height: 100%;
+    }
+
     .inner_nav_container {
-        padding: 0 1rem 0 1.5rem;
+        padding: 0 1rem;
         height: 5rem;
     }
 
