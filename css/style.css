@@ -935,11 +935,12 @@ tools_card_text_container p a:hover {
     }
 
     .home_hero_text_block {
-        padding: 3rem 1.5rem;
+        padding: 4rem 1.5rem 0;
     }
 
     .tools_category,
-    .tools_section {
+    .tools_section,
+    .home_recent_work {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
