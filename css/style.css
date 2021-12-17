@@ -522,21 +522,29 @@ footer ul li a:hover>svg path {
 }
 
 .tools_card figure,
-.tools_card figure svg {
+.tools_card figure svg,
+.tools_card img {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
+.hardware_section .tools_card_container .tools_card figure,
+.hardware_section .tools_card_container .tools_card figure svg {
+    background: hsl(200, 16%, 98%);
+}
+
 .recent_work_image_container a,
-.tools_card figure {
+.tools_card figure,
+.tools_card img {
     transition: 0.2s all;
     -webkit-transition: 0.2s all;
 }
 
 .recent_work_image_container a:hover img,
-.tools_card a:hover figure {
+.tools_card a:hover figure,
+.tools_card a:hover img {
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
     transition: 0.1s all;
@@ -723,13 +731,15 @@ tools_card_text_container p a:hover {
     }
 
     .tools_card figure,
-    .tools_card figure svg {
+    .tools_card figure svg,
+    .tools_card img {
         width: 100%;
         max-width: none;
     }
     
     .recent_work_image_container a:hover img,
-    .tools_card a:hover figure {
+    .tools_card a:hover figure,
+    .tools_card a:hover img {
         transform: none;
         -webkit-transform: none;
     }
@@ -766,10 +776,6 @@ tools_card_text_container p a:hover {
     a {
         color: hsl(220, 100%, 50%);
         text-decoration: none;
-    }
-
-    .tools_card_text_container a {
-        text-decoration: underline;
     }
 
     .home_hero_link svg {
@@ -815,6 +821,12 @@ tools_card_text_container p a:hover {
         color: hsl(200, 16%, 84%);
     }
 
+    .hardware_section .tools_card_container .tools_card figure,
+    .hardware_section .tools_card_container .tools_card figure svg,
+    .hardware_section .tools_card_container .tools_card img {
+        background: hsl(200, 16%, 6%);
+    }
+
     .hardware_tool h4 span:first-child {
         color: hsl(200, 16%, 64%);
     }
@@ -822,6 +834,10 @@ tools_card_text_container p a:hover {
     .tools_card_title_container h4,
     .hardware_tool h4 span:second-child {
         color: hsl(200, 24%, 92%);
+    }
+
+    .tools_card_text_container a {
+        text-decoration: underline;
     }
 
     .tools_card_title_container a:hover,
