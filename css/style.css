@@ -19,7 +19,8 @@ html,
 nav,
 main,
 section,
-footer ul li {
+footer ul li,
+.recent_work_image_container {
     background: hsl(200, 16%, 98%);
 }
 
@@ -753,7 +754,8 @@ tools_card_text_container p a:hover {
     html,
     main,
     section,
-    footer ul li {
+    footer ul li,
+    .recent_work_image_container {
         background: hsl(200, 16%, 6%);
     }
 
