@@ -395,6 +395,9 @@ footer ul {
 footer ul li {
     padding: 8px;
     border-radius: 16px;
+    height: 32px;
+    width: 32px;
+    position: relative;
 }
 
 footer ul li:not(:first-child) {
@@ -411,6 +414,75 @@ footer ul li:not(:first-child) {
 
 .footer_icon_github {
     fill: hsl(264, 100%, 40%);
+}
+
+footer ul li a {
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+}
+
+.footer_tooltip {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background: inherit;
+    top: -36px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 6px;
+    border-radius: 4px;
+    color: hsl(200, 16%, 98%);
+    text-shadow: 0 1px 0 hsla(200, 16%, 6%, 0.25);
+    font-size: 0.875rem;
+    line-height: 1;
+    transition: 0.1s all;
+    -webkit-transition: 0.1s all;
+}
+
+.dribbble_tooltip {
+    background: hsl(320, 88%, 60%);
+}
+
+.twitter_tooltip {
+    background: hsl(210, 100%, 52%);
+}
+
+.github_tooltip {
+    background: hsl(264, 100%, 40%);
+}
+
+footer ul li .tooltip_link:hover>.footer_tooltip {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.25s all;
+    -webkit-transition: 0.25s all;
+}
+
+.footer_tooltip::after {
+    content: '';
+    height: 0px;
+    width: 0px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+}
+
+.dribbble_tooltip::after {
+    border-top: 8px solid hsl(320, 88%, 60%);
+}
+
+.twitter_tooltip::after {
+    border-top: 8px solid hsl(210, 100%, 52%);
+}
+
+.github_tooltip::after {
+    border-top: 8px solid hsl(264, 100%, 40%);
 }
 
 footer ul li a:hover>svg path {
