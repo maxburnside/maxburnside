@@ -769,6 +769,7 @@ tools_card_text_container p a:hover {
         background: hsl(200, 16%, 98%);
         position: fixed;
     }
+
     .recent_work_image_container a,
     .recent_work_image_container a:nth-child(2n+1) {
         width: 100%;
@@ -809,7 +810,7 @@ tools_card_text_container p a:hover {
         width: 100%;
         max-width: none;
     }
-    
+
     .recent_work_image_container a:hover img,
     .tools_card a:hover figure,
     .tools_card a:hover img {
