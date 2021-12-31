@@ -502,7 +502,7 @@ footer ul li a:hover>svg path {
     width: 100%;
     padding: 14rem 0 8rem;
     background: hsl(210, 100%, 72%);
-    background-image: linear-gradient(155deg, hsl(190, 100%, 64%) 0%, hsl(200, 100%, 88%) 100%);
+    background-image: linear-gradient(320deg, hsl(190, 100%, 64%), hsl(200, 100%, 94%));
 }
 
 .tools_intro,
@@ -778,6 +778,10 @@ tools_card_text_container p a:hover {
         margin-bottom: 2.5rem;
     }
 
+    .recent_work_image_container img {
+        width: 100%;
+    }
+
     .tools_main {
         margin: 7rem 0;
         top: 0;
@@ -838,7 +842,7 @@ tools_card_text_container p a:hover {
 
     .tools_hero {
         background: hsl(220, 100%, 24%);
-        background-image: linear-gradient(155deg, hsl(210, 100%, 16%) 0%, hsl(230, 100%, 32%) 100%);
+        background-image: linear-gradient(160deg, hsl(210, 100%, 12%) 0%, hsl(230, 100%, 28%) 100%);
     }
 
     .tools_hero h1,
