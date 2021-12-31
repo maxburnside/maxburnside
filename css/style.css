@@ -770,6 +770,10 @@ tools_card_text_container p a:hover {
         position: fixed;
     }
 
+    .home_hero_text_block {
+        padding: 9rem 2rem 2rem;
+    }
+
     .recent_work_image_container a,
     .recent_work_image_container a:nth-child(2n+1) {
         width: 100%;
@@ -940,9 +944,6 @@ tools_card_text_container p a:hover {
         position: fixed;
     }
 
-    .home_hero_text_block {
-        padding: 9rem 2rem 2rem;
-    }
 }
 
 @media screen and (max-width: 440px) {
