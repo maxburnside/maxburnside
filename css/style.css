@@ -198,12 +198,12 @@ nav ul li a:focus {
 
 nav ul li a::before {
     content: '';
-    top: -1.375rem;
+    top: -2.625rem;
     width: 4.5rem;
     left: 50%;
     transform: translateX(-50%);
     height: 0.25rem;
-    border-radius: 0.125rem;
+    border-radius: 0 0 0.125rem 0.125rem;
     background-color: transparent;
     position: absolute;
 }
@@ -319,35 +319,20 @@ ul li {
 .home_hero_link {
     display: inline-flex;
     align-items: center;
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-decoration: none;
 }
 
-.home_hero_link svg {
-    display: block;
-    margin-left: 8px;
-    margin-bottom: 3px;
-    stroke: hsla(200, 100%, 72%);
-    stroke-width: 2px;
-    stroke-linecap: round;
-    fill: transparent;
-}
-
-.home_hero_link:hover span,
+.home_hero_link:hover,
 .tools_card_title_container a:hover,
 .tools_card_text_container a:hover {
     color: hsl(200, 16%, 6%);
 }
 
-.home_hero_link:hover svg {
-    stroke: hsl(220, 100%, 50%);
-    text-decoration: none;
-}
-
 .home_recent_work {
     width: 100%;
     max-width: 760px;
-    padding: 4rem 2rem;
+    padding: 6rem 2rem;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -355,12 +340,17 @@ ul li {
 }
 
 .recent_work_header {
-    margin: 2rem auto 1rem;
+    margin: 2rem auto 1.5rem;
+    line-height: 1;
     width: 100%;
     max-width: 1440px;
     display: inline-flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
+}
+
+.recent_work_header h3 {
+    line-height: 1;
 }
 
 .recent_work_image_container a {
@@ -502,7 +492,7 @@ footer ul li a:hover>svg path {
     width: 100%;
     padding: 14rem 0 8rem;
     background: hsl(210, 100%, 72%);
-    background-image: linear-gradient(320deg, hsl(190, 100%, 64%), hsl(200, 100%, 94%));
+    background: linear-gradient(320deg, hsl(190, 100%, 64%), hsl(200, 100%, 94%));
 }
 
 .tools_intro,
@@ -644,6 +634,7 @@ footer ul li a:hover>svg path {
     line-height: 1;
 }
 
+.home_hero_link,
 .tools_card_title_container h4,
 .tools_card_title_container a,
 .hardware_tool h4 span:second-child {
@@ -658,6 +649,7 @@ footer ul li a:hover>svg path {
     font-size: 1.25rem;
 }
 
+.home_hero_link,
 .tools_card_title_container a {
     color: hsl(220, 100%, 50%);
     text-decoration: none;
@@ -667,6 +659,7 @@ footer ul li a:hover>svg path {
     padding-right: 1.25rem;
 }
 
+.home_hero_link::after,
 .tools_card_title_container a::after {
     content: '';
     position: absolute;
@@ -678,6 +671,11 @@ footer ul li a:hover>svg path {
     opacity: 0.5;
 }
 
+.email_link::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd' stroke-linejoin='round'%3E%3Cpath stroke='%2305f' stroke-width='2' d='M6 7l5-3v7H1V4z'%3E%3C/path%3E%3Cpath stroke='%2305f' stroke-width='2' d='M11 4V1H1v3'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.home_hero_link:hover::after,
 .tools_card_title_container a:hover::after {
     opacity: 1;
 }
@@ -690,7 +688,7 @@ footer ul li a:hover>svg path {
 
 .hardware_tool h4 span:first-child {
     font-size: 0.75rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     color: hsl(200, 16%, 40%)
 }
 
@@ -846,7 +844,7 @@ tools_card_text_container p a:hover {
 
     .tools_hero {
         background: hsl(220, 100%, 24%);
-        background-image: linear-gradient(160deg, hsl(210, 100%, 12%) 0%, hsl(230, 100%, 28%) 100%);
+        background: linear-gradient(160deg, hsl(210, 100%, 12%) 0%, hsl(230, 100%, 28%) 100%);
     }
 
     .tools_hero h1,
@@ -923,6 +921,7 @@ tools_card_text_container p a:hover {
         text-decoration: underline;
     }
 
+    .home_hero_link:hover,
     .tools_card_title_container a:hover,
     .tools_card_text_container a:hover {
         color: hsl(200, 16%, 98%);
@@ -967,7 +966,7 @@ tools_card_text_container p a:hover {
     }
 
     nav ul li a::before {
-        top: -0.875rem;
+        top: -2.5rem;
     }
 
     h2 {
@@ -1022,10 +1021,12 @@ tools_card_text_container p a:hover {
         top: 0.25rem;
     }
 
+    .home_hero_link,
     .tools_card_title_container a {
         font-size: 0.875rem;
     }
 
+    .home_hero_link::after,
     .tools_card_title_container a::after {
         top: 0.0625rem
     }
