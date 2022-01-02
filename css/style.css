@@ -233,6 +233,21 @@ nav .active:hover::before {
 
 .nav_logo {
     position: relative;
+    opacity: 0.9;
+}
+
+.nav_logo:hover {
+    opacity: 1;
+}
+
+nav a {
+    transition: 0.2s all;
+    -webkit-transition: 0.2s all;
+}
+
+nav a:hover {
+    transition: 0.1s all;
+    -webkit-transition: 0.1s all;
 }
 
 .home_main h1 {
