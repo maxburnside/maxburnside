@@ -348,7 +348,7 @@ ul li {
 .home_recent_work {
     width: 100%;
     max-width: 760px;
-    padding: 6rem 2rem;
+    padding: 6rem 2rem 2rem;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -718,7 +718,7 @@ footer ul li a:hover>svg path {
 }
 
 .tools_card_text_container {
-    margin-top: 1.375rem;
+    margin-top: 1.25rem;
 }
 
 .card_description {
@@ -1032,8 +1032,8 @@ tools_card_text_container p a:hover {
         font-size: 1rem;
     }
 
-    .tools_card {
-        margin: 0 0 2.5rem;
+    .tools_card_text_container {
+        margin-top: 1.125rem;
     }
 
     .tools_card_text_container ul li {
@@ -1053,7 +1053,6 @@ tools_card_text_container p a:hover {
         font-size: 0.875rem;
     }
 
-    .home_hero_link::after,
     .tools_card_title_container a::after {
         top: 0.0625rem
     }
@@ -1063,10 +1062,13 @@ tools_card_text_container p a:hover {
     }
 
     .tools_category,
-    .tools_section,
-    .home_recent_work {
+    .tools_section {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+    }
+
+    .home_recent_work {
+        padding: 3rem 1.5rem 1.5rem;
     }
 
     footer {
