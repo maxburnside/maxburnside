@@ -125,7 +125,7 @@ html {
 a {
     background-color: transparent;
     color: inherit;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .home_main {
@@ -233,6 +233,21 @@ nav .active:hover::before {
 
 .nav_logo {
     position: relative;
+    opacity: 0.9;
+}
+
+.nav_logo:hover {
+    opacity: 1;
+}
+
+nav a {
+    transition: 0.2s all;
+    -webkit-transition: 0.2s all;
+}
+
+nav a:hover {
+    transition: 0.1s all;
+    -webkit-transition: 0.1s all;
 }
 
 .home_main h1 {
@@ -319,11 +334,12 @@ ul li {
 .home_hero_link {
     display: inline-flex;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-decoration: none;
 }
 
 .home_hero_link:hover,
+.external_link:hover,
 .tools_card_title_container a:hover,
 .tools_card_text_container a:hover {
     color: hsl(200, 16%, 6%);
@@ -594,8 +610,9 @@ footer ul li a:hover>svg path {
 }
 
 .hardware_section .tools_card_container .tools_card figure,
-.hardware_section .tools_card_container .tools_card figure svg {
-    background: hsl(200, 16%, 98%);
+.hardware_section .tools_card_container .tools_card figure svg,
+.hardware_section .tools_card_container .tools_card img {
+    background: transparent;
 }
 
 .recent_work_image_container a,
@@ -650,7 +667,8 @@ footer ul li a:hover>svg path {
 }
 
 .home_hero_link,
-.tools_card_title_container a {
+.tools_card_title_container a,
+.external_link {
     color: hsl(220, 100%, 50%);
     text-decoration: none;
     text-align: right;
@@ -660,15 +678,21 @@ footer ul li a:hover>svg path {
 }
 
 .home_hero_link::after,
-.tools_card_title_container a::after {
+.tools_card_title_container a::after,
+.external_link::after {
     content: '';
     position: absolute;
     right: 0;
-    top: 0.125rem;
+    top: 0.0625rem;
     height: 12px;
     width: 12px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd' stroke-linejoin='round'%3E%3Cpath stroke='%2305f' stroke-width='2' d='M9 8v3H1V3h3'%3E%3C/path%3E%3Cpath stroke='%2305f' stroke-width='2' d='M6 1h5v5'%3E%3C/path%3E%3Cpath stroke='%2305f' stroke-width='2' d='M11 1L5 7'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     opacity: 0.5;
+}
+
+.home_hero_link::after {
+    bottom: 0.1875rem;
+    top: unset;
 }
 
 .email_link::after {
@@ -676,6 +700,7 @@ footer ul li a:hover>svg path {
 }
 
 .home_hero_link:hover::after,
+.external_link:hover::after,
 .tools_card_title_container a:hover::after {
     opacity: 1;
 }
@@ -688,7 +713,7 @@ footer ul li a:hover>svg path {
 
 .hardware_tool h4 span:first-child {
     font-size: 0.75rem;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
     color: hsl(200, 16%, 40%)
 }
 
@@ -863,7 +888,8 @@ tools_card_text_container p a:hover {
         stroke: hsl(210, 100%, 24%);
     }
 
-    .home_hero_link:hover svg {
+    .home_hero_link:hover svg,
+    .external_link:hover svg {
         stroke: hsl(200, 100%, 48%)
     }
 
@@ -891,6 +917,7 @@ tools_card_text_container p a:hover {
     h3,
     h4,
     .home_hero_link:hover span,
+    .external_link:hover span,
     p span {
         color: hsl(200, 16%, 98%);
         text-decoration: none;
@@ -905,7 +932,7 @@ tools_card_text_container p a:hover {
     .hardware_section .tools_card_container .tools_card figure,
     .hardware_section .tools_card_container .tools_card figure svg,
     .hardware_section .tools_card_container .tools_card img {
-        background: hsl(200, 16%, 6%);
+        background: transparent;
     }
 
     .hardware_tool h4 span:first-child {
@@ -922,6 +949,7 @@ tools_card_text_container p a:hover {
     }
 
     .home_hero_link:hover,
+    .external_link:hover,
     .tools_card_title_container a:hover,
     .tools_card_text_container a:hover {
         color: hsl(200, 16%, 98%);
