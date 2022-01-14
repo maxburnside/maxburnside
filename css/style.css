@@ -718,7 +718,7 @@ footer ul li a:hover>svg path {
 }
 
 .tools_card_text_container {
-    margin-top: 1.375rem;
+    margin-top: 1.25rem;
 }
 
 .card_description {
@@ -1032,8 +1032,8 @@ tools_card_text_container p a:hover {
         font-size: 1rem;
     }
 
-    .tools_card {
-        margin: 0 0 2.5rem;
+    .tools_card_text_container {
+        margin-top: 1.125rem;
     }
 
     .tools_card_text_container ul li {
