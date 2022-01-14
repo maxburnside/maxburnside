@@ -713,7 +713,7 @@ footer ul li a:hover>svg path {
 
 .hardware_tool h4 span:first-child {
     font-size: 0.75rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     color: hsl(200, 16%, 40%)
 }
 
