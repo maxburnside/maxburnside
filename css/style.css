@@ -645,7 +645,8 @@ footer ul li a:hover>svg path {
     flex-direction: column;
 }
 
-.hardware_tool h4 span {
+.hardware_tool h4 span,
+.software_tool h4 span {
     padding: 0;
     margin: 0;
     line-height: 1;
@@ -654,14 +655,16 @@ footer ul li a:hover>svg path {
 .home_hero_link,
 .tools_card_title_container h4,
 .tools_card_title_container a,
-.hardware_tool h4 span:second-child {
+.hardware_tool h4 span:second-child,
+.software_tool h4 span:second-child {
     line-height: 1;
     padding: 0;
     margin: 0;
 }
 
 .tools_card_title_container h4,
-.hardware_tool h4 span:second-child {
+.hardware_tool h4 span:second-child,
+.software_tool h4 span:second-child {
     color: hsl(200, 16%, 6%);
     font-size: 1.25rem;
 }
@@ -711,7 +714,8 @@ footer ul li a:hover>svg path {
     text-align: left;
 }
 
-.hardware_tool h4 span:first-child {
+.hardware_tool h4 span:first-child,
+.software_tool h4 span:first-child {
     font-size: 0.75rem;
     margin-bottom: 0.5rem;
     color: hsl(200, 16%, 40%)
@@ -935,12 +939,14 @@ tools_card_text_container p a:hover {
         background: transparent;
     }
 
-    .hardware_tool h4 span:first-child {
+    .hardware_tool h4 span:first-child,
+    .software_tool h4 span:first-child {
         color: hsl(200, 16%, 64%);
     }
 
     .tools_card_title_container h4,
-    .hardware_tool h4 span:second-child {
+    .hardware_tool h4 span:second-child,
+    .software_tool h4 span:second-child {
         color: hsl(200, 24%, 92%);
     }
 
