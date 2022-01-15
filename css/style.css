@@ -640,7 +640,8 @@ footer ul li a:hover>svg path {
     line-height: 1;
 }
 
-.hardware_name {
+.hardware_name,
+.software_name {
     display: flex;
     flex-direction: column;
 }
