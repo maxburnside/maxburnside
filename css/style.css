@@ -509,9 +509,14 @@ footer ul li a:hover>svg path {
 .tools_hero {
     position: relative;
     width: 100%;
-    padding: 14rem 0 8rem;
+    padding: 12rem 0 8rem;
     background: hsl(210, 100%, 72%);
     background: linear-gradient(320deg, hsl(190, 100%, 64%), hsl(200, 100%, 94%));
+}
+
+.tools_hero .text_container {
+    margin: 0 auto;
+    max-width: 1056px;
 }
 
 .tools_intro,
@@ -569,20 +574,19 @@ footer ul li a:hover>svg path {
 }
 
 .tools_hero h1 {
-    text-align: center;
     line-height: 0.8;
 }
 
 .tools_hero h1,
 .tools_hero p {
-    max-width: 720px;
+    text-align: left;
     margin: 0 auto;
     padding: 0 2rem;
     color: hsl(200, 24%, 16%);
 }
 
 .tools_hero p {
-    margin: 2.5rem auto 0;
+    margin: 2.5rem 0 0;
     max-width: 720px;
 }
 
@@ -595,12 +599,11 @@ footer ul li a:hover>svg path {
     display: flex;
     flex-direction: column;
     margin: 0 0 4rem 0;
-    width: 48%;
-    /*max-width: 400px;*/
+    width: 480px;
 }
 
 .tools_card:nth-child(odd) {
-    margin-right: 4%;
+    margin-right: 2rem;
 }
 
 .tools_card figure,
@@ -836,6 +839,16 @@ tools_card_text_container p a:hover {
 }
 
 /*********************** END Tools Page Desktop Styling ***********************/
+
+@media screen and (max-width: 1056px) {
+    .tools_card {
+        width: 48%;
+    }
+
+    .tools_card:nth-child(odd) {
+        margin-right: 4%;
+    }
+}
 
 @media screen and (max-width: 760px) {
     nav {
