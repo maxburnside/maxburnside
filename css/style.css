@@ -249,9 +249,11 @@ nav a:hover {
     margin: 0 0 0 -3px;
 }
 
-.home_main p {
-    margin: 16px 0 0 -2px;
+.home_hero p,
+.tools_hero p {
+    margin: 1.25rem 0 0 -0.125rem;
     padding: 0;
+    max-width: 720px;
 }
 
 h1 {
@@ -515,7 +517,7 @@ footer ul li a:hover>svg path {
     width: 100%;
     position: relative;
     top: -6rem;
-    margin: 0 0 7rem;
+    margin: 0 0 2rem;
 }
 
 .home_hero,
@@ -590,21 +592,23 @@ footer ul li a:hover>svg path {
     margin-bottom: 2rem;
 }
 
+.home_hero h1,
 .tools_hero h1 {
-    line-height: 0.8;
+    line-height: 1.25;
 }
 
 .tools_hero h1,
 .tools_hero p {
     text-align: left;
-    margin: 0 auto;
     padding: 0 2rem;
-    color: hsl(200, 24%, 16%);
+}
+
+.tools_hero h1 {
+    color: hsl(200, 24%, 16%)
 }
 
 .tools_hero p {
-    margin: 2.5rem 0 0;
-    max-width: 720px;
+    color: hsl(200, 24%, 36%)
 }
 
 .tools_card_container {
@@ -959,9 +963,12 @@ tools_card_text_container p a:hover {
         background: linear-gradient(160deg, hsl(210, 100%, 12%) 0%, hsl(230, 100%, 28%) 100%);
     }
 
-    .tools_hero h1,
-    .tools_hero p {
+    .tools_hero h1 {
         color: hsl(200, 16%, 98%);
+    }
+
+    .tools_hero p {
+        color: hsl(200, 16%, 80%);
     }
 
     li a,
