@@ -154,7 +154,7 @@ nav {
 .inner_nav_container {
     width: 100%;
     height: 100%;
-    max-width: 1440px;
+    max-width: 1056px;
     padding: 0 1.5rem 0 2rem;
     position: absolute;
     display: inline-flex;
@@ -359,7 +359,7 @@ ul li {
     margin: 2rem auto 1.5rem;
     line-height: 1;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1056px;
     display: inline-flex;
     align-items: baseline;
     justify-content: space-between;
