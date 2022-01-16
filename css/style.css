@@ -137,7 +137,7 @@ a {
 .home_hero_text_block {
     width: 100%;
     margin: 0 auto;
-    max-width: 760px;
+    max-width: 1056px;
     padding: 2rem;
 }
 
@@ -347,7 +347,7 @@ ul li {
 
 .home_recent_work {
     width: 100%;
-    max-width: 760px;
+    max-width: 1056px;
     padding: 6rem 2rem 2rem;
     display: flex;
     position: relative;
@@ -369,16 +369,32 @@ ul li {
     line-height: 1;
 }
 
+.recent_work_image_container {
+    margin-bottom: 2rem;
+}
+
 .recent_work_image_container a {
     width: 48%;
+    margin-right: 0;
+    max-width: 480px;
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
 .recent_work_image_container a:nth-child(2n+1) {
-    margin-right: 3%;
-    margin-bottom: 4%;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.recent_work_image_container a,
+.recent_work_image_container a img {
+    padding: 0;
+}
+
+.recent_work_image_container a img {
+    width: 100%;
+    height: 100%;
 }
 
 footer {
@@ -841,6 +857,14 @@ tools_card_text_container p a:hover {
 /*********************** END Tools Page Desktop Styling ***********************/
 
 @media screen and (max-width: 1056px) {
+    .recent_work_image_container a:nth-child(2n+1) {
+        margin-right: 2%;
+    }
+
+    .recent_work_image_container a {
+        margin-right: 0;
+    }
+
     .tools_card {
         width: 48%;
     }
@@ -866,6 +890,7 @@ tools_card_text_container p a:hover {
         display: block;
         margin-right: 0;
         margin-bottom: 2.5rem;
+        max-width: unset;
     }
 
     .recent_work_image_container img {
@@ -1086,6 +1111,10 @@ tools_card_text_container p a:hover {
 
     .home_main p {
         font-size: 1.25rem;
+    }
+
+    .recent_work_image_container a:last-child {
+        margin-bottom: 1rem;
     }
 
     .tools_main {
