@@ -212,7 +212,7 @@ nav .active::before {
 }
 
 nav ul li a:hover::before {
-    background-color: transparent;
+    background-color: hsla(230, 100%, 56%, 0.25);
     cursor: auto;
 }
 
@@ -976,6 +976,10 @@ tools_card_text_container p a:hover {
 
     .tools_hero p {
         color: hsl(200, 16%, 64%);
+    }
+
+    nav ul li a:hover::before {
+        background-color: hsla(200, 16%, 99%, 0.2);
     }
 
     li a,
