@@ -21,7 +21,7 @@ main,
 section,
 footer ul li,
 .recent_work_image_container {
-    background: hsl(200, 16%, 98%);
+    background: hsl(200, 16%, 99%);
 }
 
 html,
@@ -90,14 +90,14 @@ svg:not(:root) {
 }
 
 ::selection {
-    background: hsl(200, 16%, 6%);
-    color: hsl(200, 16%, 98%);
+    background: hsl(200, 12%, 4%);
+    color: hsl(200, 16%, 88%);
     text-shadow: none;
 }
 
 ::-moz-selection {
-    background: hsl(200, 16%, 6%);
-    color: hsl(200, 16%, 98%);
+    background: hsl(200, 12%, 4%);
+    color: hsl(200, 16%, 88%);
     text-shadow: none;
 }
 
@@ -204,11 +204,11 @@ nav ul li a::before {
 
 nav .active,
 nav u li a:active {
-    color: hsl(200, 16%, 6%);
+    color: hsl(200, 12%, 4%);
 }
 
 nav .active::before {
-    background-color: hsl(220, 100%, 50%);
+    background-color: hsl(230, 100%, 56%);
 }
 
 nav ul li a:hover::before {
@@ -218,11 +218,11 @@ nav ul li a:hover::before {
 
 nav .active:hover {
     cursor: default;
-    color: hsl(200, 16%, 6%);
+    color: hsl(200, 12%, 4%);
 }
 
 nav .active:hover::before {
-    background-color: hsl(220, 100%, 50%);
+    background-color: hsl(230, 100%, 56%);
 }
 
 .nav_logo {
@@ -258,7 +258,7 @@ nav a:hover {
 
 h1 {
     clear: both;
-    color: hsl(200, 16%, 6%);
+    color: hsl(200, 12%, 4%);
     letter-spacing: 0.0125rem;
     line-height: 4rem;
     font-weight: 900;
@@ -298,12 +298,12 @@ p {
 
 li a,
 .home_hero_link {
-    color: hsl(220, 100%, 50%);
+    color: hsl(230, 100%, 56%);
 }
 
 li a:hover,
 li a:focus {
-    color: hsl(200, 16%, 6%);
+    color: hsl(200, 12%, 4%);
     text-decoration: none;
 }
 
@@ -338,7 +338,7 @@ ul li {
 .external_link:hover,
 .tools_card_title_container a:hover,
 .tools_card_text_container a:hover {
-    color: hsl(200, 16%, 6%);
+    color: hsl(200, 12%, 4%);
 }
 
 .home_recent_work {
@@ -451,7 +451,7 @@ footer ul li a {
     transform: translateX(-50%);
     padding: 5px 6px;
     border-radius: 4px;
-    color: hsl(200, 16%, 98%);
+    color: hsl(200, 16%, 88%);
     text-shadow: 0 1px 0 hsla(200, 16%, 6%, 0.25);
     font-size: 0.875rem;
     line-height: 1;
@@ -507,7 +507,7 @@ footer ul li .tooltip_link:hover>.footer_tooltip {
 .web_software_icon,
 .linux_software_icon,
 footer ul li a:hover>svg path {
-    fill: hsl(200, 16%, 6%);
+    fill: hsl(200, 12%, 4%);
 }
 
 /*********************** START Tools Page Desktop Styling ***********************/
@@ -556,7 +556,7 @@ footer ul li a:hover>svg path {
 }
 
 .tools_category h2 {
-    color: hsl(200, 16%, 6%);
+    color: hsl(200, 12%, 4%);
 }
 
 .tools_section {
@@ -733,14 +733,14 @@ footer ul li a:hover>svg path {
 .tools_card_title_container h4,
 .hardware_tool h4 span:second-child,
 .software_tool h4 span:second-child {
-    color: hsl(200, 16%, 6%);
+    color: hsl(200, 12%, 4%);
     font-size: 1.25rem;
 }
 
 .home_hero_link,
 .tools_card_title_container a,
 .external_link {
-    color: hsl(220, 100%, 50%);
+    color: hsl(230, 100%, 56%);
     text-decoration: none;
     text-align: right;
     line-height: 1;
@@ -812,7 +812,7 @@ footer ul li a:hover>svg path {
 }
 
 .tools_card_text_container a {
-    color: hsl(220, 100%, 50%);
+    color: hsl(230, 100%, 56%);
 }
 
 tools_card_text_container p a:hover {
@@ -887,7 +887,7 @@ tools_card_text_container p a:hover {
 
 @media screen and (max-width: 760px) {
     nav {
-        background: hsl(200, 16%, 98%);
+        background: hsl(200, 16%, 88%);
         position: fixed;
     }
 
@@ -957,7 +957,7 @@ tools_card_text_container p a:hover {
     section,
     footer ul li,
     .recent_work_image_container {
-        background: hsl(200, 16%, 6%);
+        background: hsl(200, 12%, 4%);
     }
 
     p {
@@ -970,17 +970,17 @@ tools_card_text_container p a:hover {
     }
 
     .tools_hero h1 {
-        color: hsl(200, 16%, 98%);
+        color: hsl(200, 16%, 88%);
     }
 
     .tools_hero p {
-        color: hsl(200, 16%, 80%);
+        color: hsl(200, 16%, 64%);
     }
 
     li a,
     li a:focus,
     a {
-        color: hsl(220, 100%, 50%);
+        color: hsl(230, 100%, 56%);
         text-decoration: none;
     }
 
@@ -994,18 +994,18 @@ tools_card_text_container p a:hover {
     }
 
     ::selection {
-        background: hsl(200, 16%, 98%);
-        color: hsl(200, 16%, 6%);
+        background: hsl(200, 16%, 88%);
+        color: hsl(200, 12%, 4%);
     }
 
     a::selection {
-        background: hsl(220, 100%, 50%);
-        color: hsl(200, 16%, 98%);
+        background: hsl(230, 100%, 56%);
+        color: hsl(200, 16%, 88%);
     }
 
     ::-moz-selection {
-        background: hsl(200, 16%, 98%);
-        color: hsl(200, 16%, 6%);
+        background: hsl(200, 16%, 88%);
+        color: hsl(200, 12%, 4%);
     }
 
     nav .active,
@@ -1019,7 +1019,7 @@ tools_card_text_container p a:hover {
     .home_hero_link:hover span,
     .external_link:hover span,
     p span {
-        color: hsl(200, 16%, 98%);
+        color: hsl(200, 16%, 88%);
         text-decoration: none;
     }
 
@@ -1054,7 +1054,7 @@ tools_card_text_container p a:hover {
     .external_link:hover,
     .tools_card_title_container a:hover,
     .tools_card_text_container a:hover {
-        color: hsl(200, 16%, 98%);
+        color: hsl(200, 16%, 88%);
     }
 
     .tools_card_text_container p,
@@ -1066,13 +1066,13 @@ tools_card_text_container p a:hover {
     .web_software_icon,
     .linux_software_icon,
     footer ul li a:hover>svg path {
-        fill: hsl(200, 16%, 98%);
+        fill: hsl(200, 16%, 88%);
     }
 }
 
 @media (prefers-color-scheme: dark) and (max-width: 760px) {
     nav {
-        background: hsl(200, 16%, 6%);
+        background: hsl(200, 12%, 4%);
         position: fixed;
     }
 
