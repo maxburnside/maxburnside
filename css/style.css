@@ -530,6 +530,7 @@ footer ul li a:hover>svg path {
 .tools_hero {
     background: hsl(210, 100%, 72%);
     background: linear-gradient(320deg, hsl(190, 100%, 64%), hsl(200, 100%, 94%));
+    margin-bottom: 3rem;
 }
 
 .home_hero .text_container,
@@ -775,6 +776,11 @@ footer ul li a:hover>svg path {
     opacity: 1;
 }
 
+.recent_work_header .external_link {
+    font-size: 1.25rem;
+    line-height: 0.75rem;
+}
+
 .hardware_tool h3 {
     margin: 0;
     padding: 0;
@@ -900,7 +906,7 @@ tools_card_text_container p a:hover {
 
     .home_main,
     .tools_main {
-        margin: 6rem 0;
+        margin: 6rem 0 0;
         top: 0;
     }
 
