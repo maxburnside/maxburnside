@@ -887,8 +887,9 @@ tools_card_text_container p a:hover {
 
 @media screen and (max-width: 760px) {
     nav {
-        background: hsl(200, 16%, 88%);
+        background: hsla(200, 16%, 99%, 0.9);
         position: fixed;
+        backdrop-filter: blur(8px);
     }
 
     .recent_work_image_container a,
@@ -1072,8 +1073,7 @@ tools_card_text_container p a:hover {
 
 @media (prefers-color-scheme: dark) and (max-width: 760px) {
     nav {
-        background: hsl(200, 12%, 4%);
-        position: fixed;
+        background: hsla(200, 12%, 4%, 0.9);
     }
 
 }
