@@ -1108,7 +1108,11 @@ tools_card_text_container p a:hover {
 
     .home_hero h1,
     .tools_hero h1 {
-        line-height: 1.125;
+        line-height: 1.0625;
+    }
+
+    .tools_hero {
+        margin-bottom: 0;
     }
 
     h2 {
@@ -1130,7 +1134,8 @@ tools_card_text_container p a:hover {
         font-size: 0.8125rem;
     }
 
-    .home_main p {
+    .home_main p,
+    .tools_hero p {
         font-size: 1.25rem;
     }
 
@@ -1140,14 +1145,6 @@ tools_card_text_container p a:hover {
 
     .tools_main {
         margin: 5rem 0;
-    }
-
-    .tools_hero h1 {
-        font-size: 3.5rem;
-    }
-
-    .tools_hero p {
-        font-size: 1rem;
     }
 
     .tools_card_text_container {
