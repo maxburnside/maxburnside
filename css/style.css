@@ -193,7 +193,7 @@ nav ul li a:focus {
 nav ul li a::before {
     content: '';
     top: -2.125rem;
-    width: 4.5rem;
+    width: 5rem;
     left: 50%;
     transform: translateX(-50%);
     height: 0.25rem;
@@ -1100,6 +1100,15 @@ tools_card_text_container p a:hover {
 
     nav ul li a::before {
         top: -2.5rem;
+    }
+
+    .home_hero {
+        padding: 2rem 0;
+    }
+
+    .home_hero h1,
+    .tools_hero h1 {
+        line-height: 1.125;
     }
 
     h2 {
