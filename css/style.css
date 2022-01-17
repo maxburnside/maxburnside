@@ -1115,6 +1115,10 @@ tools_card_text_container p a:hover {
         margin-bottom: 0;
     }
 
+    h1 {
+        font-size: 3rem;
+    }
+
     h2 {
         font-size: 1.5rem;
     }
@@ -1136,7 +1140,7 @@ tools_card_text_container p a:hover {
 
     .home_main p,
     .tools_hero p {
-        font-size: 1.25rem;
+        font-size: 1.125rem;
     }
 
     .recent_work_image_container a:last-child {
@@ -1185,11 +1189,5 @@ tools_card_text_container p a:hover {
     footer {
         bottom: 1rem;
         right: 1rem;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    h1 {
-        font-size: 3rem;
     }
 }
