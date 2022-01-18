@@ -346,7 +346,7 @@ ul li {
 .home_recent_work {
     width: 100%;
     max-width: 1056px;
-    padding: 0 2rem 2rem;
+    padding: 0 2rem;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -519,7 +519,7 @@ footer ul li a:hover>svg path {
     width: 100%;
     position: relative;
     top: -6rem;
-    margin: 0 0 2rem;
+    margin: 0;
 }
 
 .home_hero,
@@ -734,10 +734,16 @@ footer ul li a:hover>svg path {
 }
 
 .home_hero_link,
-.tools_card_title_container a,
-.external_link {
+.tools_card_title_container a {
     text-decoration: none;
     text-align: right;
+    line-height: 1;
+    position: relative;
+    padding-right: 1.25rem;
+}
+
+.external_link {
+    text-decoration: none;
     line-height: 1;
     position: relative;
     padding-right: 1.25rem;
@@ -763,6 +769,11 @@ footer ul li a:hover>svg path {
     opacity: 0.5;
 }
 
+.external_link::after {
+    top: 0.375rem;
+    right: 0.25rem;
+}
+
 .home_hero_link::after {
     bottom: 0.1875rem;
     top: unset;
@@ -778,7 +789,11 @@ footer ul li a:hover>svg path {
     opacity: 1;
 }
 
-.recent_work_header .external_link {
+.external_link_container {
+    margin: 0 auto 3rem;
+}
+
+.external_link {
     font-size: 1.25rem;
     line-height: 0.75rem;
 }
@@ -905,7 +920,7 @@ tools_card_text_container p a:hover {
 
     .home_main,
     .tools_main {
-        margin: 6rem 0 0;
+        margin: 6rem 0 3rem;
         top: 0;
     }
 
@@ -1142,7 +1157,7 @@ tools_card_text_container p a:hover {
     }
 
     .recent_work_image_container a:last-child {
-        margin-bottom: 1rem;
+        margin-bottom: 0;
     }
 
     .tools_main {
