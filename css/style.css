@@ -74,6 +74,7 @@ p {
 }
 
 img {
+    background: hsla(200, 8%, 50%, 0.15);
     border-style: none;
     height: auto;
     max-width: 100%;
@@ -212,7 +213,7 @@ nav .active::before {
 }
 
 nav ul li a:hover::before {
-    background-color: transparent;
+    background-color: hsla(230, 100%, 56%, 0.25);
     cursor: auto;
 }
 
@@ -637,12 +638,6 @@ footer ul li a:hover>svg path {
     padding: 0;
 }
 
-.hardware_section .tools_card_container .tools_card figure,
-.hardware_section .tools_card_container .tools_card figure svg,
-.hardware_section .tools_card_container .tools_card img {
-    background: transparent;
-}
-
 .recent_work_image_container a,
 .tools_card figure,
 .tools_card img {
@@ -740,12 +735,18 @@ footer ul li a:hover>svg path {
 .home_hero_link,
 .tools_card_title_container a,
 .external_link {
-    color: hsl(230, 100%, 56%);
     text-decoration: none;
     text-align: right;
     line-height: 1;
     position: relative;
     padding-right: 1.25rem;
+}
+
+.home_hero_link,
+.tools_card_title_container a,
+.tools_card_text_container a,
+.external_link {
+    color: hsl(230, 100%, 56%);
 }
 
 .home_hero_link::after,
@@ -811,10 +812,6 @@ footer ul li a:hover>svg path {
     margin-bottom: 0;
 }
 
-.tools_card_text_container a {
-    color: hsl(230, 100%, 56%);
-}
-
 tools_card_text_container p a:hover {
     text-decoration: underline;
 }
@@ -869,7 +866,7 @@ tools_card_text_container p a:hover {
 
 @media screen and (max-width: 1056px) {
     .recent_work_image_container a:nth-child(2n+1) {
-        margin-right: 2%;
+        margin-right: 3%;
     }
 
     .recent_work_image_container a {
@@ -978,6 +975,10 @@ tools_card_text_container p a:hover {
         color: hsl(200, 16%, 64%);
     }
 
+    nav ul li a:hover::before {
+        background-color: hsla(200, 16%, 99%, 0.2);
+    }
+
     li a,
     li a:focus,
     a {
@@ -1029,13 +1030,7 @@ tools_card_text_container p a:hover {
     .tools_intro h2 {
         color: hsl(200, 16%, 84%);
     }
-
-    .hardware_section .tools_card_container .tools_card figure,
-    .hardware_section .tools_card_container .tools_card figure svg,
-    .hardware_section .tools_card_container .tools_card img {
-        background: transparent;
-    }
-
+    
     .hardware_tool h4 span:first-child,
     .software_tool h4 span:first-child {
         color: hsl(200, 16%, 64%);
