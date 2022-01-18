@@ -346,7 +346,7 @@ ul li {
 .home_recent_work {
     width: 100%;
     max-width: 1056px;
-    padding: 0 2rem;
+    padding: 4rem 2rem 0;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -354,7 +354,7 @@ ul li {
 }
 
 .recent_work_header {
-    margin: 2rem auto 1.5rem;
+    margin: 1rem auto 2.25rem;
     line-height: 1;
     width: 100%;
     max-width: 1056px;
@@ -526,19 +526,29 @@ footer ul li a:hover>svg path {
 .tools_hero {
     position: relative;
     width: 100%;
-    padding: 12rem 0 8rem;
+    padding: 2rem 0;
+    height: calc(100vh - 160px);
+    min-height: 480px;
+    max-height: 720px;
 }
 
 .tools_hero {
     background: hsl(210, 100%, 72%);
     background: linear-gradient(320deg, hsl(190, 100%, 64%), hsl(200, 100%, 94%));
-    margin-bottom: 3rem;
+    margin-bottom: 0;
 }
 
 .home_hero .text_container,
 .tools_hero .text_container {
     margin: 0 auto;
+    width: 100%;
     max-width: 1056px;
+    position: absolute;
+    left: 50%;
+    top: calc(50% + 32px);
+    transform: translate(-50%,-50%);
+    transition: 0.1s all;
+    -webkit-transition: 0.1s all;
 }
 
 .tools_intro,
@@ -898,11 +908,21 @@ tools_card_text_container p a:hover {
     }
 }
 
+@media screen and (max-height: 720px) {
+    .home_hero .text_container,
+    .tools_hero .text_container {
+        top: 50%;
+        transition: 0.1s all;
+        -webkit-transition: 0.1s all;
+    }
+}
+
 @media screen and (max-width: 760px) {
     nav {
         background: hsla(200, 16%, 99%, 0.9);
         position: fixed;
         backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
     }
 
     .recent_work_image_container a,
@@ -927,6 +947,14 @@ tools_card_text_container p a:hover {
     .home_hero,
     .tools_hero {
         padding: 6rem 0 7rem;
+        height: calc(100vh - 256px);
+    }
+
+    .home_hero .text_container,
+    .tools_hero .text_container {
+        top: 50%;
+        transition: 0.1s all;
+        -webkit-transition: 0.1s all;
     }
 
     .tools_card_container {
@@ -1124,10 +1152,6 @@ tools_card_text_container p a:hover {
     .home_hero h1,
     .tools_hero h1 {
         line-height: 1.0625;
-    }
-
-    .tools_hero {
-        margin-bottom: 0;
     }
 
     h1 {
