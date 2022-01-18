@@ -740,12 +740,18 @@ footer ul li a:hover>svg path {
 .home_hero_link,
 .tools_card_title_container a,
 .external_link {
-    color: hsl(230, 100%, 56%);
     text-decoration: none;
     text-align: right;
     line-height: 1;
     position: relative;
     padding-right: 1.25rem;
+}
+
+.home_hero_link,
+.tools_card_title_container a,
+.tools_card_text_container a,
+.external_link {
+    color: hsl(230, 100%, 56%);
 }
 
 .home_hero_link::after,
@@ -811,10 +817,6 @@ footer ul li a:hover>svg path {
     margin-bottom: 0;
 }
 
-.tools_card_text_container a {
-    color: hsl(230, 100%, 56%);
-}
-
 tools_card_text_container p a:hover {
     text-decoration: underline;
 }
@@ -869,7 +871,7 @@ tools_card_text_container p a:hover {
 
 @media screen and (max-width: 1056px) {
     .recent_work_image_container a:nth-child(2n+1) {
-        margin-right: 2%;
+        margin-right: 3%;
     }
 
     .recent_work_image_container a {
