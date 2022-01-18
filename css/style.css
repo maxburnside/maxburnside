@@ -771,7 +771,7 @@ footer ul li a:hover>svg path {
 
 .external_link::after {
     top: 0.375rem;
-    right: 0.25rem;
+    right: 0.125rem;
 }
 
 .home_hero_link::after {
@@ -1117,6 +1117,10 @@ tools_card_text_container p a:hover {
         padding: 2rem 0;
     }
 
+    .home_main {
+        margin-bottom: 1rem;
+    }
+
     .home_hero h1,
     .tools_hero h1 {
         line-height: 1.0625;
@@ -1157,7 +1161,7 @@ tools_card_text_container p a:hover {
     }
 
     .recent_work_image_container a:last-child {
-        margin-bottom: 0;
+        margin-bottom: 0.5rem;
     }
 
     .tools_main {
