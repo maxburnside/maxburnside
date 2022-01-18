@@ -74,6 +74,7 @@ p {
 }
 
 img {
+    background: hsla(200, 8%, 50%, 0.15);
     border-style: none;
     height: auto;
     max-width: 100%;
@@ -637,12 +638,6 @@ footer ul li a:hover>svg path {
     padding: 0;
 }
 
-.hardware_section .tools_card_container .tools_card figure,
-.hardware_section .tools_card_container .tools_card figure svg,
-.hardware_section .tools_card_container .tools_card img {
-    background: transparent;
-}
-
 .recent_work_image_container a,
 .tools_card figure,
 .tools_card img {
@@ -1035,13 +1030,7 @@ tools_card_text_container p a:hover {
     .tools_intro h2 {
         color: hsl(200, 16%, 84%);
     }
-
-    .hardware_section .tools_card_container .tools_card figure,
-    .hardware_section .tools_card_container .tools_card figure svg,
-    .hardware_section .tools_card_container .tools_card img {
-        background: transparent;
-    }
-
+    
     .hardware_tool h4 span:first-child,
     .software_tool h4 span:first-child {
         color: hsl(200, 16%, 64%);
