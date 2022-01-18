@@ -227,6 +227,7 @@ nav .active:hover::before {
 }
 
 .nav_logo {
+    background: transparent;
     position: relative;
     opacity: 0.9;
 }
@@ -1030,7 +1031,7 @@ tools_card_text_container p a:hover {
     .tools_intro h2 {
         color: hsl(200, 16%, 84%);
     }
-    
+
     .hardware_tool h4 span:first-child,
     .software_tool h4 span:first-child {
         color: hsl(200, 16%, 64%);
