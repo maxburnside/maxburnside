@@ -18,6 +18,7 @@ body,
 html,
 nav,
 main,
+.tools_category,
 section,
 footer ul li,
 .recent_work_image_container {
@@ -546,7 +547,7 @@ footer ul li a:hover>svg path {
     position: absolute;
     left: 50%;
     top: calc(50% + 32px);
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     transition: 0.1s all;
     -webkit-transition: 0.1s all;
 }
@@ -563,8 +564,16 @@ footer ul li a:hover>svg path {
 }
 
 .tools_category {
-    padding: 4rem 2rem 0;
-    position: relative;
+    margin: 3rem auto -1rem;
+    padding: 1rem 2rem;
+    /*    position: relative;*/
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .tools_category h2 {
@@ -909,6 +918,7 @@ tools_card_text_container p a:hover {
 }
 
 @media screen and (max-height: 720px) {
+
     .home_hero .text_container,
     .tools_hero .text_container {
         top: 50%;
@@ -919,10 +929,12 @@ tools_card_text_container p a:hover {
 
 @media screen and (max-width: 760px) {
     nav {
-        background: hsla(200, 16%, 99%, 0.9);
+        background: hsl(200, 16%, 99%);
         position: fixed;
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
+    }
+
+    .tools_category {
+        top: 6rem;
     }
 
     .recent_work_image_container a,
@@ -996,6 +1008,7 @@ tools_card_text_container p a:hover {
     body,
     html,
     main,
+    .tools_category,
     section,
     footer ul li,
     .recent_work_image_container {
@@ -1112,7 +1125,7 @@ tools_card_text_container p a:hover {
 
 @media (prefers-color-scheme: dark) and (max-width: 760px) {
     nav {
-        background: hsla(200, 12%, 4%, 0.9);
+        background: hsl(200, 12%, 4%);
     }
 
 }
@@ -1120,6 +1133,10 @@ tools_card_text_container p a:hover {
 @media screen and (max-width: 440px) {
     nav {
         height: 5rem;
+    }
+
+    .tools_category {
+        top: 5rem;
     }
 
     .inner_nav_container a {
