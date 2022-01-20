@@ -565,8 +565,7 @@ footer ul li a:hover>svg path {
 
 .tools_category {
     margin: 3rem auto -1rem;
-    padding: 1rem 2rem;
-    /*    position: relative;*/
+    padding: 1.5rem 2rem;
     position: -webkit-sticky;
     position: -moz-sticky;
     position: -ms-sticky;
@@ -585,24 +584,20 @@ footer ul li a:hover>svg path {
     position: relative;
 }
 
-.tools_intro::before,
-.software_section::after {
+.tools_card_container {
+    position: relative;
+}
+
+.tools_card_container::after {
     content: '';
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    bottom: 0;
     width: 20rem;
     height: 0.125rem;
     border-radius: 0.0625rem;
     background-color: hsla(200, 16%, 56%, 0.24);
-}
-
-.tools_intro::before {
-    top: 0;
-}
-
-.software_section::after {
-    bottom: 0;
 }
 
 .tools_section h3 {
@@ -1086,6 +1081,7 @@ tools_card_text_container p a:hover {
     h2,
     .tools_intro h2 {
         color: hsl(200, 16%, 84%);
+        line-height: 1.25rem;
     }
 
     .hardware_tool h4 span:first-child,
@@ -1132,11 +1128,12 @@ tools_card_text_container p a:hover {
 
 @media screen and (max-width: 440px) {
     nav {
-        height: 5rem;
+        height: 4rem;
     }
 
     .tools_category {
-        top: 5rem;
+        top: 4rem;
+        padding: 0.75rem 4rem;
     }
 
     .inner_nav_container a {
@@ -1151,11 +1148,11 @@ tools_card_text_container p a:hover {
 
     .inner_nav_container {
         padding: 0 0.75rem 0 1rem;
-        height: 5rem;
+        height: 4rem;
     }
 
     nav ul li a::before {
-        top: -2.5rem;
+        top: -1.75rem;
     }
 
     .home_hero {
