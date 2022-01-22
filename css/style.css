@@ -929,6 +929,18 @@ footer ul li a:hover>svg path {
     }
 }
 
+@media screen and (max-width: 760px) and (max-height: 480px) {
+    .home_hero, .tools_hero {
+        top: -4rem;
+    }
+
+    .home_hero .text_container,
+    .gear_hero .text_container {
+        transition: 0.1s all;
+        -webkit-transition: 0.1s all;
+    }
+}
+
 @media screen and (max-width: 760px) {
     nav {
         background: hsl(200, 16%, 99%);
