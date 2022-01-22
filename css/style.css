@@ -564,8 +564,9 @@ footer ul li a:hover>svg path {
 }
 
 .gear_category {
-    margin: 3rem auto -1rem;
+    margin: 3rem auto 0;
     padding: 1.5rem 2rem;
+    line-height: 1;
     position: -webkit-sticky;
     position: -moz-sticky;
     position: -ms-sticky;
@@ -924,6 +925,18 @@ footer ul li a:hover>svg path {
     .home_hero .text_container,
     .gear_hero .text_container {
         top: calc(50% + 32px);
+        transition: 0.1s all;
+        -webkit-transition: 0.1s all;
+    }
+}
+
+@media screen and (max-width: 760px) and (max-height: 480px) {
+    .home_hero, .tools_hero {
+        top: -4rem;
+    }
+
+    .home_hero .text_container,
+    .gear_hero .text_container {
         transition: 0.1s all;
         -webkit-transition: 0.1s all;
     }
