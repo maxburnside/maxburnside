@@ -18,6 +18,7 @@ body,
 html,
 nav,
 main,
+.gear_category,
 section,
 footer ul li,
 .recent_work_image_container {
@@ -252,7 +253,7 @@ nav a:hover {
 }
 
 .home_hero p,
-.tools_hero p {
+.gear_hero p {
     margin: 1.25rem 0 0 -0.125rem;
     padding: 0;
     max-width: 720px;
@@ -338,8 +339,8 @@ ul li {
 
 .home_hero_link:hover,
 .external_link:hover,
-.tools_card_title_container a:hover,
-.tools_card_text_container a:hover {
+.gear_card_title_container a:hover,
+.gear_card_text_container a:hover {
     color: hsl(200, 12%, 4%);
 }
 
@@ -512,10 +513,10 @@ footer ul li a:hover>svg path {
     fill: hsl(200, 12%, 4%);
 }
 
-/*********************** START Tools Page Desktop Styling ***********************/
+/*********************** START gear Page Desktop Styling ***********************/
 
 .home_main,
-.tools_main {
+.gear_main {
     width: 100%;
     position: relative;
     top: -6rem;
@@ -523,7 +524,7 @@ footer ul li a:hover>svg path {
 }
 
 .home_hero,
-.tools_hero {
+.gear_hero {
     position: relative;
     width: 100%;
     padding: 2rem 0;
@@ -532,117 +533,127 @@ footer ul li a:hover>svg path {
     max-height: 720px;
 }
 
-.tools_hero {
+.gear_hero {
     background: hsl(210, 100%, 72%);
     background: linear-gradient(320deg, hsl(190, 100%, 64%), hsl(200, 100%, 94%));
     margin-bottom: 0;
 }
 
 .home_hero .text_container,
-.tools_hero .text_container {
+.gear_hero .text_container {
     margin: 0 auto;
     width: 100%;
     max-width: 1056px;
     position: absolute;
     left: 50%;
     top: calc(50% + 32px);
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     transition: 0.1s all;
     -webkit-transition: 0.1s all;
 }
 
-.tools_intro,
-.tools_section,
-.tools_category {
+.gear_intro,
+.gear_section,
+.gear_category {
     margin: 0 auto;
     max-width: 1056px;
 }
 
-.tools_intro {
+.gear_intro {
     padding: 8rem 2rem 0;
 }
 
-.tools_category {
-    padding: 4rem 2rem 0;
-    position: relative;
+.gear_category {
+    margin: 3rem auto -1rem;
+    padding: 1.5rem 2rem;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 8;
 }
 
-.tools_category h2 {
+.gear_subcategory {
+    top: 48px;
+    margin: 1rem auto 0;
+    padding: 1rem 2rem;
+    line-height: 1;
+}
+
+.gear_category h2 {
     color: hsl(200, 12%, 4%);
 }
 
-.tools_section {
+.gear_section {
     padding: 2rem;
     position: relative;
 }
 
-.tools_intro::before,
-.software_section::after {
+.gear_card_container {
+    position: relative;
+}
+
+.gear_card_container::after {
     content: '';
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    bottom: 0;
     width: 20rem;
     height: 0.125rem;
     border-radius: 0.0625rem;
     background-color: hsla(200, 16%, 56%, 0.24);
 }
 
-.tools_intro::before {
-    top: 0;
-}
-
-.software_section::after {
-    bottom: 0;
-}
-
-.tools_section h3 {
+.gear_section h3 {
     margin-bottom: 0.75rem;
 }
 
-.tools_section p {
+.gear_section p {
     font-size: 1.125rem;
     margin-bottom: 2rem;
 }
 
 .home_hero h1,
-.tools_hero h1 {
+.gear_hero h1 {
     line-height: 1.25;
 }
 
-.tools_hero h1,
-.tools_hero p {
+.gear_hero h1,
+.gear_hero p {
     text-align: left;
     padding: 0 2rem;
 }
 
-.tools_hero h1 {
+.gear_hero h1 {
     color: hsl(200, 24%, 16%)
 }
 
-.tools_hero p {
+.gear_hero p {
     color: hsl(200, 24%, 36%)
 }
 
-.tools_card_container {
+.gear_card_container {
     display: inline-flex;
     flex-wrap: wrap;
 }
 
-.tools_card {
+.gear_card {
     display: flex;
     flex-direction: column;
     margin: 0 0 4rem 0;
     width: 480px;
 }
 
-.tools_card:nth-child(odd) {
+.gear_card:nth-child(odd) {
     margin-right: 2rem;
 }
 
-.tools_card figure,
-.tools_card figure svg,
-.tools_card img {
+.gear_card figure,
+.gear_card figure svg,
+.gear_card img {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -650,15 +661,15 @@ footer ul li a:hover>svg path {
 }
 
 .recent_work_image_container a,
-.tools_card figure,
-.tools_card img {
+.gear_card figure,
+.gear_card img {
     transition: 0.2s all;
     -webkit-transition: 0.2s all;
 }
 
 .recent_work_image_container a:hover img,
-.tools_card a:hover figure,
-.tools_card a:hover img {
+.gear_card a:hover figure,
+.gear_card a:hover img {
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
     transition: 0.1s all;
@@ -666,7 +677,7 @@ footer ul li a:hover>svg path {
     box-shadow: 0 12px 48px 0 hsla(200, 16%, 6%, 0.16), 0 4px 16px 0 hsla(200, 16%, 6%, 0.04);
 }
 
-.tools_card_title_container {
+.gear_card_title_container {
     display: inline-flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -719,32 +730,32 @@ footer ul li a:hover>svg path {
     margin-left: 0.375rem;
 }
 
-.hardware_tool h4 span,
-.software_tool h4 span {
+.hardware_gear h4 span,
+.software_gear h4 span {
     padding: 0;
     margin: 0;
     line-height: 1;
 }
 
 .home_hero_link,
-.tools_card_title_container h4,
-.tools_card_title_container a,
-.hardware_tool h4 span:second-child,
-.software_tool h4 span:second-child {
+.gear_card_title_container h4,
+.gear_card_title_container a,
+.hardware_gear h4 span:second-child,
+.software_gear h4 span:second-child {
     line-height: 1;
     padding: 0;
     margin: 0;
 }
 
-.tools_card_title_container h4,
-.hardware_tool h4 span:second-child,
-.software_tool h4 span:second-child {
+.gear_card_title_container h4,
+.hardware_gear h4 span:second-child,
+.software_gear h4 span:second-child {
     color: hsl(200, 12%, 4%);
     font-size: 1.25rem;
 }
 
 .home_hero_link,
-.tools_card_title_container a {
+.gear_card_title_container a {
     text-decoration: none;
     text-align: right;
     line-height: 1;
@@ -760,14 +771,14 @@ footer ul li a:hover>svg path {
 }
 
 .home_hero_link,
-.tools_card_title_container a,
-.tools_card_text_container a,
+.gear_card_title_container a,
+.gear_card_text_container a,
 .external_link {
     color: hsl(230, 100%, 56%);
 }
 
 .home_hero_link::after,
-.tools_card_title_container a::after,
+.gear_card_title_container a::after,
 .external_link::after {
     content: '';
     position: absolute;
@@ -795,7 +806,7 @@ footer ul li a:hover>svg path {
 
 .home_hero_link:hover::after,
 .external_link:hover::after,
-.tools_card_title_container a:hover::after {
+.gear_card_title_container a:hover::after {
     opacity: 1;
 }
 
@@ -808,23 +819,23 @@ footer ul li a:hover>svg path {
     line-height: 0.75rem;
 }
 
-.hardware_tool h3 {
+.hardware_gear h3 {
     margin: 0;
     padding: 0;
     text-align: left;
 }
 
-.hardware_tool h4 span:first-child,
-.software_tool h4 span:first-child {
+.hardware_gear h4 span:first-child,
+.software_gear h4 span:first-child {
     font-size: 0.75rem;
     color: hsl(200, 16%, 40%)
 }
 
-.hardware_tool h4 span:first-child {
+.hardware_gear h4 span:first-child {
     margin-bottom: 0.5rem;
 }
 
-.tools_card_text_container {
+.gear_card_text_container {
     margin-top: 1.25rem;
 }
 
@@ -832,39 +843,39 @@ footer ul li a:hover>svg path {
     margin-top: 1.25rem;
 }
 
-.tools_card_text_container p {
+.gear_card_text_container p {
     font-size: 0.875rem;
     line-height: 1.375rem;
     margin-bottom: 0;
 }
 
-tools_card_text_container p a:hover {
+gear_card_text_container p a:hover {
     text-decoration: underline;
 }
 
-.tools_card_text_container ul,
-.tools_card_text_container ul li {
+.gear_card_text_container ul,
+.gear_card_text_container ul li {
     padding: 0;
     margin: 0;
 }
 
-.tools_card_text_container ul {
+.gear_card_text_container ul {
     list-style: none;
     font-size: 0.875rem;
     margin-top: 0.625rem;
 }
 
-.tools_card_text_container ul li {
+.gear_card_text_container ul li {
     margin-left: 1.25rem;
     position: relative;
     line-height: 1.25rem;
 }
 
-.tools_card_text_container ul li:not(:first-child) {
+.gear_card_text_container ul li:not(:first-child) {
     margin-top: 0.75rem;
 }
 
-.tools_card_text_container ul li::before {
+.gear_card_text_container ul li::before {
     content: '';
     position: absolute;
     left: -1.25rem;
@@ -875,20 +886,20 @@ tools_card_text_container p a:hover {
     border-radius: 0.25rem;
 }
 
-.tools_disclaimer {
+.gear_disclaimer {
     margin: 2rem auto 5rem;
     padding-bottom: 0;
 }
 
-.tools_disclaimer h4 {
+.gear_disclaimer h4 {
     margin-bottom: 1.5rem;
 }
 
-.tools_disclaimer p {
+.gear_disclaimer p {
     font-size: 0.875rem;
 }
 
-/*********************** END Tools Page Desktop Styling ***********************/
+/*********************** END gear Page Desktop Styling ***********************/
 
 @media screen and (max-width: 1056px) {
     .recent_work_image_container a:nth-child(2n+1) {
@@ -899,18 +910,19 @@ tools_card_text_container p a:hover {
         margin-right: 0;
     }
 
-    .tools_card {
+    .gear_card {
         width: 48%;
     }
 
-    .tools_card:nth-child(odd) {
+    .gear_card:nth-child(odd) {
         margin-right: 4%;
     }
 }
 
 @media screen and (max-height: 720px) {
+
     .home_hero .text_container,
-    .tools_hero .text_container {
+    .gear_hero .text_container {
         top: 50%;
         transition: 0.1s all;
         -webkit-transition: 0.1s all;
@@ -919,10 +931,18 @@ tools_card_text_container p a:hover {
 
 @media screen and (max-width: 760px) {
     nav {
-        background: hsla(200, 16%, 99%, 0.9);
+        background: hsl(200, 16%, 99%);
         position: fixed;
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
+    }
+
+    .gear_category {
+        top: 6rem;
+        padding: 0.875rem 2rem 1.25rem;
+    }
+
+    .gear_subcategory {
+        top: 9.375rem;
+        padding: 0.25rem 2rem 1rem;
     }
 
     .recent_work_image_container a,
@@ -939,25 +959,25 @@ tools_card_text_container p a:hover {
     }
 
     .home_main,
-    .tools_main {
+    .gear_main {
         margin: 6rem 0 3rem;
         top: 0;
     }
 
     .home_hero,
-    .tools_hero {
+    .gear_hero {
         padding: 6rem 0 7rem;
         height: calc(100vh - 256px);
     }
 
     .home_hero .text_container,
-    .tools_hero .text_container {
+    .gear_hero .text_container {
         top: 50%;
         transition: 0.1s all;
         -webkit-transition: 0.1s all;
     }
 
-    .tools_card_container {
+    .gear_card_container {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -965,25 +985,25 @@ tools_card_text_container p a:hover {
         /*max-width: 400px;*/
     }
 
-    .tools_card:nth-child(2n+1) {
+    .gear_card:nth-child(2n+1) {
         margin-right: unset;
     }
 
-    .tools_card {
+    .gear_card {
         margin: 0 0 4rem;
         width: 100%;
     }
 
-    .tools_card figure,
-    .tools_card figure svg,
-    .tools_card img {
+    .gear_card figure,
+    .gear_card figure svg,
+    .gear_card img {
         width: 100%;
         max-width: none;
     }
 
     .recent_work_image_container a:hover img,
-    .tools_card a:hover figure,
-    .tools_card a:hover img {
+    .gear_card a:hover figure,
+    .gear_card a:hover img {
         transform: none;
         -webkit-transform: none;
     }
@@ -996,6 +1016,7 @@ tools_card_text_container p a:hover {
     body,
     html,
     main,
+    .gear_category,
     section,
     footer ul li,
     .recent_work_image_container {
@@ -1006,16 +1027,16 @@ tools_card_text_container p a:hover {
         color: hsl(200, 16%, 52%);
     }
 
-    .tools_hero {
+    .gear_hero {
         background: hsl(220, 100%, 24%);
         background: linear-gradient(160deg, hsl(210, 100%, 12%) 0%, hsl(230, 100%, 28%) 100%);
     }
 
-    .tools_hero h1 {
+    .gear_hero h1 {
         color: hsl(200, 16%, 88%);
     }
 
-    .tools_hero p {
+    .gear_hero p {
         color: hsl(200, 16%, 64%);
     }
 
@@ -1069,36 +1090,37 @@ tools_card_text_container p a:hover {
         text-decoration: none;
     }
 
-    .tools_category h2,
+    .gear_category h2,
     h2,
-    .tools_intro h2 {
+    .gear_intro h2 {
         color: hsl(200, 16%, 84%);
+        line-height: 1.25rem;
     }
 
-    .hardware_tool h4 span:first-child,
-    .software_tool h4 span:first-child {
+    .hardware_gear h4 span:first-child,
+    .software_gear h4 span:first-child {
         color: hsl(200, 16%, 64%);
     }
 
-    .tools_card_title_container h4,
-    .hardware_tool h4 span:second-child,
-    .software_tool h4 span:second-child {
+    .gear_card_title_container h4,
+    .hardware_gear h4 span:second-child,
+    .software_gear h4 span:second-child {
         color: hsl(200, 24%, 92%);
     }
 
-    .tools_card_text_container a {
+    .gear_card_text_container a {
         text-decoration: underline;
     }
 
     .home_hero_link:hover,
     .external_link:hover,
-    .tools_card_title_container a:hover,
-    .tools_card_text_container a:hover {
+    .gear_card_title_container a:hover,
+    .gear_card_text_container a:hover {
         color: hsl(200, 16%, 88%);
     }
 
-    .tools_card_text_container p,
-    .tools_card_text_container ul {
+    .gear_card_text_container p,
+    .gear_card_text_container ul {
         color: hsl(200, 16%, 64%);
     }
 
@@ -1112,14 +1134,19 @@ tools_card_text_container p a:hover {
 
 @media (prefers-color-scheme: dark) and (max-width: 760px) {
     nav {
-        background: hsla(200, 12%, 4%, 0.9);
+        background: hsl(200, 12%, 4%);
     }
 
 }
 
 @media screen and (max-width: 440px) {
     nav {
-        height: 5rem;
+        height: 4rem;
+    }
+
+    .gear_category {
+        top: 4rem;
+        padding: 0.75rem 4rem;
     }
 
     .inner_nav_container a {
@@ -1134,11 +1161,11 @@ tools_card_text_container p a:hover {
 
     .inner_nav_container {
         padding: 0 0.75rem 0 1rem;
-        height: 5rem;
+        height: 4rem;
     }
 
     nav ul li a::before {
-        top: -2.5rem;
+        top: -1.75rem;
     }
 
     .home_hero {
@@ -1150,7 +1177,7 @@ tools_card_text_container p a:hover {
     }
 
     .home_hero h1,
-    .tools_hero h1 {
+    .gear_hero h1 {
         line-height: 1.0625;
     }
 
@@ -1173,14 +1200,14 @@ tools_card_text_container p a:hover {
     }
 
     p,
-    .tools_card_text_container p,
-    .tools_card_text_container ul,
-    .tools_disclaimer p {
+    .gear_card_text_container p,
+    .gear_card_text_container ul,
+    .gear_disclaimer p {
         font-size: 0.8125rem;
     }
 
     .home_main p,
-    .tools_hero p {
+    .gear_hero p {
         font-size: 1.125rem;
     }
 
@@ -1188,37 +1215,37 @@ tools_card_text_container p a:hover {
         margin-bottom: 0.5rem;
     }
 
-    .tools_main {
+    .gear_main {
         margin: 5rem 0;
     }
 
-    .tools_card_text_container {
+    .gear_card_text_container {
         margin-top: 1.125rem;
     }
 
-    .tools_card_text_container ul li {
+    .gear_card_text_container ul li {
         line-height: 1rem;
     }
 
-    .tools_card_text_container ul li {
+    .gear_card_text_container ul li {
         margin-left: 1.125rem;
     }
 
-    .tools_card_text_container ul li::before {
+    .gear_card_text_container ul li::before {
         left: -1.125rem;
         top: 0.25rem;
     }
 
-    .tools_card_title_container a {
+    .gear_card_title_container a {
         font-size: 0.875rem;
     }
 
-    .tools_card_title_container a::after {
+    .gear_card_title_container a::after {
         top: 0.0625rem
     }
 
-    .tools_category,
-    .tools_section {
+    .gear_category,
+    .gear_section {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
