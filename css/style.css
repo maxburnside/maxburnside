@@ -1146,11 +1146,11 @@ footer ul li a:hover>svg path {
 
     .gear_category {
         top: 4rem;
-        padding: 0.75rem 4rem;
+        padding: 0.75rem 4rem 1rem;
     }
 
     .gear_subcategory {
-        top: 6.75rem;
+        top: 6.5rem;
     }
 
     .inner_nav_container a {
