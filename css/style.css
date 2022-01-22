@@ -137,7 +137,7 @@ a {
     padding: 0 2rem;
 }
 
-nav {
+.site_navbar {
     height: 6rem;
     top: 0;
     left: 0;
@@ -161,24 +161,24 @@ nav {
     transform: translateX(-50%);
 }
 
-nav ul {
+.site_navbar ul {
     display: inline-flex;
     align-items: center;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
+.site_navbar ul li {
     padding: 0;
     margin: 0;
     line-height: 1;
 }
 
-nav ul li:not(:first-child) {
+.site_navbar ul li:not(:first-child) {
     padding: 0 0 0 1.5rem;
 }
 
-nav ul li a {
+.site_navbar ul li a {
     position: relative;
     display: block;
     font-size: 1.375rem;
@@ -188,11 +188,11 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:focus {
+.site_navbar ul li a:focus {
     box-shadow: 0 0 0 0.125rem hsla(200, 100%, 50%, 0.5);
 }
 
-nav ul li a::before {
+.site_navbar ul li a::before {
     content: '';
     top: -2.125rem;
     width: 5rem;
@@ -204,26 +204,26 @@ nav ul li a::before {
     position: absolute;
 }
 
-nav .active,
-nav u li a:active {
+.site_navbar .active,
+.site_navbar u li a:active {
     color: hsl(200, 12%, 4%);
 }
 
-nav .active::before {
+.site_navbar .active::before {
     background-color: hsl(230, 100%, 56%);
 }
 
-nav ul li a:hover::before {
+.site_navbar ul li a:hover::before {
     background-color: hsla(230, 100%, 56%, 0.25);
     cursor: auto;
 }
 
-nav .active:hover {
+.site_navbar .active:hover {
     cursor: default;
     color: hsl(200, 12%, 4%);
 }
 
-nav .active:hover::before {
+.site_navbar .active:hover::before {
     background-color: hsl(230, 100%, 56%);
 }
 
@@ -237,12 +237,12 @@ nav .active:hover::before {
     opacity: 1;
 }
 
-nav a {
+.site_navbar a {
     transition: 0.2s all;
     -webkit-transition: 0.2s all;
 }
 
-nav a:hover {
+.site_navbar a:hover {
     transition: 0.1s all;
     -webkit-transition: 0.1s all;
 }
@@ -917,7 +917,7 @@ footer ul li a:hover>svg path {
 }
 
 @media screen and (max-width: 760px) {
-    nav {
+    .site_navbar {
         background: hsl(200, 16%, 99%);
         position: fixed;
     }
@@ -1025,7 +1025,7 @@ footer ul li a:hover>svg path {
         color: hsl(200, 16%, 64%);
     }
 
-    nav ul li a:hover::before {
+    .site_navbar ul li a:hover::before {
         background-color: hsla(200, 16%, 99%, 0.2);
     }
 
@@ -1060,10 +1060,10 @@ footer ul li a:hover>svg path {
         color: hsl(200, 12%, 4%);
     }
 
-    nav .active,
-    nav u li a:active,
-    nav .active:hover,
-    nav li a:hover,
+    .site_navbar .active,
+    .site_navbar u li a:active,
+    .site_navbar .active:hover,
+    .site_navbar li a:hover,
     li a:hover,
     h1,
     h3,
@@ -1118,14 +1118,14 @@ footer ul li a:hover>svg path {
 }
 
 @media (prefers-color-scheme: dark) and (max-width: 760px) {
-    nav {
+    .site_navbar {
         background: hsl(200, 12%, 4%);
     }
 
 }
 
 @media screen and (max-width: 440px) {
-    nav {
+    .site_navbar {
         height: 4rem;
     }
 
@@ -1153,7 +1153,7 @@ footer ul li a:hover>svg path {
         height: 4rem;
     }
 
-    nav ul li a::before {
+    .site_navbar ul li a::before {
         top: -1.75rem;
     }
 
