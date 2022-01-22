@@ -564,8 +564,9 @@ footer ul li a:hover>svg path {
 }
 
 .gear_category {
-    margin: 3rem auto -1rem;
+    margin: 3rem auto 0;
     padding: 1.5rem 2rem;
+    line-height: 1;
     position: -webkit-sticky;
     position: -moz-sticky;
     position: -ms-sticky;
