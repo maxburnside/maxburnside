@@ -111,6 +111,11 @@ svg:not(:root) {
     padding-left: 24px;
 }
 
+ol {
+    list-style: none;
+    padding: 0;
+}
+
 main {
     width: 100%;
     max-width: none;
@@ -277,12 +282,12 @@ h2 {
 
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     letter-spacing: -0.0125rem;
 }
 
 h4 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     letter-spacing: -0.0125rem;
 }
 
@@ -298,7 +303,7 @@ p {
     font-size: 1.25rem;
     color: hsl(200, 12%, 28%);
     letter-spacing: -0.015rem;
-    line-height: 1.4;
+    line-height: 1.75;
 }
 
 li a,
@@ -554,8 +559,16 @@ footer ul li a:hover>svg path {
     -webkit-transition: 0.1s all;
 }
 
-.gear_table_of_contents {
-    background: ;
+.gear_table_of_contents h2 {
+    margin-bottom: 2rem;
+}
+
+.indented_link {
+    padding-left: 2rem;
+}
+
+.gear_table_of_contents h5 {
+    padding-left: 1rem;
 }
 
 .gear_table_of_contents,
@@ -570,7 +583,7 @@ footer ul li a:hover>svg path {
 }
 
 .gear_category {
-    margin: 3rem auto 0;
+    margin: 0 auto;
     padding: 1.5rem 2rem;
     line-height: 1;
     position: -webkit-sticky;
@@ -605,6 +618,10 @@ footer ul li a:hover>svg path {
     padding: 2rem;
     position: relative;
 }
+
+.gear_table_of_contents {
+    padding-top: 4rem;
+}   
 
 .gear_card_container {
     position: relative;
@@ -860,7 +877,6 @@ footer ul li a:hover>svg path {
 
 .gear_card_text_container p {
     font-size: 0.875rem;
-    line-height: 1.375rem;
     margin-bottom: 0;
 }
 
