@@ -1,5 +1,6 @@
 * {
     -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -18,6 +19,7 @@ body,
 html,
 nav,
 main,
+.gear_table_of_contents,
 .gear_category,
 section,
 footer ul li,
@@ -109,6 +111,12 @@ svg:not(:root) {
     padding-left: 24px;
 }
 
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 main {
     width: 100%;
     max-width: none;
@@ -137,7 +145,7 @@ a {
     padding: 0 2rem;
 }
 
-nav {
+.site_navbar {
     height: 6rem;
     top: 0;
     left: 0;
@@ -161,24 +169,24 @@ nav {
     transform: translateX(-50%);
 }
 
-nav ul {
+.site_navbar ul {
     display: inline-flex;
     align-items: center;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
+.site_navbar ul li {
     padding: 0;
     margin: 0;
     line-height: 1;
 }
 
-nav ul li:not(:first-child) {
+.site_navbar ul li:not(:first-child) {
     padding: 0 0 0 1.5rem;
 }
 
-nav ul li a {
+.site_navbar ul li a {
     position: relative;
     display: block;
     font-size: 1.375rem;
@@ -188,11 +196,11 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:focus {
+.site_navbar ul li a:focus {
     box-shadow: 0 0 0 0.125rem hsla(200, 100%, 50%, 0.5);
 }
 
-nav ul li a::before {
+.site_navbar ul li a::before {
     content: '';
     top: -2.125rem;
     width: 5rem;
@@ -204,26 +212,26 @@ nav ul li a::before {
     position: absolute;
 }
 
-nav .active,
-nav u li a:active {
+.site_navbar .active,
+.site_navbar u li a:active {
     color: hsl(200, 12%, 4%);
 }
 
-nav .active::before {
+.site_navbar .active::before {
     background-color: hsl(230, 100%, 56%);
 }
 
-nav ul li a:hover::before {
+.site_navbar ul li a:hover::before {
     background-color: hsla(230, 100%, 56%, 0.25);
     cursor: auto;
 }
 
-nav .active:hover {
+.site_navbar .active:hover {
     cursor: default;
     color: hsl(200, 12%, 4%);
 }
 
-nav .active:hover::before {
+.site_navbar .active:hover::before {
     background-color: hsl(230, 100%, 56%);
 }
 
@@ -237,12 +245,12 @@ nav .active:hover::before {
     opacity: 1;
 }
 
-nav a {
+.site_navbar a {
     transition: 0.2s all;
     -webkit-transition: 0.2s all;
 }
 
-nav a:hover {
+.site_navbar a:hover {
     transition: 0.1s all;
     -webkit-transition: 0.1s all;
 }
@@ -275,12 +283,12 @@ h2 {
 
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     letter-spacing: -0.0125rem;
 }
 
 h4 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     letter-spacing: -0.0125rem;
 }
 
@@ -294,9 +302,8 @@ li a {
 
 p {
     font-size: 1.25rem;
-    color: hsl(200, 12%, 28%);
     letter-spacing: -0.015rem;
-    line-height: 1.4;
+    line-height: 1.75;
 }
 
 li a,
@@ -536,7 +543,7 @@ footer ul li a:hover>svg path {
 .gear_hero {
     background: hsl(210, 100%, 72%);
     background: linear-gradient(320deg, hsl(190, 100%, 64%), hsl(200, 100%, 94%));
-    margin-bottom: 0;
+    margin-bottom: 2rem;
 }
 
 .home_hero .text_container,
@@ -552,9 +559,42 @@ footer ul li a:hover>svg path {
     -webkit-transition: 0.1s all;
 }
 
+.gear_table_of_contents h2 {
+    margin-bottom: 2.5rem;
+}
+
+.gear_table_of_contents ol li {
+    margin-bottom: 1.25rem;
+}
+
+.gear_table_of_contents h5 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.indented_link {
+    padding-left: 1rem;
+}
+
+.large_indented_link {
+    padding-left: 2rem;
+}
+
+.gear_table_of_contents li a {
+    font-size: 1.125rem;
+}
+
+.gear_table_of_contents ol li,
+.gear_table_of_contents h5,
+.gear_table_of_contents li a {
+    line-height: 1;
+}
+
+
+.gear_table_of_contents,
 .gear_intro,
-.gear_section,
-.gear_category {
+.gear_section {
     margin: 0 auto;
     max-width: 1056px;
 }
@@ -564,7 +604,7 @@ footer ul li a:hover>svg path {
 }
 
 .gear_category {
-    margin: 3rem auto 0;
+    margin: 0 auto;
     padding: 1.5rem 2rem;
     line-height: 1;
     position: -webkit-sticky;
@@ -574,6 +614,7 @@ footer ul li a:hover>svg path {
     position: sticky;
     top: 0;
     z-index: 8;
+    max-width: none;
 }
 
 .gear_subcategory {
@@ -585,12 +626,24 @@ footer ul li a:hover>svg path {
 
 .gear_category h2 {
     color: hsl(200, 12%, 4%);
+    line-height: 1.25rem;
 }
 
+.gear_category h2,
+.gear_category h3 {
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.gear_table_of_contents,
 .gear_section {
     padding: 2rem;
     position: relative;
 }
+
+.gear_table_of_contents {
+    padding-top: 4rem;
+}   
 
 .gear_card_container {
     position: relative;
@@ -628,8 +681,10 @@ footer ul li a:hover>svg path {
     padding: 0 2rem;
 }
 
-.gear_hero h1 {
-    color: hsl(200, 24%, 16%)
+.gear_hero h1,
+.gear_table_of_contents,
+p {
+    color: hsl(200, 12%, 28%);
 }
 
 .gear_hero p {
@@ -846,7 +901,6 @@ footer ul li a:hover>svg path {
 
 .gear_card_text_container p {
     font-size: 0.875rem;
-    line-height: 1.375rem;
     margin-bottom: 0;
 }
 
@@ -917,7 +971,7 @@ footer ul li a:hover>svg path {
 }
 
 @media screen and (max-width: 760px) {
-    nav {
+    .site_navbar {
         background: hsl(200, 16%, 99%);
         position: fixed;
     }
@@ -1001,15 +1055,12 @@ footer ul li a:hover>svg path {
     body,
     html,
     main,
+    .gear_table_of_contents,
     .gear_category,
     section,
     footer ul li,
     .recent_work_image_container {
         background: hsl(200, 12%, 4%);
-    }
-
-    p {
-        color: hsl(200, 16%, 52%);
     }
 
     .gear_hero {
@@ -1021,11 +1072,13 @@ footer ul li a:hover>svg path {
         color: hsl(200, 16%, 88%);
     }
 
+    p,
+    .gear_table_of_contents,
     .gear_hero p {
         color: hsl(200, 16%, 64%);
     }
 
-    nav ul li a:hover::before {
+    .site_navbar ul li a:hover::before {
         background-color: hsla(200, 16%, 99%, 0.2);
     }
 
@@ -1060,10 +1113,10 @@ footer ul li a:hover>svg path {
         color: hsl(200, 12%, 4%);
     }
 
-    nav .active,
-    nav u li a:active,
-    nav .active:hover,
-    nav li a:hover,
+    .site_navbar .active,
+    .site_navbar u li a:active,
+    .site_navbar .active:hover,
+    .site_navbar li a:hover,
     li a:hover,
     h1,
     h3,
@@ -1079,7 +1132,6 @@ footer ul li a:hover>svg path {
     h2,
     .gear_intro h2 {
         color: hsl(200, 16%, 84%);
-        line-height: 1.25rem;
     }
 
     .hardware_gear h4 span:first-child,
@@ -1118,14 +1170,14 @@ footer ul li a:hover>svg path {
 }
 
 @media (prefers-color-scheme: dark) and (max-width: 760px) {
-    nav {
+    .site_navbar {
         background: hsl(200, 12%, 4%);
     }
 
 }
 
 @media screen and (max-width: 440px) {
-    nav {
+    .site_navbar {
         height: 4rem;
     }
 
@@ -1153,7 +1205,7 @@ footer ul li a:hover>svg path {
         height: 4rem;
     }
 
-    nav ul li a::before {
+    .site_navbar ul li a::before {
         top: -1.75rem;
     }
 
