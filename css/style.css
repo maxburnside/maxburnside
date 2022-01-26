@@ -354,7 +354,7 @@ ul li {
 .home_recent_work {
     width: 100%;
     max-width: 1056px;
-    padding: 0 2rem;
+    padding: 2.5rem 2rem 0;
     display: flex;
     position: relative;
     flex-direction: column;
