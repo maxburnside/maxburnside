@@ -543,7 +543,8 @@ footer ul li a:hover>svg path {
 .gear_hero {
     background: hsl(210, 100%, 72%);
     background: linear-gradient(320deg, hsl(190, 100%, 64%), hsl(200, 100%, 94%));
-    /*margin-bottom: 2rem;*/
+    /*comment this out after adding in table of contents*/
+    margin-bottom: 2rem;
 }
 
 .home_hero .text_container,
