@@ -354,7 +354,7 @@ ul li {
 .home_recent_work {
     width: 100%;
     max-width: 1056px;
-    padding: 0 2rem;
+    padding: 2.5rem 2rem 0;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -461,8 +461,8 @@ footer ul li a {
     transform: translateX(-50%);
     padding: 5px 6px;
     border-radius: 4px;
-    color: hsl(200, 16%, 88%);
-    text-shadow: 0 1px 0 hsla(200, 16%, 6%, 0.25);
+    color: hsl(200, 16%, 98%);
+    text-shadow: 0 1px 0 hsla(200, 16%, 6%, 0.15);
     font-size: 0.875rem;
     line-height: 1;
     transition: 0.1s all;
@@ -543,6 +543,7 @@ footer ul li a:hover>svg path {
 .gear_hero {
     background: hsl(210, 100%, 72%);
     background: linear-gradient(320deg, hsl(190, 100%, 64%), hsl(200, 100%, 94%));
+    /*comment this out after adding in table of contents*/
     margin-bottom: 2rem;
 }
 
@@ -642,7 +643,7 @@ footer ul li a:hover>svg path {
 }
 
 .gear_table_of_contents {
-    padding-top: 4rem;
+    padding-top: 3rem;
 }   
 
 .gear_card_container {
@@ -670,8 +671,7 @@ footer ul li a:hover>svg path {
     margin-bottom: 2rem;
 }
 
-.home_hero h1,
-.gear_hero h1 {
+h1 {
     line-height: 1.25;
 }
 
@@ -681,14 +681,14 @@ footer ul li a:hover>svg path {
     padding: 0 2rem;
 }
 
-.gear_hero h1,
+h1,
 .gear_table_of_contents,
 p {
-    color: hsl(200, 12%, 28%);
+    color: hsl(200, 12%, 8%);
 }
 
 .gear_hero p {
-    color: hsl(200, 24%, 36%)
+    color: hsl(200, 24%, 24%)
 }
 
 .gear_card_container {
@@ -1063,12 +1063,26 @@ p {
         background: hsl(200, 12%, 4%);
     }
 
+    .site_navbar .active,
+    .site_navbar u li a:active,
+    .site_navbar .active:hover,
+    .site_navbar li a:hover,
+    li a:hover,
+    h3,
+    h4,
+    .home_hero_link:hover span,
+    .external_link:hover span,
+    p span {
+        color: hsl(200, 16%, 88%);
+        text-decoration: none;
+    }
+
     .gear_hero {
         background: hsl(220, 100%, 24%);
         background: linear-gradient(160deg, hsl(210, 100%, 12%) 0%, hsl(230, 100%, 28%) 100%);
     }
 
-    .gear_hero h1 {
+    h1 {
         color: hsl(200, 16%, 88%);
     }
 
@@ -1111,21 +1125,6 @@ p {
     ::-moz-selection {
         background: hsl(200, 16%, 88%);
         color: hsl(200, 12%, 4%);
-    }
-
-    .site_navbar .active,
-    .site_navbar u li a:active,
-    .site_navbar .active:hover,
-    .site_navbar li a:hover,
-    li a:hover,
-    h1,
-    h3,
-    h4,
-    .home_hero_link:hover span,
-    .external_link:hover span,
-    p span {
-        color: hsl(200, 16%, 88%);
-        text-decoration: none;
     }
 
     .gear_category h2,
