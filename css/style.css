@@ -646,7 +646,7 @@ footer ul li a:hover>svg path {
 .gear_subcategory {
     top: 48px;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 0 2rem 1rem;
     line-height: 1;
 }
 
@@ -695,11 +695,6 @@ footer ul li a:hover>svg path {
     margin-bottom: 0.75rem;
 }
 
-.gear_section p {
-    font-size: 1.125rem;
-    margin-bottom: 2rem;
-}
-
 h1 {
     line-height: 1.25;
 }
@@ -723,6 +718,12 @@ p {
 .gear_card_container {
     display: inline-flex;
     flex-wrap: wrap;
+}
+
+.gear_section p {
+    font-size: 1.0625rem;
+/*    line-height: 1.4375;*/
+    margin-bottom: 2rem;
 }
 
 .gear_card {
@@ -878,7 +879,8 @@ p {
 }
 
 .home_hero_link::after,
-.gear_card_title_container a::after {
+.gear_card_title_container a::after,
+.external_link::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd' stroke-linejoin='round'%3E%3Cpath stroke='%230A5CFF' stroke-width='2' d='M9 8v3H1V3h3'%3E%3C/path%3E%3Cpath stroke='%230A5CFF' stroke-width='2' d='M6 1h5v5'%3E%3C/path%3E%3Cpath stroke='%230A5CFF' stroke-width='2' d='M11 1L5 7'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
@@ -981,7 +983,7 @@ p {
 }
 
 .gear_disclaimer {
-    margin: -8rem auto 4rem;
+    margin: -6rem auto 4rem;
     padding-top: 16rem;
     padding-bottom: 0;
     position: relative;
