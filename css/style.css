@@ -583,27 +583,11 @@ footer ul li a:hover>svg path {
     letter-spacing: 0.375rem;
 }
 
-.toc_item,
-.toc_item_hardware,
-.toc_item_computers,
-.toc_item_accessories,
-.toc_item_design,
-.toc_item_applications,
-.toc_item_plugins,
-.toc_item_development,
-.toc_item_services {
+.toc_item {
     position: relative;
 }
 
-.toc_item::before,
-.toc_item_hardware::before,
-.toc_item_computers::before,
-.toc_item_accessories::before,
-.toc_item_design::before,
-.toc_item_applications::before,
-.toc_item_plugins::before,
-.toc_item_development::before,
-.toc_item_services::before {
+.toc_item::before {
     content: '';
     position: absolute;
     left: 1rem;
@@ -627,7 +611,7 @@ footer ul li a:hover>svg path {
 }
 
 .toc_item_design::before {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg%3E%3Cpath fill='%230A5CFF' fill-rule='evenodd' d='M16 4h-4a4 4 0 0 1-4-4h4a4 4 0 0 1 4 4zm-4 12v-4a4 4 0 0 1 4-4v4a4 4 0 0 1-4 4zM0 12h4a4 4 0 0 1 4 4H4a4 4 0 0 1-4-4zM4 0v4a4 4 0 0 1-4 4V4a4 4 0 0 1 4-4z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");    
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg%3E%3Cpath fill='%230A5CFF' fill-rule='evenodd' d='M16 4h-4a4 4 0 0 1-4-4h4a4 4 0 0 1 4 4zm-4 12v-4a4 4 0 0 1 4-4v4a4 4 0 0 1-4 4zM0 12h4a4 4 0 0 1 4 4H4a4 4 0 0 1-4-4zM4 0v4a4 4 0 0 1-4 4V4a4 4 0 0 1 4-4z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
 }
 
 .toc_item_applications::before {
@@ -652,11 +636,16 @@ footer ul li a:hover>svg path {
     left: 2.75rem;
 }
 
-.indented_link {
+.toc_item_computers,
+.toc_item_accessories,
+.toc_item_design,
+.toc_item_development {
     padding-left: 2.75rem;
 }
 
-.large_indented_link {
+.toc_item_applications,
+.toc_item_plugins,
+.toc_item_services {
     padding-left: 4.5rem;
 }
 
@@ -725,7 +714,7 @@ footer ul li a:hover>svg path {
 .gear_table_of_contents {
     padding-top: 3rem;
     line-height: 1;
-}   
+}
 
 .gear_card_container {
     position: relative;
@@ -774,7 +763,7 @@ p {
 
 .gear_section p {
     font-size: 1.0625rem;
-/*    line-height: 1.4375;*/
+    /*    line-height: 1.4375;*/
     margin-bottom: 2rem;
 }
 
@@ -947,11 +936,11 @@ p {
 }
 
 .email_link::after {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd' stroke-linejoin='round'%3E%3Cpath stroke='%230A5CFF' stroke-width='2' d='M6 7l5-3v7H1V4z'%3E%3C/path%3E%3Cpath stroke='%230A5CFF' stroke-width='2' d='M11 4V1H1v3'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");    
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd' stroke-linejoin='round'%3E%3Cpath stroke='%230A5CFF' stroke-width='2' d='M6 7l5-3v7H1V4z'%3E%3C/path%3E%3Cpath stroke='%230A5CFF' stroke-width='2' d='M11 4V1H1v3'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .return_to_top_link::after {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd' stroke-linejoin='round'%3E%3Cpath stroke='%230A5CFF' stroke-width='2' d='M1 6l5-5 5 5'%3E%3C/path%3E%3Cpath stroke='%230A5CFF' stroke-width='2' d='M6 1v11'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");    
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd' stroke-linejoin='round'%3E%3Cpath stroke='%230A5CFF' stroke-width='2' d='M1 6l5-5 5 5'%3E%3C/path%3E%3Cpath stroke='%230A5CFF' stroke-width='2' d='M6 1v11'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     top: 0.25rem;
     right: 0.25rem;
 }
