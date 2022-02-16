@@ -355,7 +355,7 @@ ul li {
 .home_recent_work {
     width: 100%;
     max-width: 1056px;
-    padding: 2.5rem 2rem 0;
+    padding: 5rem 2rem 0;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -536,7 +536,7 @@ footer ul li a:hover>svg path {
     position: relative;
     width: 100%;
     padding: 0;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 160px);
     min-height: 480px;
     max-height: 720px;
 }
@@ -675,9 +675,14 @@ footer ul li a:hover>svg path {
     padding: 8rem 2rem 0;
 }
 
+.gear_description {
+    font-size: 0.875rem;
+    line-height: 1.375;
+}
+
 .gear_category {
     margin: 0 auto;
-    padding: 1.5rem 2rem;
+    padding: 1rem 2rem 1.5rem;
     line-height: 1;
     position: -webkit-sticky;
     position: -moz-sticky;
@@ -690,7 +695,7 @@ footer ul li a:hover>svg path {
 }
 
 .gear_subcategory {
-    top: 48px;
+    top: 40px;
     margin: 0 auto;
     padding: 0 2rem 1rem;
     line-height: 1;
@@ -717,7 +722,7 @@ footer ul li a:hover>svg path {
 }
 
 .gear_table_of_contents {
-    padding-top: 3rem;
+    padding-top: 5.5rem;
     line-height: 1rem;
 }
 
@@ -1067,7 +1072,12 @@ p {
 @media screen and (max-width: 760px) {
     .site_navbar {
         background: hsl(200, 16%, 99%);
+        height: 5rem;
         position: fixed;
+    }
+
+    .site_navbar ul li a::before {
+        top: -1.625rem;
     }
 
     .home_recent_work,
@@ -1076,12 +1086,12 @@ p {
     }
 
     .gear_category {
-        top: 6rem;
+        top: 5rem;
         padding: 0.875rem 2rem 0.5rem;
     }
 
     .gear_subcategory {
-        top: 7.5rem;
+        top: 6.5rem;
         padding: 1rem 2rem 0.75rem;
         z-index: 6;
     }
@@ -1101,7 +1111,7 @@ p {
 
     .home_main,
     .gear_main {
-        margin: 3rem 0;
+        margin: 5rem 0;
         top: 0;
     }
 
@@ -1297,7 +1307,7 @@ p {
     }
 
     .gear_subcategory {
-        top: 6.5rem;
+        top: 5.375rem;
     }
 
     .inner_nav_container a {
@@ -1414,11 +1424,3 @@ p {
         right: 1rem;
     }
 }
-
-/*.gear_category {
-    background: orange;
-}
-
-.gear_subcategory {
-    background: blue;
-}*/
