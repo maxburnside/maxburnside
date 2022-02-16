@@ -570,20 +570,22 @@ footer ul li a:hover>svg path {
     border-left: 0.25rem solid hsla(200, 16%, 50%, 0.12);
 }
 
-.gear_table_of_contents ol a,
 .gear_table_of_contents ol li,
-.gear_table_of_contents ol h5 {
-    margin-bottom: 1.25rem;
+.gear_table_of_contents ol li a,
+.gear_table_of_contents ol h5,
+.gear_table_of_contents a {
+    font-size: 1rem;
 }
 
+.gear_table_of_contents ol li,
+.gear_table_of_contents ol h5,
 .gear_table_of_contents ol h6 {
-    margin-top: 2.25rem;
     margin-bottom: 1.25rem;
 }
 
 .gear_table_of_contents h6 {
-    margin-bottom: 1rem;
     font-size: 0.75rem;
+    margin-top: 2.25rem;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.375rem;
@@ -656,14 +658,9 @@ footer ul li a:hover>svg path {
     padding-left: 4.5rem;
 }
 
-.gear_table_of_contents li a {
-    font-size: 1.125rem;
-}
-
 .gear_table_of_contents ol li,
-.gear_table_of_contents h5,
+.gear_table_of_contents ol h5,
 .gear_table_of_contents h6 {
-    line-height: 1rem;
     display: flex;
 }
 
@@ -721,7 +718,7 @@ footer ul li a:hover>svg path {
 
 .gear_table_of_contents {
     padding-top: 3rem;
-    line-height: 1;
+    line-height: 1rem;
 }
 
 .gear_card_container {
@@ -1236,7 +1233,7 @@ p {
     }
 
     .gear_table_of_contents ol {
-        border-left: 0.25rem solid hsla(200, 16%, 50%, 0.22);
+        border-left: 0.125rem solid hsla(200, 16%, 50%, 0.22);
     }
 
     .gear_table_of_contents ol h5 {
