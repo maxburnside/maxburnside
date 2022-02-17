@@ -822,8 +822,7 @@ p {
 }
 
 .recent_work_image_container a,
-.gear_card figure,
-.gear_card img {
+.gear_card figure,.gear_card img {
     transition: 0.2s all;
     -webkit-transition: 0.2s all;
 }
