@@ -565,9 +565,9 @@ footer ul li a:hover>svg path {
     margin-bottom: 2.5rem;
 }
 
-.gear_table_of_contents ol {
-    padding-left: 1.25rem;
-    border-left: 0.25rem solid hsla(200, 16%, 50%, 0.12);
+.gear_table_of_contents ol li {
+    /*padding-left: 1.25rem;*/
+    /*border-left: 0.25rem solid hsla(200, 16%, 50%, 0.12);*/
 }
 
 .gear_table_of_contents ol li,
@@ -1034,8 +1034,8 @@ p {
 }
 
 .gear_disclaimer {
-    margin: -6rem auto 4rem;
-    padding-top: 20rem;
+    margin: -8rem auto 4rem;
+    padding-top: 22rem;
     padding-bottom: 0;
     position: relative;
     z-index: 8;
@@ -1242,8 +1242,8 @@ p {
         color: hsl(200, 16%, 84%);
     }
 
-    .gear_table_of_contents ol {
-        border-left: 0.125rem solid hsla(200, 16%, 50%, 0.22);
+    .gear_table_of_contents ol li {
+        /*border-left: 0.125rem solid hsla(200, 16%, 50%, 0.22);*/
     }
 
     .gear_table_of_contents ol h5 {
