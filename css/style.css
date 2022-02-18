@@ -22,6 +22,7 @@ main,
 .gear_table_of_contents,
 .gear_category,
 .gear_subcategory,
+.new_availability_container,
 .category_tag,
 section,
 footer ul li,
@@ -216,6 +217,7 @@ a {
 
 .site_navbar .active,
 .site_navbar u li a:active,
+.new_availability_container,
 .category_tag {
     color: hsl(200, 12%, 4%);
 }
@@ -797,15 +799,36 @@ p {
     position: relative;
 }
 
+.new_availability_container {
+    left: 0.75rem;
+}
+
 .category_tag {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  z-index: 4;
-  line-height: 1;
-  font-size: 0.75rem;
-  padding: 0.25rem 0.375rem;
-  border-radius: 4px;
+    right: 0.75rem;
+}
+
+.new_availability_container,
+.category_tag {
+    position: absolute;
+    top: 0.75rem;
+    z-index: 4;
+    line-height: 1;
+    font-size: 0.75rem;
+    padding: 0.375rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.new_availability_container {
+    display: inline-flex;
+    align-items: center;
+}
+
+.new_availability_container img {
+    background: transparent;
+}
+
+.new_availability_container img:not(:last-child) {
+    margin-right: 0.5rem;
 }
 
 .gear_card:nth-child(odd) {
@@ -819,10 +842,12 @@ p {
     height: 100%;
     margin: 0;
     padding: 0;
+    border-radius: 1.25rem;
 }
 
 .recent_work_image_container a,
-.gear_card figure,.gear_card img {
+.gear_card figure,
+.gear_card img {
     transition: 0.2s all;
     -webkit-transition: 0.2s all;
 }
@@ -835,6 +860,7 @@ p {
     transition: 0.1s all;
     -webkit-transition: 0.1s all;
     box-shadow: 0 12px 48px 0 hsla(200, 16%, 6%, 0.16), 0 4px 16px 0 hsla(200, 16%, 6%, 0.04);
+    border-radius: 2.5rem;
 }
 
 .gear_card_title_container {
@@ -1191,6 +1217,7 @@ p {
     .gear_table_of_contents,
     .gear_category,
     .gear_subcategory,
+    .new_availability_container,
     .category_tag,
     section,
     footer ul li,
@@ -1205,6 +1232,7 @@ p {
     li a:hover,
     h4,
     h5,
+    .new_availability_container,
     .category_tag,
     .home_hero_link:hover span,
     .external_link:hover span,
