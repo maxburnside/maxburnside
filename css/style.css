@@ -22,7 +22,7 @@ main,
 .gear_table_of_contents,
 .gear_category,
 .gear_subcategory,
-.new_availability_container,
+.availability_container,
 .category_tag,
 section,
 footer ul li,
@@ -217,7 +217,7 @@ a {
 
 .site_navbar .active,
 .site_navbar u li a:active,
-.new_availability_container,
+.availability_container,
 .category_tag {
     color: hsl(200, 12%, 4%);
 }
@@ -799,7 +799,7 @@ p {
     position: relative;
 }
 
-.new_availability_container {
+.availability_container {
     left: 0.75rem;
 }
 
@@ -807,7 +807,7 @@ p {
     right: 0.75rem;
 }
 
-.new_availability_container,
+.availability_container,
 .category_tag {
     position: absolute;
     top: 0.75rem;
@@ -818,16 +818,16 @@ p {
     border-radius: 0.5rem;
 }
 
-.new_availability_container {
+.availability_container {
     display: inline-flex;
     align-items: center;
 }
 
-.new_availability_container img {
+.availability_container img {
     background: transparent;
 }
 
-.new_availability_container img:not(:last-child) {
+.availability_container img:not(:last-child) {
     margin-right: 0.5rem;
 }
 
@@ -881,23 +881,11 @@ p {
     line-height: 1;
 }
 
-.software_name ul,
-.software_availability_container {
+.software_name ul {
     display: inline-flex;
     align-items: center;
     line-height: 1;
     height: 0.75rem;
-}
-
-.software_availability_container {
-    margin-bottom: 0.625rem;
-}
-
-.software_availability_container ul li img,
-.software_availability_container ul li svg {
-    height: 12px;
-    width: 12px;
-    position: absolute;
 }
 
 .software_name ul li {
@@ -1214,7 +1202,7 @@ p {
     .gear_table_of_contents,
     .gear_category,
     .gear_subcategory,
-    .new_availability_container,
+    .availability_container,
     .category_tag,
     section,
     footer ul li,
@@ -1229,7 +1217,7 @@ p {
     li a:hover,
     h4,
     h5,
-    .new_availability_container,
+    .availability_container,
     .category_tag,
     .home_hero_link:hover span,
     .external_link:hover span,
