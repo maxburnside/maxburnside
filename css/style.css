@@ -835,9 +835,7 @@ p {
     margin-right: 2rem;
 }
 
-.gear_card figure,
-.gear_card figure svg,
-.gear_card img {
+.gear_card_illustration_image {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -853,8 +851,7 @@ p {
 }
 
 .recent_work_image_container a:hover img,
-.gear_card a:hover figure,
-.gear_card a:hover img {
+.gear_card a:hover .gear_card_illustration_image {
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
     transition: 0.25s scale 0.025s border;
@@ -1200,8 +1197,7 @@ p {
     }
 
     .recent_work_image_container a:hover img,
-    .gear_card a:hover figure,
-    .gear_card a:hover img {
+    .gear_card a:hover .gear_card_illustration_image {
         transform: none;
         -webkit-transform: none;
         border-radius: 1.25rem;
