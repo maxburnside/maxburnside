@@ -801,10 +801,12 @@ p {
 
 .availability_container {
     left: 0.75rem;
+    padding: 0.375rem;
 }
 
 .category_tag {
     right: 0.75rem;
+    padding: 0.375rem 0.5rem;
 }
 
 .availability_container,
@@ -814,7 +816,6 @@ p {
     z-index: 4;
     line-height: 1;
     font-size: 0.75rem;
-    padding: 0.375rem 0.5rem;
     border-radius: 0.5rem;
 }
 
