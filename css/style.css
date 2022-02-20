@@ -857,8 +857,8 @@ p {
 .gear_card a:hover img {
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
-    transition: 0.1s all;
-    -webkit-transition: 0.1s all;
+    transition: 0.25s scale 0.025s border;
+    -webkit-transition: 0.25s scale 0.025s border;
     box-shadow: 0 12px 48px 0 hsla(200, 16%, 6%, 0.16), 0 4px 16px 0 hsla(200, 16%, 6%, 0.04);
     border-radius: 2.5rem;
 }
@@ -1204,6 +1204,7 @@ p {
     .gear_card a:hover img {
         transform: none;
         -webkit-transform: none;
+        border-radius: 1.25rem;
     }
 }
 
