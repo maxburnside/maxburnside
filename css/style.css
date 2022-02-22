@@ -794,7 +794,7 @@ p {
 .gear_card {
     display: flex;
     flex-direction: column;
-    margin: 0 0 4rem 0;
+    margin: 0 0 6rem 0;
     width: 480px;
     position: relative;
 }
@@ -855,10 +855,10 @@ p {
 .gear_card a:hover .gear_card_illustration_image {
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
-    transition: 0.25s scale 0.025s border;
-    -webkit-transition: 0.25s scale 0.025s border;
+    transition: 0.25s all;
+    -webkit-transition: 0.25s all;
     box-shadow: 0 12px 48px 0 hsla(200, 16%, 6%, 0.16), 0 4px 16px 0 hsla(200, 16%, 6%, 0.04);
-    border-radius: 2.5rem;
+/*    border-radius: 2.5rem;*/
 }
 
 .gear_card_title_container {
