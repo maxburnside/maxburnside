@@ -735,6 +735,10 @@ footer ul li a:hover>svg path {
     position: relative;
 }
 
+.gear_section {
+    padding-top: 4rem;
+}
+
 .gear_table_of_contents {
     padding-top: 5.5rem;
     line-height: 1rem;
