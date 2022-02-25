@@ -800,6 +800,7 @@ p {
     margin: 0 0 6rem 0;
     width: 480px;
     position: relative;
+    z-index: 3;
 }
 
 .availability_container {
@@ -837,6 +838,7 @@ p {
 
 .gear_card:nth-child(odd) {
     margin-right: 2rem;
+    z-index: 2;
 }
 
 .gear_card_illustration_image,
