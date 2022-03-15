@@ -539,15 +539,13 @@ footer ul li a:hover>svg path {
     width: 100%;
     padding: 0;
     height: calc(100vh - 160px);
-    min-height: 480px;
+    min-height: 320px;
     max-height: 720px;
 }
 
 .gear_hero {
     background: hsl(210, 100%, 72%);
     background: linear-gradient(320deg, hsl(190, 100%, 64%), hsl(200, 100%, 94%));
-    /*comment this out after adding in table of contents*/
-    /*margin-bottom: 2rem;*/
 }
 
 .home_hero .text_container,
