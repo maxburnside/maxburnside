@@ -432,7 +432,7 @@ footer ul li {
 }
 
 footer ul li:not(:first-child) {
-    margin: 0 0 0 8px;
+    margin: 0 0 0 0.5rem;
 }
 
 .footer_icon_dribbble {
@@ -1503,6 +1503,10 @@ p {
 
     footer {
         bottom: 1rem;
-        right: 1rem;
+        right: 0.5rem;
+    }
+
+    footer ul li:not(:first-child) {
+        margin: 0 0 0 0.75rem;
     }
 }
