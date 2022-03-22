@@ -216,7 +216,7 @@ a {
 }
 
 .site_navbar .active::before {
-    background-color: hsl(230, 100%, 56%);
+    background-color: hsl(204, 100%, 50%);
 }
 
 .site_navbar ul li a:hover::before {
@@ -230,7 +230,7 @@ a {
 }
 
 .site_navbar .active:hover::before {
-    background-color: hsl(230, 100%, 56%);
+    background-color: hsl(204, 100%, 50%);
 }
 
 .nav_logo {
@@ -269,7 +269,7 @@ a {
 
 h1 {
     clear: both;
-    color: hsl(200, 12%, 4%);
+    color: hsl(200, 12%, 8%);
     letter-spacing: 0.0125rem;
     line-height: 4rem;
     font-weight: 900;
@@ -283,8 +283,9 @@ h2 {
 
 
 h4 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     letter-spacing: -0.0125rem;
+    line-height: 1.25rem;
 }
 
 h5 {
@@ -309,7 +310,7 @@ p {
 
 li a,
 .home_hero_link {
-    color: hsl(230, 100%, 56%);
+    color: hsl(204, 100%, 50%);
 }
 
 li a:hover,
@@ -348,7 +349,9 @@ ul li {
 .home_hero_link:hover,
 .external_link:hover,
 .gear_card_title_container a:hover,
-.gear_card_text_container a:hover {
+.gear_card_text_container a:hover,
+.gear_subcategory a:hover,
+.return_to_top_link:hover {
     color: hsl(200, 12%, 4%);
 }
 
@@ -407,13 +410,23 @@ ul li {
 }
 
 footer {
-    position: fixed;
+    position: relative;
     z-index: 9;
-    right: 1.5rem;
-    bottom: 1.5rem;
+    left: 0;
+    bottom: 0;
     padding: 0;
+    width: 100%;
     margin: 0;
+    height: 128px;
+}
+
+.social_media_icons_container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 120px;
     height: 32px;
+    transform: translate(-50%, -50%);
 }
 
 footer ul {
@@ -582,11 +595,7 @@ footer ul li a:hover>svg path {
 }
 
 .gear_table_of_contents h6 {
-    font-size: 0.75rem;
     margin-top: 2.25rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.375rem;
 }
 
 .toc_item {
@@ -702,21 +711,16 @@ footer ul li a:hover>svg path {
     z-index: 7;
 }
 
-.gear_subcategory span {
-    background: lightblue;
-    color: blue;
-    padding: 0.25rem 0.375rem;
-    line-height: 1;
-    font-size: 0.875rem;
-    border-radius: 0.375rem;
+.gear_category h3,
+.gear_table_of_contents h6 {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 0.75rem;
+    letter-spacing: 0.25rem;
 }
 
 .gear_category h3 {
-    color: hsl(200, 12%, 4%);
-    line-height: 1rem;
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    letter-spacing: 0.375rem;
     margin: 0 auto;
 }
 
@@ -764,14 +768,52 @@ h1 {
     line-height: 1.25;
 }
 
-h1,
+.gear_category h3 {
+    color: hsl(200, 24%, 44%);
+}
+
+.gear_subcategory h4 {
+    color: hsl(200, 24%, 16%);
+}
+
+.gear_subcategory h4,
+.gear_subcategory a {
+    line-height: 0.75rem;
+}
+
+.gear_subcategory a {
+    position: relative;
+    padding-right: 0.75rem;
+    font-size: 0.75rem;
+    line-height: 0.5rem;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.gear_subcategory a::after {
+    content: '';
+    right: 0;
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd' stroke-linejoin='round'%3E%3Cpath stroke='%2309F' stroke-width='2' d='M1 4l3 3 3-3'%3E%3C/path%3E%3Cpath stroke='%2309F' stroke-width='2' d='M4 0v7'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");    
+}
+
+.gear_subcategory a:hover::after {
+    opacity: 1;
+}
+
 .gear_table_of_contents,
+.gear_card_text_container ul li,
 p {
-    color: hsl(200, 12%, 8%);
+    color: hsl(200, 16%, 32%);
 }
 
 .gear_hero p {
-    color: hsl(200, 24%, 24%)
+    color: hsl(200, 24%, 24%);
 }
 
 .gear_card_container {
@@ -936,15 +978,23 @@ p {
     text-decoration: none;
     line-height: 1;
     position: relative;
+}
+
+.external_link {
     padding-right: 1.25rem;
+}
+
+.return_to_top_link {
+    padding-right: 1.5rem;
 }
 
 .home_hero_link,
 .gear_card_title_container a,
 .gear_card_text_container a,
 .external_link,
-.return_to_top_link {
-    color: hsl(230, 100%, 56%);
+.return_to_top_link,
+.gear_subcategory a {
+    color: hsl(230, 100%, 50%);
 }
 
 .home_hero_link::after,
@@ -963,7 +1013,7 @@ p {
 .home_hero_link::after,
 .gear_card_title_container a::after,
 .external_link::after {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd' stroke-linejoin='round'%3E%3Cpath stroke='%230A5CFF' stroke-width='2' d='M9 8v3H1V3h3'%3E%3C/path%3E%3Cpath stroke='%230A5CFF' stroke-width='2' d='M6 1h5v5'%3E%3C/path%3E%3Cpath stroke='%230A5CFF' stroke-width='2' d='M11 1L5 7'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd' stroke-linejoin='round'%3E%3Cpath stroke='%230099FF' stroke-width='2' d='M9 8v3H1V3h3'%3E%3C/path%3E%3Cpath stroke='%230099FF' stroke-width='2' d='M6 1h5v5'%3E%3C/path%3E%3Cpath stroke='%230099FF' stroke-width='2' d='M11 1L5 7'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .home_hero_link::after {
@@ -977,11 +1027,11 @@ p {
 }
 
 .email_link::after {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd' stroke-linejoin='round'%3E%3Cpath stroke='%230A5CFF' stroke-width='2' d='M6 7l5-3v7H1V4z'%3E%3C/path%3E%3Cpath stroke='%230A5CFF' stroke-width='2' d='M11 4V1H1v3'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd' stroke-linejoin='round'%3E%3Cpath stroke='%230099FF' stroke-width='2' d='M6 7l5-3v7H1V4z'%3E%3C/path%3E%3Cpath stroke='%230099FF' stroke-width='2' d='M11 4V1H1v3'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .return_to_top_link::after {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd' stroke-linejoin='round'%3E%3Cpath stroke='%230A5CFF' stroke-width='2' d='M1 6l5-5 5 5'%3E%3C/path%3E%3Cpath stroke='%230A5CFF' stroke-width='2' d='M6 1v11'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd' stroke-linejoin='round'%3E%3Cpath stroke='%230099FF' stroke-width='2' d='M1 6l5-5 5 5'%3E%3C/path%3E%3Cpath stroke='%230099FF' stroke-width='2' d='M6 1v11'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     top: 0.25rem;
     right: 0.25rem;
 }
@@ -1060,7 +1110,7 @@ p {
     top: 0.375rem;
     width: 0.5rem;
     height: 0.5rem;
-    background-color: hsla(200, 100%, 50%, 0.5);
+    background-color: hsla(200, 24%, 50%, 0.4);
     border-radius: 0.25rem;
 }
 
@@ -1148,7 +1198,7 @@ p {
 
     .home_main,
     .gear_main {
-        margin: 5rem 0;
+        margin: 5rem 0 0;
         top: 0;
     }
 
@@ -1217,6 +1267,11 @@ p {
         background: hsl(200, 12%, 4%);
     }
 
+    .gear_category h3,
+    .gear_subcategory h4,
+    .gear_table_of_contents,
+    .gear_card_text_container ul li,
+    p,
     .site_navbar .active,
     .site_navbar u li a:active,
     .site_navbar .active:hover,
@@ -1228,14 +1283,16 @@ p {
     .category_tag,
     .home_hero_link:hover span,
     .external_link:hover span,
+    .gear_subcategory a:hover,
+    .return_to_top_link:hover,
     p span {
         color: hsl(200, 16%, 88%);
         text-decoration: none;
     }
 
     .gear_hero {
-        background: hsl(220, 100%, 24%);
-        background: linear-gradient(160deg, hsl(210, 100%, 12%) 0%, hsl(230, 100%, 28%) 100%);
+        background: hsl(220, 100%, 20%);
+        background: linear-gradient(160deg, hsl(210, 100%, 8%) 0%, hsl(230, 100%, 24%) 100%);
     }
 
     h1 {
@@ -1244,8 +1301,9 @@ p {
 
     p,
     .gear_table_of_contents,
+    .gear_card_text_container ul li,
     .gear_hero p {
-        color: hsl(200, 16%, 64%);
+        color: hsl(200, 16%, 50%);
     }
 
     .site_navbar ul li a:hover::before {
@@ -1255,7 +1313,7 @@ p {
     li a,
     li a:focus,
     a {
-        color: hsl(230, 100%, 56%);
+        color: hsl(204, 100%, 50%);
         text-decoration: none;
     }
 
@@ -1269,18 +1327,27 @@ p {
     }
 
     ::selection {
-        background: hsl(200, 16%, 88%);
+        background: hsl(200, 16%, 96%);
         color: hsl(200, 12%, 4%);
     }
 
     a::selection {
-        background: hsl(230, 100%, 56%);
-        color: hsl(200, 16%, 88%);
+        background: hsl(204, 100%, 50%);
+        color: hsl(200, 16%, 96%);
     }
 
     ::-moz-selection {
-        background: hsl(200, 16%, 88%);
+        background: hsl(200, 16%, 96%);
         color: hsl(200, 12%, 4%);
+    }
+
+    .home_hero_link,
+    .gear_card_title_container a,
+    .gear_card_text_container a,
+    .external_link,
+    .return_to_top_link,
+    .gear_subcategory a {
+        color: hsl(204, 100%, 50%);
     }
 
     h2,
@@ -1293,18 +1360,18 @@ p {
     }
 
     .gear_category h3 {
-        color: hsl(200, 16%, 48%);
+        color: hsl(200, 16%, 40%);
     }
 
     .hardware_gear h5 span:first-child,
     .software_gear h5 span:first-child {
-        color: hsl(200, 16%, 64%);
+        color: hsl(200, 16%, 50%);
     }
 
     .gear_card_title_container h5,
     .hardware_gear h5 span:second-child,
     .software_gear h5 span:second-child {
-        color: hsl(200, 24%, 92%);
+        color: hsl(200, 24%, 88%);
     }
 
     .gear_card_text_container a {
@@ -1316,11 +1383,6 @@ p {
     .gear_card_title_container a:hover,
     .gear_card_text_container a:hover {
         color: hsl(200, 16%, 88%);
-    }
-
-    .gear_card_text_container p,
-    .gear_card_text_container ul {
-        color: hsl(200, 16%, 64%);
     }
 
     .mac_software_icon,
@@ -1395,12 +1457,26 @@ p {
 
     .gear_category {
         top: 3rem;
-        padding: 0.5rem 3rem;
+        padding: 0.25rem 3rem 0;
+    }
+
+    .gear_category h3 {
+        font-size: 0.625rem;
+        line-height: 0.5rem;
     }
 
     .gear_subcategory {
-        top: 4.375rem;
+        top: 3.75rem;
         padding: 0.5rem 1rem 0.75rem;
+        display: inline-flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    .gear_subcategory a {
+        display: block;
+        opacity: 1;
+        visibility: visible;
     }
 
     .home_hero {
@@ -1458,6 +1534,25 @@ p {
         margin-top: 0;
     }
 
+    .gear_card {
+        margin: 0 0 8rem;
+    }
+
+    .gear_card_illustration_image {
+        border-radius: 0;
+        width: calc(100% + 2rem) !important;
+        left: -1rem;
+        position: relative;
+    }
+
+    .availability_container {
+        left: 0;
+    }
+
+    .category_tag {
+        right: 0;
+    }
+
     .gear_card_text_container {
         margin-top: 1.125rem;
     }
@@ -1473,6 +1568,10 @@ p {
     .gear_card_text_container ul li::before {
         left: -1.125rem;
         top: 0.25rem;
+    }
+
+    .gear_card_title_container {
+        margin: 1rem 0 0 0;
     }
 
     .gear_card_title_container a {
@@ -1500,8 +1599,7 @@ p {
     }
 
     footer {
-        bottom: 1rem;
-        right: 0.5rem;
+        height: 64px;
     }
 
     footer ul li:not(:first-child) {
