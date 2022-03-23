@@ -694,7 +694,7 @@ footer ul li a:hover>svg path {
 
 .gear_subcategory {
     top: 40px;
-    padding: 0 2rem 1rem;
+    padding: 0.25rem 2rem 1rem;
 }
 
 .gear_category,
@@ -778,7 +778,7 @@ h1 {
 
 .gear_subcategory h4,
 .gear_subcategory a {
-    line-height: 0.75rem;
+    line-height: 1rem;
 }
 
 .gear_subcategory a {
