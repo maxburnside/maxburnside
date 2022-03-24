@@ -473,10 +473,10 @@ footer ul li a {
     visibility: hidden;
     position: absolute;
     background: inherit;
-    top: -36px;
+    top: -32px;
     left: 50%;
     transform: translateX(-50%);
-    padding: 5px 6px;
+    padding: 4px 8px;
     border-radius: 4px;
     color: hsl(200, 16%, 98%);
     text-shadow: 0 1px 0 hsla(200, 16%, 6%, 0.15);
