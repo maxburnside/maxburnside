@@ -1291,14 +1291,14 @@ p,
     }
 
     h1 {
-        color: hsl(200, 16%, 88%);
+        color: hsl(200, 16%, 92%);
     }
 
     p,
     .gear_table_of_contents,
     .gear_card_text_container ul li,
     .gear_hero p {
-        color: hsl(200, 16%, 64%);
+        color: hsl(200, 16%, 68%);
     }
 
     .site_navbar ul li a:hover::before {
