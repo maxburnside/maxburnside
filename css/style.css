@@ -683,7 +683,7 @@ footer ul li a:hover>svg path {
 
 .gear_description {
     font-size: 0.875rem;
-    line-height: 1.375;
+    line-height: 1.5;
 }
 
 .gear_category {
@@ -1514,12 +1514,12 @@ p,
         font-size: 1.125rem;
     }
 
-    p,
+/*    p,
     .gear_card_text_container p,
     .gear_card_text_container ul,
     .gear_disclaimer p {
         font-size: 0.875rem;
-    }
+    }*/
 
     .recent_work_image_container a:last-child {
         margin-bottom: 0.5rem;
