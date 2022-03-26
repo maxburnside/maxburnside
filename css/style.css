@@ -1119,9 +1119,9 @@ p,
     margin-bottom: 1.5rem;
 }
 
-.gear_disclaimer p {
+/*.gear_disclaimer p {
     font-size: 0.875rem;
-}
+}*/
 
 /*********************** END gear Page Desktop Styling ***********************/
 
@@ -1433,7 +1433,8 @@ p,
         padding: 0 1.5rem;
     }
 
-    .home_hero p, .gear_hero p {
+    .home_hero p,
+    .gear_hero p {
         font-size: 1.25rem;
         line-height: 1.5;
     }
@@ -1514,7 +1515,7 @@ p,
         font-size: 1.125rem;
     }
 
-/*    p,
+    /*    p,
     .gear_card_text_container p,
     .gear_card_text_container ul,
     .gear_disclaimer p {
