@@ -604,7 +604,7 @@ footer ul li a:hover>svg path {
 .toc_item::before {
     content: '';
     position: absolute;
-    left: 1rem;
+    left: 0.75rem;
     top: 0;
     z-index: 1;
     height: 16px;
@@ -649,13 +649,13 @@ footer ul li a:hover>svg path {
 .toc_item_accessories,
 .toc_item_design,
 .toc_item_development {
-    padding-left: 2.75rem;
+    padding-left: 2.5rem;
 }
 
 .toc_item_applications,
 .toc_item_plugins,
 .toc_item_services {
-    padding-left: 2.75rem;
+    padding-left: 2.5rem;
 }
 
 .gear_table_of_contents ol li,
@@ -1449,12 +1449,9 @@ p,
         -webkit-transform: none;
     }
 
+    .home_recent_work,
     .gear_table_of_contents {
         padding: 6rem 1.5rem 3rem;
-    }
-
-    .gear_table_of_contents ol {
-        padding: 0 1.5rem;
     }
 
     .gear_section {
@@ -1547,12 +1544,17 @@ p,
         position: relative;
     }
 
+    .availability_container,
+    .category_tag {
+        top: 1rem;
+    }
+
     .availability_container {
-        left: 0;
+        left: -0.5rem;
     }
 
     .category_tag {
-        right: 0;
+        right: -0.5rem;
     }
 
     .gear_card_text_container {
@@ -1588,10 +1590,6 @@ p,
     .gear_section {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
-    }
-
-    .home_recent_work {
-        padding: 3rem 1.5rem 1.5rem;
     }
 
     .gear_disclaimer {
