@@ -555,11 +555,6 @@ footer ul li a:hover>svg path {
         hsla(190, 100%, 84%, 0) 100%);
 }
 
-/*.gear_hero {
-    background: hsl(210, 100%, 80%);
-    background: linear-gradient(320deg, hsl(190, 100%, 72%), hsl(200, 100%, 96%));
-}*/
-
 .home_hero .text_container,
 .gear_hero .text_container {
     margin: 0 auto;
@@ -1119,10 +1114,6 @@ p,
     margin-bottom: 1.5rem;
 }
 
-.gear_disclaimer p {
-    font-size: 0.875rem;
-}
-
 /*********************** END gear Page Desktop Styling ***********************/
 
 @media screen and (max-width: 1056px) {
@@ -1278,11 +1269,6 @@ p,
         text-decoration: none;
     }
 
-    /*    .gear_hero {
-        background: hsl(220, 100%, 20%);
-        background: linear-gradient(160deg, hsl(210, 100%, 8%) 0%, hsl(230, 100%, 24%) 100%);
-    }*/
-
     .home_hero,
     .gear_hero {
         background: linear-gradient(hsla(226, 100%, 32%, 1) 0%,
@@ -1433,7 +1419,8 @@ p,
         padding: 0 1.5rem;
     }
 
-    .home_hero p, .gear_hero p {
+    .home_hero p,
+    .gear_hero p {
         font-size: 1.25rem;
         line-height: 1.5;
     }
@@ -1513,13 +1500,6 @@ p,
     h5 {
         font-size: 1.125rem;
     }
-
-/*    p,
-    .gear_card_text_container p,
-    .gear_card_text_container ul,
-    .gear_disclaimer p {
-        font-size: 0.875rem;
-    }*/
 
     .recent_work_image_container a:last-child {
         margin-bottom: 0.5rem;
