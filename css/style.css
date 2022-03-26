@@ -1422,7 +1422,10 @@ p,
     .home_hero p,
     .gear_hero p {
         font-size: 1.25rem;
-        line-height: 1.5;
+    }
+
+    p {
+        line-height: 1.625;
     }
 
     .recent_work_image_container a,
@@ -1552,7 +1555,20 @@ p,
     }
 
     .gear_card_title_container {
-        margin: 1rem 0 0 0;
+        margin: 1.25rem 0 0 0;
+    }
+
+    .home_hero_link,
+    .gear_card_title_container a,
+    .hardware_gear h5 span,
+    .software_gear h5 span {
+        line-height: 0.75rem;
+    }
+
+    .gear_card_title_container h5,
+    .hardware_gear .name,
+    .software_gear .name {
+        line-height: 1rem;
     }
 
     .gear_card_title_container a {
@@ -1560,7 +1576,11 @@ p,
     }
 
     .gear_card_title_container a::after {
-        top: 0.0625rem
+        top: 0;
+    }
+
+    .hardware_gear h5 span:first-child {
+        margin-bottom: 0.75rem;
     }
 
     .gear_category,
