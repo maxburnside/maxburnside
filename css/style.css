@@ -16,17 +16,11 @@ body {
 }
 
 body,
-html,
-nav,
-main,
-.gear_table_of_contents,
 .gear_category,
 .gear_subcategory,
 .availability_container,
 .category_tag,
-section,
-footer ul li,
-.recent_work_image_container {
+.gear_disclaimer {
     background: hsl(200, 16%, 99%);
 }
 
@@ -185,7 +179,7 @@ a {
 .site_navbar ul li a {
     position: relative;
     display: block;
-    font-size: 1.375rem;
+    font-size: 1.25rem;
     line-height: 0.75rem;
     padding: 0.5rem;
     border-radius: 0.25rem;
@@ -202,8 +196,8 @@ a {
     width: 5rem;
     left: 50%;
     transform: translateX(-50%);
-    height: 0.25rem;
-    border-radius: 0 0 0.125rem 0.125rem;
+    height: 0.375rem;
+    border-radius: 0 0 0.375rem 0.375rem;
     background-color: transparent;
     position: absolute;
 }
@@ -264,7 +258,7 @@ p {
     margin: 1.25rem 0 0 -0.125rem;
     padding: 0;
     max-width: 720px;
-    line-height: 1.375;
+    font-size: 1.5rem;
 }
 
 h1 {
@@ -553,14 +547,18 @@ footer ul li a:hover>svg path {
     width: 100%;
     padding: 0;
     height: calc(100vh - 160px);
-    min-height: 320px;
-    max-height: 720px;
+    min-height: 440px;
+    max-height: 760px;
+    background: linear-gradient(hsla(190, 100%, 84%, 1) 0%,
+        hsla(190, 100%, 84%, 0.72) 36%,
+        hsla(190, 100%, 84%, 0.60) 48%,
+        hsla(190, 100%, 84%, 0) 100%);
 }
 
-.gear_hero {
+/*.gear_hero {
     background: hsl(210, 100%, 80%);
     background: linear-gradient(320deg, hsl(190, 100%, 72%), hsl(200, 100%, 96%));
-}
+}*/
 
 .home_hero .text_container,
 .gear_hero .text_container {
@@ -1249,16 +1247,11 @@ p,
 @media (prefers-color-scheme: dark) {
 
     body,
-    html,
-    main,
-    .gear_table_of_contents,
     .gear_category,
     .gear_subcategory,
     .availability_container,
     .category_tag,
-    section,
-    footer ul li,
-    .recent_work_image_container {
+    .gear_disclaimer {
         background: hsl(200, 12%, 4%);
     }
 
@@ -1285,9 +1278,17 @@ p,
         text-decoration: none;
     }
 
-    .gear_hero {
+    /*    .gear_hero {
         background: hsl(220, 100%, 20%);
         background: linear-gradient(160deg, hsl(210, 100%, 8%) 0%, hsl(230, 100%, 24%) 100%);
+    }*/
+
+    .home_hero,
+    .gear_hero {
+        background: linear-gradient(hsla(226, 100%, 32%, 1) 0%,
+            hsla(226, 100%, 32%, 0.72) 36%,
+            hsla(226, 100%, 32%, 0.60) 48%,
+            hsla(226, 100%, 32%, 0) 100%);
     }
 
     h1 {
@@ -1343,6 +1344,10 @@ p,
     .return_to_top_link,
     .gear_subcategory a {
         color: hsl(204, 100%, 50%);
+    }
+
+    .return_to_top_link {
+        padding-right: 1.25rem;
     }
 
     h2,
@@ -1406,7 +1411,7 @@ p,
     }
 
     .inner_nav_container {
-        padding: 0 0.75rem 0 1rem;
+        padding: 0 1rem 0 1.5rem;
     }
 
     .site_navbar ul li a::before {
@@ -1418,9 +1423,19 @@ p,
         font-size: 1rem;
     }
 
+    .home_main,
+    .gear_main {
+        margin: 3rem 0 0;
+    }
+
     .home_hero .text_container,
     .gear_hero .text_container {
-        padding: 0 1rem;
+        padding: 0 1.5rem;
+    }
+
+    .home_hero p, .gear_hero p {
+        font-size: 1.25rem;
+        line-height: 1.5;
     }
 
     .recent_work_image_container a,
@@ -1435,15 +1450,15 @@ p,
     }
 
     .gear_table_of_contents {
-        padding: 6rem 1rem 3rem;
+        padding: 6rem 1.5rem 3rem;
     }
 
     .gear_table_of_contents ol {
-        padding: 0 1rem;
+        padding: 0 1.5rem;
     }
 
     .gear_section {
-        padding: 4rem 1rem 6rem;
+        padding: 4rem 1.5rem 6rem;
     }
 
     .gear_content {
@@ -1462,7 +1477,7 @@ p,
 
     .gear_subcategory {
         top: 3.75rem;
-        padding: 0.5rem 1rem 0.75rem;
+        padding: 0.5rem 1.5rem 0.75rem;
         display: inline-flex;
         align-items: baseline;
         justify-content: space-between;
@@ -1491,13 +1506,13 @@ p,
         font-size: 1.375rem;
     }
 
-    .home_hero_link,
-    .external_link,
     h4,
     main p {
         font-size: 1.25rem;
     }
 
+    .external_link,
+    .home_hero_link,
     h5 {
         font-size: 1.125rem;
     }
@@ -1527,8 +1542,8 @@ p,
 
     .gear_card_illustration_image {
         border-radius: 0;
-        width: calc(100% + 2rem) !important;
-        left: -1rem;
+        width: calc(100% + 3rem) !important;
+        left: -1.5rem;
         position: relative;
     }
 
@@ -1571,12 +1586,12 @@ p,
 
     .gear_category,
     .gear_section {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 
     .home_recent_work {
-        padding: 3rem 1rem 1.5rem;
+        padding: 3rem 1.5rem 1.5rem;
     }
 
     .gear_disclaimer {
