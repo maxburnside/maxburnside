@@ -579,17 +579,17 @@ footer ul li a:hover>svg path {
 .gear_table_of_contents ol li a,
 .gear_table_of_contents ol h5,
 .gear_table_of_contents a {
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 .gear_table_of_contents ol li:not(:last-child),
 .gear_table_of_contents ol h5,
 .gear_table_of_contents ol h6 {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.75rem;
 }
 
 .gear_table_of_contents h6 {
-    margin-top: 2.25rem;
+    margin-top: 2.5rem;
 }
 
 .toc_item {
@@ -1048,7 +1048,7 @@ p,
 
 .hardware_gear h5 span:first-child,
 .software_gear h5 span:first-child {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     color: hsl(200, 16%, 40%)
 }
 
@@ -1461,7 +1461,7 @@ p,
 
     .gear_subcategory {
         top: 3.75rem;
-        padding: 0.5rem 1.5rem 0.75rem;
+        padding: 0.75rem 1.5rem;
         display: inline-flex;
         align-items: baseline;
         justify-content: space-between;
@@ -1491,14 +1491,11 @@ p,
     }
 
     h4,
-    main p {
-        font-size: 1.25rem;
-    }
-
+    main p,
     .external_link,
     .home_hero_link,
     h5 {
-        font-size: 1.125rem;
+        font-size: 1.25rem;
     }
 
     .recent_work_image_container a:last-child {
