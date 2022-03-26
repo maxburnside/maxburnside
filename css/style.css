@@ -16,17 +16,8 @@ body {
 }
 
 body,
-html,
-nav,
-main,
-.gear_table_of_contents,
 .gear_category,
-.gear_subcategory,
-.availability_container,
-.category_tag,
-section,
-footer ul li,
-.recent_work_image_container {
+.gear_subcategory {
     background: hsl(200, 16%, 99%);
 }
 
@@ -185,7 +176,7 @@ a {
 .site_navbar ul li a {
     position: relative;
     display: block;
-    font-size: 1.375rem;
+    font-size: 1.25rem;
     line-height: 0.75rem;
     padding: 0.5rem;
     border-radius: 0.25rem;
@@ -264,7 +255,7 @@ p {
     margin: 1.25rem 0 0 -0.125rem;
     padding: 0;
     max-width: 720px;
-    line-height: 1.375;
+    font-size: 1.5rem;
 }
 
 h1 {
@@ -553,8 +544,8 @@ footer ul li a:hover>svg path {
     width: 100%;
     padding: 0;
     height: calc(100vh - 160px);
-    min-height: 320px;
-    max-height: 720px;
+    min-height: 440px;
+    max-height: 760px;
 }
 
 .gear_hero {
@@ -1249,16 +1240,8 @@ p,
 @media (prefers-color-scheme: dark) {
 
     body,
-    html,
-    main,
-    .gear_table_of_contents,
     .gear_category,
-    .gear_subcategory,
-    .availability_container,
-    .category_tag,
-    section,
-    footer ul li,
-    .recent_work_image_container {
+    .gear_subcategory {
         background: hsl(200, 12%, 4%);
     }
 
@@ -1288,6 +1271,27 @@ p,
     .gear_hero {
         background: hsl(220, 100%, 20%);
         background: linear-gradient(160deg, hsl(210, 100%, 8%) 0%, hsl(230, 100%, 24%) 100%);
+    }
+
+    .home_hero,
+    .gear_hero {
+        /*background-image: linear-gradient(180deg, hsla(200, 100%, 24%, 0.5) 0%, hsla(200, 8%, 8%, 0.1) 100%), linear-gradient(130deg, hsl(210, 100%, 16%) 0%, hsl(240, 100%, 4%) 96%);*/
+        /*background: radial-gradient(circle at 26% 10%, hsl(226, 100%, 32%), hsl(200, 100%, 3%));*/
+
+
+        /*background: rgb(0, 63, 255);
+        background: -moz-radial-gradient(circle at 20% 1%, rgba(0, 63, 255, 1) 30%, rgba(0, 4, 38, 1) 100%);
+        background: -webkit-radial-gradient(circle at 20% 1%, rgba(0, 63, 255, 1) 30%, rgba(0, 4, 38, 1) 100%);
+        background: radial-gradient(circle at 20% 1%, rgba(0, 63, 255, 1) 30%, rgba(0, 4, 38, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003fff", endColorstr="#000426", GradientType=1);*/
+
+        /*background: linear-gradient(180deg, hsla(200, 100%, 24%, 0.5) 0%, hsla(200, 8%, 8%, 0.1) 100%), linear-gradient(180deg, hsl(210, 100%, 16%) 0%, hsl(240, 100%, 4%) 96%);*/
+        /*background: linear-gradient(180deg, hsla(226, 100%, 32%, 0.75) 0%, hsla(200, 12%, 4%, 1) 100%);*/
+        /*background-blend-mode: overlay;*/
+        background: linear-gradient(hsla(226, 100%, 32%, 1) 0%,
+            hsla(226, 100%, 32%, 0.72) 36%,
+            hsla(226, 100%, 32%, 0.60) 48%,
+            hsla(226, 100%, 32%, 0) 100%);
     }
 
     h1 {
