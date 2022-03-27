@@ -1474,7 +1474,10 @@ p,
         margin: 3rem 0 0;
     }
 
-    .home_hero .text_container,
+    .home_hero .text_container {
+        padding: 4rem 1.5rem 0;
+    }
+    
     .gear_hero .text_container {
         padding: 0 1.5rem;
     }
@@ -1623,6 +1626,10 @@ p,
     .hardware_gear h5 span,
     .software_gear h5 span {
         line-height: 0.75rem;
+    }
+
+    .home_hero_link::after {
+        bottom: -0.125rem;
     }
 
     .gear_card_title_container h5,
