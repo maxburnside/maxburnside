@@ -1517,12 +1517,6 @@ p,
         margin-bottom: 2rem;
     }
 
-    .recent_work_image_container a:hover .recent_work_image,
-    .gear_card a:hover .gear_card_illustration_image {
-        transform: none;
-        -webkit-transform: none;
-    }
-
     .home_recent_work,
     .gear_table_of_contents {
         padding: 6rem 1.5rem 3rem;
@@ -1601,7 +1595,9 @@ p,
         margin: 0 0 8rem;
     }
 
-    .gear_card_illustration_image {
+    /*********************** START previously-used full-width Gear Card Mobile Styling ***********************/
+
+    /*    .gear_card_illustration_image {
         border-radius: 0;
         width: calc(100% + 3rem) !important;
         left: -1.5rem;
@@ -1619,7 +1615,9 @@ p,
 
     .category_tag {
         right: -0.5rem;
-    }
+    }*/
+
+    /*********************** END previously-used full-width Gear Card Mobile Styling ***********************/
 
     .gear_card_text_container {
         margin-top: 1.125rem;
