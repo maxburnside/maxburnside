@@ -413,16 +413,10 @@ footer {
     padding: 0;
     width: 100%;
     margin: 0;
-    height: 128px;
-}
-
-.social_media_icons_container {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 120px;
-    height: 32px;
-    transform: translate(-50%, -50%);
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 footer ul {
@@ -433,33 +427,26 @@ footer ul {
 }
 
 footer ul li {
-    padding: 8px;
-    border-radius: 16px;
+    padding: 0.5rem;
+    border-radius: 0.75rem;
+    position: relative;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    height: 3rem;
+    width: 3rem;
+}
+
+footer svg {
     height: 32px;
     width: 32px;
-    position: relative;
-}
-
-footer ul li:not(:first-child) {
-    margin: 0 0 0 0.5rem;
-}
-
-.footer_icon_dribbble {
-    fill: hsl(320, 88%, 60%);
-}
-
-.footer_icon_twitter {
-    fill: hsl(210, 100%, 52%);
-}
-
-.footer_icon_github {
-    fill: hsl(264, 100%, 40%);
 }
 
 footer ul li a {
-    height: 16px;
-    width: 16px;
     display: inline-block;
+}
+
+footer ul li .tooltip_link:hover svg {
+    opacity: 0.85;
 }
 
 .footer_tooltip {
@@ -490,7 +477,7 @@ footer ul li a {
 }
 
 .github_tooltip {
-    background: hsl(264, 100%, 40%);
+    background: hsl(264, 100%, 44%);
 }
 
 footer ul li .tooltip_link:hover>.footer_tooltip {
@@ -527,8 +514,7 @@ footer ul li .tooltip_link:hover>.footer_tooltip {
 
 .mac_software_icon,
 .web_software_icon,
-.linux_software_icon,
-footer ul li a:hover>svg path {
+.linux_software_icon {
     fill: hsl(200, 12%, 4%);
 }
 
@@ -1429,8 +1415,7 @@ p,
 
     .mac_software_icon,
     .web_software_icon,
-    .linux_software_icon,
-    footer ul li a:hover>svg path {
+    .linux_software_icon {
         fill: hsl(200, 16%, 88%);
     }
 }
@@ -1662,11 +1647,4 @@ p,
         margin: -4rem auto 0;
     }
 
-    footer {
-        height: 64px;
-    }
-
-    footer ul li:not(:first-child) {
-        margin: 0 0 0 0.75rem;
-    }
 }
