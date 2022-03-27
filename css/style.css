@@ -749,7 +749,6 @@ footer ul li a:hover>svg path {
 .gear_subcategory h4::before {
     position: absolute;
     content: '';
-    /*opacity: 0.2;*/
     left: -40px;
     top: -12px;
     width: 16px;
