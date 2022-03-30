@@ -376,21 +376,22 @@ ul li {
 }
 
 .recent_work_image_container {
+    display: flex;
+    flex-flow: row wrap;
     margin-bottom: 2rem;
 }
 
 .recent_work_image_container a {
-    width: 48%;
+    width: 50%;
     margin-right: 0;
     max-width: 480px;
     display: inline-flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
 
 .recent_work_image_container a:nth-child(2n+1) {
     margin-right: 2rem;
-    margin-bottom: 2rem;
 }
 
 .recent_work_image_container a,
@@ -1141,8 +1142,13 @@ p,
 /*********************** END gear Page Desktop Styling ***********************/
 
 @media screen and (max-width: 1056px) {
+
+    .recent_work_image_container a {
+        width: 48%;
+    }
+
     .recent_work_image_container a:nth-child(2n+1) {
-        margin-right: 3%;
+        margin-right: 2%;
     }
 
     .recent_work_image_container a {
@@ -1239,7 +1245,6 @@ p,
         width: 100%;
         display: block;
         margin-right: 0;
-        margin-bottom: 2.5rem;
         max-width: unset;
     }
 
@@ -1514,7 +1519,7 @@ p,
 
     .recent_work_image_container a,
     .recent_work_image_container a:nth-child(2n+1) {
-        margin-bottom: 2rem;
+        margin-bottom: 2%;
     }
 
     .home_recent_work,
