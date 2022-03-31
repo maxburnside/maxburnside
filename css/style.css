@@ -1308,8 +1308,8 @@ p,
     .recent_work_image_container a:hover img,
     .recent_work_image_container a:hover video,
     .gear_card a:hover .gear_card_illustration_image {
-        transform: none;
-        -webkit-transform: none;
+        transform: none !important;
+        -webkit-transform: none !important;
     }
 
     .gear_disclaimer {
@@ -1523,7 +1523,7 @@ p,
 
     .recent_work_image_container a,
     .recent_work_image_container a:nth-child(2n+1) {
-        margin-bottom: 2%;
+        margin-bottom: 1.5rem;
     }
 
     .home_recent_work,
