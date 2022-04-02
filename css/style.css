@@ -834,6 +834,12 @@ p,
     flex-wrap: wrap;
 }
 
+.work_card_container {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
 .gear_section p {
     font-size: 1.125rem;
     margin-bottom: 2rem;
@@ -888,6 +894,70 @@ p,
 .gear_card:nth-child(odd) {
     margin-right: 2rem;
     z-index: 2;
+}
+
+.work_card {
+    margin-right: 0 !important;
+}
+
+.work_card {
+    flex-direction: row;
+    width: 100%;
+}
+
+.work_card_image {
+    position: relative;
+    min-width: 640px;
+    margin-right: 2rem;
+}
+
+.company_name {
+    margin-top: 1.5rem;
+    margin-bottom: 1.25rem;
+    margin-left: 1.5rem;
+    line-height: 0.875rem;
+    font-size: 1.25rem;
+    position: relative;
+}
+
+.engagement_tag,
+.role_tag {
+    line-height: 0.75rem;
+    font-size: 0.875rem;
+    display: block;
+    position: relative;
+    margin-top: 0.5rem;
+    margin-bottom: 1.25rem;
+    margin-left: 1.5rem;
+}
+
+.role_tag {
+    margin-bottom: 2rem;
+}
+
+.userevidence::before,
+.engagement_tag::before,
+.role_tag::before {
+    content: '';
+    position: absolute;
+    left: -1.5rem;
+    top: -0.125rem;
+    z-index: 1;
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+}
+
+.userevidence::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg%3E%3Cpath fill='%23850AFF' fill-rule='evenodd' d='M13 0h-2.5L7.933 5.867 7 4H4.5l2 4h3L13 0zm.5 8H16A8 8 0 0 1 0 8h2.5a5.5 5.5 0 1 0 11 0z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+.engagement_tag::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Crect width='11' height='6' x='2.5' y='2.5' stroke='%23618A9E' stroke-width='3' rx='2'%3E%3C/rect%3E%3Crect width='16' height='3' y='12' fill='%23618A9E' rx='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.role_tag::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Crect width='11' height='6' x='2.5' y='2.5' stroke='%23618A9E' stroke-width='3' rx='2'%3E%3C/rect%3E%3Crect width='16' height='3' y='12' fill='%23618A9E' rx='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .gear_card_illustration_image,
@@ -1113,7 +1183,7 @@ p,
 }
 
 .gear_card_text_container ul li {
-    margin-left: 1.25rem;
+    margin-left: 1.5rem;
     position: relative;
     line-height: 1.25rem;
 }
@@ -1125,12 +1195,12 @@ p,
 .gear_card_text_container ul li::before {
     content: '';
     position: absolute;
-    left: -1.25rem;
-    top: 0.375rem;
-    width: 0.5rem;
-    height: 0.5rem;
+    left: -1.5rem;
+    top: 0.25rem;
+    width: 0.75rem;
+    height: 0.75rem;
     background-color: hsla(200, 24%, 50%, 0.4);
-    border-radius: 0.25rem;
+    border-radius: 0.375rem;
 }
 
 .gear_disclaimer {
@@ -1162,6 +1232,15 @@ p,
 
     .recent_work_image_container a {
         margin-right: 0;
+    }
+
+    .work_card {
+        flex-direction: column;
+    }
+
+    .work_card_image {
+        width: 100%;
+        min-width: unset;
     }
 
     .gear_card {
