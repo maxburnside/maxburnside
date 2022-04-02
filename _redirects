@@ -1,5 +1,8 @@
 /.env /
+/.git/config /
+ads.txt /
 /files /
+/humans.txt /
 /images /
 /images/ /
 /robots.txt /
@@ -9,5 +12,6 @@
 /work /
 /work.html /
 /wordpress /
-/wp-login.php /
+/wp/license.txt
 /wp-admin /
+/wp-login.php /
