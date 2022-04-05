@@ -245,7 +245,11 @@ a {
     -webkit-transition: 0.2s all;
 }
 
-.site_navbar a:hover {
+.site_navbar a:hover,
+.footer_tooltip,
+.home_hero .text_container,
+.gear_hero .text_container,
+.work_card_text {
     transition: 0.1s all;
     -webkit-transition: 0.1s all;
 }
@@ -346,8 +350,12 @@ ul li {
 .external_link:hover,
 .gear_card_title_container a:hover,
 .gear_card_text_container a:hover,
+.work_responsibilities a:hover,
 .gear_subcategory a:hover,
-.return_to_top_link:hover {
+.return_to_top_link:hover,
+.work_card_text:hover .work_card_text h3,
+.work_card_text:hover .info_tag,
+.work_card_text:hover .work_responsibilities {
     color: hsl(200, 12%, 4%);
 }
 
@@ -465,8 +473,6 @@ footer ul li .tooltip_link:hover svg {
     text-shadow: 0 1px 0 hsla(200, 16%, 6%, 0.15);
     font-size: 0.875rem;
     line-height: 1;
-    transition: 0.1s all;
-    -webkit-transition: 0.1s all;
 }
 
 .dribbble_tooltip {
@@ -481,7 +487,8 @@ footer ul li .tooltip_link:hover svg {
     background: hsl(264, 100%, 44%);
 }
 
-footer ul li .tooltip_link:hover>.footer_tooltip {
+footer ul li .tooltip_link:hover>.footer_tooltip,
+.work_card_text:hover {
     display: block;
     opacity: 1;
     visibility: visible;
@@ -554,8 +561,6 @@ footer ul li .tooltip_link:hover>.footer_tooltip {
     left: 50%;
     top: calc(50% + 32px);
     transform: translate(-50%, -50%);
-    transition: 0.1s all;
-    -webkit-transition: 0.1s all;
 }
 
 .gear_hero .text_container {
@@ -783,6 +788,7 @@ footer ul li .tooltip_link:hover>.footer_tooltip {
 }
 
 .gear_category h3,
+.work_card_text h3,
 .info_tag {
     color: hsl(200, 24%, 44%);
 }
@@ -825,6 +831,7 @@ footer ul li .tooltip_link:hover>.footer_tooltip {
 .gear_table_of_contents,
 h2,
 .gear_card_text_container ul li,
+.work_responsibilities ul li,
 p,
 .gear_hero p {
     color: hsl(200, 16%, 28%);
@@ -857,6 +864,10 @@ p,
 
 .gear_card_text_container a {
     text-decoration: underline;
+}
+
+.work_responsibilities a {
+    text-decoration: none;
 }
 
 .availability_container {
@@ -1017,6 +1028,7 @@ p,
 .home_hero_link,
 .gear_card_title_container a,
 .gear_card_text_container a,
+.work_responsibilities a,
 .external_link,
 .return_to_top_link,
 .gear_subcategory a {
@@ -1094,7 +1106,8 @@ p,
     margin-bottom: 0.5rem;
 }
 
-.gear_card_text_container {
+.gear_card_text_container,
+.work_responsibilities {
     margin-top: 1.25rem;
 }
 
@@ -1102,43 +1115,53 @@ p,
     margin-top: 1.25rem;
 }
 
-.gear_card_text_container p {
+.gear_card_text_container p,
+.work_responsibilities p {
     font-size: 1rem;
     margin-bottom: 0;
 }
 
 .gear_card_text_container ul,
-.gear_card_text_container ul li {
+.gear_card_text_container ul li,
+.work_responsibilities ul,
+.work_responsibilities ul li {
     padding: 0;
     margin: 0;
 }
 
-.gear_card_text_container ul {
+.gear_card_text_container ul,
+.work_responsibilities ul {
     list-style: none;
     font-size: 0.875rem;
     margin-top: 0.625rem;
 }
 
-.gear_card_text_container ul li {
+.gear_card_text_container ul li,
+.work_responsibilities ul li {
     margin-left: 1.75rem;
     position: relative;
     line-height: 1.25rem;
 }
 
-.gear_card_text_container ul li:not(:first-child) {
+.gear_card_text_container ul li:not(:first-child),
+.work_responsibilities ul li:not(:first-child) {
     margin-top: 0.75rem;
 }
 
-.gear_card_text_container ul li::before {
+.gear_card_text_container ul li::before,
+.work_responsibilities ul li::before {
     content: '';
     position: absolute;
     left: -1.75rem;
     top: 0.125rem;
     width: 1rem;
     height: 1rem;
+    border-radius: 0.5rem;
+}
+
+.gear_card_text_container ul li::before {
     background-color: hsla(200, 100%, 50%, 0.25);
     border: 4px solid hsla(200, 100%, 50%, 0.2);
-    border-radius: 0.5rem;
 }
 
 .gear_disclaimer {
@@ -1172,7 +1195,7 @@ p,
     position: relative;
     width: 100%;
     max-width: 560px;
-    margin-right: 3rem;
+    /*margin-right: 3rem;*/
 }
 
 .work_card_image .left_tag {
@@ -1186,6 +1209,15 @@ p,
 
 .work_card_image:hover {
     cursor: pointer;
+}
+
+.work_card_text {
+    padding: 3rem;
+    border-radius: 0 2rem 2rem 0;
+}
+
+.work_card:hover .work_card_text {
+    background-color: hsla(200, 24%, 96%, 0.1);
 }
 
 .company_name,
@@ -1217,17 +1249,25 @@ p,
 .work_responsibilities p {
     font-size: 0.875rem;
     line-height: 1;
-    margin-top: 2.5rem;
+    /*margin-top: 2.5rem;*/
     margin-bottom: 0.875rem;
 }
 
 .work_responsibilities ul,
-.frontend_dev {
+.brand_design,
+.frontend_dev,
+.product_design,
+.visual_design,
+.web_design {
     margin-top: 1.25rem;
     margin-bottom: 0;
     line-height: 0.875rem;
     display: block;
     position: relative;
+}
+
+.work_responsibilities ul {
+    margin-top: 3rem;
 }
 
 .work_responsibilities ul li::before {
@@ -1248,7 +1288,8 @@ p,
 .visably::before,
 .purple_orange::before,
 .tell::before,
-.contentstack::before {
+.contentstack::before,
+.flooringstores::before {
     content: '';
     position: absolute;
     left: -1.75rem;
@@ -1272,7 +1313,23 @@ p,
     opacity: 0.6;
 }
 
+.brand_design::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='%23618A9E' d='M8 2v.5a1.5 1.5 0 0 0 3 0V2a2 2 0 0 1 2-2h1a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h4a2 2 0 0 1 2 2z' style='mix-blend-mode:darken'%3E%3C/path%3E%3Cpath fill='%23618A9E' d='M6 14v-2l-3.53-.706A1.83 1.83 0 0 1 1 9.5V9a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.5a1.83 1.83 0 0 1-1.47 1.794L10 12v2a2 2 0 1 1-4 0z' style='mix-blend-mode:multiply'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
 .frontend_dev::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg%3E%3Cpath fill='%23618A9E' fill-rule='evenodd' d='M9 12h5a2 2 0 1 1 0 4H9a2 2 0 1 1 0-4zM3.75 1.25l4.836 4.836a2 2 0 0 1 0 2.828L3.75 13.75a1.768 1.768 0 0 1-2.5-2.5L5 7.5 1.25 3.75a1.768 1.768 0 0 1 2.5-2.5z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+.product_design::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='%23618A9E' d='M9.996 2v10l1.784-3.12a2.391 2.391 0 0 1 4.216.12l-4.25 7H2l-.382-.954a6 6 0 0 1 1.728-6.837L5.996 6V2a2 2 0 1 1 4 0z'%3E%3C/path%3E%3Cpath fill='%23618A9E' d='M13 6a3 3 0 0 0 0-6v6zM3 6a3 3 0 1 1 0-6v6z'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.visual_design::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg%3E%3Cpath fill='%23618A9E' fill-rule='evenodd' d='M1.5 15.5l3.677-3.677a2 2 0 1 0-1-1L.5 14.5 0 14l1.553-8.54A2.996 2.996 0 0 1 4.5 3h.843a4 4 0 0 1 2.829 1.172l3.656 3.656A4 4 0 0 1 13 10.657v.843a2.996 2.996 0 0 1-2.46 2.947L2 16l-.5-.5zM16 3.414V6a1 1 0 0 1-1 1c-.64 0-1.254-.254-1.707-.707L9.707 2.707A2.414 2.414 0 0 1 9 1a1 1 0 0 1 1-1h2.586A3.414 3.414 0 0 1 16 3.414z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+.web_design::before {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg%3E%3Cpath fill='%23618A9E' fill-rule='evenodd' d='M9 12h5a2 2 0 1 1 0 4H9a2 2 0 1 1 0-4zM3.75 1.25l4.836 4.836a2 2 0 0 1 0 2.828L3.75 13.75a1.768 1.768 0 0 1-2.5-2.5L5 7.5 1.25 3.75a1.768 1.768 0 0 1 2.5-2.5z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
 }
 
@@ -1302,6 +1359,10 @@ p,
 
 .contentstack::before {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg%3E%3Cpath fill='%23F60' fill-rule='evenodd' d='M3.917 3a.25.25 0 0 0-.25.25v.438c0 .138.112.25.25.25h4.5a.25.25 0 0 0 .25-.25V3.25a.25.25 0 0 0-.25-.25h-4.5zm-2 1.313a.25.25 0 0 0-.25.25V5c0 .138.111.25.25.25H7.75A.25.25 0 0 0 8 5v-.437a.25.25 0 0 0-.25-.25H1.916zM0 5.875a.25.25 0 0 1 .25-.25h5.833a.25.25 0 0 1 .25.25v.438a.25.25 0 0 1-.25.25H.25a.25.25 0 0 1-.25-.25v-.438zm.25 1.063a.25.25 0 0 0-.25.25v.437c0 .138.112.25.25.25h5.833a.25.25 0 0 0 .25-.25v-.437a.25.25 0 0 0-.25-.25H.25zM1.666 8.5a.25.25 0 0 1 .25-.25H7.75A.25.25 0 0 1 8 8.5v.438a.25.25 0 0 1-.25.25H1.916a.25.25 0 0 1-.25-.25V8.5zm1.25 1.063a.25.25 0 0 0-.25.25v.437c0 .138.112.25.25.25H8.75a.25.25 0 0 0 .25-.25v-.437a.25.25 0 0 0-.25-.25H2.916zm9.418 3.187a.25.25 0 0 1-.25.25h-4.5a.25.25 0 0 1-.25-.25v-.437a.25.25 0 0 1 .25-.25h4.5a.25.25 0 0 1 .25.25v.437zm1.75-1.062a.25.25 0 0 0 .25-.25V11a.25.25 0 0 0-.25-.25H8.251A.25.25 0 0 0 8 11v.438c0 .138.112.25.25.25h5.833zM16 10.125a.25.25 0 0 1-.25.25H9.917a.25.25 0 0 1-.25-.25v-.437a.25.25 0 0 1 .25-.25h5.833a.25.25 0 0 1 .25.25v.437zm-.25-1.062a.25.25 0 0 0 .25-.25v-.438a.25.25 0 0 0-.25-.25H8.918a.25.25 0 0 0-.25.25v.438c0 .138.112.25.25.25h6.834zM14.335 7.5a.25.25 0 0 1-.25.25H7.75a.25.25 0 0 1-.25-.25v-.437a.25.25 0 0 1 .25-.25h6.334a.25.25 0 0 1 .25.25V7.5zm-1.251-1.062a.25.25 0 0 0 .25-.25V5.75a.25.25 0 0 0-.25-.25H7.25a.25.25 0 0 0-.25.25v.438c0 .138.112.25.25.25h5.833z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+.flooringstores::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Crect width='9' height='4' x='7' fill='%231F8FFF' rx='1'%3E%3C/rect%3E%3Crect width='5' height='4' fill='%230036A3' rx='1'%3E%3C/rect%3E%3Crect width='4' height='4' y='12' fill='%230036A3' rx='1'%3E%3C/rect%3E%3Crect width='6' height='4' y='6' fill='%231F8FFF' rx='1'%3E%3C/rect%3E%3Crect width='4' height='4' x='8' y='6' fill='%230036A3' rx='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 /*********************** END Work Page Desktop Styling ***********************/
@@ -1342,15 +1403,23 @@ p,
         width: 100%;
         min-width: unset;
         margin-bottom: 1.5rem;
+        margin-right: 0;
     }
 
     .info_tag {
         line-height: 1.5rem;
+        margin-top: 1rem;
     }
 
     .info_tag::before {
         top: 0.25rem;
     }
+
+    .work_responsibilities ul {
+        margin-top: 1.75rem;
+    }
+
+
 }
 
 @media screen and (max-width: 760px) {
@@ -1524,6 +1593,7 @@ p,
     .gear_subcategory h4,
     .gear_table_of_contents,
     .gear_card_text_container ul li,
+    .work_responsibilities ul li,
     p,
     .site_navbar .active,
     .site_navbar u li a:active,
@@ -1559,6 +1629,7 @@ p,
     p,
     .gear_table_of_contents,
     .gear_card_text_container ul li,
+    .work_responsibilities ul li,
     .gear_hero p {
         color: hsl(200, 16%, 68%);
     }
@@ -1582,6 +1653,11 @@ p,
     .gear_card_text_container ul li::before {
         background-color: hsla(200, 100%, 50%, 0.3);
         border: 4px solid hsla(200, 100%, 50%, 0.2);
+    }
+
+    .work_responsibilities ul li::before {
+        background-color: transparent;
+        border: 0px solid transparent;
     }
 
     .home_hero_link svg {
@@ -1611,6 +1687,7 @@ p,
     .home_hero_link,
     .gear_card_title_container a,
     .gear_card_text_container a,
+    .work_responsibilities a,
     .external_link,
     .return_to_top_link,
     .gear_subcategory a {
@@ -1627,6 +1704,7 @@ p,
     }
 
     .gear_table_of_contents ol h5,
+    .work_card_text h3,
     .info_tag {
         color: hsl(200, 16%, 72%);
     }
@@ -1649,7 +1727,11 @@ p,
     .home_hero_link:hover,
     .external_link:hover,
     .gear_card_title_container a:hover,
-    .gear_card_text_container a:hover {
+    .gear_card_text_container a:hover,
+    .work_responsibilities a:hover,
+    .work_card_text:hover .work_card_text h3,
+    .work_card_text:hover .info_tag,
+    .work_card_text:hover .work_responsibilities {
         color: hsl(200, 16%, 88%);
     }
 
@@ -1822,11 +1904,13 @@ p,
         margin-top: 1.125rem;
     }
 
-    .gear_card_text_container ul li {
+    .gear_card_text_container ul li,
+    .work_responsibilities ul li {
         line-height: 1rem;
     }
 
-    .gear_card_text_container ul li::before {
+    .gear_card_text_container ul li::before,
+    .work_responsibilities ul li::before {
         top: 0;
     }
 
