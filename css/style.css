@@ -2028,4 +2028,8 @@ p,
         margin: -4rem auto 0;
     }
 
+    .gear_disclaimer p {
+        font-size: 1rem;
+    }
+
 }
