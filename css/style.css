@@ -1681,17 +1681,14 @@ p,
         color: hsl(200, 16%, 68%);
     }
 
-    .site_navbar ul li a {
-        color: hsl(204, 16%, 80%);
-    }
-
     .site_navbar ul li a:hover::before {
         background-color: hsla(200, 16%, 99%, 0.1);
     }
 
     li a,
     li a:focus,
-    a {
+    a,
+    .site_navbar ul li a  {
         color: hsl(204, 100%, 50%);
         text-decoration: none;
     }
@@ -1798,10 +1795,6 @@ p,
 @media (prefers-color-scheme: dark) and (max-width: 760px) {
     .site_navbar {
         background: hsl(200, 12%, 4%);
-    }
-
-    .site_navbar ul li a {
-        color: hsl(204, 16%, 64%);
     }
 
 }
