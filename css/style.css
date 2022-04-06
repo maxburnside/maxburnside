@@ -174,7 +174,7 @@ a {
 }
 
 .site_navbar ul li:not(:first-child) {
-    padding: 0 0 0 1.5rem;
+    padding: 0 0 0 1.25rem;
 }
 
 .site_navbar ul li a {
@@ -194,7 +194,7 @@ a {
 .site_navbar ul li a::before {
     content: '';
     top: -2.125rem;
-    width: 5rem;
+    width: 4rem;
     left: 50%;
     transform: translateX(-50%);
     height: 0.375rem;
@@ -205,6 +205,8 @@ a {
 
 .site_navbar .active,
 .site_navbar u li a:active,
+.site_navbar .active:hover,
+.site_navbar li a:hover,
 .availability_container,
 .category_tag {
     color: hsl(200, 12%, 4%);
@@ -215,7 +217,7 @@ a {
 }
 
 .site_navbar ul li a:hover::before {
-    background-color: hsla(230, 100%, 56%, 0.25);
+    background-color: hsla(200, 100%, 50%, 0.2);
     cursor: auto;
 }
 
@@ -1637,10 +1639,6 @@ p,
     .gear_card_text_container ul li,
     .work_responsibilities ul li,
     p,
-    .site_navbar .active,
-    .site_navbar u li a:active,
-    .site_navbar .active:hover,
-    .site_navbar li a:hover,
     li a:hover,
     h4,
     h5,
@@ -1668,6 +1666,13 @@ p,
         color: hsl(200, 16%, 92%);
     }
 
+    .site_navbar .active,
+    .site_navbar u li a:active,
+    .site_navbar .active:hover,
+    .site_navbar li a:hover {
+        color: hsl(200, 16%, 96%);
+    }
+
     p,
     .gear_table_of_contents,
     .gear_card_text_container ul li,
@@ -1677,12 +1682,11 @@ p,
     }
 
     .site_navbar ul li a {
-        color: hsl(204, 100%, 50%);
-        /*text-shadow: 0px 0px 16px hsla(200, 8%, 8%, 0.9);*/
+        color: hsl(204, 16%, 80%);
     }
 
     .site_navbar ul li a:hover::before {
-        background-color: hsla(200, 16%, 99%, 0.2);
+        background-color: hsla(200, 16%, 99%, 0.1);
     }
 
     li a,
@@ -1797,7 +1801,7 @@ p,
     }
 
     .site_navbar ul li a {
-        color: hsl(204, 100%, 50%);
+        color: hsl(204, 16%, 64%);
     }
 
 }
