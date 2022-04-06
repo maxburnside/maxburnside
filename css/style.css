@@ -1221,30 +1221,31 @@ p,
 
 .userevidence_card:hover .work_card_text,
 .drift_card:hover .work_card_text {
-    background-color: hsla(270, 100%, 52%, 0.2);
+    background-color: hsla(270, 100%, 52%, 0.1);
 }
 
 .visably_card:hover .work_card_text,
 .flooringstores_card:hover .work_card_text {
-    background-color: hsla(220, 100%, 52%, 0.2);
+    background-color: hsla(220, 100%, 52%, 0.1);
 }
 
 .purple_orange_card:hover .work_card_text,
 .contentstack_card:hover .work_card_text {
-    background-color: hsla(32, 100%, 52%, 0.2);
+    background-color: hsla(32, 100%, 52%, 0.1);
 }
 
 .tell_card:hover .work_card_text {
-    background-color: hsla(260, 100%, 52%, 0.2);
+    background-color: hsla(260, 100%, 52%, 0.1);
 }
 
 .adhawk_card:hover .work_card_text {
-    background-color: hsla(160, 100%, 52%, 0.2);
+    background-color: hsla(160, 100%, 52%, 0.1);
 }
 
 .work_card:hover .work_card_text h3,
 .work_card:hover .work_card_text li {
-    color: hsl(200, 16%, 88%);
+    color: hsl(200, 12%, 4%);
+    text-shadow: 1px 1px 0 0 hsl(200, 100%, 100%);
 }
 
 .company_name,
@@ -1770,7 +1771,8 @@ p,
     .gear_card_title_container a:hover,
     .gear_card_text_container a:hover,
     .work_responsibilities a:hover,
-    .work_card_text:hover .work_card_text h3,
+    .work_card:hover .work_card_text h3,
+    .work_card:hover .work_card_text li,
     .work_card_text:hover .info_tag,
     .work_card_text:hover .work_responsibilities {
         color: hsl(200, 16%, 88%);
@@ -1781,6 +1783,12 @@ p,
     .linux_software_icon {
         fill: hsl(200, 16%, 88%);
     }
+
+    .work_card:hover .work_card_text h3,
+    .work_card:hover .work_card_text li {
+        text-shadow: 1px 1px 0 0 hsl(200, 12%, 4%);
+    }
+
 }
 
 @media (prefers-color-scheme: dark) and (max-width: 760px) {
