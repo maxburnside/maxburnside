@@ -1820,21 +1820,21 @@ p,
 
     .userevidence_card:hover .work_card_text,
     .drift_card:hover .work_card_text {
-        background-color: hsla(270, 100%, 52%, 0.25);
+        background-color: hsla(270, 100%, 32%, 0.4);
     }
 
     .visably_card:hover .work_card_text,
     .flooringstores_card:hover .work_card_text {
-        background-color: hsla(220, 100%, 52%, 0.25);
+        background-color: hsla(220, 100%, 32%, 0.4);
     }
 
     .purple_orange_card:hover .work_card_text,
     .contentstack_card:hover .work_card_text {
-        background-color: hsla(32, 100%, 52%, 0.25);
+        background-color: hsla(32, 100%, 32%, 0.4);
     }
 
     .tell_card:hover .work_card_text {
-        background-color: hsla(260, 100%, 52%, 0.25);
+        background-color: hsla(260, 100%, 32%, 0.4);
     }
 
     .adhawk_card:hover .work_card_text {
