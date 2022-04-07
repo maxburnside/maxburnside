@@ -547,11 +547,12 @@ footer ul li .tooltip_link:hover>.footer_tooltip,
     height: calc(100vh - 80px);
     min-height: 480px;
     max-height: 960px;
-    background: linear-gradient(hsla(190, 100%, 84%, 1) 0%,
-        hsla(190, 100%, 84%, 0.85) 24%,
-        hsla(190, 100%, 84%, 0.67) 48%,
-        hsla(190, 100%, 84%, 0.12) 84%,
-        hsla(190, 100%, 84%, 0) 100%);
+    background: hsl(190, 100%, 92%);
+    background: -moz-linear-gradient(180deg, hsl(190, 100%, 84%) 0%, hsla(200, 16%, 99%, 0) 100%);
+    background: -webkit-linear-gradient(180deg, hsl(190, 100%, 84%) 0%, hsla(200, 16%, 99%, 0) 100%);
+    background: linear-gradient(180deg, hsl(190, 100%, 84%) 0%, hsla(200, 16%, 99%, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#adf1ff", endColorstr="#fcfdfd", GradientType=1);
+
 }
 
 .home_hero .text_container,
@@ -920,6 +921,10 @@ p,
     z-index: 2;
 }
 
+.work_card:nth-child(odd) {
+    margin-right: 0;
+}
+
 .gear_card_illustration_image,
 .recent_work_image {
     width: 100%;
@@ -945,7 +950,7 @@ p,
     -webkit-transform: scale(1.05);
     transition: 0.175s all;
     -webkit-transition: 0.175s all;
-    box-shadow: 0 8px 32px 0 hsla(200, 16%, 6%, 0.16), 0 4px 12px 0 hsla(200, 16%, 6%, 0.04);
+    box-shadow: 0 48px 64px 0 hsla(200, 24%, 16%, 0.12), 0 4px 24px 0 hsla(200, 16%, 8%, 0.02), 0 4px 12px 0 hsla(200, 16%, 4%, 0.04);
     z-index: 7;
 }
 
@@ -1199,12 +1204,14 @@ p,
     width: 100%;
     margin-right: 0;
     margin-bottom: 8rem;
+    transition: 0.75s all;
+    -webkit-transition: 0.75s all;
 }
 
 .work_card_image {
     position: relative;
     width: 100%;
-    max-width: 560px;
+    max-width: 632px;
     /*margin-right: 3rem;*/
 }
 
@@ -1232,25 +1239,25 @@ p,
 
 .userevidence_card:hover .work_card_text,
 .drift_card:hover .work_card_text {
-    background-color: hsla(270, 100%, 52%, 0.1);
+    background-color: hsla(270, 100%, 40%, 0.12);
 }
 
 .visably_card:hover .work_card_text,
 .flooringstores_card:hover .work_card_text {
-    background-color: hsla(220, 100%, 52%, 0.1);
+    background-color: hsla(220, 100%, 40%, 0.12);
 }
 
 .purple_orange_card:hover .work_card_text,
 .contentstack_card:hover .work_card_text {
-    background-color: hsla(32, 100%, 52%, 0.1);
+    background-color: hsla(32, 100%, 40%, 0.12);
 }
 
 .tell_card:hover .work_card_text {
-    background-color: hsla(260, 100%, 52%, 0.1);
+    background-color: hsla(260, 100%, 40%, 0.12);
 }
 
 .adhawk_card:hover .work_card_text {
-    background-color: hsla(160, 100%, 52%, 0.1);
+    background-color: hsla(160, 100%, 40%, 0.12);
 }
 
 .work_card:hover .work_card_text h3,
@@ -1443,6 +1450,10 @@ p,
         align-items: flex-start;
     }
 
+    .work_card:hover .work_card_text {
+        background: transparent;
+    }
+
     .work_card_image {
         width: 100%;
         min-width: unset;
@@ -1453,10 +1464,6 @@ p,
     .work_card_text {
         padding: 0;
         border-radius: 0;
-        background: transparent;
-    }
-
-    .work_card:hover .work_card_text {
         background: transparent;
     }
 
@@ -1675,11 +1682,12 @@ p,
 
     .home_hero,
     .page_hero {
-        background: linear-gradient(hsl(226, 100%, 16%) 0%,
-            hsla(226, 100%, 16%, 0.85) 24%,
-            hsla(226, 100%, 16%, 0.67) 48%,
-            hsla(226, 100%, 16%, 0.12) 84%,
-            hsla(226, 100%, 16%, 0) 100%)
+        background: hsl(226, 100%, 12%);
+        background: -moz-linear-gradient(180deg, hsl(226, 100%, 16%) 0%, hsla(200, 12%, 4%, 0) 100%);
+        background: -webkit-linear-gradient(180deg, hsl(226, 100%, 16%) 0%, hsla(200, 12%, 4%, 0) 100%);
+        background: linear-gradient(180deg, hsl(226, 100%, 16%) 0%, hsla(200, 12%, 4%, 0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#001352", endColorstr="#090b0b", GradientType=1);
+
     }
 
     h1 {
@@ -1702,7 +1710,7 @@ p,
     }
 
     .site_navbar ul li a:hover::before {
-        background-color: hsla(200, 16%, 99%, 0.1);
+        background-color: hsla(200, 16%, 99%, 0.15);
     }
 
     li a,
@@ -1808,6 +1816,29 @@ p,
     .work_card:hover .work_card_text h3,
     .work_card:hover .work_card_text li {
         text-shadow: 1px 1px 0 0 hsl(200, 12%, 4%);
+    }
+
+    .userevidence_card:hover .work_card_text,
+    .drift_card:hover .work_card_text {
+        background-color: hsla(270, 100%, 52%, 0.25);
+    }
+
+    .visably_card:hover .work_card_text,
+    .flooringstores_card:hover .work_card_text {
+        background-color: hsla(220, 100%, 52%, 0.25);
+    }
+
+    .purple_orange_card:hover .work_card_text,
+    .contentstack_card:hover .work_card_text {
+        background-color: hsla(32, 100%, 52%, 0.25);
+    }
+
+    .tell_card:hover .work_card_text {
+        background-color: hsla(260, 100%, 52%, 0.25);
+    }
+
+    .adhawk_card:hover .work_card_text {
+        background-color: hsla(160, 100%, 24%, 0.25);
     }
 
 }
