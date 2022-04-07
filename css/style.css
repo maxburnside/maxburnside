@@ -1204,8 +1204,8 @@ p,
     width: 100%;
     margin-right: 0;
     margin-bottom: 8rem;
-    transition: 0.75s all;
-    -webkit-transition: 0.75s all;
+    transition: 0.2s all;
+    -webkit-transition: 0.2s all;
 }
 
 .work_card_image {
@@ -1450,8 +1450,14 @@ p,
         align-items: flex-start;
     }
 
-    .work_card:hover .work_card_text {
-        background: transparent;
+    .userevidence_card:hover .work_card_text,
+    .drift_card:hover .work_card_text,
+    .visably_card:hover .work_card_text,
+    .flooringstores_card:hover .work_card_text,
+    .purple_orange_card:hover .work_card_text,
+    .contentstack_card:hover .work_card_text,
+    .adhawk_card:hover .work_card_text {
+        background: transparent !important;
     }
 
     .work_card_image {
