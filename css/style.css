@@ -250,7 +250,7 @@ a {
 .site_navbar a:hover,
 .footer_tooltip,
 .home_hero .text_container,
-.gear_hero .text_container,
+.page_hero .text_container,
 .work_card,
 .work_card_text {
     transition: 0.1s all;
@@ -262,7 +262,7 @@ p {
 }
 
 .home_hero p,
-.gear_hero p {
+.page_hero p {
     margin: 1.25rem 0 0 -0.125rem;
     padding: 0;
     max-width: 720px;
@@ -540,7 +540,7 @@ footer ul li .tooltip_link:hover>.footer_tooltip,
 }
 
 .home_hero,
-.gear_hero {
+.page_hero {
     position: relative;
     width: 100%;
     padding: 0;
@@ -555,7 +555,7 @@ footer ul li .tooltip_link:hover>.footer_tooltip,
 }
 
 .home_hero .text_container,
-.gear_hero .text_container {
+.page_hero .text_container {
     margin: 0 auto;
     padding: 0 2rem;
     width: 100%;
@@ -566,7 +566,7 @@ footer ul li .tooltip_link:hover>.footer_tooltip,
     transform: translate(-50%, -50%);
 }
 
-.gear_hero .text_container {
+.page_hero .text_container {
     top: 50%;
 }
 
@@ -690,6 +690,10 @@ footer ul li .tooltip_link:hover>.footer_tooltip,
     margin-top: 4rem;
 }
 
+.work_content {
+    margin-top: 0;
+}
+
 .gear_intro {
     padding: 8rem 2rem 0;
 }
@@ -766,6 +770,10 @@ footer ul li .tooltip_link:hover>.footer_tooltip,
     padding-top: 4rem;
 }
 
+.work_section {
+    padding-top: 0;
+}
+
 .gear_table_of_contents {
     padding-top: 0;
     line-height: 1rem;
@@ -837,7 +845,7 @@ h2,
 .gear_card_text_container ul li,
 .work_responsibilities ul li,
 p,
-.gear_hero p {
+.page_hero p {
     color: hsl(200, 16%, 28%);
 }
 
@@ -1567,13 +1575,13 @@ p,
     }
 
     .home_hero,
-    .gear_hero {
+    .page_hero {
         padding: 6rem 0 7rem;
         height: calc(100vh - 120px);
     }
 
     .home_hero .text_container,
-    .gear_hero .text_container {
+    .page_hero .text_container {
         top: 50%;
     }
 
@@ -1666,7 +1674,7 @@ p,
     }
 
     .home_hero,
-    .gear_hero {
+    .page_hero {
         background: linear-gradient(hsl(226, 100%, 16%) 0%,
             hsla(226, 100%, 16%, 0.85) 24%,
             hsla(226, 100%, 16%, 0.67) 48%,
@@ -1689,7 +1697,7 @@ p,
     .gear_table_of_contents,
     .gear_card_text_container ul li,
     .work_responsibilities ul li,
-    .gear_hero p {
+    .page_hero p {
         color: hsl(200, 16%, 68%);
     }
 
@@ -1838,12 +1846,12 @@ p,
         padding: 0 1.5rem;
     }
 
-    .gear_hero .text_container {
+    .page_hero .text_container {
         padding: 0 1.5rem;
     }
 
     .home_hero p,
-    .gear_hero p {
+    .page_hero p {
         font-size: 1.25rem;
     }
 
