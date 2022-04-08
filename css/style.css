@@ -212,22 +212,22 @@ a {
     color: hsl(200, 12%, 4%);
 }
 
-.site_navbar .active::before {
-    background-color: hsl(204, 100%, 50%);
+.site_navbar .active::before,
+.site_navbar .active:hover::before {
+    background-color: hsl(230, 100%, 50%);
+    background: linear-gradient(hsla(230, 100%, 50%, 0.75), hsl(230, 100%, 72%));
+    box-shadow: 0 0 16px 8px hsla(200, 100%, 80%, 0.5);
 }
 
 .site_navbar ul li a:hover::before {
-    background-color: hsla(200, 100%, 50%, 0.2);
+    background-color: hsla(200, 100%, 50%, 0.25);
+    background: linear-gradient(hsl(200, 100%, 72%, 0.4), hsla(200, 100%, 64%, 0.6));
     cursor: auto;
 }
 
 .site_navbar .active:hover {
     cursor: default;
     color: hsl(200, 12%, 4%);
-}
-
-.site_navbar .active:hover::before {
-    background-color: hsl(204, 100%, 50%);
 }
 
 .nav_logo {
@@ -273,7 +273,10 @@ h1 {
     padding: 0;
     margin: 0 0 0 -3px;
     clear: both;
-    color: hsl(200, 12%, 8%);
+    color: hsl(200, 64%, 8%);
+    background: -webkit-linear-gradient(hsl(200, 64%, 4%), hsl(200, 64%, 20%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     letter-spacing: 0.0125rem;
     line-height: 1.25;
     font-weight: 900;
@@ -1701,7 +1704,10 @@ p,
     }
 
     h1 {
-        color: hsl(200, 16%, 92%);
+        color: hsl(200, 100%, 88%);
+        background: -webkit-linear-gradient(hsl(200, 100%, 99%), hsl(200, 100%, 84%));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .site_navbar .active,
@@ -1719,8 +1725,16 @@ p,
         color: hsl(200, 16%, 68%);
     }
 
+    .site_navbar .active::before,
+    .site_navbar .active:hover::before {
+        background-color: hsl(204, 100%, 50%);
+        background: linear-gradient(hsla(204, 100%, 50%, 0.75), hsl(204, 100%, 72%));
+        box-shadow: 0 0 16px 8px hsla(205, 100%, 50%, 0.1);
+    }
+
     .site_navbar ul li a:hover::before {
         background-color: hsla(200, 16%, 99%, 0.15);
+        background: linear-gradient(hsl(204, 100%, 50%, 0.1), hsla(204, 100%, 72%, 0.3));
     }
 
     li a,
@@ -1917,8 +1931,9 @@ p,
     .work_card:hover .gear_card_illustration_image,
     .work_card:hover .work_card_image,
     .work_card:hover .work_card_image img {
-        transform: scale(1);
-        transform: none !important;
+        transform: scale(1) !important;
+        -webkit-transform: scale(1) !important;
+        box-shadow: none !important;
     }
 
     .gear_section {
