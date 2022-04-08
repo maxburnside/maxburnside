@@ -275,6 +275,8 @@ h1 {
     clear: both;
     color: hsl(200, 64%, 8%);
     background: -webkit-linear-gradient(hsl(200, 64%, 4%), hsl(200, 64%, 20%));
+    background-clip: text;
+    text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 0.0125rem;
@@ -1706,6 +1708,8 @@ p,
     h1 {
         color: hsl(200, 100%, 88%);
         background: -webkit-linear-gradient(hsl(200, 100%, 99%), hsl(200, 100%, 84%));
+        background-clip: text;
+        text-fill-color: transparent;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
