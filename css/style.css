@@ -207,6 +207,7 @@ a {
 .site_navbar u li a:active,
 .site_navbar .active:hover,
 .site_navbar li a:hover,
+.footer_links li a,
 .availability_container,
 .category_tag {
     color: hsl(200, 12%, 4%);
@@ -1822,7 +1823,8 @@ p,
     .site_navbar .active,
     .site_navbar u li a:active,
     .site_navbar .active:hover,
-    .site_navbar li a:hover {
+    .site_navbar li a:hover,
+    .footer_links li a:hover {
         color: hsl(200, 16%, 96%);
     }
 
