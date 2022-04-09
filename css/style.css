@@ -1743,6 +1743,10 @@ p,
         padding-top: 20rem;
     }
 
+    footer {
+        margin-top: 96px;
+    }
+
     .footer_container {
         display: flex;
         flex-direction: column;
