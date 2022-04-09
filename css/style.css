@@ -425,47 +425,102 @@ ul li {
 }
 
 footer {
-    position: relative;
-    z-index: 9;
-    left: 0;
-    bottom: 0;
-    padding: 0;
     width: 100%;
-    margin: 0;
-    height: 96px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    max-width: 1056px;
+    margin: 0 auto;
 }
 
-footer ul {
+footer,
+.footer_container {
+    width: 100%;
+    max-width: 1056px;
+    margin: 0 auto;
+}
+
+.footer_container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1.25rem 1.5rem 1.5rem;
+}
+
+.footer_links {
+    text-align: center;
+}
+
+.footer_links,
+.social_media_icons {
     display: inline-flex;
     align-items: center;
     margin: 0;
     padding: 0;
 }
 
-footer ul li {
+.social_media_icons {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.social_media_icons,
+.social_media_icons li {
+    max-height: 48px;
+}
+
+.social_media_icons li {
+    padding: 0;
+    background: transparent;
+}
+
+.footer_links li {
+    padding: 0;
+    margin: 0;
+    line-height: 0.75rem;
+}
+
+.footer_links li a {
     padding: 0.5rem;
-    border-radius: 0.75rem;
-    position: relative;
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
+}
+
+.footer_links li:not(:first-child) a {
+    margin-left: 0.5rem;
+}
+
+.footer_links li:not(:last-child) a {
+    margin-right: 0.5rem;
+}
+
+.social_media_icons li a {
+    padding: 0.5rem;
     height: 3rem;
     width: 3rem;
+    border-radius: 0.75rem;
+    position: relative;
 }
+
+.social_media_icons li:not(:first-child) a {
+    margin-left: 0.5rem;
+}
+
+.social_media_icons li:not(:last-child) a {
+    margin-right: 0.5rem;
+}
+
 
 footer svg {
     height: 32px;
     width: 32px;
+    transform: scale(0.75);
+    -webkit-transform: scale(0.75);
 }
 
-footer ul li a {
+.social_media_icons li a {
     display: inline-block;
 }
 
-footer ul li .tooltip_link:hover svg {
-    opacity: 0.85;
+.social_media_icons li .tooltip_link:hover svg {
+    opacity: 0.95;
 }
 
 .footer_tooltip {
@@ -474,15 +529,27 @@ footer ul li .tooltip_link:hover svg {
     visibility: hidden;
     position: absolute;
     background: inherit;
-    top: -32px;
+    top: -36px;
     left: 50%;
     transform: translateX(-50%);
     padding: 4px 8px;
-    border-radius: 4px;
+    border-radius: 6px;
     color: hsl(200, 16%, 98%);
     text-shadow: 0 1px 0 hsla(200, 16%, 6%, 0.15);
     font-size: 0.875rem;
     line-height: 1;
+}
+
+.social_media_icons li .dribbble:hover {
+    background-color: hsla(320, 88%, 60%, 0.16);
+}
+
+.social_media_icons li .twitter:hover {
+    background-color: hsla(210, 100%, 52%, 0.14);
+}
+
+.social_media_icons li .github:hover {
+    background-color: hsla(264, 100%, 44%, 0.12);
 }
 
 .dribbble_tooltip {
@@ -497,7 +564,7 @@ footer ul li .tooltip_link:hover svg {
     background: hsl(264, 100%, 44%);
 }
 
-footer ul li .tooltip_link:hover>.footer_tooltip,
+.social_media_icons li .tooltip_link:hover>.footer_tooltip,
 .work_card_text:hover {
     display: block;
     opacity: 1;
@@ -527,7 +594,7 @@ footer ul li .tooltip_link:hover>.footer_tooltip,
 }
 
 .github_tooltip::after {
-    border-top: 8px solid hsl(264, 100%, 40%);
+    border-top: 8px solid hsl(264, 100%, 44%);
 }
 
 .mac_software_icon,
@@ -1056,7 +1123,8 @@ p,
 .work_responsibilities a,
 .external_link,
 .return_to_top_link,
-.gear_subcategory a {
+.gear_subcategory a,
+.footer_links li a {
     color: hsl(230, 100%, 50%);
 }
 
@@ -1674,14 +1742,23 @@ p,
         padding-top: 20rem;
     }
 
-    footer svg {
-        transform: scale(0.75);
-        -webkit-transform: scale(0.75);
+    .footer_container {
+        display: flex;
+        flex-direction: column;
     }
 
-    footer ul li {
-        margin-left: 0;
-        margin-right: 0;
+    .social_media_icons {
+        margin-top: 2.5rem;
+    }
+
+    .footer_links li a {
+        padding: 0 1rem;
+        margin: 0 !important;
+    }
+
+    .social_media_icons li a {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
     }
 }
 
@@ -1774,7 +1851,8 @@ p,
     li a,
     li a:focus,
     a,
-    .site_navbar ul li a {
+    .site_navbar ul li a,
+    .footer_links li a {
         color: hsl(204, 100%, 50%);
         text-decoration: none;
     }
@@ -1887,6 +1965,18 @@ p,
 
     .adhawk_card:hover .work_card_text {
         background-color: hsla(160, 100%, 24%, 0.25);
+    }
+
+    .social_media_icons li .dribbble:hover {
+        background-color: hsla(320, 88%, 60%, 0.15);
+    }
+
+    .social_media_icons li .twitter:hover {
+        background-color: hsla(210, 100%, 52%, 0.11);
+    }
+
+    .social_media_icons li .github:hover {
+        background-color: hsla(264, 100%, 44%, 0.22);
     }
 
 }
