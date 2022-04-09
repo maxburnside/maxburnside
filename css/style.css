@@ -215,13 +215,15 @@ a {
 .site_navbar .active::before,
 .site_navbar .active:hover::before {
     background-color: hsl(230, 100%, 50%);
-    background: linear-gradient(hsla(230, 100%, 50%, 0.75), hsl(230, 100%, 72%));
-    box-shadow: 0 0 16px 8px hsla(200, 100%, 80%, 0.5);
+    background: linear-gradient(hsla(200, 100%, 50%, 0.9), hsl(230, 100%, 50%));
+    box-shadow: 0 -1px 4px hsl(240, 100%, 50%) inset;
+    border-top: 1px solid hsla(190, 100%, 50%, 0.2);
 }
 
 .site_navbar ul li a:hover::before {
     background-color: hsla(200, 100%, 50%, 0.25);
     background: linear-gradient(hsl(200, 100%, 72%, 0.4), hsla(200, 100%, 64%, 0.6));
+    box-shadow: 0 -1px 4px hsla(200, 100%, 50%, 0.25) inset;
     cursor: auto;
 }
 
@@ -274,7 +276,7 @@ h1 {
     margin: 0 0 0 -3px;
     clear: both;
     color: hsl(200, 64%, 8%);
-/*    background: -webkit-linear-gradient(hsl(200, 64%, 4%), hsl(200, 64%, 20%));
+    /*    background: -webkit-linear-gradient(hsl(200, 64%, 4%), hsl(200, 64%, 20%));
     background-clip: text;
     text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -1499,7 +1501,8 @@ p,
 
 @media screen and (max-width: 760px) {
     .site_navbar {
-        background: hsl(200, 16%, 99%);
+        background: hsla(200, 16%, 99%, 0.96);
+        backdrop-filter: blur(4px);
         height: 5rem;
         position: fixed;
     }
@@ -1511,6 +1514,10 @@ p,
 
     .site_navbar ul li a::before {
         top: -1.625rem;
+    }
+
+    .site_navbar ul li a:hover::before {
+        background: linear-gradient(hsl(200, 100%, 72%, 0.25), hsla(200, 100%, 64%, 0.4));
     }
 
     /*    .home_recent_work,
@@ -1707,7 +1714,7 @@ p,
 
     h1 {
         color: hsl(200, 100%, 88%);
-/*        background: -webkit-linear-gradient(hsl(200, 100%, 99%), hsl(200, 100%, 84%));
+        /*        background: -webkit-linear-gradient(hsl(200, 100%, 99%), hsl(200, 100%, 84%));
         background-clip: text;
         text-fill-color: transparent;
         -webkit-background-clip: text;
@@ -1733,12 +1740,14 @@ p,
     .site_navbar .active:hover::before {
         background-color: hsl(204, 100%, 50%);
         background: linear-gradient(hsla(204, 100%, 50%, 0.75), hsl(204, 100%, 72%));
-        box-shadow: 0 0 16px 8px hsla(205, 100%, 50%, 0.1);
+        box-shadow: 0 -1px 4px hsl(200, 100%, 50%) inset;
+        border-top: 1px solid hsla(200, 100%, 99%, 0.15);
     }
 
     .site_navbar ul li a:hover::before {
         background-color: hsla(200, 16%, 99%, 0.15);
         background: linear-gradient(hsl(204, 100%, 50%, 0.1), hsla(204, 100%, 72%, 0.3));
+        box-shadow: 0 -1px 4px hsla(200, 100%, 50%, 0.1) inset;
     }
 
     li a,
@@ -1873,7 +1882,8 @@ p,
 
 @media (prefers-color-scheme: dark) and (max-width: 760px) {
     .site_navbar {
-        background: hsl(200, 12%, 4%);
+        background: hsla(200, 12%, 4%, 0.96);
+        backdrop-filter: blur(4px);
     }
 
 }
