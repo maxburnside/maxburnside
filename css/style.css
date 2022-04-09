@@ -278,11 +278,12 @@ h1 {
     color: hsl(200, 64%, 8%);
     background: -webkit-linear-gradient(hsl(200, 64%, 20%), hsl(200, 64%, 4%));
     background: linear-gradient(hsl(200, 64%, 20%), hsl(200, 64%, 4%));
+    background-position: 0 0;
     background-clip: text;
     -webkit-background-clip: text;
     text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
-    letter-spacing: 0.0125rem;
+    letter-spacing: normal;
     line-height: 1.25;
     font-weight: 900;
     font-size: 4.25rem;
@@ -2111,7 +2112,8 @@ p,
 
     h1 {
         font-size: 3.25rem;
-        line-height: 1.0625;
+        line-height: 1;
+        width: calc(100% + 2rem);
     }
 
     h2 {
