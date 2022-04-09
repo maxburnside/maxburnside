@@ -75,7 +75,7 @@ p {
 }
 
 img {
-    background: hsla(200, 8%, 50%, 0.15);
+    background: linear-gradient(hsla(200, 48%, 72%, 0.2), hsla(200, 80%, 84%, 0.1));
     border-style: none;
     height: auto;
     max-width: 100%;
@@ -1682,6 +1682,10 @@ p,
         background-color: hsl(200, 12%, 4%);
     }
 
+    img {
+        background: linear-gradient(hsla(200, 8%, 56%, 0.2), hsla(200, 8%, 12%, 0.1));
+    }
+
     .gear_category h3,
     .gear_subcategory h4,
     .gear_table_of_contents,
@@ -1713,7 +1717,7 @@ p,
     }
 
     h1 {
-        color: hsl(200, 100%, 88%);
+        color: hsl(200, 100%, 94%);
         /*        background: -webkit-linear-gradient(hsl(200, 100%, 99%), hsl(200, 100%, 84%));
         background-clip: text;
         text-fill-color: transparent;
