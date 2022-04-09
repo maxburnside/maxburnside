@@ -1500,10 +1500,9 @@ p,
 }
 
 @media screen and (max-width: 760px) {
+
     .site_navbar {
-        background-color: hsla(200, 16%, 99%, 0.96);
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
+        background-color: hsl(200, 16%, 99%);
         height: 5rem;
         position: fixed;
     }
@@ -1882,10 +1881,9 @@ p,
 }
 
 @media (prefers-color-scheme: dark) and (max-width: 760px) {
+
     .site_navbar {
-        background-color: hsla(200, 12%, 4%, 0.96);
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
+        background-color: hsl(200, 12%, 4%);
     }
 
 }
