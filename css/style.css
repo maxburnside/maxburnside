@@ -275,17 +275,23 @@ p {
 h1 {
     padding: 0;
     margin: 0 0 0 -3px;
-    clear: both;
     color: hsl(200, 64%, 8%);
-    /*    background: -webkit-linear-gradient(hsl(200, 64%, 4%), hsl(200, 64%, 20%));
+    background: -webkit-linear-gradient(hsl(200, 64%, 20%), hsl(200, 64%, 4%));
+    background: linear-gradient(hsl(200, 64%, 20%), hsl(200, 64%, 4%));
+    background-position: 0 0;
     background-clip: text;
-    text-fill-color: transparent;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;*/
-    letter-spacing: 0.0125rem;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: normal;
     line-height: 1.25;
     font-weight: 900;
     font-size: 4.25rem;
+}
+
+h1::selection {
+    background: hsl(200, 12%, 4%) !important;
+    color: hsl(200, 100%, 94%) !important;
 }
 
 h2 {
@@ -1818,11 +1824,17 @@ p,
 
     h1 {
         color: hsl(200, 100%, 94%);
-        /*        background: -webkit-linear-gradient(hsl(200, 100%, 99%), hsl(200, 100%, 84%));
+        background: linear-gradient(hsl(200, 100%, 99%), hsl(200, 100%, 84%));
+        background: -webkit-linear-gradient(hsl(200, 100%, 99%), hsl(200, 100%, 84%));
         background-clip: text;
-        text-fill-color: transparent;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;*/
+        text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+    }
+
+    h1::selection {
+        background: hsl(200, 16%, 96%) !important;
+        color: hsl(200, 64%, 8%) !important;
     }
 
     .site_navbar .active,
@@ -2100,7 +2112,8 @@ p,
 
     h1 {
         font-size: 3.25rem;
-        line-height: 1.0625;
+        line-height: 1;
+        width: calc(100% + 2rem);
     }
 
     h2 {
