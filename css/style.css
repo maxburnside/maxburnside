@@ -387,7 +387,7 @@ ul li {
     margin: 0 auto;
 }
 
-.recent_work_header {
+.section_header {
     margin: 0 auto 2.25rem;
     line-height: 1;
     width: 100%;
@@ -395,10 +395,6 @@ ul li {
     display: inline-flex;
     align-items: baseline;
     justify-content: space-between;
-}
-
-.recent_work_header h4 {
-    line-height: 1;
 }
 
 .recent_work_image_container {
