@@ -545,31 +545,57 @@ footer,
     -webkit-transition: 0.125s opacity;
 }
 
+.dribbble_icon_bg,
+.twitter_icon,
+.github_icon {
+    fill: hsl(230, 100%, 50%);
+}
+
+.dribbble_icon_inner {
+    fill: hsl(200, 16%, 99%);
+}
+
 .social_media_icons li .dribbble:hover {
-    background-color: hsla(320, 88%, 60%, 0.16);
-    border: 1px solid hsla(320, 100%, 64%, 0.5);
+    background-color: hsla(320, 88%, 64%, 0.12);
+    border: 1px solid hsla(320, 100%, 72%, 0.5);
 }
 
 .social_media_icons li .twitter:hover {
-    background-color: hsla(205, 100%, 52%, 0.14);
-    border: 1px solid hsla(205, 100%, 56%, 0.4);
+    background-color: hsla(205, 100%, 56%, 0.1);
+    border: 1px solid hsla(205, 100%, 64%, 0.4);
 }
 
 .social_media_icons li .github:hover {
-    background-color: hsla(265, 100%, 44%, 0.12);
-    border: 1px solid hsla(265, 100%, 48%, 0.35);
+    background-color: hsla(265, 100%, 48%, 0.08);
+    border: 1px solid hsla(265, 100%, 72%, 0.5);
+}
+
+.social_media_icons li .dribbble:hover .dribbble_icon_bg {
+    fill: hsl(320, 100%, 40%);
+}
+
+.social_media_icons li .dribbble:hover .dribbble_icon_inner {
+    fill: hsl(320, 72%, 64%);
+}
+
+.social_media_icons li .twitter:hover .twitter_icon {
+    fill: hsl(205, 100%, 56%);
+}
+
+.social_media_icons li .github:hover .github_icon {
+    fill: hsl(265, 100%, 48%);
 }
 
 .dribbble_tooltip {
-    background: hsl(320, 88%, 60%);
+    background: hsl(320, 100%, 40%);
 }
 
 .twitter_tooltip {
-    background: hsl(210, 100%, 52%);
+    background: hsl(205, 100%, 52%);
 }
 
 .github_tooltip {
-    background: hsl(264, 100%, 44%);
+    background: hsl(265, 100%, 48%);
 }
 
 .social_media_icons li .tooltip_link:hover>.footer_tooltip,
@@ -594,15 +620,15 @@ footer,
 }
 
 .dribbble_tooltip::after {
-    border-top: 8px solid hsl(320, 88%, 60%);
+    border-top: 8px solid hsl(320, 100%, 40%);
 }
 
 .twitter_tooltip::after {
-    border-top: 8px solid hsl(210, 100%, 52%);
+    border-top: 8px solid hsl(205, 100%, 52%);
 }
 
 .github_tooltip::after {
-    border-top: 8px solid hsl(264, 100%, 44%);
+    border-top: 8px solid hsl(265, 100%, 48%);
 }
 
 .mac_software_icon,
@@ -1998,6 +2024,16 @@ p,
         background-color: hsla(160, 100%, 24%, 0.25);
     }
 
+    .dribbble_icon_bg,
+    .twitter_icon,
+    .github_icon {
+        fill: hsl(204, 100%, 50%);
+    }
+
+    .dribbble_icon_inner {
+        fill: hsl(200, 12%, 4%);
+    }
+
     .social_media_icons li .dribbble:hover {
         background-color: hsla(320, 88%, 60%, 0.15);
         border: 1px solid hsla(320, 88%, 60%, 0.35);
@@ -2244,5 +2280,21 @@ p,
 
     .gear_disclaimer p {
         font-size: 1rem;
+    }
+
+    .dribbble_icon_bg {
+        fill: hsl(320, 100%, 40%);
+    }
+
+    .twitter_icon {
+        fill: hsl(205, 100%, 52%);
+    }
+
+    .github_icon {
+        fill: hsl(265, 100%, 44%);
+    }
+
+    .dribbble_icon_inner {
+        fill: hsl(320, 72%, 64%);
     }
 }
