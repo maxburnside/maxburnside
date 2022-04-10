@@ -480,6 +480,10 @@ footer,
     background: transparent;
 }
 
+.social_media_icons li a {
+    border: 1px solid transparent;
+}
+
 .footer_links li {
     padding: 0;
     margin: 0;
@@ -499,10 +503,8 @@ footer,
 }
 
 .social_media_icons li a {
-    padding: 0.5rem;
-    height: 3rem;
-    width: 3rem;
-    border-radius: 0.75rem;
+    padding: 0.6875rem;
+    border-radius: 0.625rem;
     position: relative;
 }
 
@@ -514,20 +516,13 @@ footer,
     margin-right: 0.5rem;
 }
 
-
-footer svg {
-    height: 32px;
-    width: 32px;
-    transform: scale(0.75);
-    -webkit-transform: scale(0.75);
+.social_media_icons svg {
+    height: 24px;
+    width: 24px;
 }
 
 .social_media_icons li a {
     display: inline-block;
-}
-
-.social_media_icons li .tooltip_link:hover svg {
-    opacity: 0.95;
 }
 
 .footer_tooltip {
@@ -545,18 +540,23 @@ footer svg {
     text-shadow: 0 1px 0 hsla(200, 16%, 6%, 0.15);
     font-size: 0.875rem;
     line-height: 1;
+    transition: 0.125s opacity;
+    -webkit-transition: 0.125s opacity;
 }
 
 .social_media_icons li .dribbble:hover {
     background-color: hsla(320, 88%, 60%, 0.16);
+    border: 1px solid hsla(320, 88%, 60%, 0.4);
 }
 
 .social_media_icons li .twitter:hover {
-    background-color: hsla(210, 100%, 52%, 0.14);
+    background-color: hsla(205, 100%, 52%, 0.14);
+    border: 1px solid hsla(205, 100%, 52%, 0.35);
 }
 
 .social_media_icons li .github:hover {
-    background-color: hsla(264, 100%, 44%, 0.12);
+    background-color: hsla(265, 100%, 44%, 0.12);
+    border: 1px solid hsla(265, 100%, 44%, 0.3);
 }
 
 .dribbble_tooltip {
@@ -576,8 +576,8 @@ footer svg {
     display: block;
     opacity: 1;
     visibility: visible;
-    transition: 0.25s all;
-    -webkit-transition: 0.25s all;
+    transition: 0.25s opacity;
+    -webkit-transition: 0.25s opacity;
 }
 
 .footer_tooltip::after {
@@ -1988,14 +1988,17 @@ p,
 
     .social_media_icons li .dribbble:hover {
         background-color: hsla(320, 88%, 60%, 0.15);
+        border: 1px solid hsla(320, 88%, 60%, 0.37);
     }
 
     .social_media_icons li .twitter:hover {
-        background-color: hsla(210, 100%, 52%, 0.11);
+        background-color: hsla(205, 100%, 52%, 0.11);
+        border: 1px solid hsla(205, 100%, 52%, 0.3);
     }
 
     .social_media_icons li .github:hover {
-        background-color: hsla(264, 100%, 44%, 0.22);
+        background-color: hsla(265, 100%, 44%, 0.22);
+        border: 1px solid hsla(265, 100%, 44%, 0.5);
     }
 
 }
