@@ -365,6 +365,7 @@ ul li {
 
 .home_hero_link:hover,
 .external_link:hover,
+.gear_table_of_contents ol li a:hover,
 .gear_card_title_container a:hover,
 .gear_card_text_container a:hover,
 .work_responsibilities a:hover,
@@ -1035,6 +1036,10 @@ p,
     z-index: 7;
 }
 
+.gear_card_illustration_image {
+    background: transparent;
+}
+
 .gear_card_title_container {
     display: inline-flex;
     align-items: flex-start;
@@ -1127,6 +1132,7 @@ p,
 .home_hero_link,
 .gear_card_title_container a,
 .gear_card_text_container a,
+.gear_table_of_contents ol li a,
 .work_responsibilities a,
 .external_link,
 .return_to_top_link,
@@ -1798,6 +1804,7 @@ p,
     .gear_card_text_container ul li,
     .work_responsibilities ul li,
     p,
+    .gear_table_of_contents ol li a:hover,
     li a:hover,
     h4,
     h5,
@@ -1867,6 +1874,7 @@ p,
         box-shadow: 0 -1px 4px hsla(200, 100%, 50%, 0.1) inset;
     }
 
+    .gear_table_of_contents ol li a,
     li a,
     li a:focus,
     a,
