@@ -1776,7 +1776,8 @@ p,
 
     .recent_work_image_container a:hover img,
     .recent_work_image_container a:hover video,
-    .gear_card a:hover .gear_card_illustration_image {
+    .gear_card a:hover .gear_card_illustration_image,
+    .work_card:hover .gear_card_illustration_image {
         transform: none !important;
         -webkit-transform: none !important;
     }
