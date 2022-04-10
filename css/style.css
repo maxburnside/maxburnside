@@ -653,7 +653,7 @@ footer,
     padding: 0;
     height: calc(100vh - 80px);
     min-height: 480px;
-    max-height: 960px;
+    max-height: 800px;
     background: hsl(190, 100%, 92%);
     background: -moz-linear-gradient(180deg, hsl(190, 100%, 84%) 0%, hsla(200, 16%, 99%, 0) 100%);
     background: -webkit-linear-gradient(180deg, hsl(190, 100%, 84%) 0%, hsla(200, 16%, 99%, 0) 100%);
