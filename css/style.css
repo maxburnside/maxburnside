@@ -1036,8 +1036,12 @@ p,
     z-index: 7;
 }
 
-.gear_card_illustration_image {
-    background: transparent;
+.stark {
+    background: hsla(250, 100%, 50%, 0.85);
+}
+
+.svgo {
+    background: hsla(280, 100%, 50%, 0.85);
 }
 
 .gear_card_title_container {
