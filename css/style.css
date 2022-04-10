@@ -1586,6 +1586,7 @@ p,
     .work_card {
         flex-direction: column;
         align-items: flex-start;
+        margin-bottom: 4rem;
     }
 
     .userevidence_card:hover .work_card_text,
@@ -1602,7 +1603,7 @@ p,
     .work_card_image {
         width: 100%;
         min-width: unset;
-        margin-bottom: 1rem;
+        margin-bottom: 1.25rem;
         margin-right: 0;
     }
 
@@ -1626,6 +1627,7 @@ p,
     }
 
     .work_responsibilities {
+        display: flex;
         margin: 0;
         padding: 0;
     }
@@ -1636,6 +1638,11 @@ p,
         margin-top: 0;
     }
 
+    .work_responsibilities ul li::before {
+        left: 0;
+        top: 0;
+    }
+
     .work_responsibilities ul li,
     .work_responsibilities ul li:not(:last-child),
     .work_responsibilities ul li:not(:first-child) {
@@ -1643,7 +1650,7 @@ p,
         margin-top: 0;
         width: 16px;
         height: 16px;
-        margin-left: 0.5rem;
+        margin-left: 0.75rem;
     }
 
     .work_responsibilities ul li span {
@@ -1781,10 +1788,6 @@ p,
     .gear_card {
         margin: 0 0 4rem;
         width: 100%;
-    }
-
-    .work_card {
-        margin-bottom: 4rem;
     }
 
     .work_card_image {
@@ -2305,6 +2308,19 @@ p,
 
     .gear_disclaimer p {
         font-size: 1rem;
+    }
+
+    .work_card {
+        margin-bottom: 4rem;
+    }
+
+    .company_name {
+        font-size: 1rem;
+        margin-left: 2rem;
+    }
+
+    .company_name::before {
+        left: -2rem;
     }
 
     .dribbble_icon_bg {
