@@ -2153,6 +2153,12 @@ p,
         margin-top: 3rem;
     }
 
+    .work_content,
+    .work_section {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
     .gear_category {
         top: 4rem;
         padding: 0.25rem 3rem 0;
