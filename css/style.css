@@ -327,7 +327,7 @@ p {
 
 li a,
 .home_hero_link {
-    color: hsl(204, 100%, 50%);
+    color: hsl(230, 100%, 50%);
 }
 
 li a:hover,
@@ -1550,6 +1550,20 @@ p,
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Crect width='11' height='8' x='2.5' y='5.5' stroke='%23618A9E' stroke-width='3' rx='2'%3E%3C/rect%3E%3Crect width='3' height='6' x='3' y='1' fill='%23618A9E' rx='1'%3E%3C/rect%3E%3Crect width='3' height='6' x='10' y='1' fill='%23618A9E' rx='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
+.past_projects {
+    padding: 0;
+    margin-top: 2rem;
+}
+
+.past_projects li {
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+.past_projects li:not(:first-child) {
+    margin-top: 2rem;
+}
+
 /*********************** END Work Page Desktop Styling ***********************/
 
 @media screen and (max-width: 1056px) {
@@ -1933,6 +1947,7 @@ p,
         box-shadow: 0 -1px 4px hsla(200, 100%, 50%, 0.1) inset;
     }
 
+    .home_hero_link,
     .gear_table_of_contents ol li a,
     li a,
     li a:focus,
