@@ -821,7 +821,7 @@ footer,
 .gear_category,
 .gear_subcategory {
     width: 100%;
-    max-width: 1056px;
+    max-width: none !important;
     margin: 0 auto;
     line-height: 1;
     position: -webkit-sticky;
@@ -863,6 +863,12 @@ footer,
     height: 16px;
     transform: scale(2);
     -webkit-transform: scale(2);
+}
+
+.gear_category h3,
+.gear_subcategory h4 {
+    max-width: 992px;
+    margin: 0 auto;
 }
 
 .gear_table_of_contents,
@@ -1056,6 +1062,14 @@ p,
     -webkit-transition: 0.175s all;
     box-shadow: 0 48px 64px 0 hsla(200, 24%, 16%, 0.12), 0 4px 24px 0 hsla(200, 16%, 8%, 0.02), 0 4px 12px 0 hsla(200, 16%, 4%, 0.04);
     z-index: 7;
+}
+
+.userevidence {
+    background: radial-gradient(circle at 0% 0%, hsl(285, 100%, 72%) 0%, hsl(260, 100%, 48%) 120%);
+}
+
+.mb_brand_bg {
+    background: radial-gradient(circle at 0% 0%, hsl(195, 100%, 72%) 0%, hsl(240, 100%, 48%) 120%);
 }
 
 .sketch {
@@ -2024,6 +2038,14 @@ p,
     .hardware_gear h5 span:second-child,
     .software_gear h5 span:second-child {
         color: hsl(200, 24%, 88%);
+    }
+
+    .userevidence {
+        background: radial-gradient(circle at 0% 0%, hsl(285, 100%, 52%) 0%, hsl(260, 100%, 32%) 120%);
+    }
+
+    .mb_brand_bg {
+        background: radial-gradient(circle at 0% 0%, hsl(195, 100%, 52%) 0%, hsl(240, 100%, 32%) 120%);
     }
 
     .sketch {
