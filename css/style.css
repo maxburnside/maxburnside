@@ -821,7 +821,7 @@ footer,
 .gear_category,
 .gear_subcategory {
     width: 100%;
-    max-width: 1056px;
+    max-width: none !important;
     margin: 0 auto;
     line-height: 1;
     position: -webkit-sticky;
@@ -863,6 +863,12 @@ footer,
     height: 16px;
     transform: scale(2);
     -webkit-transform: scale(2);
+}
+
+.gear_category h3,
+.gear_subcategory h4 {
+    max-width: 992px;
+    margin: 0 auto;
 }
 
 .gear_table_of_contents,
