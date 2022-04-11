@@ -584,7 +584,7 @@ footer,
 }
 
 .dribbble_tooltip {
-    background: hsl(320, 100%, 40%);
+    background: hsl(320, 100%, 50%);
 }
 
 .twitter_tooltip {
@@ -616,7 +616,7 @@ footer,
 }
 
 .dribbble_tooltip::after {
-    border-top: 8px solid hsl(320, 100%, 40%);
+    border-top: 8px solid hsl(320, 100%, 50%);
 }
 
 .twitter_tooltip::after {
