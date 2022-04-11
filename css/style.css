@@ -1044,7 +1044,7 @@ p,
 .gear_card img {
     transition: 0.125s all;
     -webkit-transition: 0.125s all;
-    will-change: scale;
+    /*will-change: scale;*/
 }
 
 .recent_work_image_container a:hover .recent_work_image,
@@ -1059,7 +1059,7 @@ p,
 }
 
 .sketch {
-    background: linear-gradient(hsl(36, 100%, 56%) 0%, hsl(24, 100%, 56%) 100%);
+    background: linear-gradient(hsl(40, 100%, 50%) 0%, hsl(28, 100%, 50%) 100%);
 }
 
 .stark {
@@ -2027,7 +2027,7 @@ p,
     }
 
     .sketch {
-        background: linear-gradient(hsl(36, 100%, 44%) 0%, hsl(24, 100%, 44%) 100%);
+        background: linear-gradient(hsl(36, 100%, 46%) 0%, hsl(24, 100%, 46%) 100%);
     }
 
     .home_hero_link:hover,
