@@ -449,6 +449,7 @@ footer,
 }
 
 .footer_links {
+    font-size: 1.25rem;
     text-align: center;
 }
 
@@ -492,11 +493,11 @@ footer,
 }
 
 .footer_links li:not(:first-child) a {
-    margin-left: 0.5rem;
+    margin-left: 1rem;
 }
 
 .footer_links li:not(:last-child) a {
-    margin-right: 0.5rem;
+    margin-right: 1rem;
 }
 
 .social_media_icons li a {
