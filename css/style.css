@@ -1072,7 +1072,12 @@ p,
     background: radial-gradient(circle at 0% 0%, hsl(195, 100%, 72%) 0%, hsl(240, 100%, 48%) 120%);
 }
 
-.sketch {
+.photoshop {
+    background: linear-gradient(180deg, hsl(190, 100%, 64%) 0%, hsl(210, 100%, 24%) 100%)
+}
+
+.sketch,
+.illustrator {
     background: linear-gradient(hsl(40, 100%, 50%) 0%, hsl(28, 100%, 50%) 100%);
 }
 
@@ -2052,7 +2057,8 @@ p,
         background: radial-gradient(circle at 0% 0%, hsl(195, 100%, 52%) 0%, hsl(240, 100%, 32%) 120%);
     }
 
-    .sketch {
+    .sketch,
+    .illustrator {
         background: linear-gradient(hsl(36, 100%, 46%) 0%, hsl(24, 100%, 46%) 100%);
     }
 
