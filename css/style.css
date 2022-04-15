@@ -1048,18 +1048,18 @@ p,
 .work_card img,
 .gear_card figure,
 .gear_card img {
-    transition: 0.125s all;
-    -webkit-transition: 0.125s all;
+    transition: 0.4s all;
+    -webkit-transition: 0.4s all;
     /*will-change: scale;*/
 }
 
 .recent_work_image_container a:hover .recent_work_image,
 .gear_card a:hover .gear_card_illustration_image,
 .work_card:hover .gear_card_illustration_image {
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transition: 0.175s all;
-    -webkit-transition: 0.175s all;
+    transform: scale(1.025);
+    -webkit-transform: scale(1.025);
+    transition: 0.26s all;
+    -webkit-transition: 0.26s all;
     box-shadow: 0 48px 64px 0 hsla(200, 24%, 16%, 0.12), 0 4px 24px 0 hsla(200, 16%, 8%, 0.02), 0 4px 12px 0 hsla(200, 16%, 4%, 0.04);
     z-index: 7;
 }
