@@ -1064,33 +1064,24 @@ p,
     z-index: 7;
 }
 
-.userevidence {
-    background: radial-gradient(circle at 0% 0%, hsl(285, 100%, 72%) 0%, hsl(260, 100%, 48%) 120%);
+.bg_gradient_purple {
+    background: linear-gradient(0deg, hsl(256, 100%, 50%) 0%, hsl(275, 100%, 56%) 100%);
 }
 
-.mb_brand_bg {
-    background: radial-gradient(circle at 0% 0%, hsl(195, 100%, 72%) 0%, hsl(240, 100%, 48%) 120%);
+.bg_gradient_blue {
+    background: linear-gradient(180deg, hsl(194, 100%, 60%) 0%, hsl(230, 100%, 50%) 100%);
 }
 
-.photoshop {
-    background: linear-gradient(180deg, hsl(190, 100%, 64%) 0%, hsl(210, 100%, 24%) 100%)
+.bg_gradient_orange {
+    background: linear-gradient(180deg, hsl(48, 100%, 56%) 0%, hsl(28, 100%, 50%) 100%);
 }
 
-.sketch,
-.illustrator {
-    background: linear-gradient(hsl(40, 100%, 50%) 0%, hsl(28, 100%, 50%) 100%);
+.bg_gradient_green {
+    background: linear-gradient(180deg, hsl(170, 80%, 50%) 0%, hsl(120, 64%, 50%) 100%);
 }
 
-.github_desktop {
-    background: linear-gradient(0deg, hsl(270, 100%, 24%) 0%, hsl(290, 100%, 40%) 100%);
-}
-
-.stark {
-    background: hsla(250, 100%, 50%, 0.85);
-}
-
-.svgo {
-    background: hsla(280, 100%, 50%, 0.85);
+.bg_gradient_black {
+    background: linear-gradient(180deg, hsl(200, 8%, 20%) 0%, hsl(225, 14%, 6%) 100%);
 }
 
 .gear_card_title_container {
@@ -2049,17 +2040,10 @@ p,
         color: hsl(200, 24%, 88%);
     }
 
-    .userevidence {
-        background: radial-gradient(circle at 0% 0%, hsl(285, 100%, 52%) 0%, hsl(260, 100%, 32%) 120%);
-    }
-
-    .mb_brand_bg {
-        background: radial-gradient(circle at 0% 0%, hsl(195, 100%, 52%) 0%, hsl(240, 100%, 32%) 120%);
-    }
-
-    .sketch,
-    .illustrator {
-        background: linear-gradient(hsl(36, 100%, 46%) 0%, hsl(24, 100%, 46%) 100%);
+    .work_card:hover .gear_card_illustration_image,
+    .work_card:hover .work_card_image,
+    .work_card:hover .work_card_image img {
+        box-shadow: none !important;
     }
 
     .home_hero_link:hover,
