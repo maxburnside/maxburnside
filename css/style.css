@@ -246,8 +246,8 @@ a {
 }
 
 .site_navbar a {
-    transition: 0.2s all;
-    -webkit-transition: 0.2s all;
+    transition: 0.4s all;
+    -webkit-transition: 0.4s all;
 }
 
 .site_navbar a:hover,
@@ -256,8 +256,8 @@ a {
 .page_hero .text_container,
 .work_card,
 .work_card_text {
-    transition: 0.1s all;
-    -webkit-transition: 0.1s all;
+    transition: 0.12s all;
+    -webkit-transition: 0.12s all;
 }
 
 p {
@@ -538,8 +538,8 @@ footer,
     text-shadow: 0 1px 0 hsla(200, 16%, 6%, 0.15);
     font-size: 0.875rem;
     line-height: 1;
-    transition: 0.125s opacity;
-    -webkit-transition: 0.125s opacity;
+    transition: 0.4s opacity;
+    -webkit-transition: 0.4s opacity;
 }
 
 .dribbble_icon_bg,
@@ -599,8 +599,8 @@ footer,
     display: block;
     opacity: 1;
     visibility: visible;
-    transition: 0.25s opacity;
-    -webkit-transition: 0.25s opacity;
+    transition: 0.26s opacity;
+    -webkit-transition: 0.26s opacity;
 }
 
 .footer_tooltip::after {
@@ -673,6 +673,32 @@ footer,
 
 .page_hero .text_container {
     top: 50%;
+}
+
+.link_container {
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
+    max-width: 1056px;
+    position: relative;
+    top: 7rem;
+    left: 0;
+}
+
+.go_back_link {
+    padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+    position: relative;
+    left: -0.5rem
+}
+
+.go_back_link::before {
+    position: absolute;
+    content: '';
+    height: 16px;
+    width: 16px;
+    left: 0.5rem;
+    top: 0.5rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg stroke-width='1' fill='none' stroke='%23F7F7F7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='15.5' y1='8.5' x2='0.5' y2='8.5' stroke='%23F7F7F7'%3E%3C/line%3E %3Cpolyline points='5.5,3.5 0.5,8.5 5.5,13.5 '%3E%3C/polyline%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* START Gear Page Table of Contents */
