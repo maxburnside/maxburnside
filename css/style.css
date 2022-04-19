@@ -706,11 +706,12 @@ footer,
 
 .case_study_hero {
     height: calc(100vh - 216px);
-    min-height: 400px;
+    min-height: 360px;
+    max-height: 800px;
     position: relative;
     z-index: 3;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     background: transparent;
     margin: 0 auto 2rem;
 }
@@ -720,6 +721,7 @@ footer,
     width: 100%;
     max-width: 1056px;
     object-fit: cover;
+    -o-object-fit: cover;
     margin: 0 auto;
     display: flex;
     border-radius: 2rem;
