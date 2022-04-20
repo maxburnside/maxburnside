@@ -277,13 +277,13 @@ h1 {
     padding: 0;
     margin: 0;
     color: hsl(200, 64%, 8%);
-    background: -webkit-linear-gradient(hsl(200, 64%, 20%), hsl(200, 64%, 4%));
+/*    background: -webkit-linear-gradient(hsl(200, 64%, 20%), hsl(200, 64%, 4%));
     background: linear-gradient(hsl(200, 64%, 20%), hsl(200, 64%, 4%));
     background-position: 0 0;
     background-clip: text;
     -webkit-background-clip: text;
     text-fill-color: transparent;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;*/
     letter-spacing: normal;
     line-height: 1.25;
     font-weight: 900;
@@ -2078,12 +2078,12 @@ p,
 
     h1 {
         color: hsl(200, 100%, 94%);
-        background: linear-gradient(hsl(200, 100%, 99%), hsl(200, 100%, 84%));
+/*        background: linear-gradient(hsl(200, 100%, 99%), hsl(200, 100%, 84%));
         background: -webkit-linear-gradient(hsl(200, 100%, 99%), hsl(200, 100%, 84%));
         background-clip: text;
         -webkit-background-clip: text;
         text-fill-color: transparent;
-        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;*/
     }
 
     h1::selection {
@@ -2496,7 +2496,7 @@ p,
     h1 {
         font-size: 3.25rem;
         line-height: 1.25;
-        width: calc(100% + 2rem);
+        /*width: calc(100% + 2rem);*/
     }
 
     h2 {
