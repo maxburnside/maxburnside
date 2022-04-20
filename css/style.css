@@ -476,7 +476,7 @@ footer,
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2.5rem 1.125rem 2.5rem 1.5rem;
+    padding: 2.5rem 1.125rem;
 }
 
 .footer_links {
@@ -1055,6 +1055,7 @@ h2,
 .work_card_text h3,
 .work_responsibilities ul li,
 p,
+.home_hero h4,
 .page_hero h4,
 .case_study_section h4 {
     color: hsl(200, 16%, 28%);
@@ -2098,6 +2099,7 @@ p,
     .gear_table_of_contents,
     .gear_card_text_container ul li,
     .work_responsibilities ul li,
+    .home_hero h4,
     .page_hero h4,
     .case_study_section h4 {
         color: hsl(200, 16%, 68%);
