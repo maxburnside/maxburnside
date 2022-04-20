@@ -1754,6 +1754,10 @@ p,
         max-width: unset;
     }
 
+    .company_name {
+        margin-bottom: 0;
+    }
+
     .info_tag {
         line-height: 1.5rem;
         margin-top: 1rem;
