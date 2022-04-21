@@ -297,8 +297,13 @@ h1::selection {
 }
 
 h2 {
-    font-size: 1.75rem;
+    font-size: 1.875rem;
     letter-spacing: -0.0125rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    line-height: 1.5;
 }
 
 h4 {
@@ -307,13 +312,12 @@ h4 {
     line-height: 1.5;
 }
 
-.home_hero h4,
-.page_hero h4,
+.home_hero h3,
+.page_hero h3,
 .case_study_section {
     margin: 1.25rem 0 0 -0.125rem;
     padding: 0;
     max-width: 720px;
-    font-size: 1.5rem;
 }
 
 h5 {
@@ -377,7 +381,7 @@ ul li {
 .home_hero_link {
     display: inline-flex;
     align-items: center;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     text-decoration: none;
 }
 
@@ -707,12 +711,6 @@ footer,
     top: 50%;
 }
 
-/*.case_study_navbar {
-    background: hsla(200, 16%, 99%, 0.75);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-}*/
-
 .adhawk_hero {
     background: hsl(140, 100%, 92%);
     background: -moz-linear-gradient(180deg, hsl(140, 100%, 84%) 0%, hsla(200, 16%, 99%, 0) 100%);
@@ -943,15 +941,6 @@ footer,
     letter-spacing: 0.25rem;
 }
 
-/*.gear_category h3 {
-    margin: 0 auto;
-}*/
-
-/*.gear_category h3,
-.gear_category h4 {
-    max-width: 992px;
-}*/
-
 .gear_subcategory h4 {
     position: relative;
 }
@@ -1055,9 +1044,9 @@ h2,
 .work_card_text h3,
 .work_responsibilities ul li,
 p,
-.home_hero h4,
-.page_hero h4,
-.case_study_section h4 {
+.home_hero h3,
+.page_hero h3,
+.case_study_section h3 {
     color: hsl(200, 16%, 28%);
 }
 
@@ -1215,7 +1204,6 @@ p,
     margin-left: 0.375rem;
 }
 
-.hardware_gear h5 span,
 .software_gear h5 span {
     padding: 0;
     margin: 0;
@@ -1225,7 +1213,6 @@ p,
 .home_hero_link,
 .gear_card_title_container h5,
 .gear_card_title_container a,
-.hardware_gear h5 span:second-child,
 .software_gear h5 span:second-child {
     line-height: 1;
     padding: 0;
@@ -1233,7 +1220,6 @@ p,
 }
 
 .gear_card_title_container h5,
-.hardware_gear h5 span:second-child,
 .software_gear h5 span:second-child {
     color: hsl(200, 12%, 4%);
     font-size: 1.25rem;
@@ -1287,11 +1273,13 @@ p,
 .return_to_top_link::after {
     content: '';
     position: absolute;
-    right: 0;
+    right: -6px;
     top: 0.0625rem;
     height: 12px;
     width: 12px;
     opacity: 0.5;
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
 }
 
 .home_hero_link::after,
@@ -1301,7 +1289,7 @@ p,
 }
 
 .home_hero_link::after {
-    bottom: 0.1875rem;
+    bottom: 6px;
     top: unset;
 }
 
@@ -1314,11 +1302,11 @@ p,
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd' stroke-linejoin='round'%3E%3Cpath stroke='%230099FF' stroke-width='2' d='M6 7l5-3v7H1V4z'%3E%3C/path%3E%3Cpath stroke='%230099FF' stroke-width='2' d='M11 4V1H1v3'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
-.return_to_top_link::after {
+/*.return_to_top_link::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='%2309F' stroke-width='2' d='M1 6l5-5 5 5'%3E%3C/path%3E%3Cpath stroke='%2309F' stroke-width='2' d='M6 2v9'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     top: 0.25rem;
     right: 0.25rem;
-}
+}*/
 
 .home_hero_link:hover::after,
 .external_link:hover::after,
@@ -1336,20 +1324,9 @@ p,
     line-height: 0.75rem;
 }
 
-.hardware_gear h4 {
-    margin: 0;
-    padding: 0;
-    text-align: left;
-}
-
-.hardware_gear h5 span:first-child,
 .software_gear h5 span:first-child {
     font-size: 0.875rem;
     color: hsl(200, 16%, 40%)
-}
-
-.hardware_gear h5 span:first-child {
-    margin-bottom: 0.5rem;
 }
 
 .gear_card_text_container,
@@ -1516,7 +1493,7 @@ p,
     margin-bottom: 0;
     margin-left: 1.75rem;
     line-height: 0.875rem;
-    font-size: 1.125rem;
+    font-size: 1.375rem;
     display: block;
     position: relative;
 }
@@ -1836,11 +1813,6 @@ p,
         top: 13.5rem;
     }
 
-    /*    .gear_category {
-        top: 5rem;
-        padding: 0.75rem 2rem 0.5rem;
-    }*/
-
     .gear_subcategory {
         top: 5rem;
         padding: 0.5rem 2rem 1.5rem;
@@ -1886,11 +1858,6 @@ p,
     .gear_subcategory h4#services::after {
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Crect width='3' height='3' x='2.5' y='2.5' stroke='%23618A9E' stroke-width='3' rx='1.5'%3E%3C/rect%3E%3Crect width='3' height='3' x='2.5' y='10.5' stroke='%23618A9E' stroke-width='3' rx='1.5'%3E%3C/rect%3E%3Cpath fill='%23618A9E' d='M12.868 1.52l2.277 3.984A1 1 0 0 1 14.277 7H9.723a1 1 0 0 1-.868-1.496l2.277-3.985a1 1 0 0 1 1.736 0z'%3E%3C/path%3E%3Crect width='3' height='3' x='10.5' y='10.5' stroke='%23618A9E' stroke-width='3' rx='1.5'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     }
-
-    /*    .gear_card p,
-    .gear_description {
-        font-size: 1.25rem;
-    }*/
 
     .recent_work_image_container a,
     .recent_work_image_container a:nth-child(2n+1) {
@@ -1942,6 +1909,10 @@ p,
     .page_hero {
         padding: 6rem 0 7rem;
         height: calc(100vh - 120px);
+    }
+
+    .home_hero_link {
+        font-size: 1.25rem;
     }
 
     .case_study_hero {
@@ -2103,9 +2074,9 @@ p,
     .gear_table_of_contents,
     .gear_card_text_container ul li,
     .work_responsibilities ul li,
-    .home_hero h4,
-    .page_hero h4,
-    .case_study_section h4 {
+    .home_hero h3,
+    .page_hero h3,
+    .case_study_section h3 {
         color: hsl(200, 16%, 68%);
     }
 
@@ -2122,10 +2093,6 @@ p,
         background: linear-gradient(hsl(204, 100%, 50%, 0.1), hsla(204, 100%, 72%, 0.3));
         box-shadow: 0 -1px 4px hsla(200, 100%, 50%, 0.1) inset;
     }
-
-    /*    .case_study_navbar {
-        background: hsla(200, 12%, 4%, 0.75);
-    }*/
 
     .home_hero_link,
     .gear_table_of_contents ol li a,
@@ -2187,17 +2154,11 @@ p,
         color: hsl(200, 16%, 72%);
     }
 
-    /*    .gear_category h3 {
-        color: hsl(200, 16%, 40%);
-    }*/
-
-    .hardware_gear h5 span:first-child,
     .software_gear h5 span:first-child {
         color: hsl(200, 16%, 50%);
     }
 
     .gear_card_title_container h5,
-    .hardware_gear h5 span:second-child,
     .software_gear h5 span:second-child {
         color: hsl(200, 24%, 88%);
     }
@@ -2356,16 +2317,6 @@ p,
         padding-top: 0;
     }
 
-    /*    .gear_category {
-        top: 4rem;
-        padding: 0.25rem 3rem 0;
-    }
-
-    .gear_category h3 {
-        font-size: 0.625rem;
-        line-height: 0.5rem;
-    }*/
-
     .gear_subcategory {
         top: 4rem;
         padding: 1rem 1.5rem;
@@ -2424,17 +2375,18 @@ p,
 
     .home_hero_link,
     .gear_card_title_container a,
-    .hardware_gear h5 span,
     .software_gear h5 span {
         line-height: 0.75rem;
     }
 
     .home_hero_link::after {
+        right: 0;
+        transform: scale(1);
+        -webkit-transform: scale(1);
         bottom: -0.0625rem;
     }
 
     .gear_card_title_container h5,
-    .hardware_gear .name,
     .software_gear .name {
         line-height: 1rem;
     }
@@ -2445,10 +2397,6 @@ p,
 
     .gear_card_title_container a::after {
         top: 0;
-    }
-
-    .hardware_gear h5 span:first-child {
-        margin-bottom: 0.75rem;
     }
 
     .gear_category,
@@ -2500,6 +2448,10 @@ p,
     }
 
     h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
         font-size: 1.375rem;
     }
 
