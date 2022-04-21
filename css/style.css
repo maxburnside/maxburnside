@@ -938,7 +938,7 @@ footer,
     font-size: 0.75rem;
     font-weight: 500;
     line-height: 0.75rem;
-    letter-spacing: 0.25rem;
+    letter-spacing: 0.375rem;
 }
 
 .gear_subcategory h4 {
@@ -1038,7 +1038,6 @@ footer,
     opacity: 1;
 }
 
-.gear_table_of_contents,
 h2,
 .gear_card_text_container ul li,
 .work_card_text h3,
@@ -1048,6 +1047,10 @@ p,
 .page_hero h3,
 .case_study_section h3 {
     color: hsl(200, 16%, 28%);
+}
+
+.gear_table_of_contents {
+    color: hsl(200, 16%, 36%);
 }
 
 .gear_card_container {
@@ -2022,7 +2025,6 @@ p,
 
     .gear_category h3,
     .gear_subcategory h4,
-    .gear_table_of_contents,
     .gear_card_text_container ul li,
     .work_responsibilities ul li,
     p,
@@ -2082,13 +2084,16 @@ p,
     }
 
     p,
-    .gear_table_of_contents,
     .gear_card_text_container ul li,
     .work_responsibilities ul li,
     .home_hero h3,
     .page_hero h3,
     .case_study_section h3 {
-        color: hsl(200, 16%, 68%);
+        color: hsl(200, 16%, 64%);
+    }
+
+    .gear_table_of_contents {
+        color: hsl(200, 16%, 48%);
     }
 
     .site_navbar .active::before,
