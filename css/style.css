@@ -1171,7 +1171,7 @@ p,
 
 .gear_card_title_container {
     display: inline-flex;
-    align-items: flex-start;
+    align-items: baseline;
     justify-content: space-between;
     margin: 1.25rem 0 0 0;
     line-height: 1;
@@ -1231,7 +1231,14 @@ p,
     text-align: right;
     line-height: 1;
     position: relative;
+}
+
+.home_hero_link {
     padding-right: 1.25rem;
+}
+
+.gear_card_title_container a {
+    padding-right: 1.75rem;
 }
 
 .gear_card_title_container h5 {
@@ -1280,6 +1287,10 @@ p,
     opacity: 0.5;
     transform: scale(1.5);
     -webkit-transform: scale(1.5);
+}
+
+.gear_card_title_container a::after {
+    right: 4px;
 }
 
 .home_hero_link::after,
