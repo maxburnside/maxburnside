@@ -472,17 +472,25 @@ ul li {
 .full_width_img {
     width: 100%;
     max-width: 1056px;
-    margin: 2rem auto;
+    margin: 3rem auto;
     padding: 0 2rem;
     background: transparent;
     display: flex;
 }
 
+.img_with_caption {
+    margin-bottom: 0;
+}
+
 .case_study_main figcaption {
     text-align: center;
     margin: 0 auto;
-    padding-top: 0.5rem;
-    margin-bottom: 2rem;
+    padding: 1rem 0 0;
+    line-height: 1.5;
+}
+
+.image_with_caption_container {
+    margin-bottom: 3rem;
 }
 
 .recent_work_image_container a,
@@ -981,7 +989,7 @@ footer,
 
 .subsection_header {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 4rem;
     line-height: 1;
     position: -webkit-sticky;
     position: -moz-sticky;
@@ -1029,8 +1037,8 @@ footer,
 }
 
 .gear_section {
-    padding-top: 4rem;
     margin-bottom: 4rem;
+    padding: 0 2rem;
 }
 
 .work_section {
@@ -2385,7 +2393,7 @@ p,
     }
 
     .gear_section {
-        padding: 4rem 1.5rem 6rem;
+        padding: 0 1.5rem 6rem;
     }
 
     .gear_content {
