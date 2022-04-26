@@ -1054,7 +1054,7 @@ footer,
     position: relative;
 }
 
-.gear_card_container::after {
+/*.gear_card_container::after {
     content: '';
     position: absolute;
     left: 50%;
@@ -1063,7 +1063,7 @@ footer,
     width: 20rem;
     height: 0.125rem;
     border-radius: 0.0625rem;
-}
+}*/
 
 .gear_section h4 {
     margin-bottom: 0.75rem;
