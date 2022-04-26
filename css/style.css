@@ -288,20 +288,21 @@ p {
 
 h1 {
     padding: 0;
-    margin: 0;
+    margin: 1px 0 0 0;
     color: hsl(200, 64%, 8%);
-    /*    background: -webkit-linear-gradient(hsl(200, 64%, 20%), hsl(200, 64%, 4%));
-    background: linear-gradient(hsl(200, 64%, 20%), hsl(200, 64%, 4%));
-    background-position: 0 0;
-    background-clip: text;
+    background-image: linear-gradient(hsl(190, 100%, 20%), hsl(200, 100%, 4%));
     -webkit-background-clip: text;
-    text-fill-color: transparent;
-    -webkit-text-fill-color: transparent;*/
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     letter-spacing: normal;
     line-height: 1.25;
     font-weight: 900;
     font-size: 4.25rem;
     word-break: break-word;
+}
+
+.adhawk_hero h1 {
+    background-image: linear-gradient(hsl(180, 100%, 20%), hsl(150, 100%, 4%));
 }
 
 h1::selection {
@@ -319,7 +320,7 @@ h3 {
     line-height: 1.5;
 }
 
-.case_study_main h2,
+.case_study_section h2,
 .case_study_main h3 {
     margin-bottom: 1rem;
 }
@@ -787,16 +788,15 @@ footer,
 }
 
 .case_study_hero {
-    height: calc(100vh - 120px);
-    min-height: 360px;
-    max-height: 800px;
+    /*    height: calc(100vh - 240px);
+    min-height: 480px;
+    max-height: 960px;*/
     margin: 0 auto 3rem;
 }
 
 .case_study_hero_image {
-    height: 100%;
-    width: 100%;
-    max-width: 1200px;
+    height: 600px;
+    width: 1200px;
     object-fit: cover;
     -o-object-fit: cover;
     margin: 0 auto;
@@ -804,8 +804,6 @@ footer,
     border-radius: 2rem;
 }
 
-.case_study_main h1,
-.case_study_main h2,
 .case_study_main h3,
 .case_study_main h4,
 .case_study_main h5,
@@ -817,7 +815,20 @@ footer,
     margin: 0 auto;
 }
 
+.case_study_hero h1,
+.case_study_hero h2 {
+    padding: 0 2rem;
+    width: 100%;
+    max-width: 1056px;
+    margin: 0 auto;
+}
+
+.case_study_hero h1 {
+    margin: 1rem 0 0 0;
+}
+
 .case_study_main {
+    margin-top: 6rem;
     margin-bottom: 6rem;
 }
 
@@ -927,10 +938,6 @@ footer,
     width: 24px;
     opacity: 0.5;
     background-repeat: no-repeat;
-}
-
-.toc_item:hover::before {
-    opacity: 1;
 }
 
 .toc_item_computer::before {
@@ -1145,8 +1152,6 @@ h2,
 .work_card_text h3,
 .work_responsibilities ul li,
 p,
-.home_hero h3,
-.page_hero h3,
 .case_study_main h3 {
     color: hsl(200, 16%, 28%);
 }
@@ -2051,7 +2056,7 @@ p,
 
     .home_hero,
     .page_hero {
-        padding: 6rem 0 7rem;
+        top: 3rem;
         height: calc(100vh - 120px);
     }
 
@@ -2062,7 +2067,7 @@ p,
 
     .case_study_hero {
         padding-top: 0;
-        height: calc(100vh - 240px);
+        background: transparent !important;
     }
 
     .home_hero .text_container,
@@ -2160,6 +2165,7 @@ p,
     p,
     .table_of_contents ol li a:hover,
     li a:hover,
+    h2,
     h4,
     h5,
     .availability_container,
@@ -2191,15 +2197,15 @@ p,
 
     h1 {
         color: hsl(200, 100%, 94%);
-        /*        background: linear-gradient(hsl(200, 100%, 99%), hsl(200, 100%, 84%));
-        background: -webkit-linear-gradient(hsl(200, 100%, 99%), hsl(200, 100%, 84%));
-        background-clip: text;
-        -webkit-background-clip: text;
-        text-fill-color: transparent;
-        -webkit-text-fill-color: transparent;*/
+        background-image: linear-gradient(hsl(190, 100%, 96%), hsl(200, 100%, 64%));
+    }
+
+    .adhawk_hero h1 {
+        background-image: linear-gradient(hsl(180, 100%, 96%), hsl(150, 100%, 64%));
     }
 
     h1::selection {
+        background-image: none !important;
         background: hsl(200, 16%, 96%) !important;
         color: hsl(200, 64%, 8%) !important;
     }
@@ -2215,14 +2221,10 @@ p,
     p,
     .gear_card_text_container ul li,
     .work_responsibilities ul li,
-    .home_hero h3,
-    .page_hero h3,
-    .case_study_main h3 {
-        color: hsl(200, 16%, 64%);
-    }
-
+    h2,
+    .case_study_main h3,
     .table_of_contents {
-        color: hsl(200, 16%, 48%);
+        color: hsl(200, 16%, 64%);
     }
 
     .site_navbar .active::before,
@@ -2423,6 +2425,11 @@ p,
         margin: 4rem 0 0;
     }
 
+    .case_study_hero_image {
+        height: calc(100vh - 176px);
+        min-height: 400px;
+    }
+
     .home_hero .text_container {
         padding: 0 1.5rem;
     }
@@ -2589,7 +2596,6 @@ p,
     h1 {
         font-size: 3.25rem;
         line-height: 1.25;
-        /*width: calc(100% + 2rem);*/
     }
 
     h2 {
