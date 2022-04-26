@@ -61,33 +61,33 @@
 </head>
 
 <body>
-    <nav class='site_navbar'>
-        <div class='inner_nav_container'>
-            <a href='/' title='Go to the home page'>
-                <img class='nav_logo' src='img/logos/mb_logo.svg' alt='Max Burnside Logo' width='80' height='48'>
-            </a>
-            <ul>
-                <!--                 <li>
+    <header class='page_hero'>
+        <nav class='site_navbar'>
+            <div class='inner_nav_container'>
+                <a href='/' title='Go to the home page'>
+                    <img class='nav_logo' src='img/logos/mb_logo.svg' alt='Max Burnside Logo' width='80' height='48'>
+                </a>
+                <ul>
+                    <!--                 <li>
                     <a href='/work' title="See the work I've done">Work</a>
                 </li> -->
-                <li>
-                    <a class='active' href='/gear' title='See the gear I use'>Gear</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <main class='gear_main' id='top'>
-        <section class='page_hero'>
-            <div class='text_container'>
-                <h1>The Gear</h1>
-                <h3>This is the hardware and software I use while designing and developing products.</h3>
+                    <li>
+                        <a class='active' href='/gear' title='See the gear I use'>Gear</a>
+                    </li>
+                </ul>
             </div>
-        </section>
+        </nav>
+        <div class='text_container'>
+            <h1>The Gear</h1>
+            <h3>This is the hardware and software I use while designing and developing products.</h3>
+        </div>
+    </header>
+    <main class='gear_main' id='top'>
         <nav class='gear_table_of_contents'>
             <h2>Table of Contents</h2>
             <ol>
                 <h6>Hardware</h6>
-                <li class='toc_item toc_item_computers'><a href='#computers'>Computers</a></li>
+                <li class='toc_item toc_item_computer'><a href='#computers'>Computers</a></li>
                 <li class='toc_item toc_item_peripherals'><a href='#peripherals'>Peripherals</a></li>
                 <h6>Software</h6>
                 <li class='toc_item toc_item_applications'><a href='#applications'>Applications</a></li>
@@ -99,9 +99,8 @@
             <!--             <div class='gear_intro gear_category'>
                 <h3 id='hardware'>Hardware</h3>
             </div> -->
-            <div class='gear_subcategory'>
-                <h4 id='computers'>Computers</h4>
-                <!-- <a href='#accessories'>Next Section</a> -->
+            <div class='subsection_header'>
+                <h4 id='computer'>Computers</h4>
             </div>
             <section class='gear_section'>
                 <p class='gear_description'>The core of all design and development workflows, these computers provide a variety of screen sizes, processors, operating system options.</p>
@@ -239,9 +238,8 @@
                         </div>
                     </div>
             </section>
-            <div class='gear_subcategory'>
+            <div class='subsection_header'>
                 <h4 id='peripherals'>Peripherals</h4>
-                <!-- <a href='#applications'>Next Section</a> -->
             </div>
             <section class='gear_section'>
                 <p class='gear_description'>While not completely necessary in the design and development workflows, these peripherals make work easier and more enjoyable.</p>
@@ -365,9 +363,8 @@
             <!--             <div class='gear_intro gear_category'>
                 <h3>Software</h3>
             </div> -->
-            <div class='gear_subcategory'>
+            <div class='subsection_header'>
                 <h4 id='applications'>Applications</h4>
-                <!-- <a href='#plugins'>Next Section</a> -->
             </div>
             <section class='gear_section'>
                 <p class='gear_description'>Though web applications have become more common in recent years, I prefer native desktop applications when possible. Being able to leverage hardware acceleration, as well as easily manage desktop workflows (as opposed to hunting through browser tabs), these applications are the foundation of my design and development workflows.</p>
@@ -641,9 +638,8 @@
                 </div>
                 </div>
             </section>
-            <div class='gear_subcategory'>
+            <div class='subsection_header'>
                 <h4 id='plugins'>Plugins</h4>
-                <!-- <a href='#services'>Next Section</a> -->
             </div>
             <section class='gear_section'>
                 <p class='gear_description'>Plugins are hugely important in design and developement work, as they extend the built-in capabilities of the applications used regularly. While any given application might have the features needed for, say, 95% of work you complete, that remaining 5% can be built by independent developers - who add features the first-party software team might not otherwise address, and/or build upcoming features faster than the first-party team.</p>
@@ -778,7 +774,7 @@
                     </div>
                 </div>
             </section>
-            <div class='gear_subcategory'>
+            <div class='subsection_header'>
                 <h4 id='services'>Services</h4>
             </div>
             <section class='gear_section'>
