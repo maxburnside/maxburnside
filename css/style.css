@@ -370,7 +370,7 @@ h6 {
 
 p {
     font-size: 1.125rem;
-    letter-spacing: -0.015rem;
+    letter-spacing: -0.015625rem;
 }
 
 .gear_section p {
@@ -427,7 +427,8 @@ ul li {
 .return_to_top_link:hover,
 .work_card_text:hover .work_card_text h3,
 .work_card_text:hover .info_tag,
-.work_card_text:hover .work_responsibilities {
+.work_card_text:hover .work_responsibilities,
+.case_study_company p {
     color: hsl(200, 12%, 4%);
 }
 
@@ -753,7 +754,7 @@ footer,
     position: relative;
     width: 100%;
     padding: 0;
-    height: calc(100vh - 80px);
+    height: 90vh;
     min-height: 480px;
     max-height: 800px;
     background: hsl(190, 100%, 92%);
@@ -949,9 +950,6 @@ footer,
 }
 
 .case_study_hero {
-    /*    height: calc(100vh - 240px);
-    min-height: 480px;
-    max-height: 960px;*/
     margin: 0 auto 2rem;
 }
 
@@ -1035,11 +1033,7 @@ footer,
 
 .case_study_company,
 .case_study_project {
-    width: 50%;
-}
-
-.case_study_project {
-    margin: 0;
+    width: calc(50% - 1rem);
 }
 
 .case_study_main .case_study_section:first-child h2 {
@@ -1054,9 +1048,18 @@ footer,
     padding: 0 2rem;
 }
 
-.case_study_company h6,
+.case_study_company h6 {
+    margin: 2.5rem 0 0.75rem;
+}
+
 .case_study_project h6 {
-    margin: 2rem 0 0.5rem;
+    margin: 2.5rem 0 1.25rem;
+}
+
+.case_study_project h5,
+.case_study_project ol li {
+    font-size: 1.125rem;
+    letter-spacing: -0.015625rem;
 }
 
 .case_study_project ol {
@@ -1073,11 +1076,15 @@ footer,
 
 .case_study_project ol,
 .case_study_project .toc_item_calendar {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .case_study_section .table_of_contents h3 {
     padding: 0;
+}
+
+.case_study_project {
+    margin: 0 2rem 0 0;
 }
 
 .link_container {
@@ -2023,7 +2030,12 @@ h6 {
         width: 100%;
     }
 
+    .case_study_project {
+        margin-right: 0;
+    }
+
     .case_study_company {
+        margin-top: 3rem;
         margin-bottom: 3rem;
     }
 
@@ -2136,7 +2148,7 @@ h6 {
     .home_hero,
     .page_hero {
         top: 3rem;
-        height: calc(100vh - 120px);
+        /*height: calc(100vh - 120px);*/
     }
 
     .home_hero_link {
@@ -2252,7 +2264,8 @@ h6 {
     .home_hero_link:hover span,
     .external_link:hover span,
     .return_to_top_link:hover,
-    p span {
+    p span,
+    .case_study_company p {
         color: hsl(200, 16%, 88%);
         text-decoration: none;
     }
@@ -2504,7 +2517,7 @@ h6 {
 
     .home_hero,
     .page_hero {
-        height: calc(100vh - 240px);
+        height: 75vh;
     }
 
     .home_main,
@@ -2529,7 +2542,7 @@ h6 {
     }
 
     .case_study_hero_image {
-        height: calc(100vh - 168px);
+        height: 75vh;
         min-height: 400px;
     }
 
