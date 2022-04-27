@@ -864,10 +864,6 @@ footer,
     margin: 2rem auto 0.5rem;
 }
 
-.case_study_intro p {
-    
-}
-
 .case_study_section .table_of_contents h6 {
     padding: 0;
     margin: 3rem 0 1.5rem;
@@ -2424,6 +2420,11 @@ h6 {
 
     .site_navbar ul li:not(:first-child) {
         padding: 0 0 0 1rem;
+    }
+
+    .home_hero,
+    .page_hero {
+        height: calc(100vh - 240px);
     }
 
     .home_main,
