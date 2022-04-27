@@ -288,21 +288,21 @@ p {
 
 h1 {
     padding: 0;
-    margin: 1px 0 0 0;
+    margin: 1px 0 0.25rem 0;
     color: hsl(200, 64%, 8%);
     background-image: linear-gradient(hsl(190, 100%, 20%), hsl(200, 100%, 4%));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: normal;
-    line-height: 1.25;
+    line-height: 1.125;
     font-weight: 900;
     font-size: 4.25rem;
     word-break: break-word;
 }
 
 .home_hero h1 {
-    margin: 2px 0 0 0;
+    margin: 2px 0 0.25rem 0;
 }
 
 .adhawk_hero h1 {
@@ -334,7 +334,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.5rem;
+    font-size: 1.625rem;
     letter-spacing: -0.0125rem;
     line-height: 1.5;
 }
@@ -2698,22 +2698,22 @@ h6 {
 
 
     h1 {
-        font-size: 3.25rem;
-        line-height: 1.25;
+        font-size: 3.5rem;
+        margin-bottom: 1rem !important;
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.375rem;
     }
 
     h3 {
-        font-size: 1.375rem;
+        font-size: 1.25rem;
     }
 
     h4,
     .external_link,
     .home_hero_link {
-        font-size: 1.25rem;
+        font-size: 1.125rem;
     }
 
     p,
