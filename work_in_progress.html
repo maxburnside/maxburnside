@@ -61,32 +61,32 @@
 </head>
 
 <body>
-    <nav class='site_navbar'>
-        <div class='inner_nav_container'>
-            <a href='/' title='Go to the home page'>
-                <img class='nav_logo' src='img/logos/mb_logo.svg' alt='Max Burnside Logo' width='80' height='48'>
-            </a>
-            <ul>
-                <li>
-                    <a class='active' href='/work' title="See the work I've done">Work</a>
-                </li>
-                <li>
-                    <a href='/gear' title='See the gear I use'>Gear</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <main class='gear_main'>
-        <section class='page_hero'>
-            <div class='text_container'>
-                <h1>The Work</h1>
-                <h3>This is the product design work I've done.</h3>
+    <header class='page_hero'>
+        <nav class='site_navbar'>
+            <div class='inner_nav_container'>
+                <a href='/' title='Go to the home page'>
+                    <img class='nav_logo' src='img/logos/mb_logo.svg' alt='Max Burnside Logo' width='80' height='48'>
+                </a>
+                <ul>
+                    <li>
+                        <a class='active' href='/work' title="See the work I've done">Work</a>
+                    </li>
+                    <li>
+                        <a href='/gear' title='See the gear I use'>Gear</a>
+                    </li>
+                </ul>
             </div>
-        </section>
+        </nav>
+        <div class='text_container'>
+            <h1>The Work</h1>
+            <h2>This is the product design work I've done.</h2>
+        </div>
+    </header>
+    <main class='gear_main'>
         <section class='gear_content work_content'>
             <section class='gear_section work_section'>
                 <div class='section_header'>
-                    <h2>Featured Projects</h2>
+                    <h3>Featured Projects</h3>
                 </div>
                 <div class='gear_card_container'>
                     <!-- <a href='#' class='gear_card work_card userevidence_card'>
@@ -209,6 +209,37 @@
                             <div class='work_responsibilities'>
                                 <!-- <p>Responsibilities:</p> -->
                                 <ul>
+                                    <li class='web_design' title='Web Design'>
+                                        <span>
+                                            Web Design
+                                            <!-- (Desktop & Mobile) -->
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                    <a href='/work/trx.html' class='gear_card work_card trx_card'>
+                        <div class='work_card_image'>
+                            <span class='availability_container left_tag'>2020</span>
+                            <span class='category_tag'>B2C</span>
+                            <img class='gear_card_illustration_image' src='https://cdn.dribbble.com/users/303299/screenshots/14484656/media/38fba8d2499e05f9f001122be386150a.png?compress=1&resize=1200x900&vertical=top' alt='TRX Hero Image' width='560' height='420' loading='lazy' />
+                        </div>
+                        <div class='work_card_text'>
+                            <h3 class='company_name trx_company'>
+                                TRX
+                            </h3>
+                            <!-- <h5 class='info_tag'>
+                                    Exercise/Training Equipment
+                                </h5> -->
+                            <div class='work_responsibilities'>
+                                <!-- <p>Responsibilities:</p> -->
+                                <ul>
+                                    <li class='product_design' title='Product Design'>
+                                        <span>
+                                            Product Design
+                                        </span>
+                                    </li>
                                     <li class='web_design' title='Web Design'>
                                         <span>
                                             Web Design
@@ -367,9 +398,9 @@
                 </div>
             </section>
         </section>
-        <section class='gear_content'>
+        <!-- <section class='gear_content'>
             <section class='gear_section'>
-                <h2>Past Projects</h2>
+                <h3>Past Projects</h3>
                 <ul class='past_projects'>
                     <li>
                         <a href='/work/hiresmarter.html' title='View HireSmarter Case Study'>
@@ -398,7 +429,7 @@
                     </li>
                 </ul>
             </section>
-        </section>
+        </section> -->
     </main>
     <footer>
         <div class='footer_container'>
