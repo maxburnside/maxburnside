@@ -301,6 +301,10 @@ h1 {
     word-break: break-word;
 }
 
+.home_hero h1 {
+    margin: 2px 0 0 0;
+}
+
 .adhawk_hero h1 {
     background-image: linear-gradient(hsl(180, 100%, 20%), hsl(150, 100%, 4%));
 }
