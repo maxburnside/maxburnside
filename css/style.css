@@ -538,7 +538,8 @@ footer::before {
 .gear_card_container::after,
 footer::before,
 .case_study_company h3::after,
-.case_study_project h3::after {
+.case_study_project h3::after,
+.work_card_text_container span h5:first-child::after {
     background-color: hsla(200, 16%, 56%, 0.24);
 }
 
@@ -870,7 +871,7 @@ footer,
 }
 
 .toc_item_calendar::before {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Crect width='24' height='14' y='10' fill='%23618A9E' rx='2'%3E%3C/rect%3E%3Crect width='24' height='5' y='3' fill='%23618A9E' rx='2'%3E%3C/rect%3E%3Crect width='4' height='6' x='6' fill='%23618A9E' rx='2'%3E%3C/rect%3E%3Crect width='4' height='6' x='14' fill='%23618A9E' rx='2'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='%23618A9E' d='M24 12v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V12a2 2 0 1 1 4 0v8h16v-8a2 2 0 1 1 4 0z'%3E%3C/path%3E%3Cpath fill='%23618A9E' d='M2 10h20v4H2z'%3E%3C/path%3E%3Crect width='4' height='8' x='3' fill='%23618A9E' rx='2'%3E%3C/rect%3E%3Crect width='4' height='8' x='17' fill='%23618A9E' rx='2'%3E%3C/rect%3E%3Crect width='24' height='4' y='4' fill='%23618A9E' rx='2'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .toc_item_designer::before {
@@ -977,7 +978,7 @@ footer,
     width: 512px;
     height: 512px;
     background-size: 512px 512px;
-    left: -256px;
+    left: -320px;
     top: 0;
     opacity: 0.4;
 }
@@ -985,7 +986,7 @@ footer,
 .hero_image_container::after {
     width: 256px;
     height: 256px;
-    right: -64px;
+    right: -320px;
     bottom: 0;
     border-radius: 32px;
 }
@@ -1117,7 +1118,7 @@ footer,
 
 .case_study_project {
     margin: 0 2rem 0 0;
-    overflow-x: hidden;
+    overflow: none;
 }
 
 .case_study_project h3,
@@ -1141,13 +1142,13 @@ footer,
 }
 
 .case_study_project h3::after {
-    left: 112px;
-    width: calc(100% - 144px);
+    left: 172px;
+    width: calc(100% - 204px);
 }
 
 .case_study_company h3::after {
-    left: 144px;
-    width: calc(100% - 200px);
+    left: 204px;
+    width: calc(100% - 260px);
 }
 
 .link_container {
@@ -1690,6 +1691,45 @@ h6 {
     border-radius: 0 2rem 2rem 0;
 }
 
+.work_card_text_container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.work_card_text_container h3 {
+    margin-top: 1.5rem;
+}
+
+.work_card_text_container span {
+    display: inline-flex;
+}
+
+.work_card_text_container span h5 {
+    font-size: 1rem;
+}
+
+.work_card_text_container span h5,
+.work_card_text_container h3 {
+    line-height: 1rem;
+    z-index: 1;
+}
+
+.work_card_text_container span h5:first-child {
+    margin-right: 1.5rem;
+    position: relative;
+}
+
+.work_card_text_container span h5:first-child::after {
+    content: '';
+    position: absolute;
+    right: -13px;
+    top: -2px;
+    height: 24px;
+    width: 2px;
+    display: block;
+    z-index: 4;
+}
+
 .userevidence_card:hover .work_card_text,
 .drift_card:hover .work_card_text {
     background-color: hsla(270, 100%, 40%, 0.12);
@@ -1737,7 +1777,7 @@ h6 {
 
 .company_name {
     margin-top: 0;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 .company_name {
@@ -2002,6 +2042,17 @@ h6 {
         max-width: unset;
     }
 
+    .work_card_text_container {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .work_card_text_container h3 {
+        margin-top: 0;
+    }
+
     .company_name {
         margin-bottom: 0;
         margin-left: 44px;
@@ -2125,11 +2176,7 @@ h6 {
     }
 
     .case_study_project h3::after {
-        width: calc(100% - 176px);
-    }
-
-    .case_study_company h3::after {
-        width: calc(100% - 208px);
+        width: calc(100% - 236px);
     }
 
     .subsection_header {
@@ -2227,9 +2274,12 @@ h6 {
     }
 
     .home_main,
-    .gear_main,
-    .case_study_main {
+    .gear_main {
         margin: 5rem 0 0;
+        top: 0;
+    }
+
+    .case_study_main {
         top: 0;
     }
 
@@ -2387,6 +2437,10 @@ h6 {
 
     .hero_image_container::before {
         opacity: 0.1;
+    }
+
+    .hero_image_container::after {
+        opacity: 0.5;
     }
 
     .adhawk_hero .hero_image_container::after {
@@ -2622,9 +2676,12 @@ h6 {
     }
 
     .home_main,
-    .gear_main,
-    .case_study_main {
+    .gear_main {
         margin: 4rem 0 0;
+    }
+
+    .case_study_hero_image {
+        height: 70vh;
     }
 
     .case_study_hero h1,
@@ -2639,16 +2696,24 @@ h6 {
     }
 
     .case_study_hero h1 {
-        margin-top: 1.5rem;
+        margin-top: 3rem;
     }
 
-    .case_study_project h3 {
+    .case_study_project h3,
+    .case_study_company h3 {
+        position: relative;
         left: 1.5rem;
+        /*top: -1rem;*/
     }
 
     .case_study_project h3::after {
         left: 85px;
-        width: calc(100% - 141px);
+        width: calc(100% - 165px);
+        height: 360px;
+    }
+
+    .case_study_company {
+        margin-top: 5rem;
     }
 
     .case_study_company h3 {
@@ -2657,7 +2722,45 @@ h6 {
 
     .case_study_company h3::after {
         left: 108px;
-        width: calc(100% - 116px);
+        width: calc(100% - 124px);
+        height: 424px;
+    }
+
+    .case_study_project h3::after,
+    .case_study_company h3::after {
+        width: 2px;
+        left: 2px;
+        position: absolute;
+        z-index: 4;
+        display: block;
+        top: 31px;
+        display: none;
+    }
+
+    .case_study_company h3::after {
+        left: 26px;
+    }
+
+    .case_study_intro .case_study_project {
+        padding: 0 0 0 1.5rem;
+    }
+
+    .case_study_project,
+    .case_study_company {
+        padding: 0 !important;
+        border-left: 2px solid hsla(200, 16%, 56%, 0.24);
+        margin-left: 1.5rem;
+    }
+
+    .case_study_section .table_of_contents h5,
+    .case_study_section .table_of_contents h6,
+    .case_study_section .table_of_contents ol,
+    .case_study_company h5,
+    .case_study_company h6,
+    .case_study_company p {
+        position: relative;
+        left: 28px;
+        padding-right: 52px;
     }
 
     .home_hero .text_container {
@@ -2725,8 +2828,7 @@ h6 {
         margin-bottom: 0.5rem;
     }
 
-    .gear_main,
-    .case_study_main {
+    .gear_main {
         margin: 3rem 0 4rem;
     }
 
@@ -2795,16 +2897,16 @@ h6 {
     }
 
     .work_card {
-        margin-bottom: 4rem;
+        margin-bottom: 6rem;
     }
 
     .company_name {
-        font-size: 1rem;
-        margin-left: 2.5rem;
+        /*font-size: 1rem;*/
+        margin-left: 0;
     }
 
     .company_name::before {
-        left: -2.5rem;
+        background-image: none;
     }
 
     .dribbble_icon_bg {
@@ -2842,6 +2944,7 @@ h6 {
         font-size: 1.125rem;
     }
 
+    h5,
     p,
     .gear_section p {
         font-size: 1rem;
