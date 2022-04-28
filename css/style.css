@@ -233,7 +233,8 @@ a {
 .site_navbar li a:hover,
 .footer_links li a:hover,
 .availability_container,
-.category_tag {
+.category_tag,
+.company_name {
     color: hsl(200, 12%, 4%);
 }
 
@@ -428,7 +429,6 @@ ul li {
 .work_responsibilities a:hover,
 .return_to_top_link:hover,
 .work_card_text:hover .work_card_text h3,
-.work_card_text:hover .info_tag,
 .work_card_text:hover .work_responsibilities,
 .case_study_company p {
     color: hsl(200, 12%, 4%);
@@ -984,9 +984,9 @@ footer,
 }
 
 .hero_image_container::after {
-    width: 256px;
+    width: 512px;
     height: 256px;
-    right: -320px;
+    right: -560px;
     bottom: 0;
     border-radius: 32px;
 }
@@ -1256,10 +1256,6 @@ footer,
     margin-bottom: 0.75rem;
 }
 
-.info_tag {
-    color: hsl(200, 24%, 44%);
-}
-
 .subsection_header h4 {
     position: relative;
     max-width: 1056px;
@@ -1272,7 +1268,7 @@ footer,
 
 h2,
 .gear_card_text_container ul li,
-.work_card_text h3,
+.work_card_text_container span h5,
 .work_responsibilities ul li,
 p,
 .case_study_main h3 {
@@ -1697,7 +1693,7 @@ h6 {
 }
 
 .work_card_text_container h3 {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 .work_card_text_container span {
@@ -1715,7 +1711,7 @@ h6 {
 }
 
 .work_card_text_container span h5:first-child {
-    margin-right: 1.5rem;
+    margin-right: 24px;
     position: relative;
 }
 
@@ -1723,9 +1719,10 @@ h6 {
     content: '';
     position: absolute;
     right: -13px;
-    top: -2px;
+    top: -3px;
     height: 24px;
     width: 2px;
+    border-radius: 1px;
     display: block;
     z-index: 4;
 }
@@ -1776,21 +1773,9 @@ h6 {
 }
 
 .company_name {
-    margin-top: 0;
     margin-bottom: 1rem;
-}
-
-.company_name {
     margin-left: 48px;
 }
-
-.info_tag {
-    margin-bottom: 1.5rem;
-}
-
-/*.left_tag {
-    padding: 6px 8px;
-}*/
 
 .work_responsibilities p {
     font-size: 0.875rem;
@@ -1818,7 +1803,6 @@ h6 {
 
 .engagement_tag::before,
 .role_tag::before,
-.info_tag::before,
 .userevidence_company::before,
 .drift_company::before,
 .visably_company::before,
@@ -1919,11 +1903,6 @@ h6 {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Crect width='11' height='6' x='2.5' y='2.5' stroke='%23618A9E' stroke-width='3' rx='2'%3E%3C/rect%3E%3Crect width='16' height='3' y='12' fill='%23618A9E' rx='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
-.info_tag::before {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg%3E%3Cpath fill='%23618A9E' fill-rule='evenodd' d='M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zm0 8a2 2 0 0 0-2 2v2a2 2 0 1 0 4 0v-2a2 2 0 0 0-2-2zm0-6a2 2 0 1 0 0 4 2 2 0 0 0 0-4z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
-    opacity: 0.6;
-}
-
 .past_projects {
     padding: 0;
     margin-top: 2rem;
@@ -1998,6 +1977,11 @@ h6 {
         margin-bottom: 4rem;
     }
 
+    .work_card_text_container span h5 {
+        font-size: 0.875rem;
+        line-height: 0.75rem;
+    }
+
     .userevidence_card:hover .work_card_text,
     .drift_card:hover .work_card_text,
     .visably_card:hover .work_card_text,
@@ -2012,7 +1996,6 @@ h6 {
 
     .engagement_tag::before,
     .role_tag::before,
-    .info_tag::before,
     .userevidence_company::before,
     .drift_company::before,
     .visably_company::before,
@@ -2056,15 +2039,6 @@ h6 {
     .company_name {
         margin-bottom: 0;
         margin-left: 44px;
-    }
-
-    .info_tag {
-        line-height: 1.5rem;
-        margin-top: 1rem;
-    }
-
-    .info_tag::before {
-        top: 0.25rem;
     }
 
     .work_responsibilities {
@@ -2400,6 +2374,7 @@ h6 {
 
     .subsection_header h4,
     .gear_card_text_container ul li,
+    .work_card_text_container span h5,
     .work_responsibilities ul li,
     p,
     .table_of_contents ol li a:hover,
@@ -2413,7 +2388,8 @@ h6 {
     .external_link:hover span,
     .return_to_top_link:hover,
     p span,
-    .case_study_company p {
+    .case_study_company p,
+    .company_name {
         color: hsl(200, 16%, 88%);
         text-decoration: none;
     }
@@ -2479,7 +2455,8 @@ h6 {
     .work_responsibilities ul li,
     h2,
     .case_study_main h3,
-    h6 {
+    h6,
+    .work_card_text_container span h5 {
         color: hsl(200, 16%, 64%);
     }
 
@@ -2551,9 +2528,7 @@ h6 {
         color: hsl(200, 16%, 84%);
     }
 
-    .table_of_contents ol h5,
-    .work_card_text h3,
-    .info_tag {
+    .table_of_contents ol h5 {
         color: hsl(200, 16%, 72%);
     }
 
@@ -2579,7 +2554,6 @@ h6 {
     .work_responsibilities a:hover,
     .work_card:hover .work_card_text h3,
     .work_card:hover .work_card_text li,
-    .work_card_text:hover .info_tag,
     .work_card_text:hover .work_responsibilities {
         color: hsl(200, 16%, 88%);
     }
@@ -2897,16 +2871,24 @@ h6 {
     }
 
     .work_card {
-        margin-bottom: 6rem;
+        margin-bottom: 8rem;
     }
 
     .company_name {
         /*font-size: 1rem;*/
-        margin-left: 0;
     }
 
-    .company_name::before {
+/*    .company_name::before {
         background-image: none;
+    }*/
+
+    .work_card_text_container span h5:first-child,
+    .work_card_text_container span h5:first-child::after {
+        display: none;
+    }
+
+    .work_card_text_container span h5 {
+        font-size: 1rem;
     }
 
     .dribbble_icon_bg {
