@@ -317,12 +317,12 @@ h1::selection {
 }
 
 h2 {
-    font-size: 1.875rem;
+    font-size: 2rem;
     letter-spacing: -0.0125rem;
 }
 
 h3 {
-    font-size: 1.75rem;
+    font-size: 1.875rem;
     line-height: 1.5;
 }
 
@@ -336,7 +336,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.625rem;
+    font-size: 1.75rem;
     letter-spacing: -0.0125rem;
     line-height: 1.5;
 }
@@ -1142,13 +1142,13 @@ footer,
 }
 
 .case_study_project h3::after {
-    left: 172px;
-    width: calc(100% - 204px);
+    left: 184px;
+    width: calc(100% - 216px);
 }
 
 .case_study_company h3::after {
-    left: 204px;
-    width: calc(100% - 260px);
+    left: 216px;
+    width: calc(100% - 272px);
 }
 
 .link_container {
@@ -1705,7 +1705,7 @@ h6 {
 }
 
 .work_card_text_container span h5 {
-    font-size: 1rem;
+    font-size: 1.125rem;
 }
 
 .work_card_text_container span h5,
@@ -2176,7 +2176,7 @@ h6 {
     }
 
     .case_study_project h3::after {
-        width: calc(100% - 236px);
+        width: calc(100% - 246px);
     }
 
     .subsection_header {
@@ -2931,11 +2931,11 @@ h6 {
     }
 
     h2 {
-        font-size: 1.375rem;
+        font-size: 1.5rem;
     }
 
     h3 {
-        font-size: 1.25rem;
+        font-size: 1.375rem;
     }
 
     h4,
