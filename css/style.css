@@ -1032,6 +1032,10 @@ footer,
     margin: 2rem 0 0 0;
 }
 
+.gear_hero h1 {
+    margin: 2px 0 0 0;
+}
+
 .case_study_main {
     margin-top: 6rem;
     margin-bottom: 6rem;
@@ -2039,6 +2043,7 @@ h6 {
         margin-left: 0.75rem;
     }
 
+    .work_responsibilities ul,
     .work_responsibilities ul li span {
         display: none;
     }
@@ -2263,6 +2268,14 @@ h6 {
     .gear_card {
         margin: 0 0 4rem;
         width: 100%;
+    }
+
+    .work_card {
+        margin-bottom: 6rem;
+    }
+
+    .company_name {
+        /*margin: 0 auto;*/
     }
 
     .work_card_image {
