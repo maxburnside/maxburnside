@@ -1109,6 +1109,7 @@ footer,
 
 .case_study_company p:last-child {
     line-height: 1;
+    padding-top: 0.3125rem;
 }
 
 .case_study_project ol,
