@@ -2699,7 +2699,7 @@ h6 {
         position: relative;
         left: -2px !important;
         padding-left: 0;
-        padding-bottom: 2rem;
+        padding-bottom: 3rem;
         /*top: -1rem;*/
     }
 
@@ -2710,7 +2710,7 @@ h6 {
     }
 
     .case_study_company {
-        margin-top: 5rem;
+        margin-top: 6rem;
     }
 
     .case_study_company h3 {
