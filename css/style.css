@@ -247,9 +247,9 @@ a {
 }
 
 .site_navbar ul li a:hover::before {
-    background-color: hsla(200, 100%, 50%, 0.25);
-    background: linear-gradient(hsl(200, 100%, 72%, 0.4), hsla(200, 100%, 64%, 0.6));
-    box-shadow: 0 -1px 4px hsla(200, 100%, 50%, 0.25) inset;
+    background-color: hsla(220, 100%, 50%, 0.2);
+    background: linear-gradient(hsl(220, 100%, 72%, 0.25), hsla(220, 100%, 64%, 0.5));
+    box-shadow: 0 -1px 4px hsla(220, 100%, 50%, 0.2) inset;
     cursor: auto;
 }
 
@@ -782,10 +782,7 @@ footer,
 }
 
 .home_hero,
-.page_hero,
-.case_study_hero,
-.case_study_hero .hero_image_container,
-.case_study_hero .hero_image_container::after {
+.page_hero {
     background: hsl(190, 100%, 92%);
     background: -moz-linear-gradient(180deg, hsl(190, 100%, 84%) 0%, hsla(200, 16%, 99%, 0) 100%);
     background: -webkit-linear-gradient(180deg, hsl(190, 100%, 84%) 0%, hsla(200, 16%, 99%, 0) 100%);
@@ -979,7 +976,6 @@ footer,
 
 /* START Case Study Page Styling */
 
-.adhawk_hero,
 .adhawk_hero .hero_image_container::after {
     background: hsl(140, 100%, 92%);
     background: -moz-linear-gradient(180deg, hsl(140, 100%, 84%) 0%, hsla(200, 16%, 99%, 0) 100%);
@@ -991,7 +987,6 @@ footer,
     background-color: hsl(140, 72%, 16%);
 }
 
-.contentstack_hero,
 .contentstack_hero .hero_image_container::after {
     background: hsl(32, 100%, 92%);
     background: -moz-linear-gradient(180deg, hsl(36, 100%, 84%) 0%, hsla(28, 16%, 99%, 0) 100%);
@@ -1117,7 +1112,7 @@ footer,
 }
 
 .case_study_main .case_study_section:first-child {
-    margin-bottom: 4rem;
+    margin-bottom: 14rem;
 }
 
 .case_study_section h6 {
@@ -2466,17 +2461,21 @@ h6 {
     }
 
     .home_hero,
-    .page_hero,
-    .case_study_hero,
-    .case_study_hero .hero_image_container,
-    .case_study_hero .hero_image_container::after {
+    .page_hero {
         background: hsl(226, 100%, 12%);
         background: -moz-linear-gradient(180deg, hsl(226, 100%, 16%) 0%, hsla(200, 12%, 4%, 0) 100%);
         background: -webkit-linear-gradient(180deg, hsl(226, 100%, 16%) 0%, hsla(200, 12%, 4%, 0) 100%);
         background: linear-gradient(180deg, hsl(226, 100%, 16%) 0%, hsla(200, 12%, 4%, 0) 100%);
     }
 
-    .adhawk_hero,
+    .case_study_hero {
+        background: transparent;
+    }
+
+/*.case_study_hero,
+.case_study_hero .hero_image_container,
+.case_study_hero .hero_image_container::after*/
+
     .adhawk_hero .hero_image_container::after {
         background: hsl(140, 100%, 12%);
         background: -moz-linear-gradient(180deg, hsl(160, 100%, 12%) 0%, hsla(150, 12%, 4%, 0) 100%);
@@ -2484,8 +2483,7 @@ h6 {
         background: linear-gradient(180deg, hsl(160, 100%, 12%) 0%, hsla(150, 12%, 4%, 0) 100%);
     }
 
-    .contentstack_hero,
-    .contenstack_hero .hero_image_container::after {
+    .contentstack_hero .hero_image_container::after {
         background: hsl(32, 100%, 12%);
         background: -moz-linear-gradient(180deg, hsl(36, 100%, 12%) 0%, hsla(28, 12%, 4%, 0) 100%);
         background: -webkit-linear-gradient(180deg, hsl(36, 100%, 12%) 0%, hsla(28, 12%, 4%, 0) 100%);
