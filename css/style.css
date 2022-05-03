@@ -333,6 +333,7 @@ h1::selection {
 h2 {
     font-size: 2rem;
     letter-spacing: -0.0125rem;
+    line-height: 1.375;
 }
 
 h3 {
@@ -2213,8 +2214,7 @@ p a {
         line-height: 1.625;
     }
 
-    .gear_section .gear_description,
-    h2 {
+    .gear_section .gear_description {
         line-height: 1.5;
     }
 
@@ -3097,6 +3097,7 @@ p a {
 
     h2 {
         font-size: 1.5rem;
+        line-height: 1.25;
     }
 
     h3,
