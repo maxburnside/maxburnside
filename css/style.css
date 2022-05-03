@@ -1,3 +1,5 @@
+/*********************** START Global Styling ***********************/
+
 * {
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
@@ -159,6 +161,10 @@ a {
     text-decoration: none;
 }
 
+/*********************** END Global Styling ***********************/
+
+/*********************** START Navbar Styling ***********************/
+
 .site_navbar {
     height: 6rem;
     top: 0;
@@ -173,7 +179,7 @@ a {
 .inner_nav_container {
     width: 100%;
     height: 100%;
-    max-width: 1056px;
+    max-width: 992px;
     padding: 0 1.5rem 0 2rem;
     position: absolute;
     display: inline-flex;
@@ -227,6 +233,7 @@ a {
     position: absolute;
 }
 
+strong,
 .site_navbar .active,
 .site_navbar u li a:active,
 .site_navbar .active:hover,
@@ -274,6 +281,8 @@ a {
     transition: 0.4s all;
     -webkit-transition: 0.4s all;
 }
+
+/*********************** END Navbar Styling ***********************/
 
 .site_navbar a:hover,
 .footer_tooltip,
@@ -356,16 +365,27 @@ h5 {
 h2,
 h3,
 h4,
-h5,
 p,
-li a {
-    font-weight: 500;
+li a,
+ul li,
+ol li,
+.cs_details_container h5 {
+    font-weight: 400;
+}
+
+strong,
+h5,
+h6,
+.site_navbar li a,
+a,
+.home_hero_link,
+.company_name {
+    font-weight: 600;
 }
 
 h6 {
     text-transform: uppercase;
     font-size: 0.75rem;
-    font-weight: 500;
     line-height: 0.5rem;
     letter-spacing: 0.25rem;
 }
@@ -435,7 +455,7 @@ ul li {
 
 .home_recent_work {
     width: 100%;
-    max-width: 1056px;
+    max-width: 992px;
     padding: 0 2rem;
     display: flex;
     position: relative;
@@ -447,7 +467,7 @@ ul li {
     margin: 0 auto 2.25rem;
     line-height: 1;
     width: 100%;
-    max-width: 1056px;
+    max-width: 992px;
     display: inline-flex;
     align-items: baseline;
     justify-content: space-between;
@@ -463,7 +483,7 @@ ul li {
 .half_width_img {
     width: 50%;
     margin-right: 0;
-    max-width: 480px;
+    max-width: 448px;
     display: inline-flex;
     flex-wrap: wrap;
     margin-bottom: 2rem;
@@ -487,7 +507,7 @@ ul li {
 .case_study_image_container,
 .full_width_img {
     width: 100%;
-    max-width: 1056px;
+    max-width: 992px;
     margin: 3rem auto;
     background: transparent;
     display: flex;
@@ -516,6 +536,7 @@ ul li {
 }
 
 .case_study_main figcaption {
+    font-size: 0.875rem;
     text-align: center;
     margin: 0 auto;
     padding: 1rem 0 0;
@@ -524,6 +545,44 @@ ul li {
 
 .image_with_caption_container {
     margin-bottom: 3rem;
+}
+
+.pull_quote {
+    position: relative;
+    width: 100%;
+    max-width: 992px;
+    margin: 6rem auto;
+}
+
+.pull_quote::before,
+.pull_quote::after {
+    position: absolute;
+    content: '';
+    display: block;
+    z-index: 4;
+    height: 48px;
+    width: 48px;
+/*    opacity: 0.5;*/
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg%3E%3Cpath fill='%2309F' fill-rule='evenodd' d='M19 4a3 3 0 0 1 0 6c-6.843 0-12.452 5.288-12.962 12H18a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V22h.026C.546 11.973 8.842 4 19 4zm26 0a3 3 0 0 1 0 6c-6.843 0-12.452 5.288-12.962 12H44a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H30a4 4 0 0 1-4-4V22h.026C26.546 11.973 34.842 4 45 4z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+.pull_quote::before {
+    top: 0;
+    left: -64px;
+}
+
+.pull_quote::after {
+    top: 96px;
+    right: -64px;
+    transform: rotate(180deg);
+}
+
+.pull_quote .author {
+    margin-top: 48px;
+}
+
+.pull_quote .description {
+
 }
 
 .recent_work_image_container a,
@@ -546,7 +605,7 @@ footer::before {
     content: '';
     position: absolute;
     width: 100%;
-    max-width: 992px;
+    max-width: 928px;
     left: 50%;
     transform: translateX(-50%);
     height: 2px;
@@ -563,7 +622,7 @@ footer::before,
 footer,
 .footer_container {
     width: 100%;
-    max-width: 1056px;
+    max-width: 992px;
     margin: 0 auto;
 }
 
@@ -794,7 +853,7 @@ footer,
     margin: 0 auto;
     padding: 0 2rem;
     width: 100%;
-    max-width: 1056px;
+    max-width: 992px;
     position: absolute;
     left: 50%;
     top: calc(50% + 32px);
@@ -957,7 +1016,7 @@ footer,
 .gear_intro,
 .gear_section {
     margin: 0 auto;
-    max-width: 1056px;
+    max-width: 992px;
 }
 
 .gear_content {
@@ -1056,7 +1115,7 @@ footer,
 .case_study_main p {
     padding: 0 2rem;
     width: 100%;
-    max-width: 1056px;
+    max-width: 992px;
     margin: 0 auto;
 }
 
@@ -1064,7 +1123,7 @@ footer,
 .case_study_hero h2 {
     padding: 0 2rem;
     width: 100%;
-    max-width: 1056px;
+    max-width: 992px;
     margin: 0 auto;
 }
 
@@ -1092,7 +1151,7 @@ footer,
 .case_study_intro {
     display: flex;
     flex-direction: row;
-    max-width: 1056px;
+    max-width: 992px;
     margin: 0 auto;
 }
 
@@ -1233,32 +1292,17 @@ footer,
 /* END Case Study Page Styling */
 
 .subsection_header {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    z-index: 6;
     top: 0;
-    padding: 2rem 0;
-}
-
-.subsection_header {
     width: 100%;
     margin: 0 auto 4rem;
     line-height: 1;
-    position: -webkit-sticky;
-    position: -moz-sticky;
-    position: -ms-sticky;
-    position: -o-sticky;
-    position: sticky;
-    z-index: 6;
-}
-
-.sticky_header {
-    width: 100%;
-    line-height: 1;
-    position: -webkit-sticky;
-    position: -moz-sticky;
-    position: -ms-sticky;
-    position: -o-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 6;
+    padding: 2rem 0;
 }
 
 .subsection_header h4::before {
@@ -1312,7 +1356,7 @@ footer,
 
 .subsection_header h4 {
     position: relative;
-    max-width: 1056px;
+    max-width: 992px;
     margin: 0 auto;
     color: hsl(200, 24%, 16%);
     line-height: 1rem;
@@ -1347,12 +1391,13 @@ h6 {
     display: flex;
     flex-direction: column;
     margin: 0 0 6rem 0;
-    width: 480px;
+    width: 448px;
     position: relative;
     z-index: 3;
 }
 
-.gear_card_text_container a {
+.gear_card_text_container a,
+p a {
     text-decoration: underline;
 }
 
@@ -1687,9 +1732,9 @@ h6 {
     padding-bottom: 0;
     position: relative;
     z-index: 8;
-    max-width: 1096px;
-    padding-left: 56px;
-    padding-right: 56px;
+    max-width: 992px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .gear_disclaimer h5 {
@@ -1755,6 +1800,7 @@ h6 {
 
 .work_card_text_container span h5 {
     font-size: 1.125rem;
+    font-weight: 400;
 }
 
 .work_card_text_container span h5,
@@ -1996,13 +2042,36 @@ h6 {
         opacity: 0;
         visibility: hidden;
     }
+
+    .pull_quote {
+        padding-top: 64px;
+    }
+
+/*    .pull_quote::before,
+    .pull_quote::after {
+        opacity: 0.25;
+    }*/
+
+    .pull_quote::before {
+        left: 32px;
+    }
+
+    .pull_quote::after {
+        right: 32px;
+        top: unset;
+        bottom: 0;
+    }
+
+    .pull_quote .author,
+    .pull_quote .description {
+        padding-right: 96px;
+    }
 }
 
-@media screen and (max-width: 1056px) {
-
+@media screen and (max-width: 992px) {
     .recent_work_image_container a {
         width: 49%;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2%;
     }
 
     .recent_work_image_container a:nth-child(2n+1) {
@@ -2011,14 +2080,6 @@ h6 {
 
     .recent_work_image_container a {
         margin-right: 0;
-    }
-
-    .gear_card {
-        width: 48%;
-    }
-
-    .gear_card:nth-child(odd) {
-        margin-right: 4%;
     }
 
     .gear_disclaimer {
@@ -2030,6 +2091,14 @@ h6 {
         flex-direction: column;
         align-items: flex-start;
         margin-bottom: 4rem;
+    }
+
+    .gear_card {
+        width: 48%;
+    }
+
+    .gear_card:nth-child(odd) {
+        margin-right: 4%;
     }
 
     .work_card_text_container span h5 {
@@ -2444,6 +2513,8 @@ h6 {
     p,
     .table_of_contents ol li a:hover,
     li a:hover,
+    p a:hover,
+    p a:focus,
     h2,
     h3,
     h4,
@@ -2460,6 +2531,12 @@ h6 {
         text-decoration: none;
     }
 
+    .gear_card_text_container a:hover,
+    p a:hover,
+    p a:focus {
+        text-decoration: underline;
+    }
+
     .home_hero,
     .page_hero {
         background: hsl(226, 100%, 12%);
@@ -2472,7 +2549,7 @@ h6 {
         background: transparent;
     }
 
-/*.case_study_hero,
+    /*.case_study_hero,
 .case_study_hero .hero_image_container,
 .case_study_hero .hero_image_container::after*/
 
@@ -2517,6 +2594,7 @@ h6 {
         color: hsl(200, 64%, 8%) !important;
     }
 
+    strong,
     .site_navbar .active,
     .site_navbar u li a:active,
     .site_navbar .active:hover,
@@ -2743,6 +2821,7 @@ h6 {
     .case_study_hero h1,
     .case_study_hero h2,
     .case_study_main h3,
+    .case_study_main h4,
     .case_study_main h5,
     .case_study_main h6,
     .case_study_section h6,
@@ -2830,6 +2909,14 @@ h6 {
 
     .cs_details_container {
         margin-top: 0;
+    }
+
+    .pull_quote::before {
+        left: 24px;
+    }
+
+    .pull_quote::after {
+        right: 24px;
     }
 
     .home_hero .text_container {
