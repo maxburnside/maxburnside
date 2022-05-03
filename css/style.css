@@ -379,7 +379,8 @@ h6,
 .site_navbar li a,
 a,
 .home_hero_link,
-.company_name {
+.company_name,
+.footer_links li a {
     font-weight: 600;
 }
 
