@@ -26,7 +26,9 @@ body,
 .category_tag,
 .gear_disclaimer,
 .case_study_company h3,
-.case_study_project h3 {
+.case_study_project h3,
+.next_case_study_section .inner_container h6,
+.next_case_study_section .inner_container a {
     background-color: hsl(200, 16%, 99%);
 }
 
@@ -246,7 +248,9 @@ strong,
 .footer_links li a:hover,
 .availability_container,
 .category_tag,
-.company_name {
+.company_name,
+.next_case_study_section .inner_container h6,
+.next_case_study_section .inner_container a {
     color: hsl(200, 12%, 4%);
 }
 
@@ -605,11 +609,12 @@ ul li {
     height: 100%;
 }
 
-footer {
+/*footer {
     position: relative;
-}
+    z-index: 8;
+}*/
 
-footer::before {
+/*footer::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -617,7 +622,7 @@ footer::before {
     left: 50%;
     transform: translateX(-50%);
     height: 2px;
-}
+}*/
 
 .gear_card_container::after,
 footer::before,
@@ -1137,7 +1142,7 @@ footer,
 
 .case_study_main {
     margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin-bottom: 0;
 }
 
 .case_study_main h3 {
@@ -1292,6 +1297,56 @@ footer,
     top: 0.75rem;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='%2309F' stroke-width='2' d='M6 11L1 6l5-5'%3E%3C/path%3E%3Cpath stroke='%2309F' stroke-width='2' d='M2 6h9'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     background-repeat: no-repeat;
+}
+
+.next_case_study_section {
+    width: 100%;
+    padding: 14rem 0;
+    margin: 8rem auto 0;
+    background: hsla(200, 24%, 50%, 0.25);
+}
+
+.adhawk_next_cs {
+    /*background: linear-gradient(hsla(200, 8%, 8%, 0), hsla(200, 8%, 8%, 0.9)), url(https://d33wubrfki0l68.cloudfront.net/img/home_cover_images/322ed69d2e22b930c0193e71249d777468bfaa68/adhawk@2x.png);*/
+    background-image: url(https://d33wubrfki0l68.cloudfront.net/img/home_cover_images/322ed69d2e22b930c0193e71249d777468bfaa68/adhawk@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.next_case_study_section .inner_container {
+    padding: 0 2rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 992px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.next_case_study_section .inner_container h6,
+.next_case_study_section .inner_container a {
+    margin: 0;
+    line-height: 1;
+    width: fit-content;
+    text-align: right;
+    position: relative;
+    box-shadow: 0 48px 64px 0 hsla(200, 24%, 16%, 0.12), 0 4px 24px 0 hsla(200, 16%, 8%, 0.02);
+}
+
+.next_case_study_section .inner_container h6 {
+    font-size: 0.875rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem 0.5rem 0 0.5rem;
+    z-index: 8;
+}
+
+.next_case_study_section .inner_container a {
+    font-size: 1.375rem;
+    padding: 0.25rem 0.75rem 0.75rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+    z-index: 9;
 }
 
 /* END Case Study Page Styling */
@@ -2473,9 +2528,9 @@ p a {
         padding-top: 20rem;
     }
 
-    footer {
+/*    footer {
         margin-top: 48px;
-    }
+    }*/
 
     .footer_container {
         display: flex;
@@ -2511,7 +2566,9 @@ p a {
     .category_tag,
     .gear_disclaimer,
     .case_study_company h3,
-    .case_study_project h3 {
+    .case_study_project h3,
+    .next_case_study_section .inner_container h6,
+    .next_case_study_section .inner_container a {
         background-color: hsl(200, 12%, 4%);
     }
 
@@ -2540,7 +2597,9 @@ p a {
     .return_to_top_link:hover,
     p span,
     .case_study_company p,
-    .company_name {
+    .company_name,
+    .next_case_study_section .inner_container h6,
+    .next_case_study_section .inner_container a {
         color: hsl(200, 16%, 88%);
         text-decoration: none;
     }
