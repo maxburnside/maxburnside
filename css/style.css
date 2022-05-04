@@ -641,7 +641,7 @@ footer,
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2.5rem 1.125rem;
+    padding: 4rem 1.125rem;
 }
 
 .footer_links {
@@ -681,13 +681,18 @@ footer,
 .footer_links li {
     padding: 0;
     margin: 0;
-    line-height: 1;
+    display: flex;
 }
 
 .footer_links li a {
-    line-height: 1;
+    text-align: center;
     padding: 0.5rem 0.75rem;
     border-radius: 0.75rem;
+}
+
+.footer_links li,
+.footer_links li a {
+    line-height: 0.75rem;
 }
 
 .footer_links li:not(:first-child) a {
@@ -2543,9 +2548,19 @@ p a {
         margin-top: 2.5rem;
     }
 
+    .footer_links li {
+        padding: 0;
+    }
+
     .footer_links li a {
         padding: 0 1rem;
-        margin: 0 !important;
+    }
+
+    .footer_links li,
+    .footer_links li a,
+    .footer_links li:not(:first-child) a,
+    .footer_links li:not(:last-child) a {
+        margin: 0;
     }
 
     .social_media_icons li a {
@@ -3154,6 +3169,10 @@ p a {
         font-size: 1rem;
     }
 
+    .footer_links li a {
+        padding: 0 0.75rem;
+    }
+
     .dribbble_icon_bg {
         fill: hsl(320, 100%, 40%);
     }
@@ -3203,4 +3222,5 @@ p a {
     .gear_section p {
         font-size: 1rem;
     }
+
 }
