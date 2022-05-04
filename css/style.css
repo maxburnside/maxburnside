@@ -92,6 +92,7 @@ p {
 
 img {
     background: linear-gradient(hsla(200, 32%, 56%, 0.2), hsla(200, 16%, 88%, 0.1));
+    box-shadow: none;
     border-style: none;
     border: 0px solid transparent;
     height: auto;
@@ -102,6 +103,10 @@ img {
     -moz-user-select: none;
     -o-user-select: none;
     user-select: none;
+}
+
+* img {
+    background-clip: content-box !important;
 }
 
 svg:not(:root) {
@@ -502,8 +507,8 @@ ul li {
     flex-direction: column;
 }
 
-.case_study_image_container img {
-    margin-bottom: 0;
+.double_image_row {
+    flex-direction: row;
 }
 
 .case_study_image_container,
@@ -527,6 +532,8 @@ ul li {
 .case_study_image_container img {
     margin-right: 0;
     margin-bottom: 0;
+    background: linear-gradient(hsla(200, 32%, 56%, 0.2), hsla(200, 16%, 88%, 0.1));
+    border: 1px solid hsla(200, 24%, 50%, 0.1);
 }
 
 .case_study_image_container {
@@ -553,7 +560,7 @@ ul li {
     position: relative;
     width: 100%;
     max-width: 992px;
-    margin: 6rem auto;
+    margin: 10rem auto;
 }
 
 .pull_quote::before,
@@ -564,8 +571,7 @@ ul li {
     z-index: 4;
     height: 48px;
     width: 48px;
-/*    opacity: 0.5;*/
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg%3E%3Cpath fill='%2309F' fill-rule='evenodd' d='M19 4a3 3 0 0 1 0 6c-6.843 0-12.452 5.288-12.962 12H18a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V22h.026C.546 11.973 8.842 4 19 4zm26 0a3 3 0 0 1 0 6c-6.843 0-12.452 5.288-12.962 12H44a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H30a4 4 0 0 1-4-4V22h.026C26.546 11.973 34.842 4 45 4z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0%' x2='89.702%' y1='-6.144%' y2='107.729%'%3E%3Cstop offset='0%' stop-color='%230AF' stop-opacity='.5'%3E%3C/stop%3E%3Cstop offset='100%' stop-color='%23002BFF'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill='url(%23a)' fill-rule='evenodd' d='M19 4a3 3 0 0 1 3 3c0 1.657-1.345 2.85-3 3-6.411.583-10.52 3.714-12.326 9.392A2 2 0 0 0 8.581 22H16a6 6 0 0 1 6 6v10a6 6 0 0 1-6 6H6a6 6 0 0 1-6-6V22h.026C.546 11.973 8.842 4 19 4zm26 0a3 3 0 0 1 3 3c0 1.657-1.345 2.85-3 3-6.411.583-10.52 3.714-12.326 9.392A2 2 0 0 0 34.581 22H42a6 6 0 0 1 6 6v10a6 6 0 0 1-6 6H32a6 6 0 0 1-6-6V22h.026C26.546 11.973 34.842 4 45 4z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
 }
 
 .pull_quote::before {
@@ -1037,6 +1043,7 @@ footer,
 
 /* START Case Study Page Styling */
 
+.adhawk_hero_image,
 .adhawk_hero .hero_image_container::after {
     background: hsl(140, 100%, 92%);
     background: -moz-linear-gradient(180deg, hsl(140, 100%, 84%) 0%, hsla(200, 16%, 99%, 0) 100%);
@@ -1044,19 +1051,12 @@ footer,
     background: linear-gradient(180deg, hsl(140, 100%, 84%) 0%, hsla(200, 16%, 99%, 0) 100%);
 }
 
-.adhawk_hero_image {
-    background-color: hsl(140, 72%, 16%);
-}
-
+.contentstack_hero_image,
 .contentstack_hero .hero_image_container::after {
     background: hsl(32, 100%, 92%);
     background: -moz-linear-gradient(180deg, hsl(36, 100%, 84%) 0%, hsla(28, 16%, 99%, 0) 100%);
     background: -webkit-linear-gradient(180deg, hsl(36, 100%, 84%) 0%, hsla(28, 16%, 99%, 0) 100%);
     background: linear-gradient(180deg, hsl(36, 100%, 84%) 0%, hsla(28, 16%, 99%, 0) 100%);
-}
-
-.contentstack_hero_image {
-    background-color: hsl(32, 100%, 16%);
 }
 
 .case_study_hero {
@@ -2503,7 +2503,8 @@ p a {
         background-color: hsl(200, 12%, 4%);
     }
 
-    img {
+    img,
+    .case_study_image_container img {
         background: linear-gradient(hsla(200, 8%, 56%, 0.2), hsla(200, 8%, 12%, 0.1));
     }
 
@@ -2554,6 +2555,7 @@ p a {
 .case_study_hero .hero_image_container,
 .case_study_hero .hero_image_container::after*/
 
+    .adhawk_hero_image,
     .adhawk_hero .hero_image_container::after {
         background: hsl(140, 100%, 12%);
         background: -moz-linear-gradient(180deg, hsl(160, 100%, 12%) 0%, hsla(150, 12%, 4%, 0) 100%);
@@ -2561,6 +2563,7 @@ p a {
         background: linear-gradient(180deg, hsl(160, 100%, 12%) 0%, hsla(150, 12%, 4%, 0) 100%);
     }
 
+    .contentstack_hero_image,
     .contentstack_hero .hero_image_container::after {
         background: hsl(32, 100%, 12%);
         background: -moz-linear-gradient(180deg, hsl(36, 100%, 12%) 0%, hsla(28, 12%, 4%, 0) 100%);
