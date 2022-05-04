@@ -249,15 +249,14 @@ strong,
 .availability_container,
 .category_tag,
 .company_name,
-.next_case_study_section .inner_container h6,
-.next_case_study_section .inner_container a {
+.next_case_study_section .inner_container h6 {
     color: hsl(200, 12%, 4%);
 }
 
 .site_navbar .active::before,
 .site_navbar .active:hover::before {
-    background-color: hsl(230, 100%, 50%);
-    background: linear-gradient(hsla(200, 100%, 50%, 0.9), hsl(230, 100%, 50%));
+    background-color: hsl(210, 100%, 50%);
+    background: linear-gradient(hsla(200, 100%, 50%, 0.9), hsl(220, 100%, 50%));
     box-shadow: 0 -1px 4px hsl(240, 100%, 50%) inset;
     border-top: 1px solid hsla(190, 100%, 50%, 0.2);
 }
@@ -416,7 +415,7 @@ p {
 
 li a,
 .home_hero_link {
-    color: hsl(230, 100%, 50%);
+    color: hsl(220, 100%, 50%);
 }
 
 li a:hover,
@@ -458,6 +457,7 @@ ul li {
 .gear_card_text_container a:hover,
 .work_responsibilities a:hover,
 .return_to_top_link:hover,
+.next_case_study_section .inner_container a:hover,
 .work_card_text:hover .work_card_text h3,
 .work_card_text:hover .work_responsibilities,
 .case_study_company p {
@@ -593,9 +593,7 @@ ul li {
     margin-top: 48px;
 }
 
-.pull_quote .description {
-
-}
+.pull_quote .description {}
 
 .recent_work_image_container a,
 .recent_work_image_container a img,
@@ -745,7 +743,7 @@ footer,
 .dribbble_icon_bg,
 .twitter_icon,
 .github_icon {
-    fill: hsl(230, 100%, 50%);
+    fill: hsl(220, 100%, 50%);
 }
 
 .dribbble_icon_inner {
@@ -1070,6 +1068,7 @@ footer,
 
 .hero_image_container {
     margin: 0 auto;
+    box-shadow: 0 48px 96px 0 hsla(200, 24%, 24%, 0.12), 0 16px 32px 0 hsla(200, 16%, 64%, 0.04), 0 24px 48px 0 hsla(200, 16%, 48%, 0.04);
 }
 
 .hero_image_container::before,
@@ -1654,8 +1653,9 @@ p a {
 .work_responsibilities a,
 .external_link,
 .return_to_top_link,
+.next_case_study_section .inner_container a,
 .footer_links li a {
-    color: hsl(230, 100%, 50%);
+    color: hsl(220, 100%, 50%);
 }
 
 .home_hero_link::after,
@@ -2094,6 +2094,7 @@ p a {
     .case_study_hero_image,
     .hero_image_container {
         border-radius: 0;
+        box-shadow: none;
         /*min-height: 600px;*/
     }
 
@@ -2107,7 +2108,7 @@ p a {
         padding-top: 64px;
     }
 
-/*    .pull_quote::before,
+    /*    .pull_quote::before,
     .pull_quote::after {
         opacity: 0.25;
     }*/
@@ -2528,7 +2529,7 @@ p a {
         padding-top: 20rem;
     }
 
-/*    footer {
+    /*    footer {
         margin-top: 48px;
     }*/
 
@@ -2572,11 +2573,6 @@ p a {
         background-color: hsl(200, 12%, 4%);
     }
 
-    img,
-    .case_study_image_container img {
-        background: linear-gradient(hsla(200, 8%, 56%, 0.2), hsla(200, 8%, 12%, 0.1));
-    }
-
     .subsection_header h4,
     .gear_card_text_container ul li,
     .work_card_text_container span h5,
@@ -2595,11 +2591,11 @@ p a {
     .home_hero_link:hover span,
     .external_link:hover span,
     .return_to_top_link:hover,
+    .next_case_study_section .inner_container a:hover,
     p span,
     .case_study_company p,
     .company_name,
-    .next_case_study_section .inner_container h6,
-    .next_case_study_section .inner_container a {
+    .next_case_study_section .inner_container h6 {
         color: hsl(200, 16%, 88%);
         text-decoration: none;
     }
@@ -2620,6 +2616,15 @@ p a {
 
     .case_study_hero {
         background: transparent;
+    }
+
+    img,
+    .case_study_image_container img {
+        background: linear-gradient(hsla(200, 8%, 56%, 0.2), hsla(200, 8%, 12%, 0.1));
+    }
+
+    .hero_image_container {
+        box-shadow: none;
     }
 
     /*.case_study_hero,
@@ -2742,6 +2747,7 @@ p a {
     .work_responsibilities a,
     .external_link,
     .return_to_top_link,
+    .next_case_study_section .inner_container a,
     .subsection_header a {
         color: hsl(204, 100%, 50%);
     }
