@@ -452,7 +452,7 @@ ul li {
 }
 
 .home_hero_link:hover,
-.external_link:hover,
+.external_link_container a:hover,
 .table_of_contents ol li a:hover,
 .gear_card_title_container a:hover,
 .gear_card_text_container a:hover,
@@ -566,11 +566,22 @@ ul li {
     margin-bottom: 3rem;
 }
 
+.case_study_list {
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+    padding: 0 2rem;
+}
+
+.case_study_list li {
+    font-size: 1.125rem;
+    line-height: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
 .pull_quote {
     position: relative;
-    width: 100%;
-    max-width: 992px;
-    margin: 10rem auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 
 .pull_quote::before,
@@ -637,10 +648,13 @@ footer::before,
 }
 
 footer,
-.footer_container {
+.footer_container,
+.case_study_list,
+.pull_quote {
     width: 100%;
     max-width: 992px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer_container {
@@ -1498,6 +1512,7 @@ h2,
 .gear_card_text_container ul li,
 .work_card_text_container span h5,
 .work_responsibilities ul li,
+.case_study_list li,
 p {
     color: hsl(200, 16%, 28%);
 }
@@ -1763,7 +1778,7 @@ p a {
 }*/
 
 .home_hero_link:hover::after,
-.external_link:hover::after,
+.external_link_container a:hover::after,
 .gear_card_title_container a:hover::after,
 .return_to_top_link:hover::after {
     opacity: 1;
@@ -1774,14 +1789,9 @@ p a {
     line-height: 1;
 }
 
-.external_link {
+.external_link_container a {
     font-size: 1.25rem;
     line-height: 12px;
-}
-
-.external_link::after {
-    right: -24px;
-    bottom: 4px;
 }
 
 .software_gear h5 span:first-child {
@@ -2693,7 +2703,7 @@ p a {
     .availability_container,
     .category_tag,
     .home_hero_link:hover span,
-    .external_link:hover span,
+    .external_link_container a:hover span,
     .return_to_top_link:hover,
     .next_case_study_section .text_container a:hover,
     p span,
@@ -2802,6 +2812,7 @@ p a {
     p,
     .gear_card_text_container ul li,
     .work_responsibilities ul li,
+    .case_study_list li,
     h2,
     h6,
     .work_card_text_container span h5 {
@@ -2839,7 +2850,7 @@ p a {
     }
 
     .home_hero_link:hover svg,
-    .external_link:hover svg {
+    .external_link_container a:hover svg {
         stroke: hsl(200, 100%, 48%)
     }
 
@@ -2862,7 +2873,6 @@ p a {
     .gear_card_title_container a,
     .gear_card_text_container a,
     .work_responsibilities a,
-    .external_link,
     .return_to_top_link,
     .subsection_header a {
         color: hsl(204, 100%, 50%);
@@ -2897,7 +2907,7 @@ p a {
     }
 
     .home_hero_link:hover,
-    .external_link:hover,
+    .external_link_container a:hover,
     .gear_card_title_container a:hover,
     .gear_card_text_container a:hover,
     .work_responsibilities a:hover,
