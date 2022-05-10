@@ -3181,10 +3181,11 @@ p a {
 
     .half_width_img {
         width: 48%;
+        margin-bottom: 0.875rem;
     }
 
     .case_study_image_container img:nth-child(2n+1) {
-        margin-right: 0.75rem;
+        margin-right: 0.875rem;
     }
 
     .cs_details_container {
