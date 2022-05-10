@@ -415,6 +415,7 @@ p {
 
 li a,
 .home_hero_link,
+.external_link_container a,
 .flooringstores_text_link {
     color: hsl(220, 100%, 50%);
 }
@@ -2865,6 +2866,7 @@ p a {
     }
 
     .home_hero_link,
+    .external_link_container a,
     .table_of_contents ol li a,
     li a,
     li a:focus,
