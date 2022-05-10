@@ -2207,8 +2207,6 @@ p a {
     .hero_image_container {
         border-radius: 0;
         box-shadow: none;
-        top: 2rem;
-        margin-bottom: 5rem;
     }
 
     .hero_image_container::before {
@@ -2422,6 +2420,12 @@ p a {
     .link_container {
         position: relative;
         top: 13.5rem;
+    }
+
+    .case_study_hero_image,
+    .hero_image_container {
+        top: 2rem;
+        margin-bottom: 5rem;
     }
 
     .case_study_intro {
