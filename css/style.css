@@ -1147,7 +1147,7 @@ footer,
     width: 100%;
     height: 100%;
     height: 70vh;
-    min-height: 440px;
+    min-height: 400px;
     max-height: 592px;
     max-width: 1184px;
     position: relative;
@@ -3082,6 +3082,8 @@ p a {
     .case_study_hero_image,
     .hero_image_container {
         margin-bottom: 4rem;
+        height: calc(100vh - 240px);
+        min-height: 320px;
     }
 
     .case_study_hero h1 {
