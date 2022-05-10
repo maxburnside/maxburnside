@@ -2107,6 +2107,7 @@ p a {
 .brand_design::before,
 .frontend_dev::before,
 .product_design::before,
+#services::before,
 .visual_design::before,
 .web_design::before {
     opacity: 0.75;
@@ -3396,12 +3397,20 @@ p a {
         font-size: 1.375rem;
     }
 
+    .section_header {
+        margin: 0 auto 1.25rem;
+    }
+
     .subsection_header h4 {
         line-height: 1.125rem;
     }
 
     .gear_section .gear_description {
         font-size: 1.25rem;
+    }
+
+    .external_link_container {
+        margin-top: 2.5rem;
     }
 
     .external_link,
