@@ -3089,10 +3089,6 @@ p a {
         min-height: 320px;
     }
 
-    .case_study_hero h1 {
-        margin-top: 2rem;
-    }
-
     .case_study_section .table_of_contents h3,
     .case_study_company h3 {
         position: relative;
@@ -3393,6 +3389,12 @@ p a {
         margin-bottom: 2rem !important;
         line-height: 1;
     }
+
+
+    .case_study_hero h1 {
+        margin-top: 2rem;
+    }
+
 
     h2,
     h3 {
