@@ -2107,6 +2107,9 @@ p a {
 .brand_design::before,
 .frontend_dev::before,
 .product_design::before,
+.color_swatch::before,
+.web_application::before,
+.mobile_application::before,
 #services::before,
 .visual_design::before,
 .web_design::before {
