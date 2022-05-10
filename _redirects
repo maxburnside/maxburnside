@@ -1,6 +1,7 @@
 /.env /
 /.git/config /
 ads.txt /
+/adhawk /work/adhawk
 /anchorpint /
 /bc /
 /eyemed /
@@ -26,8 +27,8 @@ ads.txt /
 /uploads /
 /weiss-watch /
 /weiss-watch.php /
-/work /
 /work.html /work
+/work/adhawk.html /work/adhawk
 /wordpress /
 /wp-admin /
 /wp-login.php /
