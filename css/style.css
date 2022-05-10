@@ -3079,6 +3079,11 @@ p a {
         padding-right: 0;
     }
 
+    .case_study_hero_image,
+    .hero_image_container {
+        margin-bottom: 4rem;
+    }
+
     .case_study_hero h1 {
         margin-top: 3rem;
     }
