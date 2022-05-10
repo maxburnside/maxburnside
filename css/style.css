@@ -3179,8 +3179,12 @@ p a {
         margin-bottom: 2.5rem;
     }
 
+    .half_width_img {
+        width: 48%;
+    }
+
     .case_study_image_container img:nth-child(2n+1) {
-        margin-right: 1.5rem;
+        margin-right: 0.75rem;
     }
 
     .cs_details_container {
