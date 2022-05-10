@@ -1108,7 +1108,7 @@ footer,
 
 .hero_image_container {
     margin: 0 auto;
-    box-shadow: 0 48px 96px 0 hsla(200, 24%, 24%, 0.12), 0 16px 32px 0 hsla(200, 16%, 64%, 0.04), 0 24px 48px 0 hsla(200, 16%, 48%, 0.04);
+    /*box-shadow: 0 48px 96px 0 hsla(200, 24%, 24%, 0.12), 0 16px 32px 0 hsla(200, 16%, 64%, 0.04), 0 24px 48px 0 hsla(200, 16%, 48%, 0.04);*/
 }
 
 .hero_image_container::before,
@@ -1119,12 +1119,13 @@ footer,
 }
 
 .hero_image_container::before {
-    width: 512px;
-    height: 512px;
-    background-size: 512px 512px;
-    left: -320px;
-    top: 0;
-    opacity: 0.4;
+    width: 360px;
+    height: 360px;
+    background-size: 360px 360px;
+    left: -240px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.15;
 }
 
 .hero_image_container::after {
@@ -1149,7 +1150,7 @@ footer,
     height: 100%;
     height: 70vh;
     min-height: 400px;
-    max-height: 592px;
+    max-height: 640px;
     max-width: 1184px;
     position: relative;
     z-index: 2;
@@ -1375,19 +1376,15 @@ footer,
 }
 
 .next_case_study_section .text_container h6 {
-    /*padding: 0.75rem;*/
-    padding: 12px 16px 4px;
-    /*border-radius: 0.5rem 0.5rem 0 0;*/
-    border-radius: 12px 12px 0 0;
+    padding: 0.75rem 1rem 0.25rem;
+    border-radius: 0.75rem 0.75rem 0 0;
     z-index: 8;
 }
 
 .next_case_study_section .text_container a {
     font-size: 1.375rem;
-    /*padding: 1rem 0.75rem 1rem 56px;*/
-    padding: 16px 16px 16px 56px;
-    /*border-radius: 0.5rem 0 0.5rem 0.5rem;*/
-    border-radius: 12px 0 12px 12px;
+    padding: 1rem 1rem 1rem 3.75rem;
+    border-radius: 0.75rem 0 0.75rem 0.75rem;
     z-index: 9;
     position: relative;
 }
@@ -1395,25 +1392,25 @@ footer,
 .contentstack_hero_image,
 .contentstack_hero .hero_image_container::after {
     background: hsl(32, 100%, 92%);
-    background: -moz-linear-gradient(180deg, hsl(36, 100%, 84%) 0%, hsla(28, 16%, 99%, 0) 100%);
-    background: -webkit-linear-gradient(180deg, hsl(36, 100%, 84%) 0%, hsla(28, 16%, 99%, 0) 100%);
-    background: linear-gradient(180deg, hsl(36, 100%, 84%) 0%, hsla(28, 16%, 99%, 0) 100%);
+    background: -moz-linear-gradient(180deg, hsl(36, 100%, 88%) 0%, hsla(200, 16%, 99%, 0) 100%);
+    background: -webkit-linear-gradient(180deg, hsl(36, 100%, 88%) 0%, hsla(200, 16%, 99%, 0) 100%);
+    background: linear-gradient(180deg, hsl(36, 100%, 88%) 0%, hsla(200, 16%, 99%, 0) 100%);
 }
 
 .flooringstores_hero_image,
 .flooringstores_hero .hero_image_container::after {
-    background: hsl(220, 100%, 92%);
-    background: -moz-linear-gradient(180deg, hsl(240, 100%, 84%) 0%, hsla(200, 16%, 99%, 0) 100%);
-    background: -webkit-linear-gradient(180deg, hsl(240, 100%, 84%) 0%, hsla(200, 16%, 99%, 0) 100%);
-    background: linear-gradient(180deg, hsl(240, 100%, 84%) 0%, hsla(200, 16%, 99%, 0) 100%);
+    background: hsl(220, 100%, 96%);
+    background: -moz-linear-gradient(180deg, hsl(220, 100%, 94%) 0%, hsla(200, 16%, 99%, 0) 100%);
+    background: -webkit-linear-gradient(180deg, hsl(220, 100%, 94%) 0%, hsla(200, 16%, 99%, 0) 100%);
+    background: linear-gradient(180deg, hsl(220, 100%, 94%) 0%, hsla(200, 16%, 99%, 0) 100%);
 }
 
 .adhawk_hero_image,
 .adhawk_hero .hero_image_container::after {
     background: hsl(140, 100%, 92%);
-    background: -moz-linear-gradient(180deg, hsl(140, 100%, 84%) 0%, hsla(200, 16%, 99%, 0) 100%);
-    background: -webkit-linear-gradient(180deg, hsl(140, 100%, 84%) 0%, hsla(200, 16%, 99%, 0) 100%);
-    background: linear-gradient(180deg, hsl(140, 100%, 84%) 0%, hsla(200, 16%, 99%, 0) 100%);
+    background: -moz-linear-gradient(180deg, hsl(140, 100%, 88%) 0%, hsla(200, 16%, 99%, 0) 100%);
+    background: -webkit-linear-gradient(180deg, hsl(140, 100%, 88%) 0%, hsla(200, 16%, 99%, 0) 100%);
+    background: linear-gradient(180deg, hsl(140, 100%, 88%) 0%, hsla(200, 16%, 99%, 0) 100%);
 }
 
 .contentstack_next_cs {
@@ -2161,7 +2158,7 @@ p a {
 .contentstack_text_link::before,
 .flooringstores_text_link::before,
 .adhawk_text_link::before {
-    left: 12px;
+    left: 16px;
     top: 12px;
 }
 
@@ -2779,10 +2776,10 @@ p a {
 
     .contentstack_hero_image,
     .contentstack_hero .hero_image_container::after {
-        background: hsl(32, 100%, 12%);
-        background: -moz-linear-gradient(180deg, hsl(36, 100%, 12%) 0%, hsla(28, 12%, 4%, 0) 100%);
-        background: -webkit-linear-gradient(180deg, hsl(36, 100%, 12%) 0%, hsla(28, 12%, 4%, 0) 100%);
-        background: linear-gradient(180deg, hsl(36, 100%, 12%) 0%, hsla(28, 12%, 4%, 0) 100%);
+        background: hsl(32, 100%, 24%);
+        background: -moz-linear-gradient(180deg, hsl(36, 100%, 16%) 0%, hsla(200, 12%, 4%, 0) 100%);
+        background: -webkit-linear-gradient(180deg, hsl(36, 100%, 16%) 0%, hsla(200, 12%, 4%, 0) 100%);
+        background: linear-gradient(180deg, hsl(36, 100%, 16%) 0%, hsla(200, 12%, 4%, 0) 100%);
     }
 
     .contentstack_text_link {
@@ -2791,18 +2788,18 @@ p a {
 
     .flooringstores_hero_image,
     .flooringstores_hero .hero_image_container::after {
-        background: hsl(220, 100%, 12%);
-        background: -moz-linear-gradient(180deg, hsl(240, 100%, 12%) 0%, hsla(200, 12%, 4%, 0) 100%);
-        background: -webkit-linear-gradient(180deg, hsl(240, 100%, 12%) 0%, hsla(200, 12%, 4%, 0) 100%);
-        background: linear-gradient(180deg, hsl(240, 100%, 12%) 0%, hsla(200, 12%, 4%, 0) 100%);
+        background: hsl(220, 100%, 24%);
+        background: -moz-linear-gradient(180deg, hsl(240, 100%, 32%) 0%, hsla(200, 12%, 4%, 0) 100%);
+        background: -webkit-linear-gradient(180deg, hsl(240, 100%, 32%) 0%, hsla(200, 12%, 4%, 0) 100%);
+        background: linear-gradient(180deg, hsl(240, 100%, 32%) 0%, hsla(200, 12%, 4%, 0) 100%);
     }
 
     .adhawk_hero_image,
     .adhawk_hero .hero_image_container::after {
         background: hsl(140, 100%, 12%);
-        background: -moz-linear-gradient(180deg, hsl(160, 100%, 12%) 0%, hsla(150, 12%, 4%, 0) 100%);
-        background: -webkit-linear-gradient(180deg, hsl(160, 100%, 12%) 0%, hsla(150, 12%, 4%, 0) 100%);
-        background: linear-gradient(180deg, hsl(160, 100%, 12%) 0%, hsla(150, 12%, 4%, 0) 100%);
+        background: -moz-linear-gradient(180deg, hsl(160, 100%, 12%) 0%, hsla(200, 12%, 4%, 0) 100%);
+        background: -webkit-linear-gradient(180deg, hsl(160, 100%, 12%) 0%, hsla(200, 12%, 4%, 0) 100%);
+        background: linear-gradient(180deg, hsl(160, 100%, 12%) 0%, hsla(200, 12%, 4%, 0) 100%);
     }
 
     .adhawk_text_link {
