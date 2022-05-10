@@ -3384,7 +3384,8 @@ p a {
 
     h1 {
         font-size: 3.5rem;
-        margin-bottom: 1rem !important;
+        margin-bottom: 2rem !important;
+        line-height: 1;
     }
 
     h2,
