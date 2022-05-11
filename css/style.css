@@ -1258,6 +1258,10 @@ footer,
     margin-bottom: 2rem;
 }
 
+.case_study_conclusion a {
+    text-decoration: underline;
+}
+
 .case_study_company,
 .case_study_project {
     width: calc(50% - 1rem);
