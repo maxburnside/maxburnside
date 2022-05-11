@@ -244,6 +244,7 @@ strong,
 .site_navbar .active,
 .site_navbar u li a:active,
 .site_navbar .active:hover,
+a:hover,
 .site_navbar li a:hover,
 .footer_links li a:hover,
 .availability_container,
@@ -387,6 +388,7 @@ h5,
 h6,
 .site_navbar li a,
 a,
+.table_of_contents a,
 .home_hero_link,
 .company_name,
 .footer_links li a {
@@ -414,16 +416,24 @@ p {
 }
 
 li a,
+p a,
 .home_hero_link,
 .external_link_container a,
-.flooringstores_text_link {
+.flooringstores_text_link,
+a {
     color: hsl(220, 100%, 50%);
 }
 
 li a:hover,
 li a:focus {
-    color: hsl(200, 12%, 4%);
     text-decoration: none;
+}
+
+li a:hover,
+li a:focus,
+p a:hover,
+p a:focus {
+    color: hsl(200, 12%, 4%);
 }
 
 .home_hero_text_block ul {
@@ -2932,6 +2942,10 @@ p a {
         text-decoration: none;
     }
 
+    p a {
+        color: hsl(204, 100%, 50%);
+    }
+
     .home_hero_link svg {
         stroke: hsl(210, 100%, 24%);
     }
@@ -3000,7 +3014,8 @@ p a {
     .work_responsibilities a:hover,
     .work_card:hover .work_card_text h3,
     .work_card:hover .work_card_text li,
-    .work_card_text:hover .work_responsibilities {
+    .work_card_text:hover .work_responsibilities,
+    a:hover {
         color: hsl(200, 16%, 88%);
     }
 
