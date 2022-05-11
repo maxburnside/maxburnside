@@ -3276,6 +3276,11 @@ p a {
         right: 24px;
     }
 
+    .case_study_conclusion {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+
     .home_hero .text_container {
         padding: 0 1.5rem;
     }
