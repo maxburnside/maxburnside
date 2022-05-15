@@ -959,7 +959,7 @@ footer,
 }
 
 .icon_24_article::before {
-    background-image: url('../img/icons/24px/application.svg');
+    background-image: url('../img/icons/24px/article.svg');
 }
 
 .icon_24_calendar::before {
@@ -1023,15 +1023,15 @@ footer,
 }
 
 .subsection_header h4#computer::before {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cg%3E%3Cpath fill='%23618A9E' fill-rule='evenodd' d='M26 2a4 4 0 0 1 4 4v14a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V6a4 4 0 0 1 4-4h20zm-8.5 3h-3a1.5 1.5 0 0 0 0 3h3a1.5 1.5 0 0 0 0-3zm14 23l-.394.789A4 4 0 0 1 27.528 31H4.472a4 4 0 0 1-3.578-2.211L.5 28a2.073 2.073 0 0 1 1.854-3H11l.447.894A2 2 0 0 0 13.237 27h5.527a2 2 0 0 0 1.789-1.106L21 25h8.646a2.073 2.073 0 0 1 1.854 3z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    background-image:  url('../img/icons/32px/laptop.svg');
 }
 
 .subsection_header h4.web_application::before {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='%23618A9E' d='M28 3a4 4 0 0 1 4 4v18a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4h24zm0 3H4a1 1 0 0 0-1 1v18a1 1 0 0 0 1 1h24a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1z'%3E%3C/path%3E%3Cpath fill='%23618A9E' d='M5 8h8v16H5z'%3E%3C/path%3E%3Crect width='12' height='4' x='15' y='8' fill='%23618A9E' rx='1.5'%3E%3C/rect%3E%3Crect width='6' height='4' x='15' y='14' fill='%23618A9E' rx='1.5'%3E%3C/rect%3E%3Crect width='10' height='4' x='15' y='20' fill='%23618A9E' rx='1.5'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: url('../img/icons/32px/web_application.svg');
 }
 
-.subsection_header h4.blog::before {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='%23618A9E' d='M25 0a4 4 0 0 1 4 4v24a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h18zm0 3H7a1 1 0 0 0-1 1v24a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z'%3E%3C/path%3E%3Crect width='16' height='10' x='8' y='5' fill='%23618A9E' rx='1.5'%3E%3C/rect%3E%3Crect width='12' height='4' x='8' y='23' fill='%23618A9E' rx='1.5'%3E%3C/rect%3E%3Crect width='14' height='4' x='8' y='17' fill='%23618A9E' rx='1.5'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+.subsection_header h4.article::before {
+    background-image: url('../img/icons/32px/article.svg')
 }
 
 .subsection_header h4.mobile_application::before {
@@ -1058,6 +1058,10 @@ footer,
     background-image: url('../img/icons/24px/service.svg');
 }
 
+.subsection_header h4#design_system::before {
+    background-image: url('../img/icons/32px/design_system.svg');
+}
+
 .subsection_header h4#services::before {
     background-image: url('../img/icons/32px/service.svg');
 }
@@ -1067,12 +1071,12 @@ footer,
 }
 
 .subsection_header h4.visual_design::before {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cg%3E%3Cpath fill='%23618A9E' fill-rule='evenodd' d='M14.62 7a4 4 0 0 1 2.83 1.172l6.378 6.379A4 4 0 0 1 25 17.379v6.202a4 4 0 0 1-3.184 3.916L5.529 30.89a1 1 0 0 1-.911-.272L4.5 30.5a.707.707 0 0 1 0-1l6.853-6.854a4 4 0 1 0-2-2L2.5 27.5a.707.707 0 0 1-1 0l-.118-.118a1 1 0 0 1-.272-.911l3.393-16.287A4 4 0 0 1 8.42 7h6.202zM31 5.828v6.344a2 2 0 0 1-3.414 1.414l-9.172-9.172A2 2 0 0 1 19.828 1h6.344a2 2 0 0 1 1.414.586l2.828 2.828A2 2 0 0 1 31 5.828z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    background-image: url('../img/icons/32px/pen_tip.svg')
 }
 
 .subsection_header h4#computer::before,
 .subsection_header h4.web_application::before,
-.subsection_header h4.blog::before {
+.subsection_header h4.article::before {
     z-index: 1;
 }
 
@@ -1088,7 +1092,8 @@ footer,
     z-index: 4;
 }
 
-.subsection_header h4#services::before {
+.subsection_header h4#services::before,
+.subsection_header h4#design_system::before {
     z-index: 5;
 }
 
@@ -2178,17 +2183,6 @@ p a {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg%3E%3Cpath fill='%23618A9E' fill-rule='evenodd' d='M16 3v1a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zM5 8v6a1 1 0 0 1-1 1H2a2 2 0 0 1-2-2V8a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1zm11 0v5a2 2 0 0 1-2 2H8a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1z' style='mix-blend-mode:darken'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
 }
 
-.frontend_dev::before,
-.product_design::before,
-.color_swatch::before,
-.web_application::before,
-.blog::before,
-.mobile_application::before,
-.visual_design::before,
-.web_design::before {
-    opacity: 0.75;
-}
-
 .userevidence_company::before,
 .userevidence_hero .hero_image_container::before {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cg%3E%3Cpath fill='%23850AFF' fill-rule='evenodd' d='M26 0h-5l-5.133 11.733L14 8H9l4 8h6l7-16zm1 16h5c0 8.837-7.163 16-16 16S0 24.837 0 16h5c0 6.075 4.925 11 11 11s11-4.925 11-11z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
@@ -2575,15 +2569,15 @@ p a {
     }
 
     .subsection_header h4#computer::after {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cg%3E%3Cpath fill='%23618A9E' fill-rule='evenodd' d='M26 2a4 4 0 0 1 4 4v14a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V6a4 4 0 0 1 4-4h20zm-8.5 3h-3a1.5 1.5 0 0 0 0 3h3a1.5 1.5 0 0 0 0-3zm14 23l-.394.789A4 4 0 0 1 27.528 31H4.472a4 4 0 0 1-3.578-2.211L.5 28a2.073 2.073 0 0 1 1.854-3H11l.447.894A2 2 0 0 0 13.237 27h5.527a2 2 0 0 0 1.789-1.106L21 25h8.646a2.073 2.073 0 0 1 1.854 3z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+        background-image:  url('../img/icons/32px/laptop.svg');
     }
 
     .subsection_header h4.web_application::after {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='%23618A9E' d='M28 3a4 4 0 0 1 4 4v18a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4h24zm0 3H4a1 1 0 0 0-1 1v18a1 1 0 0 0 1 1h24a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1z'%3E%3C/path%3E%3Cpath fill='%23618A9E' d='M5 8h8v16H5z'%3E%3C/path%3E%3Crect width='12' height='4' x='15' y='8' fill='%23618A9E' rx='1.5'%3E%3C/rect%3E%3Crect width='6' height='4' x='15' y='14' fill='%23618A9E' rx='1.5'%3E%3C/rect%3E%3Crect width='10' height='4' x='15' y='20' fill='%23618A9E' rx='1.5'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        background-image: url('../img/icons/32px/web_application.svg');
     }
 
-    .subsection_header h4.blog::after {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='%23618A9E' d='M25 0a4 4 0 0 1 4 4v24a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h18zm0 3H7a1 1 0 0 0-1 1v24a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z'%3E%3C/path%3E%3Crect width='16' height='10' x='8' y='5' fill='%23618A9E' rx='1.5'%3E%3C/rect%3E%3Crect width='12' height='4' x='8' y='23' fill='%23618A9E' rx='1.5'%3E%3C/rect%3E%3Crect width='14' height='4' x='8' y='17' fill='%23618A9E' rx='1.5'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    .subsection_header h4.article::after {
+        background-image: url('../img/icons/32px/article.svg')
     }
 
     .subsection_header h4#phones::after {
@@ -2606,6 +2600,10 @@ p a {
         background-image: url('../img/icons/32px/plugin.svg');
     }
 
+    .subsection_header h4#design_system::after {
+        background-image: url('../img/icons/32px/design_system.svg');
+    }
+
     .subsection_header h4#services::after {
         background-image: url('../img/icons/32px/service.svg');
     }
@@ -2615,7 +2613,7 @@ p a {
     }
 
     .subsection_header h4.visual_design::after {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cg%3E%3Cpath fill='%23618A9E' fill-rule='evenodd' d='M14.62 7a4 4 0 0 1 2.83 1.172l6.378 6.379A4 4 0 0 1 25 17.379v6.202a4 4 0 0 1-3.184 3.916L5.529 30.89a1 1 0 0 1-.911-.272L4.5 30.5a.707.707 0 0 1 0-1l6.853-6.854a4 4 0 1 0-2-2L2.5 27.5a.707.707 0 0 1-1 0l-.118-.118a1 1 0 0 1-.272-.911l3.393-16.287A4 4 0 0 1 8.42 7h6.202zM31 5.828v6.344a2 2 0 0 1-3.414 1.414l-9.172-9.172A2 2 0 0 1 19.828 1h6.344a2 2 0 0 1 1.414.586l2.828 2.828A2 2 0 0 1 31 5.828z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+        background-image: url('../img/icons/32px/pen_tip.svg')
     }
 
     .recent_work_image_container a,
