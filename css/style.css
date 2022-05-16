@@ -1038,7 +1038,7 @@ footer,
     background-image: url('../img/icons/24px/web_application.svg');
 }
 
-.subsection_header h4#computer::before {
+.subsection_header h4#computers::before {
     background-image: url('../img/icons/32px/laptop.svg');
 }
 
@@ -1090,7 +1090,7 @@ footer,
     background-image: url('../img/icons/32px/pen_tip.svg')
 }
 
-.subsection_header h4#computer::before,
+.subsection_header h4#computers::before,
 .subsection_header h4.web_application::before,
 .subsection_header h4.article::before {
     z-index: 1;
@@ -2588,7 +2588,7 @@ p a {
         visibility: hidden;
     }
 
-    .subsection_header h4#computer::after {
+    .subsection_header h4#computers::after {
         background-image: url('../img/icons/32px/laptop.svg');
     }
 
