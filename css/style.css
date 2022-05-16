@@ -1867,7 +1867,7 @@ p a {
     bottom: -2px;
     height: 16px;
     width: 16px;
-    opacity: 0.5;
+    opacity: 0.75;
     background-repeat: no-repeat;
 }
 
@@ -1965,7 +1965,7 @@ p a {
     top: 0.125rem;
     width: 1rem;
     height: 1rem;
-    opacity: 0.75;
+    /*opacity: 0.75;*/
 }
 
 .work_responsibilities ul li::before {
