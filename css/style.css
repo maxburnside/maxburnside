@@ -309,7 +309,7 @@ p {
 
 h1 {
     padding: 0;
-    margin: 1px 0 0.25rem 0;
+    margin: 1px 0 1rem 0;
     color: hsl(200, 64%, 8%);
     background-image: linear-gradient(hsl(190, 100%, 20%), hsl(200, 100%, 4%));
     -webkit-background-clip: text;
