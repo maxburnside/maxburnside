@@ -334,6 +334,10 @@ h1 {
     background-image: linear-gradient(hsl(36, 100%, 20%), hsl(28, 100%, 4%));
 }
 
+.drift_hero h1 {
+    background-image: linear-gradient(hsl(280, 100%, 20%), hsl(260, 100%, 4%));
+}
+
 h1::selection {
     background: hsl(200, 12%, 4%) !important;
     color: hsl(200, 100%, 94%) !important;
@@ -1121,6 +1125,7 @@ footer,
 .case_study_project .icon_24_article,
 .case_study_project .icon_24_calendar,
 .case_study_project .icon_24_color_swatch,
+.case_study_project .icon_24_code,
 .case_study_project .icon_24_contract,
 .case_study_project .icon_24_design_system,
 .case_study_project .icon_24_employee_badge,
@@ -1519,6 +1524,22 @@ footer,
     background: linear-gradient(180deg, hsl(140, 100%, 88%) 0%, hsla(200, 16%, 99%, 0) 100%);
 }
 
+.drift_next_cs {
+    background: url(../img/work/drift/hero.png);
+}
+
+.visably_next_cs {
+    background: url(../img/work/visably/hero.png); 
+}
+
+.purple_orange_next_cs {
+    background: url(../img/work/purple_orange/hero.png);
+}
+
+.trx_next_cs {
+    background: url(../img/work/trx/hero.png);
+}
+
 .contentstack_next_cs {
     background: url(../img/work/contentstack/hero.png);
 }
@@ -1539,6 +1560,11 @@ footer,
     color: hsl(160, 100%, 25%);
 }
 
+
+.drift_next_cs,
+.visably_next_cs,
+.purple_orange_next_cs,
+.trx_next_cs,
 .contentstack_next_cs,
 .flooringstores_next_cs,
 .adhawk_next_cs {
@@ -2179,10 +2205,15 @@ p a {
 
 .userevidence_company::before,
 .drift_company::before,
+.drift_text_link::before,
 .visably_company::before,
+.visably_text_link::before,
 .purple_orange_company::before,
+.purple_orange_text_link::before,
 .tell_company::before,
+.tell_text_link::before,
 .trx_company::before,
+.trx_text_link::before,
 .contentstack_company::before,
 .contentstack_text_link::before,
 .flooringstores_company::before,
@@ -2228,7 +2259,8 @@ p a {
 }
 
 .drift_company::before,
-.drift_hero .hero_image_container::before {
+.drift_hero .hero_image_container::before,
+.drift_text_link::before {
     background-image: url('../img/logos/32px/drift.svg');
 }
 
@@ -2239,32 +2271,36 @@ p a {
 }
 
 .purple_orange_company::before,
-.purple_orange_hero .hero_image_container::before {
+.purple_orange_hero .hero_image_container::before,
+.purple_orange_text_link::before {
     background-image: url('../img/logos/32px/purple_orange.svg');
 }
 
 
 .tell_company::before,
-.tell_hero .hero_image_container::before {
+.tell_hero .hero_image_container::before,
+.tell_text_link::before {
     background-image: url('../img/logos/32px/tell.svg');
 }
 
 .trx_company::before,
-.trx_hero .hero_image_container::before {
+.trx_hero .hero_image_container::before,
+.trx_text_link::before {
     background-image: url('../img/logos/32px/trx.svg');
 }
 
 .userevidence_company::before,
-.userevidence_hero .hero_image_container::before {
+.userevidence_hero .hero_image_container::before,
+.userevidence_text_link::before {
     background-image: url('../img/logos/32px/userevidence.svg');
     background-image: url('../img/logos/32px/.svg');
 }
 
 .visably_company::before,
-.visably_hero .hero_image_container::before {
+.visably_hero .hero_image_container::before,
+.visably_text_link::before {
     background-image: url('../img/logos/32px/visably.svg');
 }
-
 
 .adhawk_text_link::before,
 .contentstack_text_link::before,
@@ -2897,6 +2933,18 @@ p a {
         color: hsl(28, 100%, 50%);
     }
 
+    .drift_hero_image,
+    .drift_hero .hero_image_container::after {
+        background: hsl(270, 100%, 24%);
+        background: -moz-linear-gradient(180deg, hsl(280, 100%, 16%) 0%, hsla(260, 12%, 4%, 0) 100%);
+        background: -webkit-linear-gradient(180deg, hsl(280, 100%, 16%) 0%, hsla(260, 12%, 4%, 0) 100%);
+        background: linear-gradient(180deg, hsl(280, 100%, 16%) 0%, hsla(260, 12%, 4%, 0) 100%);
+    }
+
+    .drift_text_link {
+        color: hsl(270, 100%, 50%);
+    }
+
     .flooringstores_hero_image,
     .flooringstores_hero .hero_image_container::after {
         background: hsl(220, 100%, 24%);
@@ -2937,6 +2985,11 @@ p a {
     .contentstack_hero h1 {
         background-image: linear-gradient(hsl(36, 100%, 96%), hsl(28, 100%, 64%));
     }
+
+    .drift_hero h1 {
+        background-image: linear-gradient(hsl(280, 100%, 96%), hsl(270, 100%, 64%));
+    }
+
 
     h1::selection {
         background-image: none !important;
