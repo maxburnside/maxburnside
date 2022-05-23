@@ -448,7 +448,6 @@ p a:focus {
 ul li {
     list-style: none;
     padding: 0;
-    line-height: 1rem;
 }
 
 .home_hero_text_block ul li {
@@ -586,15 +585,16 @@ ul li {
 }
 
 .case_study_list {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     margin-bottom: 4rem;
     padding: 0 2rem;
 }
 
 .case_study_list li {
     font-size: 1.125rem;
-    line-height: 0.75rem;
+    line-height: 1.5;
     margin-bottom: 1.25rem;
+    list-style: circle;
 }
 
 .pull_quote {
@@ -938,7 +938,7 @@ footer,
 .table_of_contents ol li:not(:last-child),
 .table_of_contents ol h5,
 .table_of_contents ol h6 {
-    margin-bottom: 2.25rem;
+    margin-bottom: 1.25rem;
 }
 
 .table_of_contents ol li {
@@ -1356,7 +1356,7 @@ footer,
 }
 
 .case_study_section .table_of_contents h5 {
-    line-height: 0.75rem;
+    line-height: 1.5;
 }
 
 .case_study_company p:not(:last-child) {
@@ -1620,7 +1620,7 @@ footer,
 
 .table_of_contents {
     padding-top: 0;
-    line-height: 1rem;
+    line-height: 1.5;
 }
 
 .gear_card_container {
@@ -3247,7 +3247,8 @@ p a {
     .case_study_section h6,
     .case_study_main p,
     .case_study_image_container,
-    .full_width_img {
+    .full_width_img,
+    .case_study_list {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
