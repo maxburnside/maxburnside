@@ -3247,7 +3247,8 @@ p a {
     .case_study_section h6,
     .case_study_main p,
     .case_study_image_container,
-    .full_width_img {
+    .full_width_img,
+    .case_study_list {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
