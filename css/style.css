@@ -1058,6 +1058,10 @@ footer,
     background-image: url('../img/icons/32px/article.svg')
 }
 
+.subsection_header h4.frontend_dev::before {
+    background-image: url('../img/icons/32px/code.svg')
+}
+
 .subsection_header h4.mobile_application::before {
     background-image: url('../img/icons/32px/mobile_application.svg');
 }
@@ -1529,7 +1533,7 @@ footer,
 }
 
 .visably_next_cs {
-    background: url(../img/work/visably/hero.png); 
+    background: url(../img/work/visably/hero.png);
 }
 
 .purple_orange_next_cs {
@@ -2646,6 +2650,10 @@ p a {
 
     .subsection_header h4.article::after {
         background-image: url('../img/icons/32px/article.svg')
+    }
+
+    .subsection_header h4.frontend_dev::after {
+        background-image: url('../img/icons/32px/code.svg')
     }
 
     .subsection_header h4#phones::after {
