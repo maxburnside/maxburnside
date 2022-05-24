@@ -1058,6 +1058,10 @@ footer,
     background-image: url('../img/icons/32px/article.svg')
 }
 
+.subsection_header h4.frontend_dev::before {
+    background-image: url('../img/icons/32px/code.svg')
+}
+
 .subsection_header h4.mobile_application::before {
     background-image: url('../img/icons/32px/mobile_application.svg');
 }
@@ -1529,7 +1533,7 @@ footer,
 }
 
 .visably_next_cs {
-    background: url(../img/work/visably/hero.png); 
+    background: url(../img/work/visably/hero.png);
 }
 
 .purple_orange_next_cs {
@@ -2648,6 +2652,10 @@ p a {
         background-image: url('../img/icons/32px/article.svg')
     }
 
+    .subsection_header h4.frontend_dev::after {
+        background-image: url('../img/icons/32px/code.svg')
+    }
+
     .subsection_header h4#phones::after {
         background-image: url('../img/icons/32px/phone.svg');
     }
@@ -3013,7 +3021,7 @@ p a {
     h2,
     h6,
     .work_card_text_container span h5 {
-        color: hsl(200, 16%, 64%);
+        color: hsl(200, 16%, 80%);
     }
 
     .site_navbar .active::before,
