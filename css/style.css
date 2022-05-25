@@ -433,6 +433,7 @@ p a,
 .home_hero_link,
 .external_link_container a,
 .flooringstores_text_link,
+.visably_text_link,
 a {
     color: hsl(220, 100%, 50%);
 }
@@ -1071,6 +1072,10 @@ footer,
     background-image: url('../img/icons/32px/code.svg')
 }
 
+.subsection_header h4.marketing_site::before {
+    background-image: url('../img/icons/32px/marketing_site.svg');
+}
+
 .subsection_header h4.mobile_application::before {
     background-image: url('../img/icons/32px/mobile_application.svg');
 }
@@ -1530,7 +1535,9 @@ footer,
 }
 
 .flooringstores_hero_image,
-.flooringstores_hero .hero_image_container::after {
+.flooringstores_hero .hero_image_container::after,
+.visably_hero_image,
+.visably_hero .hero_image_container::after {
     background: hsl(220, 100%, 96%);
     background: -moz-linear-gradient(180deg, hsl(220, 100%, 94%) 0%, hsla(200, 16%, 99%, 0) 100%);
     background: -webkit-linear-gradient(180deg, hsl(220, 100%, 94%) 0%, hsla(200, 16%, 99%, 0) 100%);
@@ -2681,6 +2688,10 @@ p a {
         background-image: url('../img/icons/32px/mobile_application.svg');
     }
 
+    .subsection_header h4.marketing_site::after {
+        background-image: url('../img/icons/32px/marketing_site.svg');
+    }
+
     .subsection_header h4#peripherals::after {
         background-image: url('../img/icons/32px/speaker.svg');
     }
@@ -2971,7 +2982,9 @@ p a {
     }
 
     .flooringstores_hero_image,
-    .flooringstores_hero .hero_image_container::after {
+    .flooringstores_hero .hero_image_container::after,
+    .visably_hero_image,
+    .visably_hero .hero_image_container::after {
         background: hsl(220, 100%, 24%);
         background: -moz-linear-gradient(180deg, hsl(240, 100%, 32%) 0%, hsla(200, 12%, 4%, 0) 100%);
         background: -webkit-linear-gradient(180deg, hsl(240, 100%, 32%) 0%, hsla(200, 12%, 4%, 0) 100%);
@@ -3063,6 +3076,7 @@ p a {
     a,
     .site_navbar ul li a,
     .flooringstores_text_link,
+    .visably_text_link,
     .footer_links li a {
         color: hsl(204, 100%, 50%);
         text-decoration: none;
