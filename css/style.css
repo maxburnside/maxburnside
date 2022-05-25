@@ -16,7 +16,7 @@ code {
     padding: 0.125rem 0.375rem;
     background: hsla(200, 12%, 50%, 0.16);
     border-radius: 0.5rem;
-    border:  1px solid hsl(200, 12%, 50%, 0.5);
+    border: 1px solid hsl(200, 12%, 50%, 0.5);
 }
 
 *,
@@ -1521,6 +1521,14 @@ footer,
     background: linear-gradient(180deg, hsl(36, 100%, 88%) 0%, hsla(200, 16%, 99%, 0) 100%);
 }
 
+.drift_hero_image,
+.drift_hero .hero_image_container::after {
+    background: hsl(270, 100%, 92%);
+    background: -moz-linear-gradient(180deg, hsl(280, 100%, 92%) 0%, hsla(200, 16%, 99%, 0) 100%);
+    background: -webkit-linear-gradient(180deg, hsl(280, 100%, 92%) 0%, hsla(200, 16%, 99%, 0) 100%);
+    background: linear-gradient(180deg, hsl(280, 100%, 92%) 0%, hsla(200, 16%, 99%, 0) 100%);
+}
+
 .flooringstores_hero_image,
 .flooringstores_hero .hero_image_container::after {
     background: hsl(220, 100%, 96%);
@@ -2953,9 +2961,9 @@ p a {
     .drift_hero_image,
     .drift_hero .hero_image_container::after {
         background: hsl(270, 100%, 24%);
-        background: -moz-linear-gradient(180deg, hsl(280, 100%, 16%) 0%, hsla(260, 12%, 4%, 0) 100%);
-        background: -webkit-linear-gradient(180deg, hsl(280, 100%, 16%) 0%, hsla(260, 12%, 4%, 0) 100%);
-        background: linear-gradient(180deg, hsl(280, 100%, 16%) 0%, hsla(260, 12%, 4%, 0) 100%);
+        background: -moz-linear-gradient(180deg, hsl(280, 100%, 24%) 0%, hsla(260, 12%, 4%, 0) 100%);
+        background: -webkit-linear-gradient(180deg, hsl(280, 100%, 24%) 0%, hsla(260, 12%, 4%, 0) 100%);
+        background: linear-gradient(180deg, hsl(280, 100%, 24%) 0%, hsla(260, 12%, 4%, 0) 100%);
     }
 
     .drift_text_link {
