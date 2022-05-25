@@ -391,7 +391,8 @@ p,
 li a,
 ul li,
 ol li,
-.cs_details_container h5 {
+.cs_details_container h5,
+.availability_container {
     font-weight: 400;
 }
 
