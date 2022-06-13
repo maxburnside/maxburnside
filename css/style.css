@@ -913,8 +913,8 @@ footer,
     position: relative;
     width: 100%;
     padding: 0;
-    height: 90vh;
-    min-height: 480px;
+    height: calc(100vh - 160px);
+    min-height: 440px;
     max-height: 800px;
 }
 
@@ -2594,10 +2594,10 @@ p a {
         background: linear-gradient(hsl(200, 100%, 72%, 0.25), hsla(200, 100%, 64%, 0.4));
     }
 
-    .home_hero,
+/*    .home_hero,
     .page_hero {
         height: 75vh;
-    }
+    }*/
 
     .link_container {
         position: relative;
