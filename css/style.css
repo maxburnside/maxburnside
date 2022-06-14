@@ -1262,11 +1262,27 @@ footer,
 .case_study_main h4,
 .case_study_main h5,
 .case_study_main h6,
-.case_study_main p {
+.case_study_main p,
+.case_study_main ul {
     padding: 0 2rem;
     width: 100%;
     max-width: 992px;
     margin: 0 auto;
+}
+
+.case_study_main ul {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.case_study_main ul li {
+    list-style: circle;
+    padding-left: 0.5rem;
+    margin-left: 1rem;
+}
+
+.case_study_main ul li:not(:last-child) {
+    margin-bottom: 0.5rem;
 }
 
 .case_study_main h3,
@@ -1275,7 +1291,8 @@ footer,
 }
 
 .case_study_hero h1,
-.case_study_hero h2 {
+.case_study_hero h2,
+.case_study_split_list {
     padding: 0 2rem;
     width: 100%;
     max-width: 992px;
@@ -1297,6 +1314,19 @@ footer,
 
 .case_study_section {
     margin-bottom: 2rem;
+}
+
+.case_study_split_list {
+    padding: 0;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.case_study_split_column {
+    display: flex;
+    flex-direction: column;
 }
 
 .case_study_intro,
@@ -2594,7 +2624,7 @@ p a {
         background: linear-gradient(hsl(200, 100%, 72%, 0.25), hsla(200, 100%, 64%, 0.4));
     }
 
-/*    .home_hero,
+    /*    .home_hero,
     .page_hero {
         height: 75vh;
     }*/
@@ -2648,6 +2678,10 @@ p a {
 
     .pull_quote {
         margin: 6rem auto;
+    }
+
+    .case_study_split_list {
+        flex-direction: column;
     }
 
     .subsection_header {
