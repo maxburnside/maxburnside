@@ -219,13 +219,13 @@ a {
 }
 
 .site_navbar ul li:not(:first-child) {
-    padding: 0 0 0 2rem;
+    padding: 0 0 0 1.75rem;
 }
 
 .site_navbar ul li a {
     position: relative;
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 0.75rem;
     padding: 0.5rem;
     border-radius: 0.25rem;
@@ -239,7 +239,7 @@ a {
 .site_navbar ul li a::before {
     content: '';
     top: -2.125rem;
-    width: 6rem;
+    width: 5rem;
     left: 50%;
     transform: translateX(-50%);
     height: 0.375rem;
@@ -336,7 +336,7 @@ h1 {
     letter-spacing: normal;
     line-height: 1.125;
     font-weight: 900;
-    font-size: 4.25rem;
+    font-size: 4rem;
     word-break: break-word;
 }
 
@@ -362,13 +362,13 @@ h1::selection {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.875rem;
     letter-spacing: -0.0125rem;
     line-height: 1.375;
 }
 
 h3 {
-    font-size: 1.875rem;
+    font-size: 1.75rem;
     line-height: 1.5;
 }
 
@@ -377,7 +377,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.75rem;
+    font-size: 1.625rem;
     letter-spacing: -0.0125rem;
     line-height: 1.5;
 }
@@ -390,7 +390,7 @@ h4 {
 }
 
 h5 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     letter-spacing: -0.0125rem;
 }
 
@@ -426,7 +426,7 @@ h6 {
 }
 
 p {
-    font-size: 1.125rem;
+    font-size: 1rem;
     letter-spacing: -0.015625rem;
 }
 
@@ -435,7 +435,7 @@ p {
 }
 
 .gear_section .gear_description {
-    font-size: 1.375rem;
+    font-size: 1.25rem;
 }
 
 li a,
@@ -445,7 +445,7 @@ p a,
 .flooringstores_text_link,
 .visably_text_link,
 a {
-    color: hsl(220, 100%, 50%);
+    color: hsl(210, 100%, 50%);
 }
 
 li a:hover,
@@ -481,7 +481,7 @@ ul li {
 .home_hero_link {
     display: inline-flex;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.375rem;
     text-decoration: none;
 }
 
@@ -661,6 +661,7 @@ ul li {
 .recent_work_image_container a video {
     width: 100%;
     height: 100%;
+    border: 1px solid hsla(200, 24%, 24%, 0.1);
 }
 
 /*footer {
@@ -736,8 +737,10 @@ footer,
 }
 
 .social_media_icons li a {
-    border: 2px solid;
+    border: 1px solid;
     border-color: transparent;
+    transition: 0.15s all;
+    -webkit-transition: 0.15s all;
 }
 
 .footer_links li {
@@ -803,8 +806,8 @@ footer,
     text-shadow: 0 1px 0 hsla(200, 16%, 6%, 0.15);
     font-size: 0.875rem;
     line-height: 1;
-    transition: 0.4s opacity;
-    -webkit-transition: 0.4s opacity;
+    transition: 0.15s opacity;
+    -webkit-transition: 0.15s opacity;
 }
 
 .dribbble_icon_bg,
@@ -918,13 +921,13 @@ footer,
     max-height: 800px;
 }
 
-.home_hero,
+/*.home_hero,
 .page_hero {
     background: hsl(190, 100%, 92%);
     background: -moz-linear-gradient(180deg, hsl(190, 100%, 84%) 0%, hsla(200, 16%, 99%, 0) 100%);
     background: -webkit-linear-gradient(180deg, hsl(190, 100%, 84%) 0%, hsla(200, 16%, 99%, 0) 100%);
     background: linear-gradient(180deg, hsl(190, 100%, 84%) 0%, hsla(200, 16%, 99%, 0) 100%);
-}
+}*/
 
 .home_hero .text_container,
 .page_hero .text_container {
@@ -1229,13 +1232,13 @@ footer,
     opacity: 0.15;
 }
 
-.hero_image_container::after {
+/*.hero_image_container::after {
     width: 512px;
     height: 256px;
     right: -560px;
     bottom: 0;
     border-radius: 32px;
-}
+}*/
 
 .case_study_hero_image {
     display: flex;
@@ -1558,16 +1561,14 @@ footer,
     position: relative;
 }
 
-.contentstack_hero_image,
-.contentstack_hero .hero_image_container::after {
+.contentstack_hero_image {
     background: hsl(32, 100%, 92%);
     background: -moz-linear-gradient(180deg, hsl(36, 100%, 88%) 0%, hsla(200, 16%, 99%, 0) 100%);
     background: -webkit-linear-gradient(180deg, hsl(36, 100%, 88%) 0%, hsla(200, 16%, 99%, 0) 100%);
     background: linear-gradient(180deg, hsl(36, 100%, 88%) 0%, hsla(200, 16%, 99%, 0) 100%);
 }
 
-.drift_hero_image,
-.drift_hero .hero_image_container::after {
+.drift_hero_image {
     background: hsl(270, 100%, 92%);
     background: -moz-linear-gradient(180deg, hsl(280, 100%, 92%) 0%, hsla(200, 16%, 99%, 0) 100%);
     background: -webkit-linear-gradient(180deg, hsl(280, 100%, 92%) 0%, hsla(200, 16%, 99%, 0) 100%);
@@ -1575,17 +1576,14 @@ footer,
 }
 
 .flooringstores_hero_image,
-.flooringstores_hero .hero_image_container::after,
-.visably_hero_image,
-.visably_hero .hero_image_container::after {
+.visably_hero_image {
     background: hsl(220, 100%, 96%);
     background: -moz-linear-gradient(180deg, hsl(220, 100%, 94%) 0%, hsla(200, 16%, 99%, 0) 100%);
     background: -webkit-linear-gradient(180deg, hsl(220, 100%, 94%) 0%, hsla(200, 16%, 99%, 0) 100%);
     background: linear-gradient(180deg, hsl(220, 100%, 94%) 0%, hsla(200, 16%, 99%, 0) 100%);
 }
 
-.adhawk_hero_image,
-.adhawk_hero .hero_image_container::after {
+.adhawk_hero_image {
     background: hsl(140, 100%, 92%);
     background: -moz-linear-gradient(180deg, hsl(140, 100%, 88%) 0%, hsla(200, 16%, 99%, 0) 100%);
     background: -webkit-linear-gradient(180deg, hsl(140, 100%, 88%) 0%, hsla(200, 16%, 99%, 0) 100%);
@@ -1952,7 +1950,7 @@ p a {
 .external_link,
 .return_to_top_link,
 .footer_links li a {
-    color: hsl(220, 100%, 50%);
+    color: hsl(210, 100%, 50%);
 }
 
 .home_hero_link::after,
@@ -2603,17 +2601,16 @@ p a {
     }
 
     .nav_logo {
-        width: 60px;
-        height: 36px;
+        width: 64px;
     }
 
     .site_navbar ul li:not(:first-child) {
         padding: 0 0 0 1.25rem;
     }
 
-    .site_navbar ul li a {
+/*    .site_navbar ul li a {
         font-size: 1.25rem;
-    }
+    }*/
 
     .site_navbar ul li a::before {
         top: -1.625rem;
@@ -2984,13 +2981,13 @@ p a {
         text-decoration: underline;
     }
 
-    .home_hero,
+/*    .home_hero,
     .page_hero {
         background: hsl(226, 100%, 12%);
         background: -moz-linear-gradient(180deg, hsl(226, 100%, 16%) 0%, hsla(200, 12%, 4%, 0) 100%);
         background: -webkit-linear-gradient(180deg, hsl(226, 100%, 16%) 0%, hsla(200, 12%, 4%, 0) 100%);
         background: linear-gradient(180deg, hsl(226, 100%, 16%) 0%, hsla(200, 12%, 4%, 0) 100%);
-    }
+    }*/
 
     .case_study_hero {
         background: transparent;
@@ -3005,8 +3002,7 @@ p a {
         box-shadow: none;
     }
 
-    .contentstack_hero_image,
-    .contentstack_hero .hero_image_container::after {
+    .contentstack_hero_image {
         background: hsl(32, 100%, 24%);
         background: -moz-linear-gradient(180deg, hsl(36, 100%, 16%) 0%, hsla(200, 12%, 4%, 0) 100%);
         background: -webkit-linear-gradient(180deg, hsl(36, 100%, 16%) 0%, hsla(200, 12%, 4%, 0) 100%);
@@ -3017,8 +3013,7 @@ p a {
         color: hsl(28, 100%, 50%);
     }
 
-    .drift_hero_image,
-    .drift_hero .hero_image_container::after {
+    .drift_hero_image {
         background: hsl(270, 100%, 24%);
         background: -moz-linear-gradient(180deg, hsl(280, 100%, 24%) 0%, hsla(260, 12%, 4%, 0) 100%);
         background: -webkit-linear-gradient(180deg, hsl(280, 100%, 24%) 0%, hsla(260, 12%, 4%, 0) 100%);
@@ -3029,18 +3024,15 @@ p a {
         color: hsl(270, 100%, 50%);
     }
 
-    .flooringstores_hero_image,
-    .flooringstores_hero .hero_image_container::after,
-    .visably_hero_image,
-    .visably_hero .hero_image_container::after {
+    .flooringstores_hero_image
+    .visably_hero_image {
         background: hsl(220, 100%, 24%);
         background: -moz-linear-gradient(180deg, hsl(240, 100%, 32%) 0%, hsla(200, 12%, 4%, 0) 100%);
         background: -webkit-linear-gradient(180deg, hsl(240, 100%, 32%) 0%, hsla(200, 12%, 4%, 0) 100%);
         background: linear-gradient(180deg, hsl(240, 100%, 32%) 0%, hsla(200, 12%, 4%, 0) 100%);
     }
 
-    .adhawk_hero_image,
-    .adhawk_hero .hero_image_container::after {
+    .adhawk_hero_image {
         background: hsl(140, 100%, 12%);
         background: -moz-linear-gradient(180deg, hsl(160, 100%, 12%) 0%, hsla(200, 12%, 4%, 0) 100%);
         background: -webkit-linear-gradient(180deg, hsl(160, 100%, 12%) 0%, hsla(200, 12%, 4%, 0) 100%);
@@ -3055,9 +3047,9 @@ p a {
         opacity: 0.1;
     }
 
-    .hero_image_container::after {
+/*    .hero_image_container::after {
         opacity: 0.5;
-    }
+    }*/
 
     h1 {
         color: hsl(200, 100%, 94%);
@@ -3104,7 +3096,7 @@ p a {
 
     .site_navbar .active::before,
     .site_navbar .active:hover::before {
-        background-color: hsl(204, 100%, 50%);
+        background-color: hsl(196, 100%, 50%);
         background: linear-gradient(hsla(204, 100%, 50%, 0.75), hsl(204, 100%, 72%));
         box-shadow: 0 -1px 4px hsl(200, 100%, 50%) inset;
         border-top: 1px solid hsla(200, 100%, 99%, 0.15);
@@ -3123,7 +3115,7 @@ p a {
     }
 
     .site_navbar ul li:last-child a:hover {
-        box-shadow: 0 0 0 2px hsl(204, 100%, 50%);
+        box-shadow: 0 0 0 2px hsl(196, 100%, 50%);
     }
 
     .home_hero_link,
@@ -3136,12 +3128,12 @@ p a {
     .flooringstores_text_link,
     .visably_text_link,
     .footer_links li a {
-        color: hsl(204, 100%, 50%);
+        color: hsl(196, 100%, 50%);
         text-decoration: none;
     }
 
     p a {
-        color: hsl(204, 100%, 50%);
+        color: hsl(196, 100%, 50%);
     }
 
     .home_hero_link svg {
@@ -3159,7 +3151,7 @@ p a {
     }
 
     a::selection {
-        background: hsl(204, 100%, 50%);
+        background: hsl(196, 100%, 50%);
         color: hsl(200, 16%, 96%);
     }
 
@@ -3174,7 +3166,7 @@ p a {
     .work_responsibilities a,
     .return_to_top_link,
     .subsection_header a {
-        color: hsl(204, 100%, 50%);
+        color: hsl(196, 100%, 50%);
     }
 
     .return_to_top_link {
@@ -3268,7 +3260,7 @@ p a {
     .dribbble_icon_bg,
     .twitter_icon,
     .github_icon {
-        fill: hsl(204, 100%, 50%);
+        fill: hsl(196, 100%, 50%);
     }
 
     .dribbble_icon_inner {
@@ -3316,11 +3308,6 @@ p a {
 
     .inner_nav_container {
         padding: 0 1rem 0 1.5rem;
-    }
-
-    .nav_logo {
-        width: 40px;
-        height: 24px;
     }
 
     .site_navbar ul li a::before {
