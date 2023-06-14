@@ -232,7 +232,7 @@ a {
 .mb_logo_m,
 .mb_logo_b {
     transition: 0.24s all;
-    -webkit-transition: 0.24s all;    
+    -webkit-transition: 0.24s all;
 }
 
 .mb_logo_b {
@@ -328,7 +328,7 @@ h1 {
     padding: 0;
     margin: 1px 0 0.75rem 0;
     color: hsl(200, 24%, 8%);
-/*    background-image: linear-gradient(hsl(190, 100%, 20%), hsl(200, 100%, 4%));
+    /*    background-image: linear-gradient(hsl(190, 100%, 20%), hsl(200, 100%, 4%));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;*/
@@ -821,17 +821,17 @@ footer,
 
 .social_media_icons li .dribbble:hover {
     background-color: hsla(320, 88%, 64%, 0.25);
-/*    border-color: hsla(320, 100%, 72%, 0.5);*/
+    /*    border-color: hsla(320, 100%, 72%, 0.5);*/
 }
 
 .social_media_icons li .twitter:hover {
     background-color: hsla(205, 100%, 56%, 0.25);
-/*    border-color: hsla(205, 100%, 64%, 0.4);*/
+    /*    border-color: hsla(205, 100%, 64%, 0.4);*/
 }
 
 .social_media_icons li .github:hover {
     background-color: hsl(270, 100%, 92%);
-/*    border-color: hsla(265, 100%, 72%, 0.5);*/
+    /*    border-color: hsla(265, 100%, 72%, 0.5);*/
 }
 
 .social_media_icons li .dribbble:hover .dribbble_icon_bg {
@@ -1828,7 +1828,7 @@ p a {
     -webkit-transform: scale(1.025);
     transition: 0.26s all;
     -webkit-transition: 0.26s all;
-/*    box-shadow: 0 48px 64px 0 hsla(200, 24%, 16%, 0.12), 0 4px 24px 0 hsla(200, 16%, 8%, 0.02), 0 4px 12px 0 hsla(200, 16%, 4%, 0.04);*/
+    /*    box-shadow: 0 48px 64px 0 hsla(200, 24%, 16%, 0.12), 0 4px 24px 0 hsla(200, 16%, 8%, 0.02), 0 4px 12px 0 hsla(200, 16%, 4%, 0.04);*/
     border: 1px solid hsla(200, 24%, 8%, 1);
     border-radius: 0;
     z-index: 7;
@@ -2980,7 +2980,7 @@ p a {
         text-decoration: underline;
     }
 
-/*    .home_hero,
+    /*    .home_hero,
     .page_hero {
         background: hsl(226, 100%, 12%);
         background: -moz-linear-gradient(180deg, hsl(226, 100%, 16%) 0%, hsla(200, 12%, 4%, 0) 100%);
@@ -3023,8 +3023,7 @@ p a {
         color: hsl(270, 100%, 50%);
     }
 
-    .flooringstores_hero_image
-    .visably_hero_image {
+    .flooringstores_hero_image .visably_hero_image {
         background: hsl(220, 100%, 24%);
         background: -moz-linear-gradient(180deg, hsl(240, 100%, 32%) 0%, hsla(200, 12%, 4%, 0) 100%);
         background: -webkit-linear-gradient(180deg, hsl(240, 100%, 32%) 0%, hsla(200, 12%, 4%, 0) 100%);
@@ -3046,16 +3045,16 @@ p a {
         opacity: 0.1;
     }
 
-/*    .hero_image_container::after {
+    /*    .hero_image_container::after {
         opacity: 0.5;
     }*/
 
     h1 {
         color: hsl(200, 24%, 92%);
-/*        background-image: linear-gradient(hsl(190, 100%, 96%), hsl(200, 100%, 64%));*/
+        /*        background-image: linear-gradient(hsl(190, 100%, 96%), hsl(200, 100%, 64%));*/
     }
 
-/*    .adhawk_hero h1 {
+    /*    .adhawk_hero h1 {
         background-image: linear-gradient(hsl(180, 100%, 96%), hsl(150, 100%, 64%));
     }
 
@@ -3276,17 +3275,17 @@ p a {
     }
 
     .social_media_icons li .dribbble:hover {
-/*        background-color: hsla(320, 88%, 60%, 0.15);*/
+        /*        background-color: hsla(320, 88%, 60%, 0.15);*/
         border-color: hsla(320, 88%, 60%, 0.5);
     }
 
     .social_media_icons li .twitter:hover {
-/*        background-color: hsla(205, 100%, 52%, 0.11);*/
+        /*        background-color: hsla(205, 100%, 52%, 0.11);*/
         border-color: hsla(205, 100%, 52%, 0.45);
     }
 
     .social_media_icons li .github:hover {
-/*        background-color: hsla(270, 100%, 56%, 0.22);*/
+        /*        background-color: hsla(270, 100%, 56%, 0.22);*/
         border-color: hsla(270, 100%, 56%, 0.9);
     }
 
@@ -3663,7 +3662,6 @@ p a {
         margin-bottom: 2rem !important;
         line-height: 1;
     }
-
 
     .case_study_hero h1 {
         margin-top: 2rem;
