@@ -195,7 +195,7 @@ a {
     width: 100%;
     height: 100%;
     max-width: 1080px;
-    padding: 0 2rem;
+    padding: 0 1.375rem 0 2rem;
     position: absolute;
     display: inline-flex;
     align-items: center;
@@ -206,9 +206,9 @@ a {
 }
 
 .inner_nav_container .nav_logo {
-    padding: 0 0.5rem;
+    padding: 0 0.75rem;
     background: transparent;
-    margin-left: -0.5rem;
+    margin-left: -0.75rem;
 }
 
 .inner_nav_container .nav_logo:hover,
@@ -243,7 +243,6 @@ a {
 .inner_nav_container svg:hover .mb_logo_b {
     transition: 0.08s all;
     -webkit-transition: 0.08s all;
-/*    fill: hsl(150, 100%, 40%);*/
     opacity: 1;
 }
 
@@ -270,13 +269,13 @@ a {
     display: block;
     font-size: 1.25rem;
     line-height: 0.75rem;
-    padding: 0.675rem 0.5rem;
+    padding: 0.75rem 0.625rem;
     text-decoration: none;
 }
 
 .inner_nav_container .nav_logo,
 .site_navbar ul li a {
-    border-radius: 0.5rem;
+    border-radius: 0.75rem;
 }
 
 .site_navbar ul li a:hover {
@@ -510,7 +509,7 @@ ul li {
 }
 
 .section_header {
-    margin: 0 auto 2rem;
+    margin: 0 auto 1.5rem;
     line-height: 1;
     width: 100%;
     max-width: 1080px;
@@ -1830,7 +1829,7 @@ p a {
     transition: 0.26s all;
     -webkit-transition: 0.26s all;
 /*    box-shadow: 0 48px 64px 0 hsla(200, 24%, 16%, 0.12), 0 4px 24px 0 hsla(200, 16%, 8%, 0.02), 0 4px 12px 0 hsla(200, 16%, 4%, 0.04);*/
-    border: 1px solid hsla(200, 24%, 8%, 0.5);
+    border: 1px solid hsla(200, 24%, 8%, 1);
     border-radius: 0;
     z-index: 7;
 }
@@ -3316,7 +3315,7 @@ p a {
     }
 
     .inner_nav_container {
-        padding: 0 1.5rem;
+        padding: 0 1rem 0 1.5rem;
     }
 
     .site_navbar ul li a {
