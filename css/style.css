@@ -2974,6 +2974,11 @@ p a {
         text-decoration: none;
     }
 
+    .site_navbar .active,
+    .site_navbar .active:hover {
+        color: hsl(200, 24%, 8%);
+    }
+
     .gear_card_text_container a:hover,
     p a:hover,
     p a:focus {
@@ -3076,7 +3081,7 @@ p a {
     .site_navbar .active,
     .site_navbar u li a:active,
     .site_navbar .active:hover {
-        background: hsl(120, 100%, 64%);
+        background: hsl(150, 100%, 44%);
     }
 
     p,
@@ -3109,21 +3114,7 @@ p a {
     .site_navbar li a:hover,
     .footer_links li a:hover {
         color: hsl(200, 24%, 98%);
-    }
-
-    .site_navbar ul li a:hover::before {
-        background: hsl(150, 100%, 12%);
-    }
-
-    .site_navbar ul li:last-child a:hover::before {
-        background-color: transparent;
-        background: transparent;
-        box-shadow: none;
-    }
-
-    .site_navbar ul li:last-child a:hover {
-        box-shadow: 0 0 0 2px hsl(150, 100%, 12%);
-    }
+    }   
 
     .mb_logo_m,
     .mb_logo_b {
@@ -3136,7 +3127,7 @@ p a {
 
     .inner_nav_container svg:hover .mb_logo_m,
     .inner_nav_container svg:hover .mb_logo_b {
-        fill: hsl(150, 100%, 44%);
+        fill: hsl(150, 24%, 8%);
     }
 
     p a {
