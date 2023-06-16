@@ -101,7 +101,7 @@ p {
 }
 
 img {
-    background: linear-gradient(hsla(200, 32%, 56%, 0.2), hsla(200, 16%, 88%, 0.1));
+    background: hsla(200, 16%, 88%, 0.1);
     box-shadow: none;
     border-style: none;
     border: 0px solid transparent;
@@ -563,7 +563,7 @@ ul li {
 .case_study_image_container img {
     margin-right: 0;
     margin-bottom: 0;
-    background: linear-gradient(hsla(200, 32%, 56%, 0.2), hsla(200, 16%, 88%, 0.1));
+    background: hsla(200, 16%, 88%, 0.1);
 }
 
 .case_study_image_container img {
@@ -900,14 +900,6 @@ footer,
     min-height: 440px;
     max-height: 800px;
 }
-
-/*.home_hero,
-.page_hero {
-    background: hsl(190, 100%, 92%);
-    background: -moz-linear-gradient(180deg, hsl(190, 100%, 84%) 0%, hsla(200, 16%, 99%, 0) 100%);
-    background: -webkit-linear-gradient(180deg, hsl(190, 100%, 84%) 0%, hsla(200, 16%, 99%, 0) 100%);
-    background: linear-gradient(180deg, hsl(190, 100%, 84%) 0%, hsla(200, 16%, 99%, 0) 100%);
-}*/
 
 .home_hero .text_container,
 .page_hero .text_container {
@@ -1517,31 +1509,19 @@ footer,
 
 .contentstack_hero_image {
     background: hsl(32, 100%, 92%);
-    background: -moz-linear-gradient(180deg, hsl(36, 100%, 88%) 0%, hsla(200, 16%, 99%, 0) 100%);
-    background: -webkit-linear-gradient(180deg, hsl(36, 100%, 88%) 0%, hsla(200, 16%, 99%, 0) 100%);
-    background: linear-gradient(180deg, hsl(36, 100%, 88%) 0%, hsla(200, 16%, 99%, 0) 100%);
 }
 
 .drift_hero_image {
     background: hsl(270, 100%, 92%);
-    background: -moz-linear-gradient(180deg, hsl(280, 100%, 92%) 0%, hsla(200, 16%, 99%, 0) 100%);
-    background: -webkit-linear-gradient(180deg, hsl(280, 100%, 92%) 0%, hsla(200, 16%, 99%, 0) 100%);
-    background: linear-gradient(180deg, hsl(280, 100%, 92%) 0%, hsla(200, 16%, 99%, 0) 100%);
 }
 
 .flooringstores_hero_image,
 .visably_hero_image {
     background: hsl(220, 100%, 96%);
-    background: -moz-linear-gradient(180deg, hsl(220, 100%, 94%) 0%, hsla(200, 16%, 99%, 0) 100%);
-    background: -webkit-linear-gradient(180deg, hsl(220, 100%, 94%) 0%, hsla(200, 16%, 99%, 0) 100%);
-    background: linear-gradient(180deg, hsl(220, 100%, 94%) 0%, hsla(200, 16%, 99%, 0) 100%);
 }
 
 .adhawk_hero_image {
     background: hsl(140, 100%, 92%);
-    background: -moz-linear-gradient(180deg, hsl(140, 100%, 88%) 0%, hsla(200, 16%, 99%, 0) 100%);
-    background: -webkit-linear-gradient(180deg, hsl(140, 100%, 88%) 0%, hsla(200, 16%, 99%, 0) 100%);
-    background: linear-gradient(180deg, hsl(140, 100%, 88%) 0%, hsla(200, 16%, 99%, 0) 100%);
 }
 
 .drift_next_cs {
@@ -1785,26 +1765,6 @@ p a {
     -webkit-transition: 0.26s all;
     border-radius: 0;
     z-index: 7;
-}
-
-.bg_gradient_purple {
-    background: linear-gradient(0deg, hsl(256, 100%, 50%) 0%, hsl(275, 100%, 56%) 100%);
-}
-
-.bg_gradient_blue {
-    background: linear-gradient(180deg, hsl(194, 100%, 60%) 0%, hsl(230, 100%, 50%) 100%);
-}
-
-.bg_gradient_orange {
-    background: linear-gradient(180deg, hsl(48, 100%, 56%) 0%, hsl(28, 100%, 50%) 100%);
-}
-
-.bg_gradient_green {
-    background: linear-gradient(180deg, hsl(170, 80%, 50%) 0%, hsl(120, 64%, 50%) 100%);
-}
-
-.bg_gradient_black {
-    background: linear-gradient(180deg, hsl(200, 8%, 20%) 0%, hsl(225, 14%, 6%) 100%);
 }
 
 .gear_card_title_container {
@@ -2920,21 +2880,13 @@ p a {
         text-decoration: underline;
     }
 
-    /*    .home_hero,
-    .page_hero {
-        background: hsl(226, 100%, 12%);
-        background: -moz-linear-gradient(180deg, hsl(226, 100%, 16%) 0%, hsla(200, 12%, 4%, 0) 100%);
-        background: -webkit-linear-gradient(180deg, hsl(226, 100%, 16%) 0%, hsla(200, 12%, 4%, 0) 100%);
-        background: linear-gradient(180deg, hsl(226, 100%, 16%) 0%, hsla(200, 12%, 4%, 0) 100%);
-    }*/
-
     .case_study_hero {
         background: transparent;
     }
 
     img,
     .case_study_image_container img {
-        background: linear-gradient(hsla(200, 8%, 56%, 0.2), hsla(200, 8%, 12%, 0.1));
+        background: hsla(200, 8%, 12%, 0.1);
     }
 
     .hero_image_container {
@@ -2943,9 +2895,6 @@ p a {
 
     .contentstack_hero_image {
         background: hsl(32, 100%, 24%);
-        background: -moz-linear-gradient(180deg, hsl(36, 100%, 16%) 0%, hsla(200, 12%, 4%, 0) 100%);
-        background: -webkit-linear-gradient(180deg, hsl(36, 100%, 16%) 0%, hsla(200, 12%, 4%, 0) 100%);
-        background: linear-gradient(180deg, hsl(36, 100%, 16%) 0%, hsla(200, 12%, 4%, 0) 100%);
     }
 
     .contentstack_text_link {
@@ -2954,9 +2903,6 @@ p a {
 
     .drift_hero_image {
         background: hsl(270, 100%, 24%);
-        background: -moz-linear-gradient(180deg, hsl(280, 100%, 24%) 0%, hsla(260, 12%, 4%, 0) 100%);
-        background: -webkit-linear-gradient(180deg, hsl(280, 100%, 24%) 0%, hsla(260, 12%, 4%, 0) 100%);
-        background: linear-gradient(180deg, hsl(280, 100%, 24%) 0%, hsla(260, 12%, 4%, 0) 100%);
     }
 
     .drift_text_link {
@@ -2965,16 +2911,10 @@ p a {
 
     .flooringstores_hero_image .visably_hero_image {
         background: hsl(220, 100%, 24%);
-        background: -moz-linear-gradient(180deg, hsl(240, 100%, 32%) 0%, hsla(200, 12%, 4%, 0) 100%);
-        background: -webkit-linear-gradient(180deg, hsl(240, 100%, 32%) 0%, hsla(200, 12%, 4%, 0) 100%);
-        background: linear-gradient(180deg, hsl(240, 100%, 32%) 0%, hsla(200, 12%, 4%, 0) 100%);
     }
 
     .adhawk_hero_image {
         background: hsl(140, 100%, 12%);
-        background: -moz-linear-gradient(180deg, hsl(160, 100%, 12%) 0%, hsla(200, 12%, 4%, 0) 100%);
-        background: -webkit-linear-gradient(180deg, hsl(160, 100%, 12%) 0%, hsla(200, 12%, 4%, 0) 100%);
-        background: linear-gradient(180deg, hsl(160, 100%, 12%) 0%, hsla(200, 12%, 4%, 0) 100%);
     }
 
     .adhawk_text_link {
