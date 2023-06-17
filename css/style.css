@@ -206,14 +206,9 @@ a {
 }
 
 .inner_nav_container .nav_logo {
-    padding: 0 0.625rem;
+    padding: 0 0.75rem;
     background: transparent;
-    margin-left: -0.625rem;
-}
-
-.inner_nav_container .nav_logo:hover,
-.inner_nav_container ul li a:hover {
-    border-color: hsl(140, 100%, 40%);
+    margin-left: -0.75rem;
 }
 
 .inner_nav_container svg {
@@ -241,7 +236,6 @@ a {
 .inner_nav_container .nav_logo:hover .mb_logo_m,
 .inner_nav_container .nav_logo:hover .mb_logo_b {
     transition: 0.08s all;
-/*    fill: hsl(200, 24%, 8%);*/
 }
 
 .site_navbar ul {
@@ -272,26 +266,31 @@ a {
 
 .inner_nav_container .nav_logo,
 .site_navbar ul li a {
-    border: 2px solid transparent;
     border-radius: 0.75rem;
 }
 
 .site_navbar ul li a:hover {
     background: transparent;
     color: hsl(140, 100%, 40%);
-    border-color: hsla(140, 100%, 40%, 0.25);
+    box-shadow: 0 0 0 2px hsl(200, 24%, 96%);
 }
 
 .site_navbar ul li a:focus {
     box-shadow: 0 0 0 0.125rem hsla(144, 100%, 50%, 0.5);
 }
 
+.inner_nav_container .nav_logo:hover,
+.inner_nav_container ul li a:hover {
+    box-shadow: 0 0 0 2px hsl(200, 24%, 96%);
+}
+
 .site_navbar .active,
 .site_navbar .active:hover {
-    color: hsl(200, 24%, 96%);
     background: hsl(200, 24%, 4%);
+    box-shadow: none;
+    color: hsl(200, 24%, 96%);
     cursor: default;
-    border-color: transparent;
+    
 }
 
 a:hover,
@@ -2929,11 +2928,6 @@ p a {
     .footer_links li a:hover {
         color: hsl(200, 24%, 98%);
     }
-
-/*    .inner_nav_container .nav_logo:hover .mb_logo_m,
-    .inner_nav_container .nav_logo:hover .mb_logo_b {
-        fill: hsl(200, 24%, 8%);
-    }*/
 
     p a {
         color: hsl(128, 64%, 48%);
