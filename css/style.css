@@ -101,7 +101,7 @@ p {
 }
 
 img {
-    background: hsl(200, 24%, 96%);
+    background: hsl(200, 24%, 92%);
     box-shadow: none;
     border-style: none;
     border: none;
@@ -288,7 +288,7 @@ a {
 .site_navbar .active:hover {
     background: hsl(200, 24%, 4%);
     box-shadow: none;
-    color: hsl(200, 24%, 96%);
+    color: hsl(200, 24%, 92%);
     cursor: default;
 }
 
@@ -782,15 +782,15 @@ footer,
 }
 
 .social_media_icons li .dribbble:hover {
-    background-color: hsla(320, 88%, 64%, 0.15);
+    box-shadow: 0 0 0 2px hsl(320, 88%, 64%);
 }
 
 .social_media_icons li .twitter:hover {
-    background-color: hsla(205, 100%, 56%, 0.15);
+    box-shadow: 0 0 0 2px hsl(205, 100%, 56%);
 }
 
 .social_media_icons li .github:hover {
-    background-color: hsl(270, 100%, 64%, 0.15);
+    box-shadow: 0 0 0 2px hsl(270, 100%, 64%);
 }
 
 .social_media_icons li .dribbble:hover .dribbble_icon_bg {
@@ -807,49 +807,6 @@ footer,
 
 .social_media_icons li .github:hover .github_icon {
     fill: hsl(270, 100%, 60%);
-}
-
-.dribbble_tooltip {
-    background: hsl(320, 100%, 50%);
-}
-
-.twitter_tooltip {
-    background: hsl(205, 100%, 52%);
-}
-
-.github_tooltip {
-    background: hsl(270, 100%, 56%);
-}
-
-.social_media_icons li .tooltip_link:hover>.footer_tooltip {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-    transition: 0.26s opacity;
-}
-
-.footer_tooltip::after {
-    content: '';
-    height: 0px;
-    width: 0px;
-    border-left: 0.375rem solid transparent;
-    border-right: 0.375rem solid transparent;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -0.5rem;
-}
-
-.dribbble_tooltip::after {
-    border-top: 8px solid hsl(320, 100%, 50%);
-}
-
-.twitter_tooltip::after {
-    border-top: 8px solid hsl(205, 100%, 52%);
-}
-
-.github_tooltip::after {
-    border-top: 8px solid hsl(270, 100%, 56%);
 }
 
 .mac_software_icon,
@@ -2451,7 +2408,7 @@ p a {
     }
 
     .site_navbar {
-        background-color: hsl(200, 100%, 100%);
+        background-color: hsl(200, 24%, 92%);
         height: 4rem;
         position: fixed;
     }
@@ -2835,7 +2792,7 @@ p a {
     .site_navbar ul li a:hover {
         background: transparent;
         color: hsl(136, 100%, 40%);
-        box-shadow: 0 0 0 2px hsl(200, 24%, 96%);
+        box-shadow: 0 0 0 2px hsl(200, 24%, 92%);
     }
 
     .site_navbar ul li a:focus {
@@ -2844,14 +2801,14 @@ p a {
 
     .inner_nav_container .nav_logo:hover,
     .inner_nav_container ul li a:hover {
-        box-shadow: 0 0 0 2px hsl(200, 24%, 96%);
+        box-shadow: 0 0 0 2px hsl(200, 24%, 92%);
     }
 
     .site_navbar .active,
     .site_navbar .active:hover {
         background: hsl(200, 24%, 4%);
         box-shadow: none;
-        color: hsl(200, 24%, 96%);
+        color: hsl(200, 24%, 92%);
     }
 
     .site_navbar .active,
@@ -2963,17 +2920,17 @@ p a {
     }
 
     ::selection {
-        background: hsl(200, 24%, 96%);
+        background: hsl(200, 24%, 92%);
         color: hsl(200, 24%, 8%);
     }
 
     a::selection {
         background: hsl(196, 100%, 50%);
-        color: hsl(200, 24%, 96%);
+        color: hsl(200, 24%, 92%);
     }
 
     ::-moz-selection {
-        background: hsl(200, 24%, 96%);
+        background: hsl(200, 24%, 92%);
         color: hsl(200, 24%, 8%);
     }
 
@@ -3043,34 +3000,28 @@ p a {
 
     .userevidence_card:hover .work_card_text,
     .drift_card:hover .work_card_text {
-        /*background-color: hsla(270, 100%, 32%, 0.24);*/
         background: transparent;
     }
 
     .visably_card:hover .work_card_text,
     .flooringstores_card:hover .work_card_text {
-        /*background-color: hsla(220, 100%, 24%, 0.32);*/
         background: transparent;
     }
 
     .purple_orange_card:hover .work_card_text,
     .contentstack_card:hover .work_card_text {
-        /*background-color: hsla(24, 100%, 12%, 0.5);*/
         background: transparent;
     }
 
     .tell_card:hover .work_card_text {
-        /*background-color: hsla(260, 100%, 32%, 0.24);*/
         background: transparent;
     }
 
     .trx_card:hover .work_card_text {
-        /*background-color: hsla(40, 100%, 12%, 0.32);*/
         background: transparent;
     }
 
     .adhawk_card:hover .work_card_text {
-        /*background-color: hsla(160, 100%, 16%, 0.2);*/
         background: transparent;
     }
 
@@ -3085,18 +3036,15 @@ p a {
     }
 
     .social_media_icons li .dribbble:hover {
-        /*        background-color: hsla(320, 88%, 60%, 0.15);*/
-        border-color: hsla(320, 88%, 60%, 0.5);
+        box-shadow: 0 0 0 2px hsl(320, 88%, 60%);
     }
 
     .social_media_icons li .twitter:hover {
-        /*        background-color: hsla(205, 100%, 52%, 0.11);*/
-        border-color: hsla(205, 100%, 52%, 0.45);
+        box-shadow: 0 0 0 2px hsl(205, 100%, 52%);
     }
 
     .social_media_icons li .github:hover {
-        /*        background-color: hsla(270, 100%, 56%, 0.22);*/
-        border-color: hsla(270, 100%, 56%, 0.9);
+        box-shadow: 0 0 0 2px hsl(270, 100%, 56%);
     }
 
 }
@@ -3129,6 +3077,13 @@ p a {
 
     .site_navbar ul li a {
         font-size: 1rem;
+    }
+
+    .home_hero,
+    .page_hero {
+        height: calc(100vh - 320px);
+        min-height: 400px;
+        max-height: 720px;
     }
 
     .home_main,
