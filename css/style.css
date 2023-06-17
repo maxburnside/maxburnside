@@ -307,7 +307,6 @@ a:hover,
 /*********************** END Navbar Styling ***********************/
 
 .site_navbar a:hover,
-.footer_tooltip,
 .home_hero .text_container,
 .page_hero .text_container,
 .work_card,
@@ -751,24 +750,6 @@ footer,
 
 .social_media_icons li a {
     display: inline-block;
-}
-
-.footer_tooltip {
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    background: inherit;
-    top: -24px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 4px 8px;
-    border-radius: 6px;
-    color: hsl(200, 24%, 98%);
-    text-shadow: 0 1px 0 hsla(200, 16%, 6%, 0.15);
-    font-size: 0.875rem;
-    line-height: 1;
-    transition: 0.15s opacity;
 }
 
 .dribbble_icon_bg,
