@@ -221,7 +221,7 @@ a {
 
 .mb_logo_m,
 .mb_logo_b {
-    fill: hsl(140, 100%, 40%);
+    fill: hsl(136, 100%, 40%);
 }
 
 .mb_logo_m,
@@ -271,17 +271,17 @@ a {
 
 .site_navbar ul li a:hover {
     background: transparent;
-    color: hsl(140, 100%, 40%);
-    box-shadow: 0 0 0 2px hsl(200, 24%, 96%);
+    color: hsl(136, 100%, 24%);
+    box-shadow: 0 0 0 2px hsl(200, 24%, 8%);
 }
 
 .site_navbar ul li a:focus {
-    box-shadow: 0 0 0 0.125rem hsla(144, 100%, 50%, 0.5);
+    box-shadow: 0 0 0 0.125rem hsl(144, 100%, 50%);
 }
 
 .inner_nav_container .nav_logo:hover,
 .inner_nav_container ul li a:hover {
-    box-shadow: 0 0 0 2px hsl(200, 24%, 96%);
+    box-shadow: 0 0 0 2px hsl(200, 24%, 8%);
 }
 
 .site_navbar .active,
@@ -290,16 +290,14 @@ a {
     box-shadow: none;
     color: hsl(200, 24%, 96%);
     cursor: default;
-    
 }
 
 a:hover,
 .footer_links li a:hover,
 .availability_container,
 .category_tag,
-.company_name,
 .next_case_study_section .text_container h6 {
-    color: hsl(140, 72%, 38%);
+    color: hsl(136, 100%, 24%);
 }
 
 .site_navbar ul li a {
@@ -2832,6 +2830,28 @@ p a {
 
     img {
         background: hsl(200, 24%, 4%);
+    }
+
+    .site_navbar ul li a:hover {
+        background: transparent;
+        color: hsl(136, 100%, 40%);
+        box-shadow: 0 0 0 2px hsl(200, 24%, 96%);
+    }
+
+    .site_navbar ul li a:focus {
+        box-shadow: 0 0 0 0.125rem hsla(144, 100%, 50%, 0.5);
+    }
+
+    .inner_nav_container .nav_logo:hover,
+    .inner_nav_container ul li a:hover {
+        box-shadow: 0 0 0 2px hsl(200, 24%, 96%);
+    }
+
+    .site_navbar .active,
+    .site_navbar .active:hover {
+        background: hsl(200, 24%, 4%);
+        box-shadow: none;
+        color: hsl(200, 24%, 96%);
     }
 
     .site_navbar .active,
