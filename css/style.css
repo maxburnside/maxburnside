@@ -194,7 +194,7 @@ a {
 .inner_nav_container {
     width: 100%;
     height: 100%;
-    max-width: 1080px;
+    max-width: 960px;
     padding: 0 1.375rem 0 2rem;
     position: absolute;
     display: inline-flex;
@@ -205,7 +205,7 @@ a {
     transform: translateX(-50%);
 }
 
-.inner_nav_container .nav_logo {
+.nav_logo {
     padding: 0 0.75rem;
     background: transparent;
     margin-left: -0.75rem;
@@ -221,7 +221,7 @@ a {
 
 .mb_logo_m,
 .mb_logo_b {
-    fill: hsl(136, 100%, 40%);
+    fill: hsl(200, 24%, 8%);
 }
 
 .mb_logo_m,
@@ -230,12 +230,13 @@ a {
 }
 
 .mb_logo_b {
-    opacity: 0.75;
+    opacity: 0.5;
 }
 
-.inner_nav_container .nav_logo:hover .mb_logo_m,
-.inner_nav_container .nav_logo:hover .mb_logo_b {
+.nav_logo:hover .mb_logo_m,
+.nav_logo:hover .mb_logo_b {
     transition: 0.08s all;
+    fill: hsl(136, 100%, 40%);
 }
 
 .site_navbar ul {
@@ -264,24 +265,18 @@ a {
     text-decoration: none;
 }
 
-.inner_nav_container .nav_logo,
+.nav_logo,
 .site_navbar ul li a {
     border-radius: 0.75rem;
 }
 
 .site_navbar ul li a:hover {
     background: transparent;
-    color: hsl(136, 100%, 24%);
-    box-shadow: 0 0 0 2px hsl(200, 24%, 8%);
+    color: hsl(136, 100%, 28%);
 }
 
 .site_navbar ul li a:focus {
-    box-shadow: 0 0 0 0.125rem hsl(144, 100%, 50%);
-}
-
-.inner_nav_container .nav_logo:hover,
-.inner_nav_container ul li a:hover {
-    box-shadow: 0 0 0 2px hsl(200, 24%, 8%);
+    box-shadow: 0 0 0 0.125rem hsl(136, 100%, 40%);
 }
 
 .site_navbar .active,
@@ -379,7 +374,8 @@ li a,
 ul li,
 ol li,
 .cs_details_container h5,
-.availability_container {
+.availability_container,
+.category_tag {
     font-weight: 400;
 }
 
@@ -389,7 +385,6 @@ h6,
 .site_navbar li a,
 a,
 .table_of_contents a,
-.home_hero_link,
 .company_name,
 .footer_links li a {
     font-weight: 600;
@@ -417,7 +412,6 @@ p {
 
 li a,
 p a,
-.home_hero_link,
 .external_link_container a,
 .flooringstores_text_link,
 .visably_text_link,
@@ -437,32 +431,12 @@ p a:focus {
     color: hsl(200, 24%, 8%);
 }
 
-.home_hero_text_block ul {
-    margin: 48px 0 0 0;
-    padding: 0;
-}
-
 ul li {
     list-style: none;
     padding: 0;
 }
 
-.home_hero_text_block ul li {
-    letter-spacing: -0.005rem;
-}
 
-.home_hero_text_block ul li:not(:last-child) {
-    margin-bottom: 32px;
-}
-
-.home_hero_link {
-    display: inline-flex;
-    align-items: center;
-    font-size: 1.375rem;
-    text-decoration: none;
-}
-
-.home_hero_link:hover,
 .external_link_container a:hover,
 .table_of_contents ol li a:hover,
 .gear_card_title_container a:hover,
@@ -476,9 +450,9 @@ ul li {
     color: hsl(200, 24%, 8%);
 }
 
-.home_recent_work {
+.home_work_showcase {
     width: 100%;
-    max-width: 1080px;
+    /*    max-width: 1920px;*/
     padding: 0 2rem;
     display: flex;
     position: relative;
@@ -490,7 +464,7 @@ ul li {
     margin: 0 auto 1.5rem;
     line-height: 1;
     width: 100%;
-    max-width: 1080px;
+    max-width: 960px;
     display: inline-flex;
     align-items: baseline;
     justify-content: space-between;
@@ -504,17 +478,16 @@ ul li {
 
 .recent_work_image_container a,
 .half_width_img {
-    width: 50%;
+    width: calc(25% - 1rem);
     margin-right: 0;
-    max-width: 492px;
     display: inline-flex;
     flex-wrap: wrap;
     margin-bottom: 2rem;
 }
 
-.recent_work_image_container a:nth-child(2n+1),
+.recent_work_image_container :not(:last-child),
 .case_study_image_container .half_width_img:nth-child(2n+1) {
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 
 .case_study_image_container {
@@ -535,7 +508,7 @@ ul li {
 .case_study_image_container,
 .full_width_img {
     width: 100%;
-    max-width: 1080px;
+    max-width: 1920px;
     margin: 3rem auto;
     background: transparent;
     display: flex;
@@ -658,7 +631,7 @@ footer,
 .case_study_list,
 .pull_quote {
     width: 100%;
-    max-width: 1080px;
+    max-width: 960px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -666,7 +639,7 @@ footer,
 .footer_container {
     display: inline-flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 4rem 1.125rem 4rem 1.25rem;
 }
 
@@ -762,18 +735,6 @@ footer,
     fill: hsl(200, 100%, 100%);
 }
 
-.social_media_icons li .dribbble:hover {
-    box-shadow: 0 0 0 2px hsl(320, 88%, 64%);
-}
-
-.social_media_icons li .twitter:hover {
-    box-shadow: 0 0 0 2px hsl(205, 100%, 56%);
-}
-
-.social_media_icons li .github:hover {
-    box-shadow: 0 0 0 2px hsl(270, 100%, 64%);
-}
-
 .social_media_icons li .dribbble:hover .dribbble_icon_bg {
     fill: hsl(320, 100%, 40%);
 }
@@ -820,15 +781,15 @@ footer,
     margin: 0 auto;
     padding: 0 2rem;
     width: 100%;
-    max-width: 1080px;
+    max-width: 960px;
     position: absolute;
     left: 50%;
     top: calc(50% + 32px);
     transform: translate(-50%, -50%);
 }
 
-.page_hero .text_container {
-    top: 50%;
+.text_block {
+    max-width: 720px;
 }
 
 /* START Gear Page Table of Contents */
@@ -842,10 +803,14 @@ footer,
 .table_of_contents ol h5,
 .table_of_contents a {
     font-size: 1.25rem;
+    line-height: 1;
 }
 
 .table_of_contents ol li:not(:last-child),
-.table_of_contents ol h5,
+.table_of_contents ol h5 {
+    margin-bottom: 1.75rem;
+}
+
 .table_of_contents ol h6 {
     margin-bottom: 1.25rem;
 }
@@ -1072,7 +1037,7 @@ footer,
 .gear_intro,
 .gear_section {
     margin: 0 auto;
-    max-width: 1080px;
+    max-width: 960px;
 }
 
 .gear_content {
@@ -1128,7 +1093,7 @@ footer,
 .case_study_main ul {
     padding: 0 2rem;
     width: 100%;
-    max-width: 1080px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -1157,7 +1122,7 @@ footer,
 .case_study_split_list {
     padding: 0 2rem;
     width: 100%;
-    max-width: 1080px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -1195,7 +1160,7 @@ footer,
 .case_study_conclusion {
     display: flex;
     flex-direction: row;
-    max-width: 1080px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -1389,7 +1354,7 @@ footer,
     padding: 0 2rem;
     margin: 0 auto;
     width: 100%;
-    max-width: 1080px;
+    max-width: 960px;
     text-align: right;
     display: flex;
     flex-direction: column;
@@ -1546,7 +1511,7 @@ footer,
 
 .subsection_header h4 {
     position: relative;
-    max-width: 1080px;
+    max-width: 960px;
     margin: 0 auto;
     color: hsl(200, 24%, 8%);
     line-height: 1rem;
@@ -1597,19 +1562,19 @@ p a {
 }
 
 .availability_container {
-    left: 1.25rem;
-    padding: 10px;
+    left: 0.75rem;
+    padding: 0.625rem;
 }
 
 .category_tag {
-    right: 1.25rem;
-    padding: 10px;
+    right: 0.75rem;
+    padding: 0.625rem;
 }
 
 .availability_container,
 .category_tag {
     position: absolute;
-    top: 1.25rem;
+    top: 0.75rem;
     z-index: 4;
     line-height: 12px;
     font-size: 0.875rem;
@@ -1706,7 +1671,6 @@ p a {
     line-height: 1;
 }
 
-.home_hero_link,
 .gear_card_title_container h5,
 .gear_card_title_container a,
 .software_gear h5 span:second-child {
@@ -1721,15 +1685,9 @@ p a {
     font-size: 1.25rem;
 }
 
-.home_hero_link,
 .gear_card_title_container a {
     text-decoration: none;
     position: relative;
-}
-
-.home_hero_link {
-    padding-right: 1.25rem;
-    line-height: 18px;
 }
 
 .gear_card_title_container a {
@@ -1754,7 +1712,6 @@ p a {
 }
 
 .site_navbar ul li a,
-.home_hero_link,
 .gear_card_title_container a,
 .gear_card_text_container a,
 .table_of_contents ol li a,
@@ -1765,7 +1722,6 @@ p a {
     color: hsl(200, 24%, 12%);
 }
 
-.home_hero_link::after,
 .gear_card_title_container a::after,
 .external_link::after,
 .return_to_top_link::after {
@@ -1783,7 +1739,6 @@ p a {
     right: 0;
 }
 
-.home_hero_link::after,
 .gear_card_title_container a::after,
 .external_link::after {
     background-image: url('../img/icons/16px/external_link.svg');
@@ -1793,13 +1748,6 @@ p a {
     background-image: url('../img/icons/16px/email.svg')
 }
 
-/*.return_to_top_link::after {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cg%3E%3Cg fill='none' fill-rule='evenodd' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='%2309F' stroke-width='2' d='M1 6l5-5 5 5'%3E%3C/path%3E%3Cpath stroke='%2309F' stroke-width='2' d='M6 2v9'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    top: 0.25rem;
-    right: 0.25rem;
-}*/
-
-.home_hero_link:hover::after,
 .external_link_container a:hover::after,
 .gear_card_title_container a:hover::after,
 .return_to_top_link:hover::after {
@@ -1904,7 +1852,7 @@ p a {
     padding-bottom: 0;
     position: relative;
     z-index: 8;
-    max-width: 1080px;
+    max-width: 960px;
     padding-left: 32px;
     padding-right: 32px;
 }
@@ -2242,13 +2190,13 @@ p a {
     }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1440px) {
     .recent_work_image_container a {
         width: 49%;
         margin-bottom: 2%;
     }
 
-    .recent_work_image_container a:nth-child(2n+1) {
+    .recent_work_image_container a :not(:last-child) {
         margin-right: 2%;
     }
 
@@ -2373,6 +2321,12 @@ p a {
 
 @media screen and (max-width: 760px) {
 
+    .home_hero,
+    .page_hero {
+        min-height: 400px;
+        max-height: 720px;
+    }
+
     .long_text_header {
         font-size: 5vmax;
         font-size: calc(15vw - 32px);
@@ -2394,22 +2348,22 @@ p a {
         position: fixed;
     }
 
-    .inner_nav_container .nav_logo {
+    .nav_logo {
         padding: 0 0.5rem;
         background: transparent;
         margin-left: -0.5rem;
     }
 
-    .inner_nav_container svg {
-        width: 48px;
+    .nav_logo svg {
         height: 48px;
+        width: 48px;
     }
 
     .site_navbar ul li a {
         padding: 0.625rem;
     }
 
-    .inner_nav_container .nav_logo,
+    .nav_logo,
     .site_navbar ul li a {
         border-radius: 0.5rem;
     }
@@ -2558,7 +2512,7 @@ p a {
     }
 
     .recent_work_image_container a,
-    .recent_work_image_container a:nth-child(2n+1) {
+    .recent_work_image_container :not(:last-child) {
         width: 100%;
         display: block;
         margin-right: 0;
@@ -2584,7 +2538,7 @@ p a {
         border-radius: 1.5rem;
     }
 
-    .availability_container,
+    /*    .availability_container,
     .category_tag {
         top: 1rem;
     }
@@ -2596,7 +2550,7 @@ p a {
 
     .category_tag {
         right: 1rem;
-    }
+    }*/
 
     .external_link_container {
         margin-top: 1.5rem;
@@ -2615,12 +2569,6 @@ p a {
     .home_hero,
     .page_hero {
         top: 3rem;
-        /*height: calc(100vh - 120px);*/
-    }
-
-    .home_hero_link {
-        font-size: 1.25rem;
-        line-height: 16px;
     }
 
     .case_study_hero {
@@ -2754,7 +2702,6 @@ p a {
     h5,
     .availability_container,
     .category_tag,
-    .home_hero_link:hover span,
     .external_link_container a:hover span,
     .return_to_top_link:hover,
     .next_case_study_section .text_container a:hover,
@@ -2773,16 +2720,10 @@ p a {
     .site_navbar ul li a:hover {
         background: transparent;
         color: hsl(136, 100%, 40%);
-        box-shadow: 0 0 0 2px hsl(200, 24%, 92%);
     }
 
     .site_navbar ul li a:focus {
-        box-shadow: 0 0 0 0.125rem hsla(144, 100%, 50%, 0.5);
-    }
-
-    .inner_nav_container .nav_logo:hover,
-    .inner_nav_container ul li a:hover {
-        box-shadow: 0 0 0 2px hsl(200, 24%, 92%);
+        box-shadow: 0 0 0 0.125rem hsla(136, 100%, 40%, 0.5);
     }
 
     .site_navbar .active,
@@ -2795,6 +2736,11 @@ p a {
     .site_navbar .active,
     .site_navbar .active:hover {
         color: hsl(200, 24%, 8%);
+    }
+
+    .mb_logo_m,
+    .mb_logo_b {
+        fill: hsl(200, 24%, 92%);
     }
 
     .gear_card_text_container a:hover,
@@ -2868,7 +2814,6 @@ p a {
         color: hsl(200, 24%, 56%);
     }
 
-    .home_hero_link,
     .external_link_container a,
     .table_of_contents ol li a,
     li a,
@@ -2891,11 +2836,6 @@ p a {
         color: hsl(128, 64%, 48%);
     }
 
-    .home_hero_link svg {
-        stroke: hsl(210, 100%, 24%);
-    }
-
-    .home_hero_link:hover svg,
     .external_link_container a:hover svg {
         stroke: hsl(200, 100%, 48%)
     }
@@ -2915,7 +2855,6 @@ p a {
         color: hsl(200, 24%, 8%);
     }
 
-    .home_hero_link,
     .gear_card_title_container a,
     .gear_card_text_container a,
     .work_responsibilities a,
@@ -2952,7 +2891,6 @@ p a {
         box-shadow: none !important;
     }
 
-    .home_hero_link:hover,
     .external_link_container a:hover,
     .gear_card_title_container a:hover,
     .gear_card_text_container a:hover,
@@ -3016,18 +2954,6 @@ p a {
         fill: hsl(200, 12%, 4%);
     }
 
-    .social_media_icons li .dribbble:hover {
-        box-shadow: 0 0 0 2px hsl(320, 88%, 60%);
-    }
-
-    .social_media_icons li .twitter:hover {
-        box-shadow: 0 0 0 2px hsl(205, 100%, 52%);
-    }
-
-    .social_media_icons li .github:hover {
-        box-shadow: 0 0 0 2px hsl(270, 100%, 56%);
-    }
-
 }
 
 @media (prefers-color-scheme: dark) and (max-width: 760px) {
@@ -3062,9 +2988,7 @@ p a {
 
     .home_hero,
     .page_hero {
-        height: calc(100vh - 320px);
-        min-height: 400px;
-        max-height: 720px;
+        height: calc(100vh - 296px);
     }
 
     .home_main,
@@ -3194,7 +3118,7 @@ p a {
         margin-bottom: 0.875rem;
     }
 
-    .case_study_image_container img:nth-child(2n+1) {
+    .recent_work_image_container img :not(:last-child) {
         margin-right: 0.875rem;
     }
 
@@ -3232,11 +3156,11 @@ p a {
     }
 
     .recent_work_image_container a,
-    .recent_work_image_container a:nth-child(2n+1) {
+    .recent_work_image_container a:not(:last-child) {
         margin-bottom: 1.5rem;
     }
 
-    .home_recent_work,
+    .home_work_showcase,
     .table_of_contents {
         padding: 0 1.5rem 3rem;
     }
@@ -3330,7 +3254,6 @@ p a {
         margin: 1.5rem 0 0 0;
     }
 
-    .home_hero_link,
     .gear_card_title_container a,
     .software_gear h5 span {
         line-height: 0.75rem;
@@ -3338,10 +3261,6 @@ p a {
 
     .external_link::after {
         right: -20px;
-    }
-
-    .home_hero_link::after {
-        bottom: -2px;
     }
 
     .gear_card_title_container h5,
@@ -3385,22 +3304,6 @@ p a {
         padding: 0 0.75rem;
     }
 
-    .dribbble_icon_bg {
-        fill: hsl(320, 100%, 40%);
-    }
-
-    .twitter_icon {
-        fill: hsl(205, 100%, 52%);
-    }
-
-    .github_icon {
-        fill: hsl(270, 100%, 56%);
-    }
-
-    .dribbble_icon_inner {
-        fill: hsl(320, 72%, 64%);
-    }
-
     h1 {
         font-size: 3.5rem;
         margin: 2px 0 .5rem 0;
@@ -3439,8 +3342,7 @@ p a {
         margin-top: 2.5rem;
     }
 
-    .external_link,
-    .home_hero_link {
+    .external_link {
         font-size: 1.125rem;
     }
 
