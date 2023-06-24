@@ -9,11 +9,15 @@
 html,
 body {
     font-family: 'Work Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
 code {
-    background: hsla(200, 12%, 50%, 0.16);
-    border: 0.0625rem solid hsl(200, 12%, 50%, 0.5);
+    background: hsla(200, 24%, 50%, 0.16);
+    border: 0.0625rem solid hsl(200, 24%, 50%, 0.5);
     border-radius: 0.5rem;
     font-family: 'Courier', serif !important;
     padding: 0.125rem 0.375rem;
@@ -51,15 +55,12 @@ body {
 
 html {
     scrollbar-width: none !important;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
 }
 
 body {
     font-size: 1rem;
     margin: 0;
     scrollbar-width: none !important;
-    -webkit-font-smoothing: antialiased;
 }
 
 body::-webkit-scrollbar,
@@ -314,7 +315,7 @@ p {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     line-height: 1.125;
     padding: 0;
     margin: 0 0 0.75rem 0;
@@ -334,13 +335,13 @@ h1::selection {
 }
 
 h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     line-height: 1.375;
     letter-spacing: -0.0125rem;
 }
 
 h3 {
-    font-size: 1.625rem;
+    font-size: 1.375rem;
     line-height: 1.5;
 }
 
@@ -349,7 +350,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.625rem;
+    font-size: 1.375rem;
     line-height: 1.5;
     letter-spacing: -0.0125rem;
 }
@@ -362,7 +363,7 @@ h4 {
 }
 
 h5 {
-    font-size: 1.125rem;
+    font-size: 1rem;
     letter-spacing: -0.0125rem;
 }
 
@@ -391,7 +392,7 @@ a,
 }
 
 h6 {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     line-height: 0.5rem;
     letter-spacing: 0.25rem;
     text-transform: uppercase;
@@ -474,9 +475,14 @@ ul li {
     display: flex;
     flex-flow: row wrap;
     margin-bottom: 2rem;
+
+display: flex;
+flex-direction: column;
+position: relative;
+min-height: 100vh;
 }
 
-.recent_work_image_container a,
+.recent_work_image_container img,
 .half_width_img {
     width: calc(25% - 1rem);
     margin-right: 0;
@@ -489,6 +495,119 @@ ul li {
 .case_study_image_container .half_width_img:nth-child(2n+1) {
     margin-right: 1rem;
 }
+
+.recent_work_modal a {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+
+.home_page_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 400px);
+    gap: 8px;
+}
+
+.home_page_grid li {
+    display: inline-block;
+    position: relative;
+    outline: 0px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.home_page_grid li img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    color: transparent;
+}
+}
+
+/* Modal Styling */
+
+.ac_about_modal_overlay {
+    background: hsla(200, 8%, 8%, 0.75);
+    z-index: 100;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    position: fixed;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.ac_about_modal {
+    position: absolute;
+    z-index: 110;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 760px;
+    background: white;
+    display: flex;
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 24px 24px 0 hsla(0, 0%, 0%, 0.12), 0 8px 8px 0 hsla(0, 0%, 0%, 0.08);
+    flex-direction: column;
+}
+
+.ac_about_modal_header {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+}
+
+.ac_about_modal_body {
+    padding: 64px 0 96px;
+    margin: 0 auto;
+}
+
+.ac_about_modal_app_badges_container {
+    display: flex;
+    align-items: baseline;
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+    height: 24px;
+    width: 60px;
+}
+
+.ac_about_modal_app_badges_container a {
+    display: inline-flex;
+    text-decoration: none;
+}
+
+.ac_about_modal_app_badges_container a:first-child {
+    height: 24px;
+    width: 24px;
+    margin-right: 16px;
+}
+
+.ac_about_modal_app_badges_container a:last-child {
+    height: 20px;
+    width: 20px;
+}
+
+.app_store_badge:hover svg path {
+    fill: hsl(140, 72%, 36%);
+}
+
+.ac_about_modal_link .ac_text_link {
+    margin-left: 4px;
+}
+
+/* End Modal Styling */
 
 .case_study_image_container {
     display: flex;
@@ -605,13 +724,14 @@ ul li {
 .pull_quote .description {}
 
 .recent_work_image_container a,
+.recent_work_image_container img,
 .recent_work_image_container a img,
 .recent_work_image_container a video {
     padding: 0;
 }
 
 .recent_work_image_container a img,
-.recent_work_image_container a video {
+.recent_work_image_container img .recent_work_image_container a video {
     width: 100%;
     height: 100%;
 }
@@ -640,7 +760,7 @@ footer,
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 4rem 1.125rem 4rem 1.25rem;
+    padding: 4rem 2rem;
 }
 
 .footer_links {
@@ -692,28 +812,18 @@ footer,
 .footer_links li,
 .footer_links li a {
     line-height: 0.75rem;
+    margin: 0;
 }
 
-.footer_links li:not(:first-child) a {
-    margin-left: 0.5rem;
-}
-
-.footer_links li:not(:last-child) a {
-    margin-right: 0.5rem;
+.social_media_icons li:nth-child(2) a {
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .social_media_icons li a {
     padding: 0.75rem;
     border-radius: 0.75rem;
     position: relative;
-}
-
-.social_media_icons li:not(:first-child) a {
-    margin-left: 0.5rem;
-}
-
-.social_media_icons li:not(:last-child) a {
-    margin-right: 0.5rem;
 }
 
 .social_media_icons svg {
@@ -1622,6 +1732,7 @@ p a {
 }
 
 .recent_work_image_container a:hover .recent_work_image,
+.recent_work_image_container img:hover .recent_work_image,
 .gear_card a:hover .gear_card_illustration_image,
 .work_card:hover .gear_card_illustration_image {
     transform: scale(1.025);
@@ -2191,16 +2302,20 @@ p a {
 }
 
 @media screen and (max-width: 1440px) {
-    .recent_work_image_container a {
+
+    .recent_work_image_container a,
+    .recent_work_image_container img {
         width: 49%;
         margin-bottom: 2%;
     }
 
-    .recent_work_image_container a :not(:last-child) {
+    .recent_work_image_container a :not(:last-child),
+    .recent_work_image_container img:not(:last-child) {
         margin-right: 2%;
     }
 
-    .recent_work_image_container a {
+    .recent_work_image_container a,
+    .recent_work_image_container img {
         margin-right: 0;
     }
 
@@ -2512,6 +2627,7 @@ p a {
     }
 
     .recent_work_image_container a,
+    .recent_work_image_container img,
     .recent_work_image_container :not(:last-child) {
         width: 100%;
         display: block;
@@ -2520,7 +2636,8 @@ p a {
         margin-bottom: 3rem;
     }
 
-    .recent_work_image_container a:last-child {
+    .recent_work_image_container a:last-child,
+    .recent_work_image_container img:last-child {
         margin-bottom: 1.5rem;
     }
 
@@ -2622,6 +2739,7 @@ p a {
     }
 
     .recent_work_image_container a:hover img,
+    .recent_work_image_container img:hover,
     .recent_work_image_container a:hover video,
     .gear_card a:hover .gear_card_illustration_image,
     .work_card:hover .gear_card_illustration_image {
@@ -3156,7 +3274,9 @@ p a {
     }
 
     .recent_work_image_container a,
-    .recent_work_image_container a:not(:last-child) {
+    .recent_work_image_container img,
+    .recent_work_image_container a:not(:last-child),
+    .recent_work_image_container img:not(:last-child) {
         margin-bottom: 1.5rem;
     }
 
@@ -3208,7 +3328,8 @@ p a {
         margin-bottom: 1rem;
     }
 
-    .recent_work_image_container a:last-child {
+    .recent_work_image_container a:last-child,
+    .recent_work_image_container img:last-child {
         margin-bottom: 0.5rem;
     }
 
