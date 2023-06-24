@@ -206,7 +206,7 @@ footer {
     width: 100%;
     height: 100%;
     max-width: 960px;
-    padding: 0 1.375rem 0 2rem;
+    padding: 0 2rem;
     position: absolute;
     display: inline-flex;
     align-items: center;
@@ -255,7 +255,7 @@ footer {
 .site_navbar ul {
     display: inline-flex;
     align-items: center;
-    margin: 0;
+    margin: 0 -0.75rem 0 0;
     padding: 0;
 }
 
@@ -298,6 +298,15 @@ footer {
     box-shadow: none;
     color: hsl(200, 24%, 92%);
     cursor: default;
+}
+
+.home_logo {
+    background: transparent;
+    cursor: default;
+}
+
+.inner_nav_container .active {
+    background: transparent;
 }
 
 a:hover,
@@ -523,14 +532,14 @@ ul li {
     padding: 0 1rem;
     width: 100%;
     height: 100%;
-    /*    max-width: 1888px;*/
+    max-width: 1880px;
 }
 
 .home_page_grid li {
     flex-grow: 1;
     padding: 0.75rem;
-    border-radius: 2rem;
-    transition: 0.3s all;
+    border-radius: 1.5rem;
+    transition: 0.4s all;
 }
 
 .home_page_grid li img {
@@ -539,11 +548,11 @@ ul li {
     object-fit: cover;
     vertical-align: bottom;
     margin-bottom: 0.5rem;
-    border-radius: 1rem;
+    border-radius: 0.75rem;
 }
 
 .home_page_grid li:hover {
-    border-radius: 0;
+    border-radius: 0.75rem;
     background: hsl(200, 24%, 8%);
     transition: 0.15s all;
 }
