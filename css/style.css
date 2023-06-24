@@ -332,7 +332,7 @@ h1 {
 }
 
 .home_hero h1 {
-    margin: 0 0 0.75rem 0;
+    margin-bottom: 0.75rem;
 }
 
 h1::selection {
@@ -873,9 +873,6 @@ footer,
 .page_hero {
     width: 100%;
     padding: 0;
-    /*    height: calc(100vh - 160px);
-    min-height: 440px;
-    max-height: 800px;*/
 }
 
 .home_hero .text_container,
@@ -2436,8 +2433,12 @@ p a {
 
     .home_hero,
     .page_hero {
-        min-height: 400px;
         max-height: 720px;
+    }
+
+    .home_hero .text_container,
+    .page_hero .text_container {
+        padding: 6rem 2rem;
     }
 
     .long_text_header {
@@ -2681,11 +2682,6 @@ p a {
         top: 0;
     }
 
-    .home_hero,
-    .page_hero {
-        top: 3rem;
-    }
-
     .case_study_hero {
         padding-top: 0;
         background: transparent !important;
@@ -2694,11 +2690,6 @@ p a {
     .case_study_conclusion::before,
     .case_study_conclusion::after {
         display: none;
-    }
-
-    .home_hero .text_container,
-    .page_hero .text_container {
-        top: 50%;
     }
 
     .gear_card_container {
@@ -3093,14 +3084,9 @@ p a {
         font-size: 1rem;
     }
 
-    .home_hero,
-    .page_hero {
-        height: calc(100vh - 296px);
-    }
-
-    .home_main,
-    .gear_main {
-        margin: 4rem 0 0;
+    .home_hero .text_container,
+    .page_hero .text_container {
+        padding: 4rem 2rem 8rem;
     }
 
     .home_page_grid li {
@@ -3265,10 +3251,6 @@ p a {
         margin-bottom: 10rem;
     }
 
-    .home_hero .text_container {
-        padding: 0 1.5rem;
-    }
-
     .page_hero .text_container {
         padding: 0 1.5rem;
     }
@@ -3316,14 +3298,6 @@ p a {
         display: inline-flex;
         align-items: baseline;
         justify-content: space-between;
-        margin-bottom: 1rem;
-    }
-
-    .home_hero {
-        padding: 2rem 0;
-    }
-
-    .home_main {
         margin-bottom: 1rem;
     }
 
