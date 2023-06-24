@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
     <meta name="robots" content="noimageindex">
-    <meta name="description" content="I'm Max Burnside, a designer who builds well-crafted experiences, and this is my little corner of the internet." />
+    <meta name="description" content="I'm Max Burnside, a designer who's been creating well-crafted products for over a decade." />
     <meta name="keywords" content="max burnside, designer, los angeles, dribbble, ui, ux, web development, front-end, icon, branding, logo, wordmark, illustration, visual design" />
     <meta name="author" content="Max Burnside" />
     <meta name="target" content="all" />
@@ -41,22 +41,23 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@maxburnside" />
     <meta name="twitter:creator" content="@maxburnside" />
-    <meta name="twitter:image:alt" content="I'm Max Burnside, a designer who builds well-crafted experiences, and this is my little corner of the internet.">
+    <meta name="twitter:image:alt" content="I'm Max Burnside, a designer who's been creating well-crafted products for over a decade.">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@maxburnside">
     <meta name="twitter:creator" content="@maxburnside">
-    <meta name="twitter:title" content="I'm Max Burnside, a designer who builds well-crafted experiences, and this is my little corner of the internet.">
-    <meta name="twitter:description" content="I'm Max Burnside, a designer who builds well-crafted experiences, and this is my little corner of the internet.">
+    <meta name="twitter:title" content="I'm Max Burnside, a designer who's been creating well-crafted products for over a decade.">
+    <meta name="twitter:description" content="I'm Max Burnside, a designer who's been creating well-crafted products for over a decade.">
     <meta name="twitter:image" content="https://maxburnside.com/img/home/preview.png">
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://maxburnside.com" />
-    <meta property="og:title" content="Max Burnside's Site" />
+    <meta property="og:title" content="Home | Max Burnside" />
     <meta property="og:site_name" content="Max Burnside">
-    <meta property="og:description" content="I'm Max Burnside, a designer who builds well-crafted experiences, and this is my little corner of the internet." />
+    <meta property="og:description" content="I'm Max Burnside, a designer who's been creating well-crafted products for over a decade." />
     <meta property="og:image" content="https://maxburnside.com/img/home/preview.png" />
     <meta name="color-scheme" content="dark light">
-    <title>Max Burnside's Site</title>
+    <title>Home | Max Burnside</title>
     <link href="css/style.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.1/dist/cdn.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,900&display=swap" rel="stylesheet">
 </head>
 
@@ -71,17 +72,6 @@
                     </svg>
                 </a>
                 <ul>
-                    <!--                     <li>
-                        <a href='/work' title="See the work I've done">Work</a>
-                    </li>
-                    <li>
-                        <a href='/gear' title='See the gear I use'>Gear</a>
-                    </li>
-                    <li>
-                        <a href='/words' title="Read the words I've written">
-                            Words
-                        </a>
-                    </li> -->
                     <li>
                         <a href='mailto:hello@maxburnside.com' title='Send me an email' aria-label='Send me an email'>Contact</a>
                     </li>
@@ -90,31 +80,77 @@
         </nav>
         <div class='home_hero_text_block text_container'>
             <h1>Hi, I'm Max Burnside.</h1>
-            <h2 class='text_block'>I'm a designer with 10+ years of experience who builds well-crafted products.</h2>
+            <h2 class='text_block'>I'm a designer who's been creating well-crafted products for over a decade.</h2>
         </div>
     </header>
     <main class="home_main">
         <section class='home_work_showcase'>
             <div class='recent_work_image_container'>
-                <a href='https://dribbble.com/shots/21751775-Sync-watchOS-Workout-Time-with-iOS-Stopwatch-UX-Concept' title='Sync watchOS Workout Time with iOS Stopwatch - UX Concept' target='_blank'>
-                    <img alt='Sync watchOS Workout Time with iOS Stopwatch - UX Concept' class='recent_work_image' src='img/home/dribbble/1.png' width='400' height='300' />
-                </a>
-                <a href='https://dribbble.com/shots/18480142-Starbucks-Drink-Size-Dropdown-UX-Concept' title='Starbucks Drink Size Dropdown - UX Concept' target='_blank'>
-                    <img alt='Starbucks Drink Size Dropdown - UX Concept' class='recent_work_image' src='img/home/dribbble/2.png' width='400' height='300' />
-                </a>
-                <a href='https://dribbble.com/shots/18467593-UserEvidence-UX-Components' title='UserEvidence UX Components' target='_blank'>
-                    <img alt='UserEvidence UX Components' class='recent_work_image' src='img/home/dribbble/3.png' width='400' height='300' />
-                </a>
-                                <a href='https://dribbble.com/shots/18451915-Visably-Marketing-Site-Home' title='Visably Marketing Site - Home' target='_blank'>
-                    <img alt='Visably Marketing Site - Home' class='recent_work_image' src='img/home/dribbble/4.png' width='400' height='300' />
-                </a>
-                <a href='https://dribbble.com/shots/18315297-Drift-Protocol-Mobile' title='Drift Protocol Mobile' target='_blank'>
-                    <img alt='Drift Protocol Mobile' class='recent_work_image' src='img/home/dribbble/5.png' width='400' height='300' />
-                </a>
-                <a href='https://dribbble.com/shots/18295340-TRX-Training-Club-Web-Mobile-Watch-App' title='TRX Training Club - Web, Mobile, Watch App' target='_blank'>
-                    <img alt='TRX Training Club - Web, Mobile, Watch App' class='recent_work_image' src='img/home/dribbble/6.png' width='400' height='300' />
-                </a>
-            </div>
+                 <!-- <div class="header_link_click_container" x-data="{
+        open: false
+    }" x-init="
+    $watch('open', value => {
+        const body = document.body;
+        if(!open) {
+           body.classList.remove('h_screen');
+           return body.classList.remove('overflow_hidden');
+        } else {
+            body.classList.add('h_screen');
+            return body.classList.add('overflow_hidden');
+        }
+    });">
+                    <div x-cloak x-ref="modal" x-show.transition.opacity="open" class="ac_about_modal_overlay" role="dialog" aria-modal="true" style="display: none;">
+                        <div @mousedown.away="open = false" @keydown.window.escape="open = false" class="ac_about_modal">
+                            <div class="ac_about_modal_header">
+                                <h2>
+                                    Sync watchOS Workout Time with iOS Stopwatch (UX Concept)
+                                </h2>
+                            </div>
+                            <div class="ac_about_modal_actions">
+                                <button class="ac_about_modal_close_icon" title="Close modal" aria-label="Close modal" @click="open = false">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <line x1="14" x2="2" y1="2" y2="14" stroke="hsl(200, 16%, 80%)" stroke-width="3" transform="rotate(-90 8 8)" />
+                                        <line x1="14" x2="2" y1="2" y2="14" stroke="hsl(200, 16%, 80%)" stroke-width="3" transform="matrix(0 -1 -1 0 16 16)" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="ac_about_modal_body">
+                                <p>AreaToad is a simplified location search experience, with a clutter-free approach. No ads. No spam. No, really.</p>
+                            </div>
+                        </div>
+                    </div> 
+                    <button title="View Details" aria-label="View Details" @click="open = true" class="header_text header_link">View Details</button> -->
+                    <ul class='home_page_grid'>
+                        <li class='recent_work_modal home_image_container'>
+                            <img alt='Sync watchOS Workout Time with iOS Stopwatch - UX Concept' class='recent_work_image' src='img/home/dribbble/1.png' width='400' height='300' />
+                            <a href='https://dribbble.com/shots/21751775-Sync-watchOS-Workout-Time-with-iOS-Stopwatch-UX-Concept' title='Sync watchOS Workout Time with iOS Stopwatch - UX Concept' target='_blank'>View on Dribbble</a>
+                        </li>
+                        <li class='recent_work_modal home_image_container'>
+                            <img alt='Starbucks Drink Size Dropdown - UX Concept' class='recent_work_image' src='img/home/dribbble/2.png' width='400' height='300' />
+                            <a href='https://dribbble.com/shots/18480142-Starbucks-Drink-Size-Dropdown-UX-Concept' title='Starbucks Drink Size Dropdown - UX Concept' target='_blank'>View on Dribbble</a>
+                        </li>
+                        <li class='recent_work_modal home_image_container'>
+                            <img alt='UserEvidence UX Components' class='recent_work_image' src='img/home/dribbble/3.png' width='400' height='300' />
+                            <a href='https://dribbble.com/shots/18467593-UserEvidence-UX-Components' title='UserEvidence UX Components' target='_blank'>
+                            </a>
+                        </li>
+                        <li class='recent_work_modal home_image_container'>
+                            <img alt='Visably Marketing Site - Home' class='recent_work_image' src='img/home/dribbble/4.png' width='400' height='300' />
+                            <a href='https://dribbble.com/shots/18451915-Visably-Marketing-Site-Home' title='Visably Marketing Site - Home' target='_blank'>
+                            </a>
+                        </li>
+                        <li class='recent_work_modal home_image_container'>
+                            <img alt='Drift Protocol Mobile' class='recent_work_image' src='img/home/dribbble/5.png' width='400' height='300' />
+                            <a href='https://dribbble.com/shots/18315297-Drift-Protocol-Mobile' title='Drift Protocol Mobile' target='_blank'>
+                            </a>
+                        </li>
+                        <li class='recent_work_modal home_image_container'>
+                            <img alt='TRX Training Club - Web, Mobile, Watch App' class='recent_work_image' src='img/home/dribbble/6.png' width='400' height='300' />
+                            <a href='https://dribbble.com/shots/18295340-TRX-Training-Club-Web-Mobile-Watch-App' title='TRX Training Club - Web, Mobile, Watch App' target='_blank'>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
         </section>
     </main>
     <footer>
