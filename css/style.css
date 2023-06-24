@@ -16,8 +16,8 @@ body {
 }
 
 code {
-    background: hsla(200, 24%, 50%, 0.16);
-    border: 0.0625rem solid hsl(200, 24%, 50%, 0.5);
+    background: hsla(200, 16%, 50%, 0.16);
+    border: 0.0625rem solid hsl(200, 16%, 50%, 0.5);
     border-radius: 0.5rem;
     font-family: 'Courier', serif !important;
     padding: 0.125rem 0.375rem;
@@ -41,7 +41,7 @@ body,
 .case_study_project h3,
 .next_case_study_section .text_container h6,
 .next_case_study_section .text_container a {
-    background-color: hsl(200, 24%, 92%);
+    background-color: hsl(200, 16%, 92%);
 }
 
 html,
@@ -102,7 +102,7 @@ p {
 }
 
 img {
-    background: hsl(200, 24%, 92%);
+    background: hsl(200, 16%, 92%);
     box-shadow: none;
     border-style: none;
     border: none;
@@ -125,20 +125,20 @@ svg:not(:root) {
 }
 
 ::selection {
-    background: hsl(200, 24%, 8%);
-    color: hsl(200, 24%, 92%);
+    background: hsl(200, 16%, 8%);
+    color: hsl(200, 16%, 92%);
     text-shadow: none;
 }
 
 ::-moz-selection {
-    background: hsl(200, 24%, 8%);
-    color: hsl(200, 24%, 92%);
+    background: hsl(200, 16%, 8%);
+    color: hsl(200, 16%, 92%);
     text-shadow: none;
 }
 
 a::selection {
     background: hsl(136, 100%, 40%);
-    color: hsl(200, 24%, 8%);
+    color: hsl(200, 16%, 8%);
 }
 
 
@@ -232,7 +232,7 @@ footer {
 
 .mb_logo_m,
 .mb_logo_b {
-    fill: hsl(200, 24%, 8%);
+    fill: hsl(200, 16%, 8%);
 }
 
 .mb_logo_m,
@@ -294,9 +294,9 @@ footer {
 
 .site_navbar .active,
 .site_navbar .active:hover {
-    background: hsl(200, 24%, 4%);
+    background: hsl(200, 16%, 4%);
     box-shadow: none;
-    color: hsl(200, 24%, 92%);
+    color: hsl(200, 16%, 92%);
     cursor: default;
 }
 
@@ -340,7 +340,7 @@ h1 {
     line-height: 1.125;
     padding: 0;
     margin: 0 0 0.75rem 0;
-    color: hsl(200, 24%, 8%);
+    color: hsl(200, 16%, 8%);
     letter-spacing: normal;
     font-weight: 900;
     word-break: break-word;
@@ -351,7 +351,7 @@ h1 {
 }
 
 h1::selection {
-    background: hsl(200, 24%, 8%) !important;
+    background: hsl(200, 16%, 8%) !important;
     color: hsl(200, 100%, 94%) !important;
 }
 
@@ -438,7 +438,7 @@ p a,
 .flooringstores_text_link,
 .visably_text_link,
 a {
-    color: hsl(200, 24%, 8%);
+    color: hsl(200, 16%, 8%);
 }
 
 li a:hover,
@@ -450,7 +450,7 @@ li a:hover,
 li a:focus,
 p a:hover,
 p a:focus {
-    color: hsl(200, 24%, 8%);
+    color: hsl(200, 16%, 8%);
 }
 
 ul li {
@@ -469,7 +469,7 @@ ul li {
 .work_card_text:hover .work_card_text h3,
 .work_card_text:hover .work_responsibilities,
 .case_study_company p {
-    color: hsl(200, 24%, 8%);
+    color: hsl(200, 16%, 8%);
 }
 
 .home_work_showcase {
@@ -553,7 +553,7 @@ ul li {
 
 .home_page_grid li:hover {
     border-radius: 0.75rem;
-    background: hsl(200, 24%, 8%);
+    background: hsl(200, 16%, 8%);
     transition: 0.15s all;
 }
 
@@ -564,7 +564,7 @@ ul li {
 .home_page_grid li:hover h4,
 .home_page_grid li:hover h5,
 .home_page_grid li:hover a {
-    color: hsl(200, 24%, 92%);
+    color: hsl(200, 16%, 92%);
 }
 
 .home_page_grid li h4 {
@@ -694,7 +694,7 @@ ul li {
 }
 
 .case_study_image_container img {
-    border: 0.0625rem solid hsla(200, 24%, 8%, 0.05);
+    border: 0.0625rem solid hsla(200, 16%, 8%, 0.05);
 }
 
 .case_study_image_container {
@@ -826,7 +826,7 @@ footer,
     align-items: center;
     margin: 0;
     padding: 0;
-    background: hsl(200, 24%, 8%);
+    background: hsl(200, 16%, 8%);
     border-radius: 0.5rem;
     /*! background: #efefef; */
 }
@@ -882,11 +882,11 @@ footer,
 .dribbble_icon_bg,
 .twitter_icon,
 .github_icon {
-    fill: hsl(200, 24%, 8%);
+    fill: hsl(200, 16%, 8%);
 }
 
 .dribbble_icon_inner {
-    fill: hsl(200, 24%, 92%);
+    fill: hsl(200, 16%, 92%);
 }
 
 .social_media_icons li .dribbble:hover .dribbble_icon_bg {
@@ -904,7 +904,7 @@ footer,
 .mac_software_icon,
 .web_software_icon,
 .linux_software_icon {
-    fill: hsl(200, 24%, 8%);
+    fill: hsl(200, 16%, 8%);
 }
 
 /*********************** START Gear Page Desktop Styling ***********************/
@@ -1499,7 +1499,7 @@ footer,
     min-height: 320px;
     padding: 8rem 0;
     margin: 8rem auto 0;
-    background-color: hsla(200, 24%, 50%, 0.25);
+    background-color: hsla(200, 16%, 50%, 0.25);
 }
 
 .next_case_study_section .text_container {
@@ -1520,7 +1520,7 @@ footer,
     width: fit-content;
     text-align: right;
     position: relative;
-    box-shadow: 0 48px 64px 0 hsla(200, 24%, 16%, 0.12), 0 4px 24px 0 hsla(200, 16%, 8%, 0.02);
+    box-shadow: 0 48px 64px 0 hsla(200, 16%, 16%, 0.12), 0 4px 24px 0 hsla(200, 16%, 8%, 0.02);
 }
 
 .next_case_study_section .text_container h6 {
@@ -1665,7 +1665,7 @@ footer,
     position: relative;
     max-width: 960px;
     margin: 0 auto;
-    color: hsl(200, 24%, 8%);
+    color: hsl(200, 16%, 8%);
     line-height: 1rem;
     width: 100%;
     padding-left: 5.25rem;
@@ -1677,11 +1677,11 @@ h2,
 .work_responsibilities ul li,
 .case_study_list li,
 p {
-    color: hsl(200, 24%, 20%);
+    color: hsl(200, 16%, 20%);
 }
 
 h6 {
-    color: hsl(200, 24%, 36%);
+    color: hsl(200, 16%, 36%);
 }
 
 .gear_card_container {
@@ -1834,7 +1834,7 @@ p a {
 
 .gear_card_title_container h5,
 .software_gear h5 span:second-child {
-    color: hsl(200, 24%, 8%);
+    color: hsl(200, 16%, 8%);
     font-size: 1.25rem;
 }
 
@@ -1872,7 +1872,7 @@ p a {
 .external_link,
 .return_to_top_link,
 .footer_links li a {
-    color: hsl(200, 24%, 12%);
+    color: hsl(200, 16%, 12%);
 }
 
 .gear_card_title_container a::after,
@@ -1919,7 +1919,7 @@ p a {
 
 .software_gear h5 span:first-child {
     font-size: 0.875rem;
-    color: hsl(200, 24%, 40%)
+    color: hsl(200, 16%, 40%)
 }
 
 .gear_card_text_container,
@@ -2138,7 +2138,7 @@ p a {
 
 .work_card:hover .work_card_text h3,
 .work_card:hover .work_card_text li {
-    color: hsl(200, 24%, 8%);
+    color: hsl(200, 16%, 8%);
     text-shadow: 1px 1px 0 0 hsl(200, 100%, 100%);
 }
 
@@ -2502,7 +2502,7 @@ p a {
     }
 
     .site_navbar {
-        background-color: hsl(200, 24%, 92%);
+        background-color: hsl(200, 16%, 92%);
         height: 4rem;
         position: fixed;
     }
@@ -2832,7 +2832,7 @@ p a {
     .case_study_project h3,
     .next_case_study_section .text_container h6,
     .next_case_study_section .text_container a {
-        background-color: hsl(200, 24%, 8%);
+        background-color: hsl(200, 16%, 8%);
     }
 
     .subsection_header h4,
@@ -2857,12 +2857,12 @@ p a {
     .case_study_company p,
     .company_name,
     .next_case_study_section .text_container h6 {
-        color: hsl(200, 24%, 88%);
+        color: hsl(200, 16%, 88%);
         text-decoration: none;
     }
 
     img {
-        background: hsl(200, 24%, 4%);
+        background: hsl(200, 16%, 4%);
     }
 
     .site_navbar ul li a:hover {
@@ -2876,19 +2876,19 @@ p a {
 
     .site_navbar .active,
     .site_navbar .active:hover {
-        background: hsl(200, 24%, 4%);
+        background: hsl(200, 16%, 4%);
         box-shadow: none;
-        color: hsl(200, 24%, 92%);
+        color: hsl(200, 16%, 92%);
     }
 
     .site_navbar .active,
     .site_navbar .active:hover {
-        color: hsl(200, 24%, 8%);
+        color: hsl(200, 16%, 8%);
     }
 
     .mb_logo_m,
     .mb_logo_b {
-        fill: hsl(200, 24%, 92%);
+        fill: hsl(200, 16%, 92%);
     }
 
     .gear_card_text_container a:hover,
@@ -2898,13 +2898,13 @@ p a {
     }
 
     .home_page_grid li:hover {
-        background: hsl(200, 24%, 92%);
+        background: hsl(200, 16%, 92%);
     }
 
     .home_page_grid li:hover h4,
     .home_page_grid li:hover h5,
     .home_page_grid li:hover a {
-        color: hsl(200, 24%, 8%);
+        color: hsl(200, 16%, 8%);
     }
 
     .case_study_hero {
@@ -2944,19 +2944,19 @@ p a {
     }
 
     h1 {
-        color: hsl(200, 24%, 92%);
+        color: hsl(200, 16%, 92%);
     }
 
     h1::selection {
         background-image: none !important;
-        background: hsl(200, 24%, 92%) !important;
-        color: hsl(200, 24%, 8%) !important;
+        background: hsl(200, 16%, 92%) !important;
+        color: hsl(200, 16%, 8%) !important;
     }
 
     .site_navbar .active,
     .site_navbar u li a:active,
     .site_navbar .active:hover {
-        background: hsl(200, 24%, 92%);
+        background: hsl(200, 16%, 92%);
     }
 
     p,
@@ -2965,11 +2965,11 @@ p a {
     .case_study_list li,
     h2,
     .work_card_text_container span h5 {
-        color: hsl(200, 24%, 80%);
+        color: hsl(200, 16%, 80%);
     }
 
     h6 {
-        color: hsl(200, 24%, 56%);
+        color: hsl(200, 16%, 56%);
     }
 
     .external_link_container a,
@@ -2981,13 +2981,13 @@ p a {
     .flooringstores_text_link,
     .visably_text_link,
     .footer_links li a {
-        color: hsl(200, 24%, 72%);
+        color: hsl(200, 16%, 72%);
         text-decoration: none;
     }
 
     .site_navbar li a:hover,
     .footer_links li a:hover {
-        color: hsl(200, 24%, 98%);
+        color: hsl(200, 16%, 98%);
     }
 
     p a {
@@ -2999,13 +2999,13 @@ p a {
     }
 
     ::selection {
-        background: hsl(200, 24%, 92%);
-        color: hsl(200, 24%, 8%);
+        background: hsl(200, 16%, 92%);
+        color: hsl(200, 16%, 8%);
     }
 
     ::-moz-selection {
-        background: hsl(200, 24%, 92%);
-        color: hsl(200, 24%, 8%);
+        background: hsl(200, 16%, 92%);
+        color: hsl(200, 16%, 8%);
     }
 
     .gear_card_title_container a,
@@ -3022,20 +3022,20 @@ p a {
 
     h2,
     .gear_intro h2 {
-        color: hsl(200, 24%, 72%);
+        color: hsl(200, 16%, 72%);
     }
 
     .table_of_contents ol h5 {
-        color: hsl(200, 24%, 72%);
+        color: hsl(200, 16%, 72%);
     }
 
     .software_gear h5 span:first-child {
-        color: hsl(200, 24%, 50%);
+        color: hsl(200, 16%, 50%);
     }
 
     .gear_card_title_container h5,
     .software_gear h5 span:second-child {
-        color: hsl(200, 24%, 92%);
+        color: hsl(200, 16%, 92%);
     }
 
     .work_card:hover .gear_card_illustration_image,
@@ -3052,22 +3052,22 @@ p a {
     .work_card:hover .work_card_text li,
     .work_card_text:hover .work_responsibilities,
     a:hover {
-        color: hsl(200, 24%, 88%);
+        color: hsl(200, 16%, 88%);
     }
 
     .mac_software_icon,
     .web_software_icon,
     .linux_software_icon {
-        fill: hsl(200, 24%, 88%);
+        fill: hsl(200, 16%, 88%);
     }
 
     .work_card {
-        color: hsl(200, 24%, 8%);
+        color: hsl(200, 16%, 8%);
     }
 
     .work_card:hover .work_card_text h3,
     .work_card:hover .work_card_text li {
-        text-shadow: 1px 1px 0 0 hsl(200, 24%, 8%);
+        text-shadow: 1px 1px 0 0 hsl(200, 16%, 8%);
     }
 
     .userevidence_card:hover .work_card_text,
@@ -3100,11 +3100,11 @@ p a {
     .dribbble_icon_bg,
     .twitter_icon,
     .github_icon {
-        fill: hsl(200, 24%, 88%);
+        fill: hsl(200, 16%, 88%);
     }
 
     .dribbble_icon_inner {
-        fill: hsl(200, 24%, 8%);
+        fill: hsl(200, 16%, 8%);
     }
 
 }
@@ -3112,7 +3112,7 @@ p a {
 @media (prefers-color-scheme: dark) and (max-width: 760px) {
 
     .site_navbar {
-        background-color: hsl(200, 24%, 8%);
+        background-color: hsl(200, 16%, 8%);
     }
 
 }
@@ -3122,7 +3122,7 @@ p a {
 
     .case_study_project h3,
     .case_study_company h3 {
-        background-color: hsl(200, 24%, 8%);
+        background-color: hsl(200, 16%, 8%);
     }
 }
 
