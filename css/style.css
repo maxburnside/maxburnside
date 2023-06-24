@@ -217,16 +217,16 @@ footer {
 }
 
 .nav_logo {
-    padding: 0 0.75rem;
+    padding: 0.75rem;
     background: transparent;
     margin-left: -0.75rem;
 }
 
-.inner_nav_container svg {
+.nav_logo svg {
     background: transparent;
     position: relative;
     opacity: 1;
-    height: 64px;
+    height: 40px;
     width: 64px;
 }
 
@@ -2499,13 +2499,13 @@ p a {
     }
 
     .nav_logo {
-        padding: 0 0.5rem;
+        padding: 0.5rem;
         background: transparent;
         margin-left: -0.5rem;
     }
 
     .nav_logo svg {
-        height: 48px;
+        height: 30px;
         width: 48px;
     }
 
