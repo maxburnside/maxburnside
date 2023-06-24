@@ -150,12 +150,6 @@ a::selection {
     font-size: 1px !important;
 }
 
-.home_main ul {
-    margin-top: 0;
-    margin-bottom: 24px;
-    padding-left: 24px;
-}
-
 ol {
     list-style: none;
     padding: 0;
@@ -181,6 +175,10 @@ a {
     background-color: transparent;
     color: inherit;
     text-decoration: none;
+}
+
+footer {
+    margin-top: 4rem;
 }
 
 /*********************** END Global Styling ***********************/
@@ -232,7 +230,8 @@ a {
 }
 
 .mb_logo_m,
-.mb_logo_b {
+.mb_logo_b,
+.social_media_icons li a {
     transition: 0.24s all;
 }
 
@@ -244,6 +243,7 @@ a {
 .nav_logo:hover .mb_logo_b {
     transition: 0.08s all;
     fill: hsl(136, 100%, 40%);
+    opacity: 1;
 }
 
 .site_navbar ul {
@@ -460,7 +460,7 @@ ul li {
 .home_work_showcase {
     width: 100%;
     /*    max-width: 1920px;*/
-    padding: 0 2rem;
+    padding: 0;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -482,10 +482,10 @@ ul li {
     flex-flow: row wrap;
     margin-bottom: 2rem;
 
-display: flex;
-flex-direction: column;
-position: relative;
-min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
 }
 
 .recent_work_image_container img,
@@ -508,32 +508,27 @@ min-height: 100vh;
     visibility: hidden;
 }
 
-
-
 .home_page_grid {
-    display: grid;
-    grid-template-columns: repeat(4, 400px);
-    gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 24px;
+    margin: 0;
+    padding: 0 2rem;
+    width: 100%;
+    height: 100%;
 }
 
 .home_page_grid li {
-    display: inline-block;
-    position: relative;
-    outline: 0px;
-    height: 300px;
-    overflow: hidden;
+    flex-grow: 1;
 }
 
 .home_page_grid li img {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    color: transparent;
-}
+    border-radius: 0.5rem;
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
 }
 
 /* Modal Styling */
@@ -766,7 +761,7 @@ footer,
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 4rem 2rem;
+    padding: 2rem;
 }
 
 .footer_links {
@@ -797,10 +792,6 @@ footer,
 .social_media_icons li {
     padding: 0;
     background: transparent;
-}
-
-.social_media_icons li a {
-    transition: 0.15s all;
 }
 
 .footer_links li {
@@ -844,7 +835,7 @@ footer,
 .dribbble_icon_bg,
 .twitter_icon,
 .github_icon {
-    fill: hsl(200, 24%, 12%);
+    fill: hsl(200, 24%, 8%);
 }
 
 .dribbble_icon_inner {
@@ -852,7 +843,7 @@ footer,
 }
 
 .social_media_icons li .dribbble:hover .dribbble_icon_bg {
-    fill: hsl(320, 100%, 40%);
+    fill: hsl(320, 100%, 64%);
 }
 
 .social_media_icons li .twitter:hover .twitter_icon {
@@ -880,20 +871,11 @@ footer,
 
 .home_hero,
 .page_hero {
-    position: relative;
     width: 100%;
     padding: 0;
-    height: calc(100vh - 160px);
+    /*    height: calc(100vh - 160px);
     min-height: 440px;
-    max-height: 800px;
-}
-
-.home_hero .text_container,
-.page_hero .text_container {
-    position: absolute;
-    left: 50%;
-    top: calc(50% + 32px);
-    transform: translate(-50%, -50%);
+    max-height: 800px;*/
 }
 
 .home_hero .text_container,
@@ -903,6 +885,11 @@ footer,
     max-width: 960px;
     padding: 0 2rem;
     width: 100%;
+}
+
+.home_hero .text_container,
+.page_hero .text_container {
+    padding: 12rem 2rem;
 }
 
 .home_work_showcase h3 {
@@ -1203,7 +1190,7 @@ footer,
     max-width: 1184px;
     position: relative;
     z-index: 2;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
 }
 
 .case_study_main h3,
@@ -1732,7 +1719,7 @@ p a {
     height: 100%;
     margin: 0;
     padding: 0;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
 }
 
 .recent_work_image,
@@ -2762,10 +2749,6 @@ p a {
         padding-top: 20rem;
     }
 
-    /*    footer {
-        margin-top: 48px;
-    }*/
-
     .footer_container {
         display: flex;
         flex-direction: column;
@@ -3120,6 +3103,17 @@ p a {
         margin: 4rem 0 0;
     }
 
+    .home_page_grid li {
+        height: auto;
+        width: 100%;
+    }
+
+    .home_page_grid li img {
+        width: 100%;
+        max-height: 75vh;
+        min-width: 0;
+    }
+
     .case_study_hero_image {
         height: 70vh;
     }
@@ -3286,7 +3280,6 @@ p a {
         margin-bottom: 1.5rem;
     }
 
-    .home_work_showcase,
     .table_of_contents {
         padding: 0 1.5rem 3rem;
     }
