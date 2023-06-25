@@ -181,7 +181,7 @@ footer {
     margin-top: 4rem;
     margin-left: auto;
     margin-right: auto;
-/*    position: absolute;
+    /*    position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);*/
@@ -294,7 +294,7 @@ footer {
 
 .site_navbar .active,
 .site_navbar .active:hover {
-    background: hsl(200, 16%, 4%);
+    background: hsl(200, 16%, 8%);
     box-shadow: none;
     color: hsl(200, 16%, 92%);
     cursor: default;
@@ -380,7 +380,7 @@ h4 {
 .page_hero h3 {
     margin: 1.25rem 0 0 -0.125rem;
     padding: 0;
-/*    max-width: 720px;*/
+    /*    max-width: 720px;*/
 }
 
 h5 {
@@ -527,7 +527,7 @@ ul li {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 0.75rem 0.5rem;
+    gap: 1.5rem 0.5rem;
     margin: 0 auto;
     padding: 0 1rem;
     width: 100%;
@@ -539,7 +539,8 @@ ul li {
     flex-grow: 1;
     padding: 0.75rem;
     border-radius: 1.5rem;
-    transition: 0.4s all;
+    transition: 0.4s all, 0.25s border-radius, 0.25s border-color;
+/*    border: 1px solid transparent;*/
 }
 
 .home_page_grid li img {
@@ -554,7 +555,13 @@ ul li {
 .home_page_grid li:hover {
     border-radius: 0.75rem;
     background: hsl(200, 16%, 8%);
-    transition: 0.15s all;
+/*    border: 1px solid black;*/
+    cursor: zoom-in;
+}
+
+.home_page_grid li:hover,
+.home_page_grid li:hover img {
+    transition: 0.15s all, 0.35s border-radius, 0.25s border-color;
 }
 
 .home_page_grid li:hover img {
@@ -913,7 +920,7 @@ footer,
 .gear_main {
     width: 100%;
     /*! position: relative; */
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .home_hero,
@@ -2720,7 +2727,7 @@ p a {
     .home_main,
     .gear_main {
         margin: 5rem 0 0;
-        top: 0; 
+        top: 0;
     }
 
     .case_study_main {
@@ -2862,7 +2869,7 @@ p a {
     }
 
     img {
-        background: hsl(200, 16%, 4%);
+        background: black;
     }
 
     .site_navbar ul li a:hover {
@@ -2876,7 +2883,7 @@ p a {
 
     .site_navbar .active,
     .site_navbar .active:hover {
-        background: hsl(200, 16%, 4%);
+        background: hsl(200, 16%, 8%);
         box-shadow: none;
         color: hsl(200, 16%, 92%);
     }
@@ -2899,6 +2906,7 @@ p a {
 
     .home_page_grid li:hover {
         background: hsl(200, 16%, 92%);
+/*        border: 1px solid white;*/
     }
 
     .home_page_grid li:hover h4,
@@ -3132,11 +3140,16 @@ p a {
     }
 
     .inner_nav_container {
-        padding: 0 1rem 0 1.5rem;
+        padding: 0 1.5rem;
     }
 
     .site_navbar ul li a {
         font-size: 1rem;
+    }
+
+    .home_hero .text_container, .page_hero .text_container, .home_work_showcase h3 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 
     .home_hero .text_container {
@@ -3145,6 +3158,10 @@ p a {
 
     .page_hero .text_container {
         padding: 8rem 1.5rem;
+    }
+
+    .home_page_grid {
+        padding: 0 0.75rem;
     }
 
     .home_page_grid li {
@@ -3309,7 +3326,7 @@ p a {
         margin-bottom: 10rem;
     }
 
-/*    .page_hero .text_container {
+    /*    .page_hero .text_container {
         padding: 0 1.5rem;
     }*/
 
