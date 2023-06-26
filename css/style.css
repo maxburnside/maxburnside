@@ -506,15 +506,16 @@ ul li {
     display: none;
     opacity: 0;
     visibility: hidden;
-    right: 5px;   
+    right: 6px;   
 }
 
 .badge:hover {
     background: hsl(136, 100%, 48%);
     border-color: hsl(136, 100%, 48%);
     color: hsl(200, 16%, 8%);
-    padding-right: 1.5rem;
+    padding-right: 1.625rem;
     transition: 0.3s all;
+    cursor: pointer;
 }
 
 .badge:hover::after {
@@ -1034,9 +1035,12 @@ footer,
     width: 100%;
 }
 
-.home_hero .text_container,
+.home_hero .text_container {
+    padding: 6rem 2rem 10rem;
+}
+
 .page_hero .text_container {
-    padding: 12rem 2rem;
+    padding: 8rem 2rem;
 }
 
 .home_work_showcase h3 {
