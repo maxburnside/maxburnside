@@ -8,7 +8,7 @@
 *,
 html,
 body {
-    font-family: 'Work Sans', 'Readex Pro', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     -ms-text-size-adjust: 100%;
@@ -137,7 +137,7 @@ svg:not(:root) {
 }
 
 a::selection {
-    background: hsl(136, 100%, 40%);
+    background: hsl(136, 100%, 44%);
     color: hsl(200, 16%, 8%);
 }
 
@@ -248,7 +248,7 @@ footer {
 .nav_logo:hover .mb_logo_m,
 .nav_logo:hover .mb_logo_b {
     transition: 0.08s all;
-    fill: hsl(136, 100%, 40%);
+    fill: hsl(136, 100%, 44%);
     opacity: 1;
 }
 
@@ -272,12 +272,11 @@ footer {
 .site_navbar ul li a {
     position: relative;
     display: block;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     line-height: 0.75rem;
     padding: 0.75rem 0.625rem;
     text-decoration: none;
     font-weight: 700;
-    font-family: 'Readex Pro', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -293,7 +292,7 @@ footer {
 }
 
 .site_navbar ul li a:focus {
-    box-shadow: 0 0 0 0.125rem hsl(136, 100%, 40%);
+    box-shadow: 0 0 0 0.125rem hsl(136, 100%, 44%);
 }
 
 .site_navbar .active,
@@ -341,18 +340,23 @@ p {
 
 h1 {
     color: hsl(200, 16%, 8%);
-    font-family: 'Readex Pro', sans-serif;
     font-size: 3.25rem;
     font-weight: 700;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.25px;
     line-height: 1.125;
     margin: 0 0 0.75rem 0;
     padding: 0;
     word-break: break-word;
 }
 
+h1,
+.site_navbar ul li a {
+    font-family: 'Readex Pro', sans-serif;
+}
+
 .home_hero h1 {
     margin-bottom: 0.75rem;
+    margin-top: 0.75rem;
 }
 
 h1::selection {
@@ -414,7 +418,7 @@ a,
 .table_of_contents a,
 .company_name,
 .footer_links li a {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 h6 {
@@ -463,6 +467,40 @@ ul li {
     padding: 0;
 }
 
+.badge::before {
+    background: hsl(136, 100%, 44%);
+    position: absolute;
+    content: '';
+    height: 12px;
+    width: 12px;
+    border-radius: 0.75rem;
+    top: 5px;
+    left: 5px;
+}
+
+.badge {
+    border: 1px solid hsl(136, 100%, 44%);
+    border-radius: 0.75rem;
+    color: hsl(200, 16%, 8%);
+    font-size: 0.875rem;
+    font-weight: 400;
+    padding: 0.25rem 0.5rem 0.25rem 1.375rem;
+    position: relative;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+}
+
+.badge:hover {
+    background: hsl(136, 100%, 48%);
+    border-color: hsl(136, 100%, 48%);
+    color: hsl(200, 16%, 8%);
+}
+
+.badge:hover::before {
+    background: hsl(200, 16%, 96%);
+}
 
 .external_link_container a:hover,
 .table_of_contents ol li a:hover,
@@ -532,7 +570,7 @@ ul li {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 3rem 1.5rem;
+    gap: 2rem 1.5rem;
     margin: 0 auto;
     padding: 0 1rem;
     width: 100%;
@@ -542,11 +580,9 @@ ul li {
 
 .home_page_grid li {
     flex-grow: 1;
-    padding: 0.75rem;
-    /*    border-radius: 1.5rem;*/
+    padding: 1rem;
     border-radius: 0.75rem;
     transition: 0.4s all, 0.25s border-radius, 0.25s border-color;
-    /*    border: 1px solid transparent;*/
 }
 
 .home_page_grid li img {
@@ -560,9 +596,9 @@ ul li {
 
 .home_page_grid li:hover {
     /*    background: white;*/
-    box-shadow: 0 0 0 2px inset hsl(136, 100%, 40%);
+    box-shadow: 0 0 0 2px inset hsl(136, 100%, 44%);
     cursor: zoom-in;
-    transform: scale(1.025);
+    /*    transform: scale(1.025);*/
     transition: 0.26s all;
 }
 
@@ -2891,9 +2927,21 @@ p a {
         background: black;
     }
 
+    .badge {
+        color: hsl(200, 16%, 96%);
+    }
+
+    .badge:hover {
+        color: black;
+    }
+
+    .badge:hover::before {
+        background: hsl(200, 16%, 8%);
+    }
+
     .site_navbar ul li a:hover {
         background: transparent;
-        color: hsl(136, 100%, 40%);
+        color: hsl(136, 100%, 44%);
     }
 
     .site_navbar ul li a:focus {
@@ -3007,7 +3055,7 @@ p a {
 
     .site_navbar li a:hover,
     .footer_links li a:hover {
-        color: hsl(200, 16%, 98%);
+        color: hsl(200, 16%, 96%);
     }
 
     p a {
