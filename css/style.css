@@ -141,7 +141,6 @@ a::selection {
     color: hsl(200, 16%, 8%);
 }
 
-
 .screen_reader_only_text {
     position: absolute !important;
     left: -999999px !important;
@@ -467,39 +466,89 @@ ul li {
     padding: 0;
 }
 
-.badge::before {
-    background: hsl(136, 100%, 44%);
-    position: absolute;
-    content: '';
-    height: 12px;
-    width: 12px;
-    border-radius: 0.75rem;
-    top: 5px;
-    left: 5px;
-}
-
 .badge {
     border: 1px solid hsl(136, 100%, 44%);
     border-radius: 0.75rem;
     color: hsl(200, 16%, 8%);
     font-size: 0.875rem;
     font-weight: 400;
-    padding: 0.25rem 0.5rem 0.25rem 1.375rem;
+    padding: 0 0.5rem 0 1.375rem;
     position: relative;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
     line-height: 1;
+    height: 24px;
+    transition: 0.15s all;
+}
+
+.badge::before,
+.badge::after {
+    height: 12px;
+    position: absolute;
+    top: 5px;
+    width: 12px;
+}
+
+.badge::before {
+    animation: pulse 4s infinite;
+    -webkit-animation: pulse 4s infinite;
+    background: hsl(136, 100%, 44%);
+    content: '';
+    border-radius: 0.75rem;
+    left: 5px;
+}
+
+.badge::after {
+    content: '';
+/*    background-image: url("data:image/svg+xml,<svg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http: //www.w3.org/2000/svg'><path d='M4 4V1H11V8H8V6L3 11L1 9L6 4H4Z' fill='black'/></svg>");*/
+    background-image: url('data:image/svg+xml,<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 4V1H11V10H8V6L3 11L1 9L6 4H2Z" fill="hsla(200, 16%, 8%, 0.75)"/></svg>');
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    right: 5px;   
 }
 
 .badge:hover {
     background: hsl(136, 100%, 48%);
     border-color: hsl(136, 100%, 48%);
     color: hsl(200, 16%, 8%);
+    padding-right: 1.5rem;
+    transition: 0.3s all;
 }
 
-.badge:hover::before {
-    background: hsl(200, 16%, 96%);
+.badge:hover::after {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+@-webkit-keyframes pulse {
+    30% {
+        background: hsla(136, 100%, 44%, 1);
+    }
+
+    50% {
+        background: transparent;
+    }
+
+    70% {
+        background: hsla(136, 100%, 44%, 1);
+    }
+}
+
+@keyframes pulse {
+    30% {
+        background: hsla(136, 100%, 44%, 1);
+    }
+
+    50% {
+        background: transparent;
+    }
+
+    70% {
+        background: hsla(136, 100%, 44%, 1);
+    }
 }
 
 .external_link_container a:hover,
@@ -2939,6 +2988,34 @@ p a {
         background: hsl(200, 16%, 8%);
     }
 
+    @-webkit-keyframes pulse {
+        30% {
+            background: hsla(136, 100%, 44%, 1);
+        }
+
+        50% {
+            background: transparent;
+        }
+
+        70% {
+            background: hsla(136, 100%, 44%, 1);
+        }
+    }
+
+    @keyframes pulse {
+        30% {
+            background: hsla(136, 100%, 44%, 1);
+        }
+
+        50% {
+            background: transparent;
+        }
+
+        70% {
+            background: hsla(136, 100%, 44%, 1);
+        }
+    }
+
     .site_navbar ul li a:hover {
         background: transparent;
         color: hsl(136, 100%, 44%);
@@ -3013,12 +3090,6 @@ p a {
 
     h1 {
         color: hsl(200, 16%, 96%);
-    }
-
-    h1::selection {
-        background-image: none !important;
-        background: hsl(200, 16%, 96%) !important;
-        color: hsl(200, 16%, 8%) !important;
     }
 
     .site_navbar .active,
