@@ -135,7 +135,7 @@ svg:not(:root) {
 }
 
 a::selection {
-    background: hsl(136, 100%, 44%);
+    background: hsl(136, 100%, 36%);
     color: hsl(200, 16%, 8%);
 }
 
@@ -245,7 +245,7 @@ footer {
 .nav_logo:hover .mb_logo_m,
 .nav_logo:hover .mb_logo_b {
     transition: 0.08s all;
-    fill: hsl(136, 100%, 44%);
+    fill: hsl(136, 100%, 36%);
     opacity: 1;
 }
 
@@ -285,7 +285,12 @@ footer {
 
 .site_navbar ul li a:hover {
     background: transparent;
-    color: hsl(136, 100%, 28%);
+}
+
+.site_navbar ul li a:hover,
+.site_navbar ul li a:focus,
+.badge {
+    color: hsl(136, 56%, 32%);
 }
 
 .site_navbar .active,
@@ -310,7 +315,7 @@ a:hover,
 .availability_container,
 .category_tag,
 .next_case_study_section .text_container h6 {
-    color: hsl(136, 100%, 24%);
+    color: hsl(136, 100%, 36%);
 }
 
 .site_navbar ul li a {
@@ -337,7 +342,6 @@ h1 {
     font-weight: 700;
     letter-spacing: 0.25px;
     line-height: 1.125;
-    margin: 0 0 0.75rem 0;
     padding: 0;
     word-break: break-word;
 }
@@ -377,7 +381,6 @@ h4 {
 .page_hero h3 {
     margin: 1.25rem 0 0 -0.125rem;
     padding: 0;
-    /*    max-width: 720px;*/
 }
 
 h5 {
@@ -431,7 +434,6 @@ p {
 
 li a,
 p a,
-.external_link_container a,
 .flooringstores_text_link,
 .visably_text_link,
 a {
@@ -447,7 +449,7 @@ li a:hover,
 li a:focus,
 p a:hover,
 p a:focus {
-    color: hsl(200, 16%, 8%);
+    color: black;
 }
 
 ul li {
@@ -456,14 +458,13 @@ ul li {
 }
 
 *:focus {
-    box-shadow: 0 0 0 2px hsl(136, 100%, 44%);
+    box-shadow: 0 0 0 2px hsl(136, 100%, 36%);
     outline: none;
 }
 
 .badge {
-    border: 1px solid hsl(136, 100%, 44%);
+    border: 1px solid hsl(136, 100%, 36%);
     border-radius: 0.75rem;
-    color: hsl(200, 16%, 8%);
     font-size: 0.875rem;
     font-weight: 400;
     padding: 0 0.5rem 0 1.375rem;
@@ -485,9 +486,9 @@ ul li {
 }
 
 .badge::before {
-    animation: pulse 4s infinite;
-    -webkit-animation: pulse 4s infinite;
-    background: hsl(136, 100%, 44%);
+    animation: pulse 3s infinite;
+    -webkit-animation: pulse 3s infinite;
+    background: hsl(136, 80%, 56%);
     content: '';
     border-radius: 0.75rem;
     left: 5px;
@@ -499,7 +500,7 @@ ul li {
     display: none;
     opacity: 0;
     visibility: hidden;
-    right: 6px;   
+    right: 6px;
 }
 
 .badge:hover {
@@ -509,8 +510,8 @@ ul li {
 
 .badge:hover,
 .badge:focus {
-    background: hsl(136, 100%, 48%);
-    border-color: hsl(136, 100%, 48%);
+    background: hsl(136, 100%, 36%);
+    border-color: hsl(136, 100%, 36%);
     color: hsl(200, 16%, 8%);
     padding-right: 1.625rem;
 }
@@ -524,7 +525,7 @@ ul li {
 
 @-webkit-keyframes pulse {
     30% {
-        background: hsla(136, 100%, 44%, 1);
+        background: hsla(136, 100%, 64%, 1);
     }
 
     50% {
@@ -532,13 +533,13 @@ ul li {
     }
 
     70% {
-        background: hsla(136, 100%, 44%, 1);
+        background: hsla(136, 100%, 64%, 1);
     }
 }
 
 @keyframes pulse {
     30% {
-        background: hsla(136, 100%, 44%, 1);
+        background: hsla(136, 100%, 64%, 1);
     }
 
     50% {
@@ -546,11 +547,10 @@ ul li {
     }
 
     70% {
-        background: hsla(136, 100%, 44%, 1);
+        background: hsla(136, 100%, 64%, 1);
     }
 }
 
-.external_link_container a:hover,
 .table_of_contents ol li a:hover,
 .gear_card_title_container a:hover,
 .gear_card_text_container a:hover,
@@ -643,7 +643,7 @@ ul li {
 }
 
 .home_page_grid li:hover {
-    box-shadow: 0 0 0 2px inset hsl(136, 100%, 44%);
+    box-shadow: 0 0 0 2px inset hsl(136, 100%, 36%);
     cursor: zoom-in;
     transition: 0.26s all;
 }
@@ -891,17 +891,13 @@ footer,
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
-    /*! position: absolute; */
-    /*! bottom: 0; */
-    /*! left: 50%; */
-    /*! transform: translateX(-50%); */
 }
 
 .footer_container {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .footer_links {
@@ -939,6 +935,7 @@ footer,
     padding: 0;
     margin: 0;
     display: flex;
+    background-repeat: no-repeat;
 }
 
 .footer_links li a {
@@ -950,13 +947,7 @@ footer,
 .footer_links li,
 .footer_links li a {
     line-height: 0.75rem;
-    margin: 0;
 }
-
-/*.social_media_icons li:nth-child(2) a {
-    margin-left: 1rem;
-    margin-right: 1rem;
-}*/
 
 .social_media_icons {
     gap: 1rem;
@@ -966,58 +957,36 @@ footer,
     display: inline-flex;
     flex-direction: row;
     align-items: center;
+    background: transparent;
 }
 
 .social_media_icons li a {
-    padding: 0.75rem;
+    display: flex;
+    height: 48px;
+    width: 48px;
+    background-size: 24px 24px;
+    background-position: 12px 12px;
+    background-repeat: no-repeat;
     border-radius: 0.75rem;
-/*    position: relative;*/
-}
-
-.social_media_icons svg,
-.social_media_icons img {
-    height: 24px;
-    width: 24px;
-    position: relative;
-    background: transparent;
-}
-
-.social_media_icons img {
     filter: saturate(0);
-/*    position: absolute;
-    content: '';
-    width: 24px;
-    height: 24px;
-    top: 0;
-    left: 0;
-    background: hsla(200, 100%, 100%, 0.25);*/
 }
 
-.social_media_icons li:hover img {
+.social_media_icons li .dribbble {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM13.7736 13.6226L13.3733 13.7652C11.1728 14.5824 9.54616 15.6938 8.37968 16.7474L8.04343 17.0613C7.88209 17.2171 7.73085 17.3708 7.58933 17.5211L7.31913 17.8172L7.07414 18.1023L6.8537 18.3745L6.65713 18.6316L6.48373 18.8714L6.33283 19.092L6.20375 19.2911L6.04954 19.5449L5.94058 19.7386L5.86215 19.8901L6.13346 20.0944C7.78259 21.2932 9.81038 22.0012 12.0006 22.0012C13.3859 22.0012 14.7063 21.7179 15.907 21.2064L15.8302 20.7783L15.7433 20.3342L15.6703 19.984L15.5368 19.3833L15.3728 18.699L15.2456 18.2003L15.1033 17.6702C15.0784 17.5794 15.0527 17.4874 15.0264 17.3942L14.8606 16.8215L14.6784 16.2234L14.4791 15.6021L14.2623 14.96C14.187 14.7428 14.1087 14.5224 14.0273 14.2994L13.7736 13.6226ZM17.5883 20.2908C19.8318 18.7738 21.429 16.3707 21.8747 13.588L21.6476 13.521L21.2297 13.4128L20.956 13.35L20.6426 13.2852L20.2924 13.221L19.9081 13.1601C19.8413 13.1503 19.7733 13.1409 19.7039 13.1317L19.2735 13.0809C19.1993 13.0731 19.1241 13.0659 19.0478 13.0591L18.5772 13.0244C17.6924 12.9731 16.6901 12.9933 15.6454 13.1605C15.7247 13.3784 15.8011 13.5938 15.8748 13.8063L16.0875 14.4353L16.2841 15.0451L16.5496 15.9191L16.7077 16.4715L16.8513 16.997L16.9808 17.4935L17.0967 17.9587L17.2459 18.5932L17.3671 19.1449L17.4617 19.6064L17.5883 20.2908ZM13.0939 11.969C12.8428 11.4009 12.5694 10.8321 12.2831 10.2718C10.6986 10.746 9.12902 11.0635 7.71041 11.2756L7.06687 11.3663L6.44775 11.4431C6.34676 11.4548 6.24691 11.466 6.14827 11.4766L5.57134 11.5348L5.02624 11.5819L4.27481 11.6345L3.61174 11.6685L3.04708 11.6878L2.59084 11.6963L2.00509 11.695C2.00203 11.7966 2 11.8983 2 12.0006C2 14.5692 2.97368 16.9144 4.57091 18.6873L4.72858 18.4309L4.97732 18.0567L5.14242 17.8221L5.33461 17.5604L5.55385 17.2745L5.80008 16.9679L6.07325 16.6438L6.37333 16.3055C7.73184 14.813 9.84659 13.0102 12.6998 12.0879C12.8301 12.0458 12.9616 12.0062 13.0939 11.969ZM22 11.9061C21.978 9.5457 21.1345 7.3782 19.7417 5.67645L19.6112 5.8435L19.4349 6.05113L19.1892 6.31883L18.9858 6.526L18.7499 6.75286C18.7078 6.79216 18.6644 6.83216 18.6196 6.87281L18.3338 7.12397C18.2834 7.16697 18.2315 7.21049 18.1782 7.25449L17.8413 7.52364C16.9555 8.20831 15.7421 8.9726 14.1574 9.61958C14.3901 10.0959 14.6132 10.5804 14.8209 11.0681L15.0364 11.5842C15.7019 11.5005 16.3666 11.4604 17.0067 11.4503L17.5489 11.4487L18.0758 11.4599C18.1621 11.4628 18.2477 11.4661 18.3324 11.4698L18.8301 11.4967L19.3043 11.5317L19.7515 11.5729L20.1685 11.6184L20.7303 11.6906L21.2054 11.7619L21.4686 11.8057L22 11.9061ZM8.27099 3.68458L7.74887 2.95022C4.95105 4.26988 2.85973 6.84909 2.21124 9.95236L2.60528 9.95206L3.14932 9.94034L3.88341 9.90915L4.54594 9.86778L5.03598 9.82961L5.56161 9.78169L6.12017 9.72297L6.70903 9.65234L7.32553 9.56873L7.96703 9.47106C9.05554 9.29596 10.2371 9.05775 11.4567 8.7339L11.1543 8.20387L10.8513 7.68638L10.5499 7.18362L10.1054 6.46192L9.67689 5.78574L9.14316 4.96779L8.56133 4.1045L8.27099 3.68458ZM18.6299 4.52C16.8639 2.95314 14.5416 2 12.0006 2C11.1937 2 10.4091 2.09673 9.65705 2.27801L9.76933 2.42992L10.2848 3.15034L10.8272 3.93938L11.3381 4.71019L11.7542 5.35873L12.1899 6.0598L12.6374 6.80635L12.9385 7.32583C12.9887 7.41371 13.0389 7.50222 13.089 7.59131L13.3886 8.13247C15.2174 7.447 16.5039 6.57888 17.3466 5.86244L17.6112 5.6297L17.8437 5.41094L18.045 5.20893C18.076 5.17681 18.1057 5.1455 18.1342 5.11506L18.2902 4.94331L18.4169 4.79517L18.5152 4.67341L18.6299 4.52Z' fill='hsl(136  92%25  36%25)'/%3E%3C/svg%3E");
+}
+
+.social_media_icons li .twitter {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M24 4.36754C23.117 4.76911 22.1681 5.04056 21.172 5.16258C22.1886 4.53773 22.9694 3.54824 23.337 2.36921C22.3856 2.94783 21.3319 3.36802 20.2103 3.59448C19.3121 2.61316 18.0324 2 16.6162 2C13.8968 2 11.6922 4.26064 11.6922 7.04891C11.6922 7.44468 11.7357 7.82997 11.8197 8.19954C7.72747 7.989 4.09932 5.9789 1.67078 2.92418C1.24694 3.66991 1.00415 4.5372 1.00415 5.46252C1.00415 7.21418 1.87344 8.7596 3.19461 9.66506C2.38748 9.63886 1.62826 9.4117 0.964365 9.03352C0.96402 9.05462 0.963945 9.07572 0.963945 9.09699C0.963945 11.5433 2.6612 13.584 4.91374 14.0478C4.50053 14.1632 4.06554 14.2249 3.61649 14.2249C3.2992 14.2249 2.99075 14.1932 2.69009 14.1343C3.31669 16.1402 5.1351 17.6 7.28974 17.6408C5.60456 18.995 3.48147 19.8021 1.17458 19.8021C0.777135 19.8021 0.38518 19.7782 0 19.7316C2.17907 21.1642 4.76723 22 7.54786 22C16.6047 22 21.5573 14.3065 21.5573 7.63438C21.5573 7.41548 21.5525 7.19774 21.5431 6.98122C22.5051 6.26934 23.3399 5.38006 24 4.36754Z' fill='hsl(136  92%25  36%25)'/%3E%3C/svg%3E");
+}
+
+.social_media_icons li .github {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 23.6219C20.1757 22.2898 24 17.5915 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.5923 3.82537 22.2911 9.00214 23.6225C9.00295 22.8046 9.00307 21.8262 9.00004 21.2932C5.66205 22.0367 4.96748 19.6438 4.96748 19.6438C4.42183 18.2225 3.63514 17.8441 3.63514 17.8441C2.5456 17.0807 3.71757 17.0961 3.71757 17.0961C4.92181 17.1832 5.55563 18.3641 5.55563 18.3641C6.62609 20.2443 8.31627 19.815 9.00004 19.5C9.10907 18.7049 9.46698 18.0491 9.80982 17.7416C7.14515 17.431 4.34382 16.3755 4.34382 11.6606C4.34382 10.3174 4.81138 9.21913 5.57899 8.35904C5.4556 8.04778 6 5.00001 6 5.00001C6 5.00001 6.70417 4.77203 8.99654 6.36417C9.95369 6.09127 10.9802 6.00476 12.0007 6C13.0198 6.00476 14.0464 6.09127 15.005 6.36417C17.2959 4.77203 18 5.00001 18 5.00001C18 5.00001 18.5444 8.04778 18.421 8.35904C19.1901 9.21913 19.6545 10.3174 19.6545 11.6606C19.6545 16.3873 16.8488 17.4273 14.1755 17.732C14.6064 18.1118 15 18.8628 15 20.0105V23.6219Z' fill='hsl(136  92%25  36%25)'/%3E%3C/svg%3E");
+}
+
+.social_media_icons li a:hover,
+.social_media_icons li a:focus {
+    opacity: 1;
     filter: saturate(1);
-    background: transparent;
-}
-
-.dribbble_icon_bg,
-.twitter_icon,
-.github_icon {
-    fill: hsl(200, 16%, 8%);
-}
-
-.dribbble_icon_inner {
-    fill: hsl(200, 16%, 92%);
-}
-
-.social_media_icons li .dribbble:hover .dribbble_icon_bg {
-    fill: hsl(320, 100%, 64%);
-}
-
-.social_media_icons li .twitter:hover .twitter_icon {
-    fill: hsl(205, 100%, 56%);
-}
-
-.social_media_icons li .github:hover .github_icon {
-    fill: hsl(270, 100%, 60%);
 }
 
 .mac_software_icon,
@@ -1045,6 +1014,20 @@ footer,
     padding: 0;
 }
 
+.home_hero {
+    height: 50vh;
+    max-height: 576px;
+    min-height: 288px;
+    position: relative;
+}
+
+.home_hero .text_container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
 .home_hero .text_container,
 .page_hero .text_container,
 .home_work_showcase h3 {
@@ -1055,7 +1038,7 @@ footer,
 }
 
 .home_hero .text_container {
-    padding: 8rem 2rem 12rem;
+    padding: 10rem 2rem 12rem;
 }
 
 .page_hero .text_container {
@@ -1979,7 +1962,6 @@ p a {
     flex-direction: column;
 }
 
-.external_link,
 .return_to_top_link {
     text-decoration: none;
     line-height: 1;
@@ -1995,14 +1977,12 @@ p a {
 .gear_card_text_container a,
 .table_of_contents ol li a,
 .work_responsibilities a,
-.external_link,
 .return_to_top_link,
 .footer_links li a {
     color: hsl(200, 16%, 12%);
 }
 
 .gear_card_title_container a::after,
-.external_link::after,
 .return_to_top_link::after {
     content: '';
     position: absolute;
@@ -2018,8 +1998,7 @@ p a {
     right: 0;
 }
 
-.gear_card_title_container a::after,
-.external_link::after {
+.gear_card_title_container a::after {
     background-image: url('../img/icons/16px/external_link.svg');
 }
 
@@ -2027,20 +2006,9 @@ p a {
     background-image: url('../img/icons/16px/email.svg')
 }
 
-.external_link_container a:hover::after,
 .gear_card_title_container a:hover::after,
 .return_to_top_link:hover::after {
     opacity: 1;
-}
-
-.external_link_container {
-    margin: 0 auto 3rem;
-    line-height: 1;
-}
-
-.external_link_container a {
-    font-size: 1.25rem;
-    line-height: 12px;
 }
 
 .software_gear h5 span:first-child {
@@ -2604,10 +2572,6 @@ p a {
 
 @media screen and (max-width: 760px) {
 
-    .home_hero {
-        max-height: 720px;
-    }
-
     .home_main {
         margin-bottom: 2rem;
     }
@@ -2828,24 +2792,6 @@ p a {
         border-radius: 0.75rem;
     }
 
-    /*    .availability_container,
-    .category_tag {
-        top: 1rem;
-    }
-
-    .availability_container,
-    .work_card_image .left_tag {
-        left: 1rem;
-    }
-
-    .category_tag {
-        right: 1rem;
-    }*/
-
-    .external_link_container {
-        margin-top: 1.5rem;
-    }
-
     .home_main,
     .gear_main {
         margin: 5rem 0 0;
@@ -2917,7 +2863,7 @@ p a {
     .footer_container {
         display: flex;
         flex-direction: column;
-        padding: 4rem 2rem 3rem;
+        padding: 3rem 2rem;
     }
 
     .social_media_icons {
@@ -2939,10 +2885,6 @@ p a {
         margin: 0;
     }
 
-    .social_media_icons li a {
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-    }
 }
 
 /* Dark Mode Styling */
@@ -2979,7 +2921,6 @@ p a {
     h5,
     .availability_container,
     .category_tag,
-    .external_link_container a:hover span,
     .return_to_top_link:hover,
     .next_case_study_section .text_container a:hover,
     p span,
@@ -2994,12 +2935,22 @@ p a {
         background: black;
     }
 
-    .badge {
-        color: hsl(200, 16%, 96%);
+    .site_navbar .active,
+    .site_navbar .active:hover {
+        background: transparent;
+        box-shadow: none;
     }
 
+    .site_navbar ul li a:hover,
+    .site_navbar ul li a:focus,
+    .badge {
+        color: hsl(136, 100%, 36%);
+    }
+
+    .site_navbar .active,
+    .site_navbar .active:hover,
     .badge:hover {
-        color: black;
+        color: hsl(200, 16%, 8%);
     }
 
     .badge:hover::before {
@@ -3008,7 +2959,7 @@ p a {
 
     @-webkit-keyframes pulse {
         30% {
-            background: hsla(136, 100%, 44%, 1);
+            background: hsla(136, 100%, 64%, 1);
         }
 
         50% {
@@ -3016,13 +2967,13 @@ p a {
         }
 
         70% {
-            background: hsla(136, 100%, 44%, 1);
+            background: hsla(136, 100%, 64%, 1);
         }
     }
 
     @keyframes pulse {
         30% {
-            background: hsla(136, 100%, 44%, 1);
+            background: hsla(136, 100%, 64%, 1);
         }
 
         50% {
@@ -3030,25 +2981,8 @@ p a {
         }
 
         70% {
-            background: hsla(136, 100%, 44%, 1);
+            background: hsla(136, 100%, 64%, 1);
         }
-    }
-
-    .site_navbar ul li a:hover {
-        background: transparent;
-        color: hsl(136, 100%, 44%);
-    }
-
-    .site_navbar .active,
-    .site_navbar .active:hover {
-        background: hsl(200, 16%, 8%);
-        box-shadow: none;
-        color: hsl(200, 16%, 96%);
-    }
-
-    .site_navbar .active,
-    .site_navbar .active:hover {
-        color: hsl(200, 16%, 8%);
     }
 
     .mb_logo_m,
@@ -3061,10 +2995,6 @@ p a {
     p a:focus {
         text-decoration: underline;
     }
-
-    /*    .home_page_grid li:hover {
-        background: black;
-    }*/
 
     .case_study_hero {
         background: transparent;
@@ -3125,7 +3055,6 @@ p a {
         color: hsl(200, 16%, 56%);
     }
 
-    .external_link_container a,
     .table_of_contents ol li a,
     li a,
     li a:focus,
@@ -3193,7 +3122,6 @@ p a {
         box-shadow: none !important;
     }
 
-    .external_link_container a:hover,
     .gear_card_title_container a:hover,
     .gear_card_text_container a:hover,
     .work_responsibilities a:hover,
@@ -3246,16 +3174,6 @@ p a {
         background: transparent;
     }
 
-    .dribbble_icon_bg,
-    .twitter_icon,
-    .github_icon {
-        fill: hsl(200, 16%, 88%);
-    }
-
-    .dribbble_icon_inner {
-        fill: hsl(200, 16%, 8%);
-    }
-
 }
 
 @media (prefers-color-scheme: dark) and (max-width: 760px) {
@@ -3284,6 +3202,10 @@ p a {
         padding: 0 1.5rem;
     }
 
+    .home_hero {
+        min-height: 400px;
+    }
+
     .home_hero .text_container,
     .page_hero .text_container,
     .home_work_showcase h3 {
@@ -3292,7 +3214,7 @@ p a {
     }
 
     .home_hero .text_container {
-        padding: 4rem 1.5rem 8rem;
+        padding: 6rem 1.5rem 8rem;
     }
 
     .page_hero .text_container {
@@ -3351,7 +3273,6 @@ p a {
         left: -2px !important;
         padding-left: 0;
         padding-bottom: 2rem;
-        /*top: -1rem;*/
     }
 
     .case_study_project h3::after {
@@ -3567,10 +3488,6 @@ p a {
         line-height: 0.75rem;
     }
 
-    .external_link::after {
-        right: -20px;
-    }
-
     .gear_card_title_container h5,
     .software_gear .name {
         line-height: 1rem;
@@ -3612,10 +3529,10 @@ p a {
         padding: 0 0.75rem;
     }
 
+    .home_hero h1,
     h1 {
-        font-size: 3.5rem;
-        margin: 2px 0 .5rem 0;
-        margin-bottom: 2rem !important;
+        font-size: 3rem;
+        margin-bottom: 1rem;
         line-height: 1;
     }
 
@@ -3625,7 +3542,7 @@ p a {
 
     h2,
     h3 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         line-height: 1.25;
     }
 
@@ -3642,14 +3559,6 @@ p a {
     }
 
     .gear_section .gear_description {
-        font-size: 1.25rem;
-    }
-
-    .external_link_container {
-        margin-top: 2.5rem;
-    }
-
-    .external_link {
         font-size: 1.125rem;
     }
 
