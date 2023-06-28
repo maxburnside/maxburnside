@@ -338,7 +338,7 @@ p {
 
 h1 {
     color: hsl(200, 16%, 8%);
-    font-size: 3.25rem;
+    font-size: 3.75rem;
     font-weight: 700;
     letter-spacing: 0.25px;
     line-height: 1.125;
@@ -496,7 +496,7 @@ ul li {
 
 .badge::after {
     content: '';
-    background-image: url('data:image/svg+xml,<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 4V1H11V10H8V6L3 11L1 9L6 4H2Z" fill="hsla(200, 16%, 8%, 0.75)"/></svg>');
+    background-image: url('data:image/svg+xml,<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 4V1H11V10H8V6L3 11L1 9L6 4H2Z" fill="hsl(200, 16%, 8%)"/></svg>');
     display: none;
     opacity: 0;
     visibility: hidden;
@@ -2572,6 +2572,10 @@ p a {
 
 @media screen and (max-width: 760px) {
 
+    h1 {
+        font-size: 3.375rem;
+    }
+
     .home_main {
         margin-bottom: 2rem;
     }
@@ -3531,7 +3535,7 @@ p a {
 
     .home_hero h1,
     h1 {
-        font-size: 3rem;
+        font-size: 3.25rem;
         margin-bottom: 1rem;
         line-height: 1;
     }
