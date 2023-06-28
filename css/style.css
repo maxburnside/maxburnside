@@ -188,21 +188,21 @@ footer {
 
 s::before,
 s::after {
-  clip-path: inset(100%);
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
+    clip-path: inset(100%);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
 
 s::before {
-  content: " [start of stricken text] ";
+    content: " [start of stricken text] ";
 }
 
 s::after {
-  content: " [end of stricken text] ";
+    content: " [end of stricken text] ";
 }
 
 /* END Strikethrough screen reader helper CSS */
