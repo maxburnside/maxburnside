@@ -205,6 +205,10 @@ s::after {
     content: " [end of stricken text] ";
 }
 
+s {
+    color: hsl(200, 16%, 32%);
+}
+
 /* END Strikethrough screen reader helper CSS */
 
 
@@ -3122,7 +3126,7 @@ p a {
     .work_responsibilities a,
     .return_to_top_link,
     .subsection_header a {
-        color: hsl(136, 64%, 48%);
+        color: hsl(136, 56%, 32%);
     }
 
     .return_to_top_link {
