@@ -184,6 +184,30 @@ footer {
     transform: translateX(-50%);*/
 }
 
+/* START Strikethrough screen reader helper CSS */
+
+s::before,
+s::after {
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+s::before {
+  content: " [start of stricken text] ";
+}
+
+s::after {
+  content: " [end of stricken text] ";
+}
+
+/* END Strikethrough screen reader helper CSS */
+
+
 /*********************** END Global Styling ***********************/
 
 /*********************** START Navbar Styling ***********************/
@@ -344,6 +368,7 @@ h1 {
     line-height: 1.125;
     padding: 0;
     word-break: break-word;
+    margin-left: -4px;
 }
 
 h1,
@@ -467,7 +492,7 @@ ul li {
     border-radius: 0.75rem;
     font-size: 0.875rem;
     font-weight: 400;
-    padding: 0 0.5rem 0 1.375rem;
+    padding: 0 0.5rem 0 1.5rem;
     position: relative;
     text-decoration: none;
     display: inline-flex;
@@ -479,10 +504,9 @@ ul li {
 
 .badge::before,
 .badge::after {
-    height: 12px;
+    height: 14px;
     position: absolute;
-    top: 5px;
-    width: 12px;
+    width: 14px;
 }
 
 .badge::before {
@@ -491,16 +515,19 @@ ul li {
     background: hsl(136, 80%, 56%);
     content: '';
     border-radius: 0.75rem;
-    left: 5px;
+    left: 4px;
+    top: 4px;
 }
 
 .badge::after {
     content: '';
     background-image: url('data:image/svg+xml,<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 4V1H11V10H8V6L3 11L1 9L6 4H2Z" fill="hsl(200, 16%, 8%)"/></svg>');
+    background-repeat: no-repeat;
     display: none;
     opacity: 0;
     visibility: hidden;
     right: 6px;
+    top: 5px;
 }
 
 .badge:hover {
