@@ -366,7 +366,7 @@ p {
 
 h1 {
     color: hsl(200, 16%, 8%);
-    font-size: 3.75rem;
+    font-size: 3.5rem;
     font-weight: 700;
     letter-spacing: 0.25px;
     line-height: 1.125;
@@ -675,7 +675,6 @@ ul li {
 
 .home_page_grid li:hover {
     box-shadow: 0 0 0 2px inset hsl(136, 100%, 36%);
-    cursor: zoom-in;
     transition: 0.26s all;
 }
 
@@ -686,6 +685,10 @@ ul li {
 
 .home_page_grid li:hover img {
     border-radius: 0;
+}
+
+.home_page_grid li a:focus {
+    box-shadow: none;
 }
 
 /*.home_page_grid li:hover h4,
@@ -2604,7 +2607,7 @@ p a {
 @media screen and (max-width: 760px) {
 
     h1 {
-        font-size: 3.375rem;
+        font-size: 3.125rem;
     }
 
     .home_main {
@@ -3566,7 +3569,7 @@ p a {
 
     .home_hero h1,
     h1 {
-        font-size: 3.25rem;
+        font-size: 3rem;
         margin-bottom: 1rem;
         line-height: 1;
     }
