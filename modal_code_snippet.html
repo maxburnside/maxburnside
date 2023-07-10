@@ -1,0 +1,35 @@
+<div class='header_link_click_container' x-data="{
+        open: false
+    }" x-init="
+    $watch('open', value => {
+        const body = document.body;
+        if(!open) {
+           body.classList.remove('h_screen');
+           return body.classList.remove('overflow_hidden');
+        } else {
+            body.classList.add('h_screen');
+            return body.classList.add('overflow_hidden');
+        }
+    });">
+    <div x-cloak x-ref="modal" x-show.transition.opacity="open" class="ac_about_modal_overlay" role="dialog" aria-modal="true" style="display: none;">
+        <div @mousedown.away="open = false" @keydown.window.escape="open = false" class="ac_about_modal">
+            <div class="ac_about_modal_header">
+                <h2>
+                    Sync watchOS Workout Time with iOS Stopwatch (UX Concept)
+                </h2>
+            </div>
+            <div class="ac_about_modal_actions">
+                <button class="ac_about_modal_close_icon" title="Close modal" aria-label="Close modal" @click="open = false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <line x1="14" x2="2" y1="2" y2="14" stroke="hsl(200, 16%, 80%)" stroke-width="3" transform="rotate(-90 8 8)" />
+                        <line x1="14" x2="2" y1="2" y2="14" stroke="hsl(200, 16%, 80%)" stroke-width="3" transform="matrix(0 -1 -1 0 16 16)" />
+                    </svg>
+                </button>
+            </div>
+            <div class="ac_about_modal_body">
+                <p>AreaToad is a simplified location search experience, with a clutter-free approach. No ads. No spam. No, really.</p>
+            </div>
+        </div>
+    </div>
+    <button title="View Details" aria-label="View Details" @click="open = true" class="header_text header_link">View Details</button>
+</div>
