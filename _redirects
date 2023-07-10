@@ -4,6 +4,7 @@ ads.txt /
 /adhawk /work/adhawk
 /adhawk.html /work/adhawk
 /anchorpint /
+/about.html /about
 /bc /
 /contentstack /work/contentstack
 /contentstack.html /work/contentstack
@@ -20,6 +21,7 @@ ads.txt /
 /images /
 /images/ /
 /john-frieda /
+modal_code_snippet.html /
 /nas /
 /nas.php /
 /robots.txt /
@@ -37,3 +39,11 @@ ads.txt /
 /wordpress /
 /wp-admin /
 /wp-login.php /
+
+
+/work /
+/work/adhawk /
+/work/contentstack /
+/work/drift /
+/work/flooringstores /
+/gear /
