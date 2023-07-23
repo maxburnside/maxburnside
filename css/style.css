@@ -251,8 +251,8 @@ s {
     background: transparent;
     position: relative;
     opacity: 1;
-    height: 40px;
-    width: 64px;
+    height: 48px;
+    width: 80px;
 }
 
 .mb_logo_m,
@@ -448,9 +448,15 @@ h6 {
     text-transform: uppercase;
 }
 
+/* Paragraph styling */
+
 p {
     font-size: 0.875rem;
     letter-spacing: -0.015625rem;
+}
+
+.page_hero p {
+    margin-top: 4rem;
 }
 
 .gear_section p {
@@ -2645,8 +2651,8 @@ p a {
     }
 
     .nav_logo svg {
-        height: 30px;
-        width: 48px;
+        height: 36px;
+        width: 60px;
     }
 
     .site_navbar ul li a {
