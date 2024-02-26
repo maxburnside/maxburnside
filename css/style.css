@@ -367,7 +367,7 @@ p {
 h1 {
     color: hsl(200, 16%, 8%);
     font-size: 3.5rem;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 0.25px;
     line-height: 1.125;
     padding: 0;
@@ -414,7 +414,7 @@ h4 {
 
 h5 {
     font-size: 1rem;
-    letter-spacing: -0.0125rem;
+    letter-spacing: 0;
 }
 
 h2,
@@ -438,7 +438,7 @@ a,
 .table_of_contents a,
 .company_name,
 .footer_links li a {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 h6 {
@@ -660,7 +660,7 @@ ul li {
     padding: 0 1rem;
     width: 100%;
     height: 100%;
-    max-width: 1896px;
+    max-width: 1360px;
 }
 
 .home_page_grid li {
