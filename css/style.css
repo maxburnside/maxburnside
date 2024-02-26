@@ -41,7 +41,7 @@ body,
 .case_study_project h3,
 .next_case_study_section .text_container h6,
 .next_case_study_section .text_container a {
-    background: hsl(200, 16%, 96%);
+    background: hsl(200, 16%, 99%);
 }
 
 html,
@@ -102,7 +102,7 @@ p {
 }
 
 img {
-    background: hsl(200, 16%, 96%);
+    background: hsl(200, 16%, 99%);
     box-shadow: none;
     border-style: none;
     border: none;
@@ -126,12 +126,12 @@ svg:not(:root) {
 
 ::selection {
     background: hsl(200, 16%, 8%);
-    color: hsl(200, 16%, 96%);
+    color: hsl(200, 16%, 99%);
 }
 
 ::-moz-selection {
     background: hsl(200, 16%, 8%);
-    color: hsl(200, 16%, 96%);
+    color: hsl(200, 16%, 99%);
 }
 
 a::selection {
@@ -325,7 +325,7 @@ s {
 .site_navbar .active:hover {
     background: hsl(200, 16%, 8%);
     box-shadow: none;
-    color: hsl(200, 16%, 96%);
+    color: hsl(200, 16%, 99%);
     cursor: default;
 }
 
@@ -707,6 +707,7 @@ ul li {
     vertical-align: bottom;
     margin-bottom: 0.75rem;
     border-radius: 0.75rem;
+    border: 1px solid hsla(200, 8%, 8%, 0.05);
 }
 
 .home_page_grid li:hover {
@@ -730,7 +731,7 @@ ul li {
 /*.home_page_grid li:hover h4,
 .home_page_grid li:hover h5,
 .home_page_grid li:hover a {
-    color: hsl(200, 16%, 96%);
+    color: hsl(200, 16%, 99%);
 }*/
 
 .home_page_grid li h4 {
@@ -2669,7 +2670,7 @@ p a {
     }
 
     .site_navbar {
-        background: hsl(200, 16%, 96%);
+        background: hsl(200, 16%, 99%);
         height: 4rem;
         position: fixed;
     }
@@ -3111,13 +3112,13 @@ p a {
     }
 
     h1 {
-        color: hsl(200, 16%, 96%);
+        color: hsl(200, 16%, 99%);
     }
 
     .site_navbar .active,
     .site_navbar u li a:active,
     .site_navbar .active:hover {
-        background: hsl(200, 16%, 96%);
+        background: hsl(200, 16%, 99%);
     }
 
     p,
@@ -3147,7 +3148,7 @@ p a {
 
     .site_navbar li a:hover,
     .footer_links li a:hover {
-        color: hsl(200, 16%, 96%);
+        color: hsl(200, 16%, 99%);
     }
 
     p a {
@@ -3155,12 +3156,12 @@ p a {
     }
 
     ::selection {
-        background: hsl(200, 16%, 96%);
+        background: hsl(200, 16%, 99%);
         color: hsl(200, 16%, 8%);
     }
 
     ::-moz-selection {
-        background: hsl(200, 16%, 96%);
+        background: hsl(200, 16%, 99%);
         color: hsl(200, 16%, 8%);
     }
 
@@ -3191,7 +3192,7 @@ p a {
 
     .gear_card_title_container h5,
     .software_gear h5 span:second-child {
-        color: hsl(200, 16%, 96%);
+        color: hsl(200, 16%, 99%);
     }
 
     .work_card:hover .gear_card_illustration_image,
