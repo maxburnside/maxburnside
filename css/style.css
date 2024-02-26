@@ -498,7 +498,7 @@ ul li {
 }
 
 .badge {
-    border: 1px solid hsl(136, 100%, 36%);
+    border: 1px solid hsl(136, 48%, 56%);
     border-radius: 0.75rem;
     font-size: 0.875rem;
     font-weight: 400;
@@ -522,7 +522,7 @@ ul li {
 .badge::before {
     animation: pulse 3s infinite;
     -webkit-animation: pulse 3s infinite;
-    background: hsl(136, 80%, 56%);
+    background: hsl(136, 64%, 40%);
     content: '';
     border-radius: 0.75rem;
     left: 4px;
@@ -560,9 +560,39 @@ ul li {
     visibility: visible;
 }
 
+.external_link {
+    position: relative;
+    text-decoration: none;
+    line-height: 1;
+    width: 100%;
+    transition: 0.75s opacity;
+}
+
+.external_link::after {
+    content: '';
+    background-image: url('data:image/svg+xml,<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 4V1H11V10H8V6L3 11L1 9L6 4H2Z" fill="hsl(136, 64%, 40%)"/></svg>');
+    background-repeat: no-repeat;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: 0;
+    top: 2px;
+}
+
+.home_image_container:hover .external_link::after,
+.home_image_container:focus .external_link::after {
+    transition: 0.5s opacity;
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
 @-webkit-keyframes pulse {
     30% {
-        background: hsla(136, 100%, 64%, 1);
+        background: hsla(136, 64%, 40%, 1);
     }
 
     50% {
@@ -570,13 +600,13 @@ ul li {
     }
 
     70% {
-        background: hsla(136, 100%, 64%, 1);
+        background: hsla(136, 64%, 40%, 1);
     }
 }
 
 @keyframes pulse {
     30% {
-        background: hsla(136, 100%, 64%, 1);
+        background: hsla(136, 64%, 40%, 1);
     }
 
     50% {
@@ -584,7 +614,7 @@ ul li {
     }
 
     70% {
-        background: hsla(136, 100%, 64%, 1);
+        background: hsla(136, 64%, 40%, 1);
     }
 }
 
@@ -665,7 +695,7 @@ ul li {
 
 .home_page_grid li {
     flex-grow: 1;
-    padding: 0.75rem;
+    padding: 0.75rem 0.75rem 1rem 0.75rem;
     border-radius: 0.75rem;
     transition: 0.4s all, 0.25s border-radius, 0.25s border-color;
 }
@@ -675,7 +705,7 @@ ul li {
     min-width: 100%;
     object-fit: cover;
     vertical-align: bottom;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     border-radius: 0.75rem;
 }
 
@@ -2985,10 +3015,14 @@ p a {
         box-shadow: none;
     }
 
+    .badge {
+        border: 1px solid hsl(136, 100%, 32%);
+    }
+
     .site_navbar ul li a:hover,
     .site_navbar ul li a:focus,
     .badge {
-        color: hsl(136, 100%, 36%);
+        color: hsl(136, 64%, 36%);
     }
 
     .site_navbar .active,
