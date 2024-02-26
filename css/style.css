@@ -728,14 +728,8 @@ ul li {
     box-shadow: none;
 }
 
-/*.home_page_grid li:hover h4,
-.home_page_grid li:hover h5,
-.home_page_grid li:hover a {
-    color: hsl(200, 16%, 99%);
-}*/
-
-.home_page_grid li h4 {
-    margin-top: 0.5rem;
+.home_page_grid li:hover h5 {
+    color: hsl(200, 8%, 1%);
 }
 
 /* Modal Styling */
@@ -3132,6 +3126,10 @@ p a {
 
     h6 {
         color: hsl(200, 16%, 56%);
+    }
+
+    .home_page_grid li:hover h5 {
+        color: hsl(200, 16%, 99%);
     }
 
     .table_of_contents ol li a,
