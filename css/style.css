@@ -2587,6 +2587,12 @@ h6 {
     }
 }
 
+@media screen and (max-width: 960px) {
+    .gear_card {
+        width: calc(50% - 1rem);
+    }
+}
+
 /*@media screen and (min-width: 761px) {
     .gear_page_grid {
         gap: 2%;
