@@ -356,10 +356,82 @@ a:hover,
     color: hsl(200, 16%, 8%);
 }
 
-.home_page_grid li img,
-.card_header img {
+.home_page_grid li img {
     border: 1px solid hsla(200, 24%, 8%, 0.05);
     background: hsl(200, 16%, 92%);
+}
+
+.gear_image_container {
+    /*    background: hsla(136, 100%, 36%, 0.25) !important;*/
+    border: 1px solid hsla(200, 24%, 8%, 0.05);
+    box-shadow: none;
+    overflow: hidden;
+    transition: 0.1s border-radius, 0.2s background;
+}
+
+/*.gear_image_container img {
+    border: none !important;
+    background: transparent !important;
+    transition: 0.3s opacity, 0.1s filter;
+    filter: saturate(0.5);
+}
+
+.gear_card:hover .gear_image_container img {
+    border: none !important;
+    background: transparent !important;
+    transition: 0.1s opacity, 0.1s filter;
+    filter: saturate(1);
+}*/
+
+.gear_card:hover .gear_image_container {
+    /*    background: hsla(136, 100%, 36%, 1) !important;*/
+    border-radius: 0;
+    transition: 0.1s border-radius, 0.5s background;
+}
+
+.gear_device_image,
+.gear_device_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+/*    min-height: 400px;
+    min-width: 300px;*/
+    display: block;
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+.gear_device_image {
+    filter: saturate(1);
+    z-index: 3;
+    transition: 0.15s all;
+}
+
+.gear_device_background {
+    z-index: 2;
+    border: none !important;
+    background: transparent !important;
+    transition: 0.3s opacity, 0.1s filter;
+    filter: saturate(0.25); 
+}
+
+.gear_card:hover .gear_device_background {
+    background: transparent !important;
+    transition: 0.1s opacity, 0.1s filter;
+    filter: saturate(1);
+}
+
+.gear_card:hover .gear_device_image {
+    transform: scale(1.25);
+    transition: 0.3s all;
+}
+
+.gear_card:hover .gear_card_button {
+    border-radius: 0.25rem;
 }
 
 .home_page_grid li:hover img {
@@ -626,6 +698,10 @@ ul li {
     border: none !important;
 }
 
+.home_image_container img {
+    margin-bottom: 0.75rem;
+}
+
 @-webkit-keyframes pulse {
     30% {
         background: hsla(136, 64%, 40%, 1);
@@ -719,9 +795,27 @@ ul li {
     min-width: 100%;
     object-fit: cover;
     vertical-align: bottom;
-    margin-bottom: 1rem;
+    /*    margin-bottom: 1rem;*/
     border-radius: 1rem;
     border: 1px solid hsla(200, 24%, 48%, 0.25);
+}
+
+.gear_image_container {
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    border: 1px solid hsla(200, 24%, 48%, 0.1);
+    position: relative;
+    height: 100%;
+    width: 100%;
+/*    min-height: 300px;
+    min-width: 400px;*/
+}
+
+.gear_image_container img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
 }
 
 .home_page_grid li:hover,
@@ -989,6 +1083,11 @@ footer,
 .social_media_icons li .github {
     background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 23.6219C20.1757 22.2898 24 17.5915 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.5923 3.82537 22.2911 9.00214 23.6225C9.00295 22.8046 9.00307 21.8262 9.00004 21.2932C5.66205 22.0367 4.96748 19.6438 4.96748 19.6438C4.42183 18.2225 3.63514 17.8441 3.63514 17.8441C2.5456 17.0807 3.71757 17.0961 3.71757 17.0961C4.92181 17.1832 5.55563 18.3641 5.55563 18.3641C6.62609 20.2443 8.31627 19.815 9.00004 19.5C9.10907 18.7049 9.46698 18.0491 9.80982 17.7416C7.14515 17.431 4.34382 16.3755 4.34382 11.6606C4.34382 10.3174 4.81138 9.21913 5.57899 8.35904C5.4556 8.04778 6 5.00001 6 5.00001C6 5.00001 6.70417 4.77203 8.99654 6.36417C9.95369 6.09127 10.9802 6.00476 12.0007 6C13.0198 6.00476 14.0464 6.09127 15.005 6.36417C17.2959 4.77203 18 5.00001 18 5.00001C18 5.00001 18.5444 8.04778 18.421 8.35904C19.1901 9.21913 19.6545 10.3174 19.6545 11.6606C19.6545 16.3873 16.8488 17.4273 14.1755 17.732C14.6064 18.1118 15 18.8628 15 20.0105V23.6219Z' fill='hsl(136  92%25  36%25)'/%3E%3C/svg%3E");
 }
+
+.social_media_icons li .noun_project {
+    background-image: url("data:image/svg+xml, <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M6 12C6 13.6569 4.65685 15 3 15C1.34315 15 0 13.6569 0 12C0 10.3431 1.34315 9 3 9C4.65685 9 6 10.3431 6 12Z' fill='#00B831'/><path d='M18 9H24V15H18V9Z' fill='#00B831'/><path d='M14.5 10.1445L12.6445 12L14.5 13.8555L13.3555 15L11.5 13.1445L9.64446 15L8.5 13.8555L10.3555 12L8.50001 10.1445L9.64447 9L11.5 10.8555L13.3555 9L14.5 10.1445Z' fill='#00B831'/></svg>");
+}
+
 
 .social_media_icons li a:hover,
 .social_media_icons li a:focus {
@@ -1836,10 +1935,31 @@ h6 {
     flex-direction: column;
     margin: 0 0 6rem 0;
     width: 100%;
+    height: 100%;
     max-width: 448px;
     position: relative;
     z-index: 3;
     padding: 1rem;
+}
+
+.gear_card_button {
+    padding: 12px 24px;
+    border-radius: 0.5rem;
+    background: hsl(136, 100%, 36%);
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid hsla(200, 8%, 8%, 0.1);
+    margin-top: 2rem;
+    display: block;
+    width: 100%;
+    text-decoration: none !important;
+    font-weight: 600;
+}
+
+.gear_card_button:hover {
+    background: hsl(136, 100%, 32%);   
 }
 
 .gear_card .card_footer {
@@ -2036,7 +2156,7 @@ h6 {
 }
 
 .card_description {
-    margin-top: 1.5rem;
+    margin: 1.5rem 0 0;
 }
 
 .gear_card .card_footer {
@@ -2052,7 +2172,7 @@ h6 {
 .gear_card .card_footer p,
 .work_responsibilities p {
     /*font-size: 0.875rem;*/
-    margin-bottom: 0;
+    /*    margin-bottom: 0;*/
 }
 
 .gear_card .card_footer ul,
@@ -2108,7 +2228,7 @@ h6 {
 
 .gear_card .card_footer ul li::before {
     left: -1.5rem;
-    opacity: 0.5;
+    opacity: 0.75;
     transition: opacity 0.15s;
 }
 
@@ -2816,6 +2936,10 @@ h6 {
         max-width: unset;
     }
 
+    .gear_image_container img {
+        transform: scale(1);
+    }
+
     .home_main,
     .gear_main {
         margin: 5rem 0 0;
@@ -3018,7 +3142,7 @@ h6 {
     }
 
     .gear_card .card_footer ul li::before {
-        opacity: 0.25;
+        opacity: 0.5;
     }
 
     .case_study_hero {
@@ -3085,10 +3209,28 @@ h6 {
         color: hsl(200, 16%, 99%);
     }
 
-    .home_page_grid li img,
-    .card_header img {
+    .home_page_grid li img {
         border: 1px solid hsla(200, 24%, 99%, 0.05);
         background: hsl(200, 16%, 24%);
+    }
+
+    .gear_image_container {
+        border: 1px solid hsla(200, 12%, 99%, 0.05);
+        box-shadow: none;
+        /*        background: hsl(200, 16%, 24%);*/
+    }
+
+    .gear_image_container img {
+        opacity: 0.75;
+        border: none !important;
+        background: transparent !important;
+        transition: 0.3s opacity;
+    }
+
+    .gear_card:hover .gear_image_container img {
+        /*    transform: scale(1.1);*/
+        opacity: 1;
+        transition: 0.15s opacity;
     }
 
     .home_page_grid li:hover img {
@@ -3138,6 +3280,16 @@ h6 {
     .return_to_top_link,
     .subsection_header a {
         color: hsl(136, 56%, 32%);
+    }
+
+    .gear_card_button {
+        color: hsl(136, 100%, 8%) !important;
+        border: 1px solid hsla(200, 100%, 98%, 0.3);
+    }
+
+    .gear_card_button:hover {
+        color: black !important;
+        border: 1px solid hsla(136, 100%, 48%, 0.5);
     }
 
     .return_to_top_link {
@@ -3290,7 +3442,8 @@ h6 {
     }
 
     .home_page_grid li img,
-    .card_header img {
+    .card_header img,
+    .gear_image_container img {
         width: 100%;
         max-height: 75vh;
         min-width: 0;
