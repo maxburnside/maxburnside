@@ -432,6 +432,11 @@ a:hover,
     border-radius: 0.25rem;
 }
 
+.gear_card_image_credit {
+    font-size: 0.8125rem;
+    font-weight: 400;
+}
+
 .home_page_grid li:hover img {
     border: 1px solid hsla(200, 24%, 8%, 0.2);
     background: hsl(200, 16%, 80%);
@@ -1959,7 +1964,7 @@ h6 {
     text-align: center;
     margin: 0 auto;
     border: 1px solid hsla(200, 8%, 8%, 0.1);
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     display: block;
     width: 100%;
     text-decoration: none !important;
@@ -2164,7 +2169,7 @@ h6 {
 }
 
 .card_description {
-    margin: 1.5rem 0 0;
+    margin: 1.5rem 0 0.25rem;
 }
 
 .gear_card .card_footer {
