@@ -469,6 +469,10 @@ h1 {
     margin-left: -4px;
 }
 
+.gear_card h5 strong {
+    color: hsl(200, 16%, 8%);
+}
+
 h1,
 .site_navbar ul li a {
     font-family: 'Readex Pro', sans-serif;
@@ -535,6 +539,10 @@ h6,
     font-weight: 600;
 }
 
+.gear_card h5 {
+    font-weight: 400;
+}
+
 h6 {
     font-size: 0.75rem;
     line-height: 0.5rem;
@@ -568,7 +576,8 @@ li a,
 p a,
 .flooringstores_text_link,
 .visably_text_link,
-a {
+a,
+.gear_card h5 {
     color: hsl(200, 16%, 32%);
 }
 
@@ -736,7 +745,8 @@ ul li {
 .next_case_study_section .text_container a:hover,
 .work_card_text:hover .work_card_text h3,
 .work_card_text:hover .work_responsibilities,
-.case_study_company p {
+.case_study_company p,
+.gear_card:hover h5 {
     color: hsl(200, 16%, 8%);
 }
 
@@ -3065,7 +3075,8 @@ h6 {
     p span,
     .case_study_company p,
     .company_name,
-    .next_case_study_section .text_container h6 {
+    .next_case_study_section .text_container h6,
+    .gear_card h5 strong {
         color: hsl(200, 16%, 72%);
         text-decoration: none;
     }
