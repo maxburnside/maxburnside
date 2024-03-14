@@ -2003,8 +2003,14 @@ h6 {
     top: 0.75rem;
     z-index: 4;
     line-height: 12px;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     border-radius: .25rem;
+}
+
+.photo_tag {
+    top: unset;
+    bottom: 0.75rem;
+    font-size: 0.75rem;
 }
 
 .availability_container {
