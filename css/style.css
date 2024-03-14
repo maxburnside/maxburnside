@@ -362,6 +362,10 @@ a:hover,
     background: hsl(200, 16%, 92%);
 }
 
+.gear_page_grid li img {
+    border: none !important;
+}
+
 /*.gear_image_container img {
     border: none !important;
     background: transparent !important;
@@ -433,6 +437,10 @@ a:hover,
 .home_page_grid li:hover img {
     border: 1px solid hsla(200, 24%, 8%, 0.2);
     background: hsl(200, 16%, 80%);
+}
+
+.gear_page_grid li:hover img {
+    border: none !important;
 }
 
 .gear_card a:focus {
@@ -1946,6 +1954,10 @@ h6 {
     padding: 1rem;
 }
 
+.gear_card a {
+    text-decoration: none !important;
+}
+
 .gear_card_button {
     padding: 12px 24px;
     border-radius: 0.5rem;
@@ -2238,7 +2250,7 @@ h6 {
 
 .gear_card .card_footer ul li::before {
     left: -1.5rem;
-    opacity: 0.75;
+    opacity: 0.55;
     transition: opacity 0.15s;
 }
 
@@ -3233,7 +3245,7 @@ h6 {
     }
 
     .gear_image_container img {
-        opacity: 0.75;
+/*        opacity: 0.75;*/
         border: none !important;
         background: transparent !important;
         transition: 0.3s opacity;
