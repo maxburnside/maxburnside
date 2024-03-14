@@ -317,7 +317,8 @@ s {
 
 .site_navbar ul li a:hover,
 .site_navbar ul li a:focus,
-.badge {
+.badge,
+.photo_tag {
     color: hsl(136, 56%, 32%);
 }
 
@@ -359,14 +360,6 @@ a:hover,
 .home_page_grid li img {
     border: 1px solid hsla(200, 24%, 8%, 0.05);
     background: hsl(200, 16%, 92%);
-}
-
-.gear_image_container {
-    /*    background: hsla(136, 100%, 36%, 0.25) !important;*/
-    border: 1px solid hsla(200, 24%, 8%, 0.05);
-    box-shadow: none;
-    overflow: hidden;
-    transition: 0.1s border-radius, 0.2s background;
 }
 
 /*.gear_image_container img {
@@ -812,24 +805,6 @@ ul li {
     border: 1px solid hsla(200, 24%, 48%, 0.25);
 }
 
-.gear_image_container {
-    margin-bottom: 1rem;
-    border-radius: 1rem;
-    border: 1px solid hsla(200, 24%, 48%, 0.1);
-    position: relative;
-    height: 100%;
-    width: 100%;
-    /*    min-height: 300px;
-    min-width: 400px;*/
-}
-
-.gear_image_container img {
-    max-height: 100%;
-    min-width: 100%;
-    object-fit: cover;
-    vertical-align: bottom;
-}
-
 .home_page_grid li:hover,
 .home_page_grid li:focus,
 .gear_card a:hover .gear_card_illustration_image {
@@ -863,6 +838,27 @@ ul li {
 .gear_page_grid .card_footer:focus {
     border: none !important;
     box-shadow: none !important;
+}
+
+.gear_image_container {
+    border: 1px solid transparent;
+    box-shadow: none;
+    overflow: hidden;
+    transition: 0.1s border-radius, 0.2s background;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    border: 1px solid hsla(200, 24%, 48%, 0.1);
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.gear_image_container img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    border: 1px solid transparent;
 }
 
 .gear_page_grid {
@@ -1941,7 +1937,7 @@ h6 {
 .gear_card {
     display: flex;
     flex-direction: column;
-    margin: 0 0 6rem 0;
+    margin: 0 0 2rem 0;
     width: 100%;
     height: 100%;
     max-width: 448px;
@@ -1984,12 +1980,10 @@ h6 {
 
 .availability_container {
     left: 0.75rem;
-    padding: 0.625rem 0.75rem;
 }
 
 .category_tag {
     right: 0.75rem;
-    padding: 0.625rem 0.75rem;
 }
 
 .availability_container,
@@ -1997,15 +1991,17 @@ h6 {
     position: absolute;
     top: 0.75rem;
     z-index: 4;
-    line-height: 12px;
+    line-height: 8px;
     font-size: 0.75rem;
     border-radius: .25rem;
+    padding: 0.5rem 0.5rem;
 }
 
 .photo_tag {
     top: unset;
     bottom: 0.75rem;
     font-size: 0.75rem;
+    color: hsl(136, 56%, 32%);
 }
 
 .availability_container {
@@ -2170,11 +2166,11 @@ h6 {
 }
 
 .card_description {
-    margin: 1.5rem 0 0.25rem;
+    margin: 1.25rem 0 0.25rem;
 }
 
 .gear_card .card_footer {
-    margin-top: 0.5rem;
+    margin-top: 0;
 }
 
 .gear_card .card_footer li {
@@ -2200,7 +2196,7 @@ h6 {
 .gear_card .card_footer ul,
 .work_responsibilities ul {
     list-style: none;
-    margin-top: 1.5rem;
+    margin-top: 1.25rem;
 }
 
 .gear_card .card_footer ul li,
@@ -3103,7 +3099,8 @@ h6 {
 
     .site_navbar ul li a:hover,
     .site_navbar ul li a:focus,
-    .badge {
+    .badge,
+    .photo_tag {
         color: hsl(136, 64%, 36%);
     }
 
