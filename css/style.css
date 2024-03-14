@@ -802,8 +802,7 @@ ul li {
     transition: 0.4s all, 0.25s border-radius, 0.25s border-color;
 }
 
-.home_page_grid li img,
-.card_header img {
+.home_page_grid li img {
     max-height: 100%;
     min-width: 100%;
     object-fit: cover;
@@ -1933,10 +1932,6 @@ h6 {
     display: flex;
     width: 100%;
     flex-wrap: nowrap;
-}
-
-.card_header {
-    position: relative;
 }
 
 .card_footer {
@@ -3258,11 +3253,6 @@ h6 {
         background: hsl(200, 16%, 40%);
     }
 
-    .card_header li:hover img {
-        border: 1px solid hsla(200, 24%, 99%, 0.8);
-        background: hsl(200, 16%, 40%);
-    }
-
     .table_of_contents ol li a,
     li a,
     li a:focus,
@@ -3462,7 +3452,6 @@ h6 {
     }
 
     .home_page_grid li img,
-    .card_header img,
     .gear_image_container img {
         width: 100%;
         max-height: 75vh;
