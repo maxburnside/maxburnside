@@ -428,6 +428,8 @@ a:hover,
 
 .gear_card:hover .gear_card_button {
     border-radius: 0.25rem;
+    background: hsl(136, 100%, 36%);
+    border: 1px solid hsl(136, 100%, 32%);
 }
 
 .gear_card_image_credit {
@@ -2005,12 +2007,13 @@ h6 {
 .gear_card_button {
     padding: 12px 24px;
     border-radius: 0.5rem;
-    background: hsl(136, 100%, 40%);
+/*    background: hsl(136, 100%, 40%);*/
     font-size: 14px;
     line-height: 1;
     text-align: center;
     margin: 0 auto;
-    border: 1px solid hsla(200, 8%, 8%, 0.1);
+/*    border: 1px solid hsla(200, 8%, 8%, 0.1);*/
+    border: 1px solid hsl(136, 100%, 40%);
     margin-top: 1.5rem;
     display: block;
     width: 100%;
@@ -2019,7 +2022,8 @@ h6 {
 }
 
 .gear_card_button:hover {
-    background: hsl(136, 100%, 44%);
+    background: hsl(136, 100%, 40%);
+    border: 1px solid hsl(136, 100%, 36%);
 }
 
 .gear_card .card_footer {
@@ -3370,14 +3374,20 @@ h6 {
     }
 
     .gear_card_button {
+        background: transparent;
+        color: hsl(200, 16%, 99%) !important;
+        border: 1px solid hsl(200, 16%, 99%);
+    }
+
+    .gear_card:hover .gear_card_button {
         background: hsl(136, 100%, 36%);
-        color: hsl(136, 100%, 8%) !important;
-        border: 1px solid hsla(200, 100%, 98%, 0.3);
+        color: hsl(200, 8%, 8%) !important;
+        border: 1px solid hsl(136, 100%, 32%);
     }
 
     .gear_card_button:hover {
         background: hsl(136, 100%, 40%);
-        color: black !important;
+        color: hsl(200, 8%, 8%) !important;
         border: 1px solid hsla(136, 100%, 48%, 0.5);
     }
 
