@@ -882,6 +882,24 @@ ul li {
 /*    background: hsl(136, 100%, 36%);*/
 }
 
+.gear_image_container svg {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 16px;
+    width: 16px;
+    opacity: 0;
+    transition: 0.15s opacity;
+    fill: hsl(200, 16%, 99%);
+}
+
+.gear_card:hover .gear_image_container svg {
+    opacity: 1;
+    transition: 0.3s opacity;
+}
+
 .gear_image_container img {
     max-height: 100%;
     min-width: 100%;
@@ -3199,7 +3217,7 @@ h6 {
     }
 
     .contentstack_hero_image {
-        background: hsl(32, 100%, x);
+        background: hsl(32, 100%, 50%);
     }
 
     .contentstack_text_link {
@@ -3275,6 +3293,10 @@ h6 {
         background: transparent;
 /*        background: transparent !important;*/
         transition: 0.3s all;
+    }
+
+    .gear_image_container svg { 
+        fill: hsl(200, 16%, 8%);
     }
 
     .gear_card:hover .gear_image_container img {
