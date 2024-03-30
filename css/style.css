@@ -879,7 +879,7 @@ ul li {
     position: relative;
     height: 100%;
     width: 100%;
-/*    background: hsl(136, 100%, 36%);*/
+    /*    background: hsl(136, 100%, 36%);*/
 }
 
 .gear_image_container svg {
@@ -888,8 +888,8 @@ ul li {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    height: 16px;
-    width: 16px;
+    height: 24px;
+    width: 40px;
     opacity: 0;
     transition: 0.15s opacity;
     fill: hsl(200, 16%, 99%);
@@ -2813,6 +2813,11 @@ h6 {
         line-height: 1.5;
     }
 
+    .gear_image_container svg {
+        height: 16px;
+        width: 26.67px;
+    }
+
     .site_navbar {
         background: hsl(200, 16%, 99%);
         height: 4rem;
@@ -3288,14 +3293,14 @@ h6 {
     }
 
     .gear_image_container img {
-/*        opacity: 0.85;*/
+        /*        opacity: 0.85;*/
         border: none !important;
         background: transparent;
-/*        background: transparent !important;*/
+        /*        background: transparent !important;*/
         transition: 0.3s all;
     }
 
-    .gear_image_container svg { 
+    .gear_image_container svg {
         fill: hsl(200, 16%, 8%);
     }
 
@@ -3518,8 +3523,9 @@ h6 {
     .home_page_grid li img,
     .gear_image_container img {
         width: 100%;
-        max-height: 75vh;
+        /*        max-height: 75vh;*/
         min-width: 0;
+        background: transparent;
     }
 
     .case_study_hero_image {
@@ -3828,4 +3834,20 @@ h6 {
         font-size: 1.125rem;
     }
 
+}
+
+@media screen and (max-width: 360px) {
+
+    .inner_nav_container {
+        padding: 0 1.25rem 0 0.75rem;
+    }
+
+    .home_page_grid,
+    .gear_page_grid {
+        padding: 0;
+    }
+
+    .gear_disclaimer {
+        margin: -2rem auto 0;
+    }
 }
