@@ -895,6 +895,11 @@ ul li {
     fill: hsl(200, 16%, 99%);
 }
 
+.gear_image_phone svg {
+    height: 12px;
+    width: 20px;
+}
+
 .gear_card:hover .gear_image_container svg {
     opacity: 1;
     transition: 0.3s opacity;
@@ -2816,6 +2821,11 @@ h6 {
     .gear_image_container svg {
         height: 16px;
         width: 26.67px;
+    }
+
+    .gear_image_phone svg {
+        height: 12px;
+        width: 20px;
     }
 
     .site_navbar {
