@@ -922,6 +922,9 @@ ul li {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 960px;
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
 .case_study_image_container {
