@@ -320,7 +320,8 @@ s {
 .site_navbar ul li a:hover,
 .site_navbar ul li a:focus,
 .badge,
-.photo_tag {
+.photo_tag,
+.blog_post_text a:hover {
     color: hsl(136, 56%, 32%);
 }
 
@@ -2009,6 +2010,34 @@ footer,
     max-width: unset;
 }
 
+.page_hero .blog_post_text {
+    padding: 4rem 2rem 8rem 2rem;
+}
+
+.page_hero .blog_post_text h1 {
+    margin-top: 4rem;
+}
+
+.blog_home_link {
+    position: relative;
+    line-height: 1rem;
+    height: 1rem;
+    display: inline-block;
+    width: auto;
+}
+
+.blog_home_link::before {
+    content: '';
+    position: absolute;
+    background-image: url('data:image/svg+xml,<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.28852 4.61862L7.95357 1.95357L6 0L0 6L6 12L7.95357 10.0464L5.28853 7.38139H12V4.61862H5.28852Z" fill="hsl(136, 64%, 40%)"/></svg>');
+    background-repeat: no-repeat;
+    left: -20px;
+    top: 2px;
+    width: 12px;
+    height: 12px;
+}
+
+
 .blog_post_text ul li {
     list-style: disc;
     margin-left: 2rem;
@@ -2962,6 +2991,10 @@ h6 {
         align-items: flex-start;
     }
 
+    .page_hero .blog_post_text {
+        padding: 6rem 2rem;
+    }
+
     .gear_section .gear_description {
         line-height: 1.5;
     }
@@ -3314,7 +3347,8 @@ h6 {
     .site_navbar ul li a:hover,
     .site_navbar ul li a:focus,
     .badge,
-    .photo_tag {
+    .photo_tag,
+    .blog_post_text a:hover {
         color: hsl(136, 64%, 36%);
     }
 
