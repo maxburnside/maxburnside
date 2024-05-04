@@ -321,7 +321,7 @@ s {
 .site_navbar ul li a:focus,
 .badge,
 .photo_tag,
-.blog_post_text a:hover {
+.blog_post_hero_text a:hover {
     color: hsl(136, 56%, 32%);
 }
 
@@ -1217,7 +1217,8 @@ footer,
 .home_hero .text_container,
 .page_hero .text_container,
 .home_work_showcase h3,
-.blog_work_showcase h3 {
+.blog_work_showcase h3,
+.blog_post_text {
     margin: 0 auto;
     max-width: 960px;
     padding: 0 2rem;
@@ -2010,20 +2011,25 @@ footer,
     max-width: unset;
 }
 
-.page_hero .blog_post_text {
-    padding: 4rem 2rem 8rem 2rem;
+.page_hero .blog_post_hero_text {
+    padding: 2rem;
 }
 
-.page_hero .blog_post_text h1 {
-    margin-top: 4rem;
+.page_hero .blog_post_hero_text h1 {
+    margin-top: 6rem;
 }
 
 .blog_home_link {
     position: relative;
     line-height: 1rem;
-    height: 1rem;
     display: inline-block;
     width: auto;
+    padding: 0.5rem 0.5rem 0.5rem 1.875rem;
+    border-radius: 0.5rem;
+}
+
+.blog_home_link:hover {
+    background: hsla(200, 16%, 48%, 0.25);
 }
 
 .blog_home_link::before {
@@ -2031,17 +2037,30 @@ footer,
     position: absolute;
     background-image: url('data:image/svg+xml,<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.28852 4.61862L7.95357 1.95357L6 0L0 6L6 12L7.95357 10.0464L5.28853 7.38139H12V4.61862H5.28852Z" fill="hsl(136, 64%, 40%)"/></svg>');
     background-repeat: no-repeat;
-    left: -20px;
-    top: 2px;
+    left: 8px;
+    top: 10px;
     width: 12px;
     height: 12px;
 }
 
+.blog_post_text {
+    margin-top: 6rem;
+}
+
+.blog_post_text p {
+    margin: 0;
+    font-size: 18px;
+}
 
 .blog_post_text ul li {
     list-style: disc;
     margin-left: 2rem;
     padding-left: 0.5rem;
+}
+
+.bottom_of_blog_post {
+    margin: 10rem auto 4rem;
+    gap: 24px;
 }
 
 /* END Blog Styling */
@@ -2991,8 +3010,12 @@ h6 {
         align-items: flex-start;
     }
 
-    .page_hero .blog_post_text {
-        padding: 6rem 2rem;
+    .page_hero .blog_post_hero_text {
+        padding: 6rem 2rem 2rem;
+    }
+
+    .bottom_of_blog_post {
+        margin: 8rem auto 2rem;
     }
 
     .gear_section .gear_description {
@@ -3348,7 +3371,7 @@ h6 {
     .site_navbar ul li a:focus,
     .badge,
     .photo_tag,
-    .blog_post_text a:hover {
+    .blog_post_hero_text a:hover {
         color: hsl(136, 64%, 36%);
     }
 
