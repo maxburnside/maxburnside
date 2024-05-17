@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta id='viewport' name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5'>
+    <meta name='robots' content='noimageindex'>
+    <meta name='description' content="As 2023 winds down, there is discussion of how technology such as AI is changing our world. That's a valid discussion point for a different post, as it certainly is changing how we interact with media, computers, and information. What I'm more surprised by, rather, is how a decades old technology has managed to stay relevant all these years later.">
+    <meta name='keywords' content='SMS technology, app development, Max Burnside, text message formatting, UI design, web-based application, React, HTML, CSS, JavaScript, autodidact, tech blog, entrepreneurship'>
+    <meta name='author' content='Max Burnside'>
+    <meta name='target' content='all'>
+    <meta name='audience' content='all'>
+    <meta name='coverage' content='Worldwide'>
+    <meta name='distribution' content='Global'>
+    <meta name='HandheldFriendly' content='True'>
+    <meta name='MSThemeCompatible' content='yes'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='default'>
+    <meta name='msapplication-navbutton-color' content='#101619'>
+    <meta name='mssmarttagspreventparsing' content='true'>
+    <link rel='icon' type='image/svg+xml' sizes='16x16' href='/favicon.svg'>
+    <link rel='icon' type='image/png' sizes='16x16' href='/favicon.png'>
+    <link rel='manifest' href='/manifest.json'>
+    <meta name='msapplication-TileColor' content='#101619'>
+    <meta name='theme-color' content='#101619'>
+    <meta name='twitter:card' content='summary'>
+    <meta name='twitter:site' content='@maxburnside'>
+    <meta name='twitter:creator' content='@maxburnside'>
+    <meta name='twitter:image:alt' content="Just Tell Me When You've Launched">
+    <meta name='twitter:card' content='summary_large_image'>
+    <meta name='twitter:site' content='@maxburnside'>
+    <meta name='twitter:creator' content='@maxburnside'>
+    <meta name='twitter:title' content="Just Tell Me When You've Launched">
+    <meta name='twitter:description' content="As 2023 winds down, there is discussion of how technology such as AI is changing our world. That's a valid discussion point for a different post, as it certainly is changing how we interact with media, computers, and information. What I'm more surprised by, rather, is how a decades old technology has managed to stay relevant all these years later.">
+    <meta name='twitter:image' content='https://maxburnside.com/img/blog/im_going_to_build_an_app/preview.jpg'>
+    <meta property='og:type' content='website'>
+    <meta property='og:url' content='https://maxburnside.com/blog/im_going_to_build_an_app'>
+    <meta property='og:title' content="Just Tell Me When You've Launched">
+    <meta property='og:site_name' content='Max Burnside'>
+    <meta property='og:description' content="As 2023 winds down, there is discussion of how technology such as AI is changing our world. That's a valid discussion point for a different post, as it certainly is changing how we interact with media, computers, and information. What I'm more surprised by, rather, is how a decades old technology has managed to stay relevant all these years later.">
+    <meta property='og:image' content='https://maxburnside.com/img/blog/im_going_to_build_an_app/preview.jpg'>
+    <meta name='color-scheme' content='dark light'>
+    <title>Just Tell Me When You've Launched - Max Burnside [Blog Post]</title>
+    <link href='../css/style.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class='site_navbar'>
+            <div class='inner_nav_container'>
+                <a class='nav_logo' href='/' title="Go home">
+                    <svg width='80' height='48' viewBox='0 0 80 48' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <path class='mb_logo_m' d='M25.7448 15.7982C22.2959 6.31363 13.2819 0 3.18974 0H0V48H16V28L20 40H36L40 28V48H56V0H52.8103C42.7181 0 33.7041 6.31363 30.2552 15.7982L28 22L25.7448 15.7982Z' fill='#101619' />
+                        <path class='mb_logo_b' d='M73.57 14.5079C73.1521 16.0124 72.3924 17.3507 71.389 18.4482C76.8626 21.1964 80.466 27.0646 79.9512 33.6212C79.3139 41.7382 72.142 48 64 48H56V0H62C69.5687 0 75.5957 7.21531 73.57 14.5079Z' fill='#101619' />
+                    </svg>
+                </a>
+                <ul>
+                    <li>
+                        <a class='active' href='/blog.html' title="Blog Home">Blog</a>
+                    </li>
+                    <li>
+                        <a href='/gear.html' title='See the hardware & software I use'>Gear</a>
+                    </li>
+                    <li>
+                        <a href='/about.html' title="Learn more about me">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class='page_hero'>
+
+            <div class='home_hero_text_block text_container blog_post_hero_section'>
+                <a class="blog_home_link" href="/blog.html" title="View All Blog Posts">
+                    All Blog Posts
+                </a>
+                <img src="../img/blog/im_going_to_build_an_app/preview.jpg" alt="Preview SMS Logo"/>
+                <div class="heading_and_subheading">
+                    <h1>Just Tell Me When You've Launched</h1>
+                    <h4 class='text_block'>January 14, 2024</h4>
+                </div>
+            </div>
+
+            <div class="blog_post_text">
+                <p>
+                    As 2023 winds down, there is discussion of how technology such as AI is changing our world. What I'm more surprised by, rather, is how a decades old technology has managed to stay relevant all these years later. Short Message/Messaging Service or SMS (commonly referred to as "texting") has been around since the early 90's. Over 30 years since it's inception, it's still consistently utilized by nearly every large company in the industrialized world.
+                    <br />
+                    <br />
+                    <strong>But why?</strong>
+                    <br />
+                    <br />
+                </p>
+                    As is usually the case, there are a few reasons:
+                    <ul>
+                        <li>
+                            Cost
+                        </li>
+                        <li>
+                            Simplicity
+                        </li>
+                        <li>
+                            Reach
+                        </li>
+                        <li>
+                            Effectiveness
+                        </li>
+                    </ul>
+                    <br />
+                <p>
+                    With such a ubiquitous technology, I figured there must be an industry leading tool to check how text messages will be formatted. That was an incorrect assumption.
+                    <br />
+                    <br />
+                    While there are a number of services that allow you to send text messages to customers, none of them provide an exact representation of the formatting that users will see when the message gets to them. The previews provided are abstracted phone displays. When it comes to paying for every message (however small the financial cost) you're sending, you should know more precisely how they're going to look. With different screen sizes, font sizes, appearance settings and operating systems, how your message will look when the recipient receives the message can vary greatly.
+                    <br />
+                    <br />
+                    Discovering this void, I figured, "Why don't I just make this application?"
+                    <br />
+                    <br />
+                    I'm first and foremost a designer. Over the years, I’ve learn to code well enough to build out my design ideas. I started, as many do, with coding static websites (like the one that's hosting this blog post you're reading). Working at a variety of startups, wherein there was either a small development team, or just one developer, I found an increasing value in demonstrating how the UI should be implemented. At certain companies, I was “just a designer”, while at others I was actually coding the UI myself.
+                    <br />
+                    <br />
+                    But beyond the UI, I was interested in creating the entire application. That’s the journey I’m still on, and will be for some time.
+                    <br />
+                    <br />
+                    I'm an autodidact. I teach myself. It often takes longer. It's a messy path to knowledge. But it also ensures I better internalize lessons. As with any skill, the more you perform it the better you get (typically).
+                </p>
+                    <br />
+                    <h4>Technology Specifics</h4>
+                    <br />
+                    <p>
+                    The first iteration of the app will web-based. There are a few reasons for this:
+                    <ul>
+                        <li>
+                            Ease of publishing updates (no app store approval delays)
+                        </li>
+                        <li>
+                            Lowest barrier to entry for users. I’m planning to use X, Reddit, Threads and Instagram to share the site URL, and I want users to be able to jump right in.
+                        </li>
+                        <li>
+                            The planned experience works best when using a larger screen size, which are more readily available in web formats. While not specifically relegated to desktop users, designing a web application will make it possible for users on both Mac and Windows to preview multiple phone previews simultaneously.
+                        </li>
+                        <li>
+                            Ease of building quickly. While I have some experience in Objective-C and Swift, I have far more experience with HTML, CSS, and JS frameworks (the first iteration of the app will be built with React), which will make building the first version of the application much easier.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </section>
+        <section class="blog_work_showcase bottom_of_blog_post">
+            <h3>Related Posts</h3>
+            <a class="blog_post_preview_container" href="../blog/launching_preview_sms.html" title="Launching Preview SMS">
+                <div class="image_container">
+                    <img src="../img/blog/launching_preview_sms/preview.jpg" alt="Preview SMS Logo"/>
+                </div>
+                <div class="text_container">
+                    <h2>
+                        Launching Preview SMS
+                    </h2>
+                    <div class="secondary_line">
+                        <h5>
+                            May 13, 2024
+                        </h5>
+                        <ul>
+                            <li>Preview SMS</li>
+                            <li>React</li>
+                            <li>Product Design</li>
+                        </ul>
+                    </div>
+                    <p>
+                        After months spent designing, redesigning, refining, scrolling Stackoverflow, making failed API calls, encountering build errors, and code rewrites later, I’m finally launching Preview SMS...
+                    </p>
+                </div>
+            </a>
+            <a class="blog_post_preview_container" href="#" title="The Preview SMS Technology Stack">
+                <div class="text_container">
+                    <h2>
+                        The Preview SMS Technology Stack
+                    </h2>
+                    <div class="secondary_line">
+                        <h5>
+                            March 20, 2024
+                        </h5>
+                        <ul>
+                            <li>Preview SMS</li>
+                            <li>React</li>
+                            <li>Product Design</li>
+                        </ul>
+                    </div>
+                    <p>
+                        When building a product, there are a number of different services and technologies that need to be used in order to create the product in a timely manner as well as provide the best possible user experience...
+                    </p>
+                </div>
+            </a>    
+        </section>
+    </main>
+    <footer>
+        <div class='footer_container'>
+            <ul class='social_media_icons'>
+                <li>
+                    <a class='dribbble' href='https://dribbble.com/maxburnside' target='_blank' title='Visit my Dribbble profile' aria-label='Visit my Dribbble profile'></a>
+                </li>
+                <li>
+                    <a class='mail' href='mailto:hello@maxburnside.com' title='Send me an email' aria-label='Send me an email'></a>
+                </li>
+                <li>
+                    <a class='github' href='https://github.com/maxburnside' target='_blank' title='Visit my GitHub profile' aria-label='Visit my GitHub profile'></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
