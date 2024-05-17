@@ -3058,10 +3058,6 @@ h6 {
         border-radius: 0.75rem;
     }
 
-    .site_navbar ul li:not(:first-child) {
-        margin: 0 0 0 0.75rem;
-    }
-
     .link_container {
         position: relative;
         top: 13.5rem;
@@ -3715,10 +3711,6 @@ h6 {
 
     .inner_nav_container {
         padding: 0 1.5rem;
-    }
-
-    .site_navbar ul li:not(:first-child) {
-        margin: 0 0 0 0.5rem;
     }
 
     .site_navbar ul li a {
