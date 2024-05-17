@@ -2056,7 +2056,7 @@ footer,
     object-fit: cover;
     overflow: hidden;
     height: 66%;
-    max-height: 360px;
+    max-height: 440px;
     border-radius: 0.5rem;
 }
 
@@ -2096,7 +2096,7 @@ footer,
 }
 
 .blog_post_text {
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .blog_post_text p,
