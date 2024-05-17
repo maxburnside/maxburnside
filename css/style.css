@@ -321,7 +321,7 @@ s {
 .site_navbar ul li a:focus,
 .badge,
 .photo_tag,
-.blog_post_hero_text a:hover {
+.blog_post_hero_section a:hover {
     color: hsl(136, 56%, 32%);
 }
 
@@ -493,7 +493,7 @@ h1 {
     color: hsl(200, 16%, 8%);
     font-size: 3.5rem;
     font-weight: 600;
-    letter-spacing: 0.25px;
+    letter-spacing: 0.125px;
     line-height: 1.125;
     padding: 0;
     word-break: break-word;
@@ -1233,9 +1233,12 @@ footer,
     padding: 8rem 2rem;
 }
 
-.home_work_showcase h3,
-.blog_work_showcase h3 {
+.home_work_showcase h3 {
     margin-bottom: 1.5rem;
+}
+
+.blog_work_showcase h3 {
+    margin-bottom: 0;
 }
 
 /*.text_block {
@@ -2011,27 +2014,58 @@ footer,
     max-width: unset;
 }
 
-.page_hero .blog_post_hero_text {
-    padding: 2rem;
+.page_hero .blog_post_hero_section {
+    padding: 1rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-.page_hero .blog_post_hero_text h1 {
-    margin-top: 6rem;
+.heading_and_subheading {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.page_hero .blog_post_hero_section img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.page_hero .blog_post_hero_section img {
+    object-fit: cover;
+    overflow: hidden;
+    height: 66%;
+    max-height: 320px;
+    border-radius: 0.5rem;
+}
+
+.page_hero .blog_post_hero_section h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.page_hero .blog_post_hero_section .text_block {
+    margin: 0;
+    padding: 0;
 }
 
 .blog_home_link {
     position: relative;
     line-height: 1rem;
-    display: inline-block;
+    display: block;
     width: auto;
+    max-width: 146px;
     padding: 0.5rem 0.5rem 0.5rem 1.875rem;
     border-radius: 0.5rem;
 }
 
-.blog_home_link:hover {
+/*.blog_home_link:hover {
     background: hsla(200, 16%, 48%, 0.25);
 }
-
+*/
 .blog_home_link::before {
     content: '';
     position: absolute;
@@ -2044,12 +2078,18 @@ footer,
 }
 
 .blog_post_text {
-    margin-top: 6rem;
+    margin-top: 3rem;
 }
 
-.blog_post_text p {
+.blog_post_text p,
+.blog_post_text ul,
+.blog_post_text ul li {
     margin: 0;
     font-size: 18px;
+}
+
+.blog_post_text ul {
+    margin-top: 1rem;
 }
 
 .blog_post_text ul li {
@@ -2144,7 +2184,8 @@ h2,
 .work_card_text_container span h5,
 .work_responsibilities ul li,
 .case_study_list li,
-p {
+p,
+.blog_post_text {
     color: hsl(200, 16%, 28%);
 }
 
@@ -3010,7 +3051,11 @@ h6 {
         align-items: flex-start;
     }
 
-    .page_hero .blog_post_hero_text {
+    .page_hero .blog_post_hero_section img {
+        height: 100%;
+    }
+
+    .page_hero .blog_post_hero_section {
         padding: 6rem 2rem 2rem;
     }
 
@@ -3344,7 +3389,8 @@ h6 {
     .case_study_company p,
     .company_name,
     .next_case_study_section .text_container h6,
-    .gear_card h5 strong {
+    .gear_card h5 strong,
+    .blog_post_text {
         color: hsl(200, 16%, 72%);
         text-decoration: none;
     }
@@ -3367,7 +3413,7 @@ h6 {
     .site_navbar ul li a:focus,
     .badge,
     .photo_tag,
-    .blog_post_hero_text a:hover {
+    .blog_post_hero_section a:hover {
         color: hsl(136, 64%, 36%);
     }
 
@@ -3489,7 +3535,7 @@ h6 {
     .case_study_list li,
     h2,
     .work_card_text_container span h5 {
-        color: hsl(200, 16%, 80%);
+        color: hsl(200, 16%, 72%);
     }
 
     h6 {
@@ -3737,6 +3783,19 @@ h6 {
         padding: 8rem 1.5rem;
     }
 
+    .page_hero .blog_post_hero_section {
+        padding: 6rem 1.5rem 2rem;
+    }
+
+    .blog_post_text {
+        padding: 0 1.5rem;
+    }
+
+    .blog_post_text ul li {
+        margin-left: 1rem;
+        padding-left: 0.5rem;
+    }
+
     .home_page_grid {
         padding: 0 0.75rem;
     }
@@ -3762,7 +3821,6 @@ h6 {
     .blog_post_preview_container .secondary_line {
         gap: 12px;
     }
-
 
     .case_study_hero_image {
         height: 70vh;
