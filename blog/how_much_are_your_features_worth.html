@@ -6,7 +6,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta id='viewport' name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5'>
     <meta name='robots' content='noimageindex'>
-    <meta name='description' content="As 2023 winds down, there is discussion of how technology such as AI is changing our world. That's a valid discussion point for a different post, as it certainly is changing how we interact with media, computers, and information. What I'm more surprised by, rather, is how a decades old technology has managed to stay relevant all these years later.">
+    <meta name='description' content="While I’m planning the features for Preview SMS, I’m also planning the split of which features will be available to all users, for no cost, and which features will only be accessible for paying users (whether they purchase 1 year subscription, or a lifetime of access).">
     <meta name='keywords' content='SMS technology, app development, Max Burnside, text message formatting, UI design, web-based application, React, HTML, CSS, JavaScript, autodidact, tech blog, entrepreneurship'>
     <meta name='author' content='Max Burnside'>
     <meta name='target' content='all'>
@@ -32,13 +32,13 @@
     <meta name='twitter:site' content='@maxburnside'>
     <meta name='twitter:creator' content='@maxburnside'>
     <meta name='twitter:title' content="How Much Are Your Features Worth?">
-    <meta name='twitter:description' content="As 2023 winds down, there is discussion of how technology such as AI is changing our world. That's a valid discussion point for a different post, as it certainly is changing how we interact with media, computers, and information. What I'm more surprised by, rather, is how a decades old technology has managed to stay relevant all these years later.">
+    <meta name='twitter:description' content="While I’m planning the features for Preview SMS, I’m also planning the split of which features will be available to all users, for no cost, and which features will only be accessible for paying users (whether they purchase 1 year subscription, or a lifetime of access).">
     <meta name='twitter:image' content='https://maxburnside.com/img/blog/how_much_are_your_features_worth/preview.jpg'>
     <meta property='og:type' content='website'>
     <meta property='og:url' content='https://maxburnside.com/blog/how_much_are_your_features_worth'>
     <meta property='og:title' content="How Much Are Your Features Worth?">
     <meta property='og:site_name' content='Max Burnside'>
-    <meta property='og:description' content="As 2023 winds down, there is discussion of how technology such as AI is changing our world. That's a valid discussion point for a different post, as it certainly is changing how we interact with media, computers, and information. What I'm more surprised by, rather, is how a decades old technology has managed to stay relevant all these years later.">
+    <meta property='og:description' content="While I’m planning the features for Preview SMS, I’m also planning the split of which features will be available to all users, for no cost, and which features will only be accessible for paying users (whether they purchase 1 year subscription, or a lifetime of access).">
     <meta property='og:image' content='https://maxburnside.com/img/blog/how_much_are_your_features_worth/preview.jpg'>
     <meta name='color-scheme' content='dark light'>
     <title>How Much Are Your Features Worth? - Max Burnside [Blog Post]</title>
@@ -88,66 +88,10 @@
 
             <div class="blog_post_text">
                 <p>
-                    As 2023 winds down, there is discussion of how technology such as AI is changing our world. What I'm more surprised by, rather, is how a decades old technology has managed to stay relevant all these years later. Short Message/Messaging Service or SMS (commonly referred to as "texting") has been around since the early 90's. Over 30 years since it's inception, it's still consistently utilized by nearly every large company in the industrialized world.
+                    While I’m planning the features for Preview SMS, I’m also planning the split of which features will be available to all users, for no cost, and which features will only be accessible for paying users (whether they purchase 1 year subscription, or a lifetime of access). There’s a fine balance between making the free version so good that nobody bothers upgrading and hampering the free experience too badly for users to get a true sense of what they would be purchasing access to, should they make the decision to pay for it.
                     <br />
                     <br />
-                    <strong>But why?</strong>
-                    <br />
-                    <br />
-                </p>
-                    As is usually the case, there are a few reasons:
-                    <ul>
-                        <li>
-                            Cost
-                        </li>
-                        <li>
-                            Simplicity
-                        </li>
-                        <li>
-                            Reach
-                        </li>
-                        <li>
-                            Effectiveness
-                        </li>
-                    </ul>
-                    <br />
-                <p>
-                    With such a ubiquitous technology, I figured there must be an industry leading tool to check how text messages will be formatted. That was an incorrect assumption.
-                    <br />
-                    <br />
-                    While there are a number of services that allow you to send text messages to customers, none of them provide an exact representation of the formatting that users will see when the message gets to them. The previews provided are abstracted phone displays. When it comes to paying for every message (however small the financial cost) you're sending, you should know more precisely how they're going to look. With different screen sizes, font sizes, appearance settings and operating systems, how your message will look when the recipient receives the message can vary greatly.
-                    <br />
-                    <br />
-                    Discovering this void, I figured, "Why don't I just make this application?"
-                    <br />
-                    <br />
-                    I'm first and foremost a designer. Over the years, I’ve learn to code well enough to build out my design ideas. I started, as many do, with coding static websites (like the one that's hosting this blog post you're reading). Working at a variety of startups, wherein there was either a small development team, or just one developer, I found an increasing value in demonstrating how the UI should be implemented. At certain companies, I was “just a designer”, while at others I was actually coding the UI myself.
-                    <br />
-                    <br />
-                    But beyond the UI, I was interested in creating the entire application. That’s the journey I’m still on, and will be for some time.
-                    <br />
-                    <br />
-                    I'm an autodidact. I teach myself. It often takes longer. It's a messy path to knowledge. But it also ensures I better internalize lessons. As with any skill, the more you perform it the better you get (typically).
-                </p>
-                    <br />
-                    <h4>Technology Specifics</h4>
-                    <br />
-                    <p>
-                    The first iteration of the app will web-based. There are a few reasons for this:
-                    <ul>
-                        <li>
-                            Ease of publishing updates (no app store approval delays)
-                        </li>
-                        <li>
-                            Lowest barrier to entry for users. I’m planning to use X, Reddit, Threads and Instagram to share the site URL, and I want users to be able to jump right in.
-                        </li>
-                        <li>
-                            The planned experience works best when using a larger screen size, which are more readily available in web formats. While not specifically relegated to desktop users, designing a web application will make it possible for users on both Mac and Windows to preview multiple phone previews simultaneously.
-                        </li>
-                        <li>
-                            Ease of building quickly. While I have some experience in Objective-C and Swift, I have far more experience with HTML, CSS, and JS frameworks (the first iteration of the app will be built with React), which will make building the first version of the application much easier.
-                        </li>
-                    </ul>
+                    The way that I’m planning to balance this split is to make the free version of the product helpful to many people. It should be a simple product, that allows users to come to the site, paste in text they’re workshopping for a message/series of messages and then have the results instantly. If they use the service often enough to warrant needing to see how different font sizes and phone screens show the message(s), then they’re able to do so for a very reasonable (in my humble opinion) price. That being said, if they never want to pay for the service, they will still get a great product experience, with accuracy of UI formatting that no other service provides.
                 </p>
             </div>
         </section>
