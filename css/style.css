@@ -477,13 +477,14 @@ a:hover,
     background: hsl(200, 16%, 92%);
 }
 
-.site_navbar a:hover,
-.home_hero .text_container,
-.page_hero .text_container,
-.work_card,
-.work_card_text {
+.site_navbar a:hover {
     transition: 0.12s all;
 }
+
+/*.home_hero .text_container,
+.page_hero .text_container,
+.work_card,
+.work_card_text*/
 
 p {
     line-height: 1.625;
@@ -885,11 +886,15 @@ ul li {
     transition: 0.1s border-radius, 0.2s background;
     margin-bottom: 1rem;
     border-radius: 1rem;
-    border: 1px solid hsla(200, 24%, 48%, 0.1);
     position: relative;
     height: 100%;
     width: 100%;
     /*    background: hsl(136, 100%, 36%);*/
+}
+
+.blog_post_preview_container .image_container img,
+.gear_image_container {
+    border: 1px solid hsla(200, 24%, 48%, 0.1);
 }
 
 .gear_image_container svg {
@@ -3071,13 +3076,17 @@ h6 {
         gap: 16px;
     }
 
-    .blog_post_preview_container .text_container {
-        gap: 16px;
-    }
-
     .blog_post_preview_container .image_container {
         min-width: unset;
         width: 100%;
+    }
+
+    .blog_post_preview_container .image_container img {
+        width: 100%;
+    }
+
+    .blog_post_preview_container .text_container {
+        gap: 16px;
     }
 
     .blog_post_preview_container .secondary_line {
@@ -3090,7 +3099,7 @@ h6 {
     }
 
     .page_hero .blog_post_hero_section {
-        padding: 6rem 2rem 2rem;
+        padding: 7rem 2rem 2rem;
         gap: 12px;
     }
 
@@ -3599,6 +3608,7 @@ h6 {
         background: hsl(200, 24%, 6%);
     }
 
+    .blog_post_preview_container .image_container img,
     .gear_image_container {
         border: 1px solid hsla(200, 12%, 99%, 0.05);
         box-shadow: none;
@@ -3819,11 +3829,11 @@ h6 {
     }
 
     .home_hero .text_container {
-        padding: 6rem 1.5rem 8rem;
+        padding: 6rem 1.5rem 4rem;
     }
 
     .page_hero .text_container {
-        padding: 8rem 1.5rem;
+        padding: 8rem 1.5rem 4rem;
     }
 
     .page_hero .blog_post_hero_section {
@@ -3856,8 +3866,16 @@ h6 {
         background: transparent;
     }
 
+    .blog_work_showcase {
+        margin: 0 auto;
+    }
+
     .blog_post_preview_container {
         padding: 1.5rem;
+    }
+
+    .blog_post_preview_container:hover {
+        background: transparent;
     }
 
     .blog_post_preview_container .text_container,
