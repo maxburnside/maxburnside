@@ -493,7 +493,7 @@ h1 {
     color: hsl(200, 16%, 8%);
     font-size: 3.5rem;
     font-weight: 600;
-    letter-spacing: 0.125px;
+    letter-spacing: -0.5px;
     line-height: 1.125;
     padding: 0;
     word-break: break-word;
@@ -1226,7 +1226,7 @@ footer,
 }
 
 .home_hero .text_container {
-    padding: 10rem 2rem 12rem;
+    padding: 7rem 2rem 12rem;
 }
 
 .page_hero .text_container {
@@ -1912,7 +1912,7 @@ footer,
     display: flex;
     flex-direction: column;
     gap: 32px;
-    margin: 2rem auto 4rem;
+    margin: 0 auto 4rem;
 }
 
 .blog_post_preview_container {
@@ -1976,7 +1976,7 @@ footer,
 
 .blog_post_preview_container .image_container img {
     overflow: hidden;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
 }
 
 .blog_post_preview_container:hover .image_container img {
@@ -2057,7 +2057,7 @@ footer,
     overflow: hidden;
     height: 66%;
     max-height: 440px;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
 }
 
 .page_hero .blog_post_hero_section h1 {
@@ -3061,7 +3061,7 @@ h6 {
     }
 
     .blog_work_showcase {
-        margin: 5rem auto 0;
+        margin: 3rem auto 0;
     }
 
     .blog_post_preview_container {
@@ -3094,6 +3094,10 @@ h6 {
 
     .bottom_of_blog_post {
         margin: 8rem auto 2rem;
+    }
+
+    .gear_page_grid {
+        padding: 4rem 1rem 1rem;
     }
 
     .gear_section .gear_description {
