@@ -3107,10 +3107,6 @@ h6 {
         margin-top: 0.75rem;
     }
 
-    .bottom_of_blog_post {
-        margin: 8rem auto 2rem;
-    }
-
     .gear_page_grid {
         padding: 4rem 1rem 1rem;
     }
@@ -3870,6 +3866,10 @@ h6 {
         margin: 0 auto;
     }
 
+    .bottom_of_blog_post {
+        margin: 3rem auto 0;
+    }
+
     .blog_post_preview_container {
         padding: 1.5rem;
     }
@@ -4197,6 +4197,14 @@ h6 {
         padding: 0 1.25rem 0 0.75rem;
     }
 
+    .home_hero .text_container,
+    .page_hero .text_container,
+    .home_work_showcase h3,
+    .blog_work_showcase h3 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
     .home_page_grid,
     .gear_page_grid {
         padding: 0;
@@ -4204,5 +4212,13 @@ h6 {
 
     .gear_disclaimer {
         margin: -2rem auto 0;
+    }
+
+    .blog_post_preview_container {
+        padding: 1.5rem 1rem;
+    }
+
+    .blog_post_text {
+        padding: 0 1rem;
     }
 }
