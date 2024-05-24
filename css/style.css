@@ -3879,6 +3879,10 @@ h6 {
         background: transparent;
     }
 
+    .blog_post_preview_container:hover > .image_container img {
+        border-radius: 1rem;
+    }
+
     .blog_post_preview_container .text_container,
     .blog_post_preview_container .secondary_line {
         gap: 12px;
