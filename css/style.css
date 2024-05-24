@@ -2040,10 +2040,10 @@ footer,
 }
 
 .page_hero .blog_post_hero_section {
-    padding: 1rem 2rem 2rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
 }
 
 .heading_and_subheading {
