@@ -2127,8 +2127,22 @@ footer,
     margin-top: 24px;
 }
 
-.blog_post_text a {
+.blog_post_text a,
+.blog_post_text a:hover {
     text-decoration: underline;
+}
+
+.blog_post_text img {
+    width: 100%;
+    height: auto;
+    margin-top: 48px;
+    border-radius: 8px;
+}
+
+.blog_post_text figcaption {
+    margin: 8px auto 48px;
+    text-align: center;
+    font-size: 14px;
 }
 
 .blog_post_text ul {
