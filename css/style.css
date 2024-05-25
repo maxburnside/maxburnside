@@ -617,6 +617,11 @@ a,
     color: hsl(200, 16%, 32%);
 }
 
+p a,
+.blog_post_text a {
+    color: hsl(136, 72%, 30%);
+}
+
 li a:hover,
 li a:focus {
     text-decoration: none;
@@ -2114,8 +2119,16 @@ footer,
     font-size: 18px;
 }
 
-.blog_post_text p {
+.blog_post_text p,
+.blog_post_text h2,
+.blog_post_text h3,
+.blog_post_text h4,
+.blog_post_text h5 {
     margin-top: 24px;
+}
+
+.blog_post_text a {
+    text-decoration: underline;
 }
 
 .blog_post_text ul {
@@ -3661,8 +3674,9 @@ h6 {
         color: hsl(200, 16%, 99%);
     }
 
-    p a {
-        color: hsl(128, 64%, 48%);
+    p a,
+    .blog_post_text a {
+        color: hsl(136, 64%, 48%);
     }
 
     ::selection {
