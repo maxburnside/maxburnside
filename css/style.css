@@ -2114,6 +2114,10 @@ footer,
     font-size: 18px;
 }
 
+.blog_post_text p {
+    margin-top: 24px;
+}
+
 .blog_post_text ul {
     margin-top: 1rem;
 }
