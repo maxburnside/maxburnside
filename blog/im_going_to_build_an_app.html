@@ -107,7 +107,7 @@
                         Simplicity: Text, emojis, and/or links only.
                     </li>
                     <li>
-                        Reach: Numbers range but there are around 7 billion mobile phone users (~88% of the world's population), and nearly every one of those phones is capable of receiving SMS. And this doesn't account for users with multiple devices capable of receiving SMS such as smart watches and tablets.
+                        Reach: Numbers range but there are around 7 billion mobile phone users (~88% of the world's population), and nearly every one of those phones is capable of receiving SMS messages.
                     </li>
                     <li>
                         Effectiveness: 98% open rate, and 90% of SMS are read within 3 minutes of delivery (<a href="https://www.twilio.com/en-us/solutions/text-marketing" target="_blank">Source: Twilio</a>)
@@ -117,7 +117,12 @@
                     With such a ubiquitous technology, I figured there must be an industry leading tool to check how text messages will be formatted. That was an incorrect assumption.
                 </p>
                 <p>
-                    While there are a number of services that allow you to send text messages to customers, none of them provide an exact representation of the formatting that users will see when the message gets to them. The previews provided are abstracted phone displays. When it comes to paying for every message (however small the financial cost) you're sending, you should know more precisely how they're going to look. With different screen sizes, font sizes, appearance settings and operating systems, how your message will look when the recipient receives the message can vary greatly.
+                    While there are a number of services that allow you to send text messages to customers, none of them provide an exact representation of the formatting that users will see when the message gets to them. The previews provided are often abstracted phone displays. Even when an actual device is shown, the formatting of the UI itself is incorrect, and there are no options to change the device, font size, operating system or appearance (light vs dark mode). To be generous, the current tools are lackluster.
+                </p>
+                <img src="../img/blog/im_going_to_build_an_app/current_options.png" alt="Current SMS Previewing Applications" width="400" height="300"/>
+                <figcaption>Current SMS Previewing Applications</figcaption>
+                <p>
+                    When it comes to paying for every message (however small the financial cost) you're sending, you should know more precisely how they're going to look. With different screen sizes, font sizes, appearance settings and operating systems, how your message will look when the recipient receives the message can vary greatly.
                 </p>
                 <p>
                     So I figured, "Why don't I just make this application?"
@@ -131,7 +136,6 @@
                 <p>
                     I'm an autodidact. I teach myself. It often takes longer. It's a messy path to knowledge. But it also ensures I better internalize lessons. As with any skill, the more you perform it the better you get (typically).
                 </p>
-                <h4>Technology Specifics</h4>
                 <p>
                     The first iteration of the app will web-based. There are a few reasons for this:
                 </p>
@@ -146,11 +150,11 @@
                             The planned experience works best when using a larger screen size, which are more readily available in web formats. While not specifically relegated to desktop users, designing a web application will make it possible for users on both Mac and Windows to preview multiple phone previews simultaneously.
                         </li>
                         <li>
-                            Ease of building quickly. While I have some experience in Objective-C and Swift, I have far more experience with HTML, CSS, and JS frameworks (the first iteration of the app will be built with React), which will make building the first version of the application much easier.
+                            Ease of building quickly. While I have some experience with Objective-C and Swift, I have far more experience with HTML, CSS, and JS frameworks (the first iteration of the app will be built with React), which will make building the first version of the application much easier.
                         </li>
                     </ul>
                 <p>
-                    I'm sure there will be lots of undoing and/or redoing some of the steps to build this first version. Time to get started on this adventure.
+                    I'm not sure what I'm getting myself into. But it'll be fun. I hope. Let's get this thing started.
                 </p>
             </div>
         </section>
