@@ -85,78 +85,76 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="blog_post_text">
-                <p>
-                    As 2023 winds down, there is nearly constant discussion around AI changing our world. But my interest currently is in a technology that's decades old. That might seem backwards but there is a method to this madness. First, the technology in question:
-                </p>
-                <p>
-                    Short Message/Messaging Service or SMS (commonly referred to as "texting") has been around since the early 90's. On the surface, it's an incredibly simple and boring technology. That's kind of the point, after all. Early devices weren't powerful and feature-packed, so a mobile messaging service had to be barebones. SMS has evolved into iMessage, WhatsApp, and Google Messages, but the core technology behind SMS hasn't.
-                </p>
-                <p>
-                    Now and increasingly so going forward, phone numbers are collected when signing up for services. They're a staple to online user profiles - whether as a secondary authentication method or a communication method for notifications, marketing updates, and product status updates. Over 30 years since it's inception, SMS messages are still used by just about every large company in the world.
-                </p>
-                <p>
-                    But why?
-                </p>
+        <section class="blog_post_text">
+            <p>
+                As 2023 winds down, there is nearly constant discussion around AI changing our world. But my interest currently is in a technology that's decades old. That might seem backwards but there is a method to this madness. First, the technology in question:
+            </p>
+            <p>
+                Short Message/Messaging Service or SMS (commonly referred to as "texting") has been around since the early 90's. On the surface, it's an incredibly simple and boring technology. That's kind of the point, after all. Early devices weren't powerful and feature-packed, so a mobile messaging service had to be barebones. SMS has evolved into iMessage, WhatsApp, and Google Messages, but the core technology behind SMS hasn't.
+            </p>
+            <p>
+                Now and increasingly so going forward, phone numbers are collected when signing up for services. They're a staple to online user profiles - whether as a secondary authentication method or a communication method for notifications, marketing updates, and product status updates. Over 30 years since it's inception, SMS messages are still used by just about every large company in the world.
+            </p>
+            <p>
+                But why?
+            </p>
+            <ul>
+                <li>
+                    <strong>Cost:</strong> Depending on service provider and plan, about a penny or two per message.
+                </li>
+                <li>
+                    <strong>Simplicity:</strong> Text, emojis, and/or links only.
+                </li>
+                <li>
+                    <strong>Reach:</strong> Numbers range but there are around 7 billion mobile phone users (~88% of the world's population), and nearly every one of those phones is capable of receiving SMS messages.
+                </li>
+                <li>
+                    <strong>Effectiveness:</strong> 98% open rate, and 90% of SMS are read within 3 minutes of delivery (<a href="https://www.twilio.com/en-us/solutions/text-marketing" target="_blank">Source: Twilio</a>)
+                </li>
+            </ul>
+            <p>
+                With such a widely used technology, I figured there must be an industry leading tool to check how text messages will be formatted. That was an incorrect assumption.
+            </p>
+            <p>
+                While there are a number of services that allow you to send text messages to customers, none of them provide an exact representation of the formatting that users will see when the message gets to them. The previews provided are often abstracted phone displays. Even when an actual device is shown, the formatting of the UI itself is incorrect, and there are no options to change the device, font size, operating system or appearance (light vs dark mode). To be generous, the current tools are lackluster.
+            </p>
+            <img src="img/blog/im_going_to_build_an_app/current_options.png" alt="Current SMS Previewing Applications" width="400" height="300"/>
+            <figcaption>Current SMS Previewing Applications</figcaption>
+            <p>
+                When it comes to paying for every message you're sending, you should know more precisely how they're going to look to recipients. With different screen sizes, font sizes, appearance settings and operating systems, how your message will look when the recipient receives the message can vary greatly.
+            </p>
+            <p>
+                So I figured, "Why don't I just create this application?"
+            </p>
+            <p>
+                I'm first and foremost a designer. Over the years, I’ve learn to code well enough to build out my design ideas. I started, as many do, with coding static websites (like the one that's hosting this blog post you're reading). Working at a variety of startups, wherein there was either a small development team, or just one developer, I found it helpful to be able to show how the UI designs should be implemented. At some companies, I was “just a designer”, while at others I was actually coding the UI myself.
+            </p>
+            <p>
+                But beyond just the UI, I was interested in creating the entire application. I've created some basic applications, but all used static data. The challenge here will be to build out an application that allows users to create accounts, and manage different settings for the best user experience.
+            </p>
+            <p>
+                The first iteration of the application will web-based. There are a few reasons for this:
+            </p>
                 <ul>
                     <li>
-                        <strong>Cost:</strong> Depending on service provider and plan, about a penny or two per message.
+                        <strong>Instant Updates:</strong> New changes/bug fixes are able to be pushed nearly instantly (a few minutes for the application to be re-built). No app store approval delays
                     </li>
                     <li>
-                        <strong>Simplicity:</strong> Text, emojis, and/or links only.
+                        <strong>Lowest Barrier to Entry:</strong> Users don't need to install/download anything. They can click on a link/type in the web application URL and instantly use it.
                     </li>
                     <li>
-                        <strong>Reach:</strong> Numbers range but there are around 7 billion mobile phone users (~88% of the world's population), and nearly every one of those phones is capable of receiving SMS messages.
+                        <strong>Larger Screens:</strong> The planned experience works best when using a larger screen size, which are more readily available in web formats. While not specifically relegated to desktop users, designing a web application will make it possible for users on both Mac and Windows to preview multiple phone previews simultaneously.
                     </li>
                     <li>
-                        <strong>Effectiveness:</strong> 98% open rate, and 90% of SMS are read within 3 minutes of delivery (<a href="https://www.twilio.com/en-us/solutions/text-marketing" target="_blank">Source: Twilio</a>)
+                        <strong>Speed of Building:</strong> While I have some experience with Objective-C and Swift, I have far more experience with HTML, CSS, and JS frameworks (the first iteration of the appplication will be built with React), which will make building the first version of the application much easier.
                     </li>
                 </ul>
-                <p>
-                    With such a widely used technology, I figured there must be an industry leading tool to check how text messages will be formatted. That was an incorrect assumption.
-                </p>
-                <p>
-                    While there are a number of services that allow you to send text messages to customers, none of them provide an exact representation of the formatting that users will see when the message gets to them. The previews provided are often abstracted phone displays. Even when an actual device is shown, the formatting of the UI itself is incorrect, and there are no options to change the device, font size, operating system or appearance (light vs dark mode). To be generous, the current tools are lackluster.
-                </p>
-                <img src="img/blog/im_going_to_build_an_app/current_options.png" alt="Current SMS Previewing Applications" width="400" height="300"/>
-                <figcaption>Current SMS Previewing Applications</figcaption>
-                <p>
-                    When it comes to paying for every message you're sending, you should know more precisely how they're going to look to recipients. With different screen sizes, font sizes, appearance settings and operating systems, how your message will look when the recipient receives the message can vary greatly.
-                </p>
-                <p>
-                    So I figured, "Why don't I just create this application?"
-                </p>
-                <p>
-                    I'm first and foremost a designer. Over the years, I’ve learn to code well enough to build out my design ideas. I started, as many do, with coding static websites (like the one that's hosting this blog post you're reading). Working at a variety of startups, wherein there was either a small development team, or just one developer, I found it helpful to be able to show how the UI designs should be implemented. At some companies, I was “just a designer”, while at others I was actually coding the UI myself.
-                </p>
-                <p>
-                    But beyond just the UI, I was interested in creating the entire application. I've created some basic applications, but all used static data. The challenge here will be to build out an application that allows users to create accounts, and manage different settings for the best user experience.
-                </p>
-                <p>
-                    The first iteration of the application will web-based. There are a few reasons for this:
-                </p>
-                    <ul>
-                        <li>
-                            <strong>Instant Updates:</strong> New changes/bug fixes are able to be pushed nearly instantly (a few minutes for the application to be re-built). No app store approval delays
-                        </li>
-                        <li>
-                            <strong>Lowest Barrier to Entry:</strong> Users don't need to install/download anything. They can click on a link/type in the web application URL and instantly use it.
-                        </li>
-                        <li>
-                            <strong>Larger Screens:</strong> The planned experience works best when using a larger screen size, which are more readily available in web formats. While not specifically relegated to desktop users, designing a web application will make it possible for users on both Mac and Windows to preview multiple phone previews simultaneously.
-                        </li>
-                        <li>
-                            <strong>Speed of Building:</strong> While I have some experience with Objective-C and Swift, I have far more experience with HTML, CSS, and JS frameworks (the first iteration of the appplication will be built with React), which will make building the first version of the application much easier.
-                        </li>
-                    </ul>
-                <p>
-                    I'm not sure what I'm getting myself into. But it'll be fun. I hope. If nothing else, it'll be educational.
-                </p>
-                <p>
-                    Let's get started.
-                </p>
-            </div>
+            <p>
+                I'm not sure what I'm getting myself into. But it'll be fun. I hope. If nothing else, it'll be educational.
+            </p>
+            <p>
+                Let's get started.
+            </p>
         </section>
         <section class="blog_work_showcase bottom_of_blog_post">
             <h3>Related Posts</h3>
