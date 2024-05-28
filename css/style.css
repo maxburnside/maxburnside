@@ -320,7 +320,8 @@ s {
 .site_navbar ul li a:hover,
 .site_navbar ul li a:focus,
 .badge,
-.photo_tag {
+.photo_tag,
+.blog_post_hero_section a:hover {
     color: hsl(136, 56%, 32%);
 }
 
@@ -330,6 +331,10 @@ s {
     box-shadow: none;
     color: hsl(200, 16%, 99%);
     cursor: default;
+}
+
+#blog_active_link.active:hover {
+    cursor: pointer;
 }
 
 .home_logo {
@@ -476,13 +481,14 @@ a:hover,
     background: hsl(200, 16%, 92%);
 }
 
-.site_navbar a:hover,
-.home_hero .text_container,
-.page_hero .text_container,
-.work_card,
-.work_card_text {
+.site_navbar a:hover {
     transition: 0.12s all;
 }
+
+/*.home_hero .text_container,
+.page_hero .text_container,
+.work_card,
+.work_card_text*/
 
 p {
     line-height: 1.625;
@@ -492,7 +498,7 @@ h1 {
     color: hsl(200, 16%, 8%);
     font-size: 3.5rem;
     font-weight: 600;
-    letter-spacing: 0.25px;
+    letter-spacing: -0.5px;
     line-height: 1.125;
     padding: 0;
     word-break: break-word;
@@ -511,6 +517,10 @@ h1,
 .home_hero h1 {
     margin-bottom: 0.75rem;
     margin-top: 0.75rem;
+}
+
+.home_hero_text_block h1 {
+    margin-bottom: 1.25rem;
 }
 
 h2 {
@@ -609,6 +619,11 @@ p a,
 a,
 .gear_card h5 {
     color: hsl(200, 16%, 32%);
+}
+
+p a,
+.blog_post_text a {
+    color: hsl(136, 72%, 30%);
 }
 
 li a:hover,
@@ -780,7 +795,8 @@ ul li {
     color: hsl(200, 16%, 8%);
 }
 
-.home_work_showcase {
+.home_work_showcase,
+.blog_work_showcase {
     width: 100%;
     /*    max-width: 1920px;*/
     padding: 0;
@@ -879,11 +895,15 @@ ul li {
     transition: 0.1s border-radius, 0.2s background;
     margin-bottom: 1rem;
     border-radius: 1rem;
-    border: 1px solid hsla(200, 24%, 48%, 0.1);
     position: relative;
     height: 100%;
     width: 100%;
     /*    background: hsl(136, 100%, 36%);*/
+}
+
+.blog_post_preview_container .image_container img,
+.gear_image_container {
+    border: 1px solid hsla(200, 24%, 48%, 0.1);
 }
 
 .gear_image_container svg {
@@ -1210,7 +1230,9 @@ footer,
 
 .home_hero .text_container,
 .page_hero .text_container,
-.home_work_showcase h3 {
+.home_work_showcase h3,
+.blog_work_showcase h3,
+.blog_post_text {
     margin: 0 auto;
     max-width: 960px;
     padding: 0 2rem;
@@ -1218,7 +1240,7 @@ footer,
 }
 
 .home_hero .text_container {
-    padding: 10rem 2rem 12rem;
+    padding: 7rem 2rem 12rem;
 }
 
 .page_hero .text_container {
@@ -1227,6 +1249,10 @@ footer,
 
 .home_work_showcase h3 {
     margin-bottom: 1.5rem;
+}
+
+.blog_work_showcase h3 {
+    margin-bottom: 0;
 }
 
 /*.text_block {
@@ -1894,6 +1920,308 @@ footer,
 
 /* END Case Study Page Styling */
 
+/* START Blog Styling */
+
+.blog_work_showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: 0 auto 4rem;
+}
+
+.blog_post_preview_container {
+    width: 100%;
+    max-width: 960px;
+    padding: 2rem;
+    border-radius: 2rem;
+    margin: 0 auto;
+    position: relative;
+    transition: 0.1s all;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: flex-start;
+}
+
+/*.blog_post_preview_container::before {
+    content: '';
+    position: absolute;
+    top: 2rem;
+    left: -1rem;
+    height: calc(100% - 4rem);
+    width: 0.25rem;
+    border-radius: 0.25rem;
+    background: hsla(200, 24%, 48%, 0.25);
+    transition: 0.2s all;
+}*/
+
+.blog_post_preview_container:hover {
+    background: hsla(200, 16%, 96%);
+    border-radius: 0;
+    transition: 0.2s all;
+}
+
+/*.blog_post_preview_container:hover::before {
+    background: hsl(136, 100%, 36%);
+    transition: 0.1s all;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 0;
+}*/
+
+.blog_post_preview_container:focus::before {
+    width: 0;
+}
+
+.blog_work_showcase a:hover,
+.blog_post_preview_container:hover h2,
+.blog_post_preview_container:hover h5,
+.blog_post_preview_container:hover ul,
+.blog_post_preview_container:hover ul li,
+.blog_post_preview_container:hover p {
+    color: black;
+}
+
+.blog_post_preview_container .image_container {
+    width: 100%;
+    min-width: 400px;
+}
+
+.blog_post_preview_container .image_container img {
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.blog_post_preview_container:hover .image_container img {
+    border-radius: 0;
+}
+
+.blog_post_preview_container .text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.blog_post_preview_container .secondary_line,
+.blog_post_preview_container .secondary_line ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog_post_preview_container .secondary_line {
+    gap: 16px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.blog_post_preview_container .secondary_line ul {
+    gap: 8px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.blog_post_preview_container .secondary_line ul li {
+    background: hsla(200, 16%, 48%, 0.25);
+    padding: 2px 12px;
+    border-radius: 16px;
+    line-height: 1rem;
+    font-size: 1rem;
+}
+
+.blog_post_preview_container h3,
+.blog_post_preview_container h4,
+.blog_post_preview_container h5 {
+    line-height: 1rem;
+}
+
+.blog_post_preview_container h2,
+.blog_post_preview_container h3,
+.blog_post_preview_container h4,
+.blog_post_preview_container h5 {
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    max-width: unset;
+}
+
+.page_hero .blog_post_hero_section {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.heading_and_subheading {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.page_hero .blog_post_hero_section img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.page_hero .blog_post_hero_section img {
+    object-fit: cover;
+    overflow: hidden;
+    height: 66%;
+    max-height: 480px;
+    border-radius: 1rem;
+}
+
+.page_hero .blog_post_hero_section h1 {
+    margin: 1.5rem 0 0;
+    padding: 0;
+    font-size: 3rem;
+}
+
+.page_hero .blog_post_hero_section .text_block {
+    margin: 0;
+    padding: 0;
+}
+
+.blog_home_link {
+    position: relative;
+    line-height: 1rem;
+    display: block;
+    width: auto;
+    max-width: 146px;
+    padding: 0.5rem 0.5rem 0.5rem 1.875rem;
+    border-radius: 0.5rem;
+}
+
+.blog_home_link:hover {
+    background: hsla(200, 16%, 48%, 0.25);
+}
+
+.blog_home_link::before {
+    content: '';
+    position: absolute;
+    background-image: url('data:image/svg+xml,<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.28852 4.61862L7.95357 1.95357L6 0L0 6L6 12L7.95357 10.0464L5.28853 7.38139H12V4.61862H5.28852Z" fill="hsl(136, 64%, 40%)"/></svg>');
+    background-repeat: no-repeat;
+    left: 8px;
+    top: 10px;
+    width: 12px;
+    height: 12px;
+}
+
+.blog_post_text {
+    margin-top: 2rem;
+}
+
+.blog_post_text p,
+.blog_post_text ul,
+.blog_post_text ul li {
+    margin: 0;
+    font-size: 18px;
+}
+
+.blog_post_text p,
+.blog_post_text h2,
+.blog_post_text h3,
+.blog_post_text h4,
+.blog_post_text h5 {
+    margin-top: 24px;
+}
+
+.blog_post_text a,
+.blog_post_text a:hover {
+    text-decoration: underline;
+}
+
+.blog_post_text .coffee_button {
+    max-width: 240px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.blog_post_text img {
+    width: 100%;
+    height: auto;
+    margin-top: 48px;
+    border-radius: 8px;
+}
+
+.blog_post_text figcaption {
+    margin: 8px auto 48px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.blog_post_text ul {
+    margin-top: 1rem;
+}
+
+.blog_post_text ul li {
+    list-style: disc;
+    margin-left: 2rem;
+    padding-left: 0.5rem;
+}
+
+.blog_post_text .larger_text {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.buy_me_a_coffee_container {
+    width: 100%;
+    background: white;
+    border:1px solid hsla(200, 24%, 48%, 0.1);
+    border-radius: 16px;
+    padding: 112px 32px 128px;
+    margin: 64px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+.buy_me_a_coffee_container svg {
+    position: absolute;
+    z-index: 1;
+    left: -48px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.5;
+}
+
+.blog_post_text .coffee_button a,
+.buy_me_a_coffee_container a {
+    color: hsl(200, 16%, 8%);
+}
+
+.buy_me_a_coffee_container a {
+    font-size: 16px;
+}
+
+.buy_me_a_coffee_container a,
+.buy_me_a_coffee_container h4 {
+    position: relative;
+    z-index: 2;
+}
+
+.buy_me_a_coffee_container h4 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.bottom_of_blog_post {
+    margin: 10rem auto 4rem;
+    gap: 32px;
+}
+
+/* END Blog Styling */
+
 .subsection_header {
     /*    position: -webkit-sticky;
     position: -moz-sticky;
@@ -1973,7 +2301,8 @@ h2,
 .work_card_text_container span h5,
 .work_responsibilities ul li,
 .case_study_list li,
-p {
+p,
+.blog_post_text {
     color: hsl(200, 16%, 28%);
 }
 
@@ -2012,7 +2341,8 @@ h6 {
     text-decoration: none !important;
 }
 
-.gear_card_button {
+.gear_card_button,
+.coffee_button {
     padding: 12px 24px;
     border-radius: 0.5rem;
     /*    background: hsl(136, 100%, 40%);*/
@@ -2029,9 +2359,24 @@ h6 {
     font-weight: 600;
 }
 
-.gear_card_button:hover {
+.coffee_button {
+    background: hsl(136, 100%, 40%);
+}
+
+.gear_card_button:hover,
+.coffee_button:hover {
     background: hsl(136, 100%, 40%);
     border: 1px solid hsl(136, 100%, 36%);
+}
+
+.coffee_button {
+    margin: 0;
+}
+
+.coffee_button:hover {
+    background: hsl(136, 100%, 44%);
+    border: 1px solid hsl(136, 100%, 36%);
+    color: hsl(200, 8%, 8%);
 }
 
 .gear_card .card_footer {
@@ -2789,6 +3134,10 @@ h6 {
     .gear_card {
         width: calc(50% - 1rem);
     }
+
+    .blog_post_preview_container {
+        border-radius: 0;
+    }
 }
 
 /*@media screen and (min-width: 761px) {
@@ -2824,6 +3173,69 @@ h6 {
         font-size: 5vmax;
         font-size: calc(15vw - 32px);
         font-size: 11vmin;
+    }
+
+    .blog_work_showcase {
+        margin: 3rem auto 0;
+    }
+
+    .blog_post_preview_container {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .blog_post_preview_container .image_container {
+        min-width: unset;
+        width: 100%;
+    }
+
+    .blog_post_preview_container .image_container img {
+        width: 100%;
+    }
+
+    .blog_post_preview_container .text_container {
+        gap: 16px;
+    }
+
+    .blog_post_preview_container .secondary_line {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .page_hero .blog_post_hero_section img {
+        height: 100%;
+    }
+
+    .page_hero .blog_post_hero_section {
+        padding: 7rem 2rem 2rem;
+        gap: 12px;
+    }
+
+    .page_hero .blog_post_hero_section h1 {
+        margin-top: 0.75rem;
+    }
+
+    .buy_me_a_coffee_container {
+        width: calc(100% + 4rem);
+        margin-left: -2rem;
+        border-radius: 0;
+        margin-top: 96px;
+        margin-bottom: 96px;
+        padding: 64px 32px;
+        gap: 40px;
+    }
+
+    .buy_me_a_coffee_container svg {
+        position: relative;
+        transform: none;
+        margin: 0 auto;
+        left: unset;
+        top: unset;
+        opacity: 1;
+    }
+
+    .gear_page_grid {
+        padding: 4rem 1rem 1rem;
     }
 
     .gear_section .gear_description {
@@ -2864,10 +3276,6 @@ h6 {
     .nav_logo,
     .site_navbar ul li a {
         border-radius: 0.75rem;
-    }
-
-    .site_navbar ul li:not(:first-child) {
-        margin: 0 0 0 0.75rem;
     }
 
     .link_container {
@@ -3135,6 +3543,11 @@ h6 {
         background: hsl(200, 16%, 8%);
     }
 
+    .buy_me_a_coffee_container {
+        background: hsl(200, 24%, 6%);
+        border: 1px solid hsla(180, 20%, 99%, 0.05);
+    }
+
     .subsection_header h4,
     .gear_card .card_footer ul li,
     .work_card_text_container span h5,
@@ -3156,7 +3569,8 @@ h6 {
     .case_study_company p,
     .company_name,
     .next_case_study_section .text_container h6,
-    .gear_card h5 strong {
+    .gear_card h5 strong,
+    .blog_post_text {
         color: hsl(200, 16%, 72%);
         text-decoration: none;
     }
@@ -3178,7 +3592,8 @@ h6 {
     .site_navbar ul li a:hover,
     .site_navbar ul li a:focus,
     .badge,
-    .photo_tag {
+    .photo_tag,
+    .blog_post_hero_section a:hover {
         color: hsl(136, 64%, 36%);
     }
 
@@ -3190,6 +3605,19 @@ h6 {
 
     .badge:hover::before {
         background: hsl(200, 16%, 8%);
+    }
+
+    .blog_post_preview_container:hover {
+        background: black;
+    }
+
+    .blog_work_showcase a:hover,
+    .blog_post_preview_container:hover h2,
+    .blog_post_preview_container:hover h5,
+    .blog_post_preview_container:hover ul,
+    .blog_post_preview_container:hover ul li,
+    .blog_post_preview_container:hover p {
+        color: white;
     }
 
     @-webkit-keyframes pulse {
@@ -3287,7 +3715,7 @@ h6 {
     .case_study_list li,
     h2,
     .work_card_text_container span h5 {
-        color: hsl(200, 16%, 80%);
+        color: hsl(200, 16%, 72%);
     }
 
     h6 {
@@ -3308,6 +3736,7 @@ h6 {
         background: hsl(200, 24%, 6%);
     }
 
+    .blog_post_preview_container .image_container img,
     .gear_image_container {
         border: 1px solid hsla(200, 12%, 99%, 0.05);
         box-shadow: none;
@@ -3359,8 +3788,9 @@ h6 {
         color: hsl(200, 16%, 99%);
     }
 
-    p a {
-        color: hsl(128, 64%, 48%);
+    p a,
+    .blog_post_text a {
+        color: hsl(136, 64%, 48%);
     }
 
     ::selection {
@@ -3381,10 +3811,16 @@ h6 {
         color: hsl(136, 56%, 32%);
     }
 
-    .gear_card_button {
+    .gear_card_button,
+    .coffee_button {
         background: transparent;
         color: hsl(200, 16%, 99%) !important;
-        border: 1px solid hsl(200, 16%, 99%);
+/*        border: 1px solid hsl(200, 16%, 99%);*/
+    }
+
+    .coffee_button {
+        background: hsl(136, 100%, 40%);
+        color: black !important;
     }
 
     .gear_card:hover .gear_card_button {
@@ -3393,10 +3829,15 @@ h6 {
         border: 1px solid hsl(136, 100%, 32%);
     }
 
-    .gear_card_button:hover {
+    .gear_card_button:hover,
+    .coffee_button:hover {
         background: hsl(136, 100%, 40%);
         color: hsl(200, 8%, 8%) !important;
         border: 1px solid hsla(136, 100%, 48%, 0.5);
+    }
+
+    .coffee_button:hover {
+        background: hsl(136, 100%, 44%);
     }
 
     .return_to_top_link {
@@ -3511,13 +3952,8 @@ h6 {
         padding: 0 1.5rem;
     }
 
-    .site_navbar ul li:not(:first-child) {
-        margin: 0 0 0 0.5rem;
-    }
-
     .site_navbar ul li a {
         padding: 0.625rem 0.5rem;
-        font-size: 10px;
     }
 
     .home_hero {
@@ -3526,17 +3962,31 @@ h6 {
 
     .home_hero .text_container,
     .page_hero .text_container,
-    .home_work_showcase h3 {
+    .home_work_showcase h3,
+    .blog_work_showcase h3 {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
 
     .home_hero .text_container {
-        padding: 6rem 1.5rem 8rem;
+        padding: 6rem 1.5rem 4rem;
     }
 
     .page_hero .text_container {
-        padding: 8rem 1.5rem;
+        padding: 8rem 1.5rem 4rem;
+    }
+
+    .page_hero .blog_post_hero_section {
+        padding: 6rem 1.5rem 2rem;
+    }
+
+    .blog_post_text {
+        padding: 0 1.5rem;
+    }
+
+    .blog_post_text ul li {
+        margin-left: 1rem;
+        padding-left: 0.5rem;
     }
 
     .home_page_grid {
@@ -3554,6 +4004,31 @@ h6 {
         /*        max-height: 75vh;*/
         min-width: 0;
         background: transparent;
+    }
+
+    .blog_work_showcase {
+        margin: 0 auto;
+    }
+
+    .bottom_of_blog_post {
+        margin: 3rem auto 0;
+    }
+
+    .blog_post_preview_container {
+        padding: 1.5rem;
+    }
+
+    .blog_post_preview_container:hover {
+        background: transparent;
+    }
+
+    .blog_post_preview_container:hover > .image_container img {
+        border-radius: 1rem;
+    }
+
+    .blog_post_preview_container .text_container,
+    .blog_post_preview_container .secondary_line {
+        gap: 12px;
     }
 
     .case_study_hero_image {
@@ -3870,6 +4345,14 @@ h6 {
         padding: 0 1.25rem 0 0.75rem;
     }
 
+    .home_hero .text_container,
+    .page_hero .text_container,
+    .home_work_showcase h3,
+    .blog_work_showcase h3 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
     .home_page_grid,
     .gear_page_grid {
         padding: 0;
@@ -3877,5 +4360,13 @@ h6 {
 
     .gear_disclaimer {
         margin: -2rem auto 0;
+    }
+
+    .blog_post_preview_container {
+        padding: 1.5rem 1rem;
+    }
+
+    .blog_post_text {
+        padding: 0 1rem;
     }
 }
