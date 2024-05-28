@@ -113,10 +113,10 @@
                 </li>
             </ul>
             <p>
-                With such a widely used technology, I figured there must be an industry leading tool to check how text messages will be formatted. That was an incorrect assumption.
+                With such a widely used technology, I figured there must be an industry leading tool to check how text messages will be formatted. But, I was wrong.
             </p>
             <p>
-                While there are a number of services that allow you to send text messages to customers, none of them provide an exact representation of the formatting that users will see when the message gets to them. The previews provided are often abstracted phone displays. Even when an actual device is shown, the formatting of the UI itself is incorrect, and there are no options to change the device, font size, operating system or appearance (light vs dark mode). To be generous, the current tools are lackluster.
+                While there are a number of services that allow you to send text messages to customers, none of them provide an exact representation of the formatting that users will see when the message gets to them. The previews provided are often abstracted phone displays with some semblance of chat bubbles shown. Even when an actual device is shown, the formatting of the UI itself is incorrect, and there are no options to change the device, font size, operating system or appearance (light vs dark mode). To be generous, the current tools are lackluster.
             </p>
             <img src="img/blog/im_going_to_build_an_app/current_options.png" alt="Current SMS Previewing Applications" width="400" height="300"/>
             <figcaption>Current SMS Previewing Applications</figcaption>
@@ -124,26 +124,35 @@
                 When you're paying for every message you're sending, you should know precisely how they're going to appear to your recipients. With different screen sizes, font sizes, appearance settings and operating systems, how your message will look when the recipient receives the message can vary greatly.
             </p>
             <p>
-                So I figured, "Why don't I just create this application?"
+                Seeing this problem as an opportunity, I figured, "Why don't I just create this application?"
             </p>
             <p>
-                I'm first and foremost a designer. Over the years, I’ve learn to code well enough to build out my design ideas. I started, as many do, with coding static websites (like the one that's hosting this blog post you're reading). Working at a variety of startups, wherein there was either a small development team, or just one developer, I found it helpful to be able to show how the UI designs should be implemented. At some companies, I was “just a designer”, while at others I was actually coding the UI myself.
+                I'm first and foremost a designer. Over the years, I’ve taught myself to code well enough to build out my design ideas. I started, as many do, with creating static websites (like this site you're currently browsing). Working at a variety of startups, where there was either a small development team, or just one developer, I found it helpful to be able to show how the UI designs should be implemented. At some companies, I was “just a designer”, while at others I was actually coding the UI myself.
             </p>
             <p>
-                But beyond just the UI, I was interested in creating the entire application. I've created some basic applications, but all used static data. The challenge here will be to build out an application that allows users to create accounts, and manage different settings for the best user experience.
+                Like anything you do for long enough, you reach a limit. I enjoyed creating the UI, but I felt like I wasn't really making the product - because I wasn't. I was making a (very important) piece of it. I wanted to create the whole thing.
+            </p>
+            <p>
+                I've created some basic applications, but all of them used static data, and didn't interact with other services. They were standlone applications set out to do a single task. Good for learning, bad for immersive user experience.
+            </p>
+            <p>
+                The challenge with this application I'm going to build will be to allow users to create accounts, and manage different settings for the best user experience. Later on, there will be other features I haven't even begun to plan just yet, and that will be an entirely new challenge to figure out how to build.
             </p>
             <p>
                 The initial version of the application will be web-based. There are a few reasons for this:
             </p>
                 <ul>
                     <li>
-                        <strong>Instant Updates:</strong> New changes/bug fixes are able to be pushed nearly instantly (a few minutes for the application to be re-built). No app store approval delays
+                        <strong>Instant Updates:</strong> I can push new product features and bug fixes nearly instantly (a few minutes for the application to be re-built). No app store approval delays.
                     </li>
                     <li>
-                        <strong>Lowest Barrier to Entry:</strong> Users don't need to install/download anything. They can click on a link/type in the web application URL and instantly use it.
+                        <strong>Lowest Barrier to Entry:</strong> Users don't need to install/download anything. They can click on a link/type in the web application URL and instantly use the application.
                     </li>
                     <li>
-                        <strong>Larger Screens:</strong> The planned experience works best when using a larger screen size, which are more readily available in web formats. While not specifically relegated to desktop users, designing a web application will make it possible for users on both Mac and Windows to preview multiple phone previews simultaneously.
+                        <strong>Larger Screens:</strong> The planned experience will work best when using larger screen sizes, which are more typically available to web users. Even large tablet screens aren't very big when compared to laptops and external monitors, and the larger the screen the better for an experience that will simultaneously display different devices.
+                    </li>
+                    <li>
+                        <strong>Wider Reach:</strong> Designing a web application will make it possible for users of all connected devices to preview multiple phone previews simultaneously.
                     </li>
                     <li>
                         <strong>Speed of Building:</strong> While I have some experience with Objective-C and Swift, I have far more experience with HTML, CSS, and JS frameworks, which will make building the first version of the application much easier.
