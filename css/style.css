@@ -2136,6 +2136,12 @@ footer,
     text-decoration: underline;
 }
 
+.blog_post_text .coffee_button {
+    max-width: 240px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .blog_post_text img {
     width: 100%;
     height: auto;
@@ -2162,6 +2168,50 @@ footer,
 .blog_post_text .larger_text {
     font-size: 24px;
     line-height: 36px;
+}
+
+.buy_me_a_coffee_container {
+    width: 100%;
+    background: white;
+    border:1px solid hsla(200, 24%, 48%, 0.1);
+    border-radius: 16px;
+    padding: 64px 32px 80px;
+    margin: 64px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+.buy_me_a_coffee_container svg {
+    position: absolute;
+    z-index: 1;
+    left: -48px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.blog_post_text .coffee_button a,
+.buy_me_a_coffee_container a {
+    color: hsl(200, 16%, 8%);
+}
+
+.buy_me_a_coffee_container a {
+    font-size: 16px;
+}
+
+.buy_me_a_coffee_container a,
+.buy_me_a_coffee_container h4 {
+    position: relative;
+    z-index: 2;
+}
+
+.buy_me_a_coffee_container h4 {
+    font-size: 18px;
+    margin: 0;
 }
 
 .bottom_of_blog_post {
@@ -2290,7 +2340,8 @@ h6 {
     text-decoration: none !important;
 }
 
-.gear_card_button {
+.gear_card_button,
+.coffee_button {
     padding: 12px 24px;
     border-radius: 0.5rem;
     /*    background: hsl(136, 100%, 40%);*/
@@ -2307,9 +2358,24 @@ h6 {
     font-weight: 600;
 }
 
-.gear_card_button:hover {
+.coffee_button {
+    background: hsl(136, 100%, 40%);
+}
+
+.gear_card_button:hover,
+.coffee_button:hover {
     background: hsl(136, 100%, 40%);
     border: 1px solid hsl(136, 100%, 36%);
+}
+
+.coffee_button {
+    margin: 0;
+}
+
+.coffee_button:hover {
+    background: hsl(136, 100%, 44%);
+    border: 1px solid hsl(136, 100%, 36%);
+    color: hsl(200, 8%, 8%);
 }
 
 .gear_card .card_footer {
@@ -3148,6 +3214,22 @@ h6 {
         margin-top: 0.75rem;
     }
 
+    .buy_me_a_coffee_container {
+        width: calc(100% + 4rem);
+        margin-left: -2rem;
+        border-radius: 0;
+        margin-top: 96px;
+        margin-bottom: 96px;
+    }
+
+    .buy_me_a_coffee_container svg {
+        position: relative;
+        transform: none;
+        margin: 0 auto;
+        left: unset;
+        top: unset;
+    }
+
     .gear_page_grid {
         padding: 4rem 1rem 1rem;
     }
@@ -3457,6 +3539,11 @@ h6 {
         background: hsl(200, 16%, 8%);
     }
 
+    .buy_me_a_coffee_container {
+        background: hsl(200, 24%, 6%);
+        border: 1px solid hsla(180, 20%, 99%, 0.05);
+    }
+
     .subsection_header h4,
     .gear_card .card_footer ul li,
     .work_card_text_container span h5,
@@ -3720,10 +3807,16 @@ h6 {
         color: hsl(136, 56%, 32%);
     }
 
-    .gear_card_button {
+    .gear_card_button,
+    .coffee_button {
         background: transparent;
         color: hsl(200, 16%, 99%) !important;
-        border: 1px solid hsl(200, 16%, 99%);
+/*        border: 1px solid hsl(200, 16%, 99%);*/
+    }
+
+    .coffee_button {
+        background: hsl(136, 100%, 40%);
+        color: black !important;
     }
 
     .gear_card:hover .gear_card_button {
@@ -3732,10 +3825,15 @@ h6 {
         border: 1px solid hsl(136, 100%, 32%);
     }
 
-    .gear_card_button:hover {
+    .gear_card_button:hover,
+    .coffee_button:hover {
         background: hsl(136, 100%, 40%);
         color: hsl(200, 8%, 8%) !important;
         border: 1px solid hsla(136, 100%, 48%, 0.5);
+    }
+
+    .coffee_button:hover {
+        background: hsl(136, 100%, 44%);
     }
 
     .return_to_top_link {
