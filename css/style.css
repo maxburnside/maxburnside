@@ -2165,7 +2165,7 @@ footer,
 .blog_post_text ol li,
 .blog_post_text ul li {
     list-style: disc;
-    margin-left: 2rem;
+    margin-left: 2.5rem;
     padding-left: 0.5rem;
 }
 
@@ -3992,9 +3992,13 @@ h6 {
         padding: 0 1.5rem;
     }
 
-    .blog_post_text ol li,
     .blog_post_text ul li {
         margin-left: 1rem;
+        padding-left: 0.5rem;
+    }
+
+    .blog_post_text ol li {
+        margin-left: 1.25rem;
         padding-left: 0.5rem;
     }
 
