@@ -2117,6 +2117,8 @@ footer,
 }
 
 .blog_post_text p,
+.blog_post_text ol,
+.blog_post_text ol li,
 .blog_post_text ul,
 .blog_post_text ul li {
     margin: 0;
@@ -2155,14 +2157,20 @@ footer,
     font-size: 14px;
 }
 
+.blog_post_text ol,
 .blog_post_text ul {
     margin-top: 1rem;
 }
 
+.blog_post_text ol li,
 .blog_post_text ul li {
     list-style: disc;
     margin-left: 2rem;
     padding-left: 0.5rem;
+}
+
+.blog_post_text ol li {
+    list-style: decimal;
 }
 
 .blog_post_text .larger_text {
@@ -3984,6 +3992,7 @@ h6 {
         padding: 0 1.5rem;
     }
 
+    .blog_post_text ol li,
     .blog_post_text ul li {
         margin-left: 1rem;
         padding-left: 0.5rem;
