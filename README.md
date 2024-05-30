@@ -1,24 +1,5 @@
-## Hi, I'm Max Burnside.
+### I recently launched <a href="https://previewsms.com#github_referral" target="_blank">Preview SMS</a>, which instantly shows you how recipients will see your messages.
 
-### I'm a designer who's been creating well-crafted products for over a decade.
+### 📚 <a href="https://maxburnside.com/blog#github_referral">Read my blog posts</a>
 
-#### I recently launched <a href="https://previewsms.com#github_referral" target="_blank">Preview SMS</a> - an application that instantly shows you how recipients will see your messages.
-
-#### 📚 <a href="https://maxburnside.com/blog#github_referral">Read my blog posts</a>
-
-#### 💻 <a href="https://maxburnside.com/gear#github_referral">Check out the gear I use</a>
-
-<!--
-**maxburnside/maxburnside** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 💻 <a href="https://maxburnside.com/gear#github_referral">Check out the gear I use</a>
