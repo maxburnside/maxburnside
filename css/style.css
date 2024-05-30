@@ -41,7 +41,7 @@ body,
 .case_study_project h3,
 .next_case_study_section .text_container h6,
 .next_case_study_section .text_container a {
-    background: hsl(200, 16%, 99%);
+    background: hsl(200, 16%, 96%);
 }
 
 html,
@@ -1956,7 +1956,7 @@ footer,
 }*/
 
 .blog_post_preview_container:hover {
-    background: hsla(200, 16%, 96%);
+    background: hsla(136, 32%, 88%);
     border-radius: 0;
     transition: 0.2s all;
 }
