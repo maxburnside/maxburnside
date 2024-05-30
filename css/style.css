@@ -392,6 +392,7 @@ a:hover,
     /*    background: hsla(136, 100%, 36%, 1) !important;*/
     border-radius: 0;
     transition: 0.1s border-radius, 0.5s background;
+    border: 1px solid hsla(200, 24%, 48%, 0.5);
 }
 
 .gear_device_image,
@@ -865,6 +866,7 @@ ul li {
 .home_page_grid li:focus,
 .home_page_grid li:focus img {
     transition: 0.15s all, 0.35s border-radius, 0.25s border-color;
+    background: white;
 }
 
 .home_page_grid li:hover img,
