@@ -30,6 +30,7 @@ code {
 }
 
 body,
+.site_navbar,
 .go_back_link,
 .subsection_header,
 .sticky_header,
@@ -225,7 +226,6 @@ s {
     position: relative;
     z-index: 10;
     width: 100%;
-    background: transparent;
     flex-shrink: 0;
 }
 
@@ -895,7 +895,6 @@ ul li {
     box-shadow: none;
     overflow: hidden;
     transition: 0.1s border-radius, 0.2s background;
-    margin-bottom: 1rem;
     border-radius: 1rem;
     position: relative;
     height: 100%;
@@ -2391,6 +2390,7 @@ h6 {
 
 .gear_card .card_footer {
     text-decoration: none;
+    margin-top: 1rem;
 }
 
 .card_description a {
@@ -2590,10 +2590,6 @@ h6 {
 
 .card_description {
     margin: 1.25rem 0 0.25rem;
-}
-
-.gear_card .card_footer {
-    margin-top: 0;
 }
 
 .gear_card .card_footer li {
@@ -3248,6 +3244,20 @@ h6 {
         padding: 4rem 1rem 1rem;
     }
 
+    .gear_page_grid .gear_card:hover {
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .gear_card:hover .gear_image_container {
+        border-radius: 1rem;
+        border: 1px solid hsla(200, 24%, 48%, 0.1);
+    }
+
+    .gear_page_grid .gear_card {
+        padding: 6rem 1rem 1rem;
+    }
+
     .gear_section .gear_description {
         line-height: 1.5;
     }
@@ -3263,7 +3273,7 @@ h6 {
     }
 
     .site_navbar {
-        background: hsl(200, 16%, 99%);
+/*        background: hsl(200, 16%, 99%);*/
         height: 4rem;
         position: fixed;
     }
@@ -3539,6 +3549,7 @@ h6 {
 @media (prefers-color-scheme: dark) {
 
     body,
+    .site_navbar,
     .go_back_link,
     .subsection_header,
     .sticky_header,
@@ -3932,14 +3943,6 @@ h6 {
 
     .adhawk_card:hover .work_card_text {
         background: transparent;
-    }
-
-}
-
-@media (prefers-color-scheme: dark) and (max-width: 760px) {
-
-    .site_navbar {
-        background: hsl(200, 16%, 8%);
     }
 
 }
