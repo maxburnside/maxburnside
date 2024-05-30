@@ -1,6 +1,6 @@
-##Hi, I'm Max Burnside.
+##Hi, I'm Max Burnside.##
 
-#I'm a designer who's been creating well-crafted products for over a decade.
+#I'm a designer who's been creating well-crafted products for over a decade.#
 
 I recently launched <a href="https://previewsms.com#github_referral" target="_blank">Preview SMS</a> - an application that instantly shows you how recipients will see your messages.
 
