@@ -1957,7 +1957,7 @@ footer,
 }*/
 
 .blog_post_preview_container:hover {
-    background: hsla(136, 32%, 88%);
+    background: hsl(200, 16%, 88%);
     border-radius: 0;
     transition: 0.2s all;
 }
@@ -3785,6 +3785,10 @@ h6 {
     .home_page_grid li:hover img {
         border: 1px solid hsla(200, 24%, 99%, 0.4);
         background: hsl(200, 16%, 40%);
+    }
+
+    .home_page_grid li:hover {
+        background: transparent;
     }
 
     .gear_page_grid li:hover img {
