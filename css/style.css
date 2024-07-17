@@ -30,6 +30,7 @@ code {
 }
 
 body,
+.site_navbar,
 .go_back_link,
 .subsection_header,
 .sticky_header,
@@ -41,7 +42,7 @@ body,
 .case_study_project h3,
 .next_case_study_section .text_container h6,
 .next_case_study_section .text_container a {
-    background: hsl(200, 16%, 99%);
+    background: hsl(200, 16%, 96%);
 }
 
 html,
@@ -225,7 +226,6 @@ s {
     position: relative;
     z-index: 10;
     width: 100%;
-    background: transparent;
     flex-shrink: 0;
 }
 
@@ -392,6 +392,7 @@ a:hover,
     /*    background: hsla(136, 100%, 36%, 1) !important;*/
     border-radius: 0;
     transition: 0.1s border-radius, 0.5s background;
+    border: 1px solid hsla(200, 24%, 48%, 0.5);
 }
 
 .gear_device_image,
@@ -865,6 +866,7 @@ ul li {
 .home_page_grid li:focus,
 .home_page_grid li:focus img {
     transition: 0.15s all, 0.35s border-radius, 0.25s border-color;
+    background: white;
 }
 
 .home_page_grid li:hover img,
@@ -893,7 +895,6 @@ ul li {
     box-shadow: none;
     overflow: hidden;
     transition: 0.1s border-radius, 0.2s background;
-    margin-bottom: 1rem;
     border-radius: 1rem;
     position: relative;
     height: 100%;
@@ -1956,7 +1957,7 @@ footer,
 }*/
 
 .blog_post_preview_container:hover {
-    background: hsla(200, 16%, 96%);
+    background: hsl(200, 16%, 88%);
     border-radius: 0;
     transition: 0.2s all;
 }
@@ -2117,6 +2118,8 @@ footer,
 }
 
 .blog_post_text p,
+.blog_post_text ol,
+.blog_post_text ol li,
 .blog_post_text ul,
 .blog_post_text ul li {
     margin: 0;
@@ -2155,14 +2158,20 @@ footer,
     font-size: 14px;
 }
 
+.blog_post_text ol,
 .blog_post_text ul {
     margin-top: 1rem;
 }
 
+.blog_post_text ol li,
 .blog_post_text ul li {
     list-style: disc;
-    margin-left: 2rem;
+    margin-left: 2.5rem;
     padding-left: 0.5rem;
+}
+
+.blog_post_text ol li {
+    list-style: decimal;
 }
 
 .blog_post_text .larger_text {
@@ -2381,6 +2390,7 @@ h6 {
 
 .gear_card .card_footer {
     text-decoration: none;
+    margin-top: 1rem;
 }
 
 .card_description a {
@@ -2580,10 +2590,6 @@ h6 {
 
 .card_description {
     margin: 1.25rem 0 0.25rem;
-}
-
-.gear_card .card_footer {
-    margin-top: 0;
 }
 
 .gear_card .card_footer li {
@@ -3238,6 +3244,20 @@ h6 {
         padding: 4rem 1rem 1rem;
     }
 
+    .gear_page_grid .gear_card:hover {
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .gear_card:hover .gear_image_container {
+        border-radius: 1rem;
+        border: 1px solid hsla(200, 24%, 48%, 0.1);
+    }
+
+    .gear_page_grid .gear_card {
+        padding: 6rem 1rem 1rem;
+    }
+
     .gear_section .gear_description {
         line-height: 1.5;
     }
@@ -3253,7 +3273,7 @@ h6 {
     }
 
     .site_navbar {
-        background: hsl(200, 16%, 99%);
+/*        background: hsl(200, 16%, 99%);*/
         height: 4rem;
         position: fixed;
     }
@@ -3529,6 +3549,7 @@ h6 {
 @media (prefers-color-scheme: dark) {
 
     body,
+    .site_navbar,
     .go_back_link,
     .subsection_header,
     .sticky_header,
@@ -3766,6 +3787,10 @@ h6 {
         background: hsl(200, 16%, 40%);
     }
 
+    .home_page_grid li:hover {
+        background: transparent;
+    }
+
     .gear_page_grid li:hover img {
         border: none !important;
         background: hsl(136, 100%, 36%);
@@ -3926,14 +3951,6 @@ h6 {
 
 }
 
-@media (prefers-color-scheme: dark) and (max-width: 760px) {
-
-    .site_navbar {
-        background: hsl(200, 16%, 8%);
-    }
-
-}
-
 
 @media (prefers-color-scheme: dark) and (max-width: 440px) {
 
@@ -3986,6 +4003,11 @@ h6 {
 
     .blog_post_text ul li {
         margin-left: 1rem;
+        padding-left: 0.5rem;
+    }
+
+    .blog_post_text ol li {
+        margin-left: 1.25rem;
         padding-left: 0.5rem;
     }
 
