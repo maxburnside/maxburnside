@@ -8,5 +8,3 @@
 ### 🎨 <a href="https://maxburnside.com/work#github_referral">Design Case Studies</a>
 
 ### 📚 <a href="https://maxburnside.com/blog#github_referral">Blog Posts</a>
-
-### 💻 <a href="https://maxburnside.com/gear#github_referral">Gear I Use</a>
